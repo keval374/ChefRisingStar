@@ -7,14 +7,16 @@ using Xamarin.Forms;
 
 namespace ChefRisingStar.ViewModels
 {
-    [QueryProperty(nameof(ItemId), nameof(ItemId))]
-    public class ItemDetailViewModel : BaseDataViewModel<Item, string>
+    [QueryProperty(nameof(Id), nameof(Id))]
+    public class AchievementDetailViewModel : BaseDataViewModel<Achievement, int>
     {
-        private string itemId;
+        private int id;
         private string text;
         private string description;
-        public string Id { get; set; }
 
+        public override IDataStore<Achievement, int> DataStore { get; protected set; }
+               
+        
         public string Text
         {
             get => text;
@@ -27,33 +29,31 @@ namespace ChefRisingStar.ViewModels
             set => SetProperty(ref description, value);
         }
 
-        public string ItemId
+        public int Id
         {
             get
             {
-                return itemId;
+                return id;
             }
             set
             {
-                itemId = value;
+                id = value;
                 LoadItemId(value);
             }
         }
 
-        public override IDataStore<Item, string> DataStore { get; protected set; }
-
-        public ItemDetailViewModel()
+        public AchievementDetailViewModel()
         {
-            DataStore = DependencyService.Get<IDataStore<Item, string>>();
+            DataStore = DependencyService.Get<IDataStore<Achievement, int>>();
         }
 
-        public async void LoadItemId(string itemId)
+        public async void LoadItemId(int itemId)
         {
             try
             {
                 var item = await DataStore.GetItemAsync(itemId);
                 Id = item.Id;
-                Text = item.Text;
+                Text = item.Description;
                 Description = item.Description;
             }
             catch (Exception)

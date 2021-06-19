@@ -15,5 +15,8 @@
     <Compile Update="Views\AchievementsPage.xaml.cs">
       <DependentUpon>AchievementsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\AchievementDetailPage.xaml.cs">
+      <DependentUpon>AchievementDetailPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

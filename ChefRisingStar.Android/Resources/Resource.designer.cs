@@ -13290,28 +13290,25 @@ namespace ChefRisingStar.Droid
 			public const int chef = 2131492868;
 			
 			// aapt resource value: 0x7F0C0005
-			public const int chef256 = 2131492869;
+			public const int icon = 2131492869;
 			
 			// aapt resource value: 0x7F0C0006
-			public const int icon = 2131492870;
+			public const int icon_round = 2131492870;
 			
 			// aapt resource value: 0x7F0C0007
-			public const int icon_round = 2131492871;
+			public const int launcher_foreground = 2131492871;
 			
 			// aapt resource value: 0x7F0C0008
-			public const int launcher_foreground = 2131492872;
+			public const int trophy128 = 2131492872;
 			
 			// aapt resource value: 0x7F0C0009
-			public const int trophy128 = 2131492873;
+			public const int trophy256 = 2131492873;
 			
 			// aapt resource value: 0x7F0C000A
-			public const int trophy256 = 2131492874;
+			public const int trophy512 = 2131492874;
 			
 			// aapt resource value: 0x7F0C000B
-			public const int trophy512 = 2131492875;
-			
-			// aapt resource value: 0x7F0C000C
-			public const int trophy64 = 2131492876;
+			public const int trophy64 = 2131492875;
 			
 			static Mipmap()
 			{

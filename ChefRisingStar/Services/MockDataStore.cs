@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChefRisingStar.Services
 {
-    public class MockDataStore : IDataStore<Item>
+    public class MockDataStore : IDataStore<Item, string>
     {
         readonly List<Item> items;
 

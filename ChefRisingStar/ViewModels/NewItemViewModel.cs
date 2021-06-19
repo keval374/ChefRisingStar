@@ -1,4 +1,5 @@
 ﻿using ChefRisingStar.Models;
+using ChefRisingStar.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,10 +8,12 @@ using Xamarin.Forms;
 
 namespace ChefRisingStar.ViewModels
 {
-    public class NewItemViewModel : BaseViewModel
+    public class NewItemViewModel : BaseDataViewModel<Item, string>
     {
         private string text;
         private string description;
+
+        public override IDataStore<Item, string> DataStore { get; protected set; }
 
         public NewItemViewModel()
         {

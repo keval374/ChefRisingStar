@@ -1,4 +1,5 @@
 ﻿using ChefRisingStar.Models;
+using ChefRisingStar.Services;
 using ChefRisingStar.Views;
 using System;
 using System.Collections.ObjectModel;
@@ -8,7 +9,7 @@ using Xamarin.Forms;
 
 namespace ChefRisingStar.ViewModels
 {
-    public class ItemsViewModel : BaseViewModel
+    public class ItemsViewModel : BaseDataViewModel<Item, string>
     {
         private Item _selectedItem;
 
@@ -16,6 +17,8 @@ namespace ChefRisingStar.ViewModels
         public Command LoadItemsCommand { get; }
         public Command AddItemCommand { get; }
         public Command<Item> ItemTapped { get; }
+
+        public override IDataStore<Item, string> DataStore { get; protected set; }
 
         public ItemsViewModel()
         {
@@ -26,6 +29,8 @@ namespace ChefRisingStar.ViewModels
             ItemTapped = new Command<Item>(OnItemSelected);
 
             AddItemCommand = new Command(OnAddItem);
+
+            DataStore = DependencyService.Get<IDataStore<Item, string>>();
         }
 
         async Task ExecuteLoadItemsCommand()

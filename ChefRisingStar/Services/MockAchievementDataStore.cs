@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChefRisingStar.Services
 {
-    public class MockAchievementDataStore : IDataStore<Achievement>
+    public class MockAchievementDataStore : IDataStore<Achievement, int>
     {
         readonly List<Achievement> items;
 
@@ -37,20 +37,16 @@ namespace ChefRisingStar.Services
             return await Task.FromResult(true);
         }
 
-        public async Task<bool> DeleteItemAsync(string stringId)
+        public async Task<bool> DeleteItemAsync(int id)
         {
-            //NOTE: not clean but by contract
-            int id = int.Parse(stringId);
             var oldItem = items.Where((Achievement arg) => arg.Id == id).FirstOrDefault();
             items.Remove(oldItem);
 
             return await Task.FromResult(true);
         }
 
-        public async Task<Achievement> GetItemAsync(string stringId)
+        public async Task<Achievement> GetItemAsync(int id)
         {
-            //NOTE: not clean but by contract
-            int id = int.Parse(stringId);
             return await Task.FromResult(items.FirstOrDefault(s => s.Id == id));
         }
 

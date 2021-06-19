@@ -8,10 +8,8 @@ using Xamarin.Forms;
 
 namespace ChefRisingStar.ViewModels
 {
-    public class BaseViewModel : INotifyPropertyChanged
-    {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
-
+    public abstract class BaseViewModel : INotifyPropertyChanged
+    {   
         bool isBusy = false;
         public bool IsBusy
         {

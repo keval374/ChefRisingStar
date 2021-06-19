@@ -9,7 +9,7 @@ using Xamarin.Forms;
 
 namespace ChefRisingStar.ViewModels
 {
-    public class AchievementsViewModel : BaseViewModel
+    public class AchievementsViewModel : BaseDataViewModel<Achievement, int>
     {
         private Achievement _selectedItem;
 
@@ -18,7 +18,7 @@ namespace ChefRisingStar.ViewModels
         public Command AddItemCommand { get; }
         public Command<Achievement> ItemTapped { get; }
 
-        public IDataStore<Achievement> AchievementDataStore => DependencyService.Get<IDataStore<Achievement>>();
+        public override IDataStore<Achievement, int> DataStore { get; protected set; }
 
         public AchievementsViewModel()
         {
@@ -29,6 +29,8 @@ namespace ChefRisingStar.ViewModels
             ItemTapped = new Command<Achievement>(OnItemSelected);
 
             AddItemCommand = new Command(OnAddItem);
+
+            DataStore = DependencyService.Get<IDataStore<Achievement, int>>();
         }
 
         async Task ExecuteLoadItemsCommand()
@@ -38,7 +40,7 @@ namespace ChefRisingStar.ViewModels
             try
             {
                 Achievements.Clear();
-                var items = await AchievementDataStore.GetItemsAsync(true);
+                var items = await DataStore.GetItemsAsync(true);
                 foreach (var item in items)
                 {
                     Achievements.Add(item);
