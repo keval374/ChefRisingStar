@@ -81,6 +81,9 @@
     <FlyoutItem Title="Daily Challenge" Icon="Calendar64.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
+    <FlyoutItem Title="Recipes" Icon="icon_feed.png">
+        <ShellContent Route="RecipesListPage" ContentTemplate="{DataTemplate local:RecipesListPage}" />
+    </FlyoutItem>
     <FlyoutItem Title="Food Footprint" Icon="footprint64.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
@@ -153,7 +156,6 @@
             </ContentView>
         </DataTemplate>
     </Shell.MenuItemTemplate>
-
     -->
 
 </Shell>

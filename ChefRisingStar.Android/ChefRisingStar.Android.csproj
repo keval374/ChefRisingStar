@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -88,7 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ChefRisingStar\ChefRisingStar.csproj">
-      <Project>{0D510482-DA1B-4AD1-BE31-0AD126D00EDA}</Project>
+      <Project>{E425E057-4625-4566-9BF1-27F5087484E2}</Project>
       <Name>ChefRisingStar</Name>
     </ProjectReference>
   </ItemGroup>
