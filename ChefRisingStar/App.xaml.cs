@@ -12,9 +12,9 @@ namespace ChefRisingStar
         public App()
         {
             InitializeComponent();
-
             DependencyService.Register<MockDataStore>();
             DependencyService.Register<MockAchievementDataStore>();
+            DependencyService.Register<MockRecipeDataStore>();
             MainPage = new AppShell();
         }
 
