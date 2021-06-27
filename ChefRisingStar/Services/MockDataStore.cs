@@ -1,6 +1,7 @@
 ﻿using ChefRisingStar.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -55,6 +56,11 @@ namespace ChefRisingStar.Services
         public async Task<IEnumerable<Item>> GetItemsAsync(bool forceRefresh = false)
         {
             return await Task.FromResult(items);
+        }
+
+        public ReadOnlyCollection<Item> GetItems(bool forceRefresh = false)
+        {
+            return items.AsReadOnly();
         }
     }
 }

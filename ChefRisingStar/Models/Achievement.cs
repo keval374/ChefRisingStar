@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
 namespace ChefRisingStar.Models
 {
+    [DebuggerDisplay("{GetDebuggerDisplay}")]
     public class Achievement : IEquatable<Achievement>
     {
         public Achievement(int id, int value, string name, string description, string imageSrc, AchievementTypes achievementType)
@@ -14,6 +16,8 @@ namespace ChefRisingStar.Models
             Description = description ?? throw new ArgumentNullException(nameof(description));
             ImageSrc = imageSrc ?? throw new ArgumentNullException(nameof(imageSrc));
             AchievementType = achievementType;
+
+            AchievementSteps = new List<AchievementStep>();
         }
         
         public Achievement(int id, int value, string name, string description, string imageSrc, AchievementTypes achievementType, DateTime dateEarned): this (id, value, name, description, imageSrc, achievementType)
@@ -44,7 +48,7 @@ namespace ChefRisingStar.Models
             }
         }
         public AchievementTypes AchievementType { get; set; }
-        public List<AchievementCondition> AchievementConditions { get; set; }
+        public List<AchievementStep> AchievementSteps { get; set; }
 
         public override bool Equals(object obj)
         {
@@ -61,7 +65,7 @@ namespace ChefRisingStar.Models
                    ImageSrc == other.ImageSrc &&
                    DateEarned == other.DateEarned &&
                    AchievementType == other.AchievementType &&
-                   EqualityComparer<List<AchievementCondition>>.Default.Equals(AchievementConditions, other.AchievementConditions);
+                   EqualityComparer<List<AchievementStep>>.Default.Equals(AchievementSteps, other.AchievementSteps);
         }
 
         public override int GetHashCode()
@@ -74,8 +78,13 @@ namespace ChefRisingStar.Models
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(ImageSrc);
             hashCode = hashCode * -1521134295 + DateEarned.GetHashCode();
             hashCode = hashCode * -1521134295 + AchievementType.GetHashCode();
-            hashCode = hashCode * -1521134295 + EqualityComparer<List<AchievementCondition>>.Default.GetHashCode(AchievementConditions);
+            hashCode = hashCode * -1521134295 + EqualityComparer<List<AchievementStep>>.Default.GetHashCode(AchievementSteps);
             return hashCode;
+        }
+
+        private string GetDebuggerDisplay()
+        {
+            return $"{Id} - {Name} Achievment Count: {AchievementSteps.Count}";
         }
     }
 

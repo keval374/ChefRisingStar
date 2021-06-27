@@ -1,6 +1,7 @@
 ﻿using ChefRisingStar.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,8 +20,6 @@ namespace ChefRisingStar.Services
                 new Recipe(3, "Recipe 3", "description 3", "ingredients", "directions" ),
             };
         }
-
-
         public async Task<bool> AddItemAsync(Recipe item)
         {
             items.Add(item);
@@ -55,6 +54,9 @@ namespace ChefRisingStar.Services
             return await Task.FromResult(items);
         }
 
-       
+        public ReadOnlyCollection<Recipe> GetItems(bool forceRefresh = false)
+        {
+            return items.AsReadOnly();
+        }
     }
 }

@@ -45,6 +45,8 @@ namespace ChefRisingStar.ViewModels
                 {
                     Achievements.Add(item);
                 }
+
+
             }
             catch (Exception ex)
             {
@@ -83,8 +85,7 @@ namespace ChefRisingStar.ViewModels
                 return;
 
             // This will push the ItemDetailPage onto the navigation stack
-            //TODO: This detail
-            await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={achievement.Id}");
+            await Shell.Current.GoToAsync($"{nameof(AchievementDetailPage)}?{nameof(AchievementDetailViewModel.Id)}={achievement.Id}");
         }
     }
 }
