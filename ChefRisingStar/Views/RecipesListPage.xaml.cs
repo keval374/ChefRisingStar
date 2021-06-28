@@ -12,6 +12,7 @@ using Xamarin.Forms.Xaml;
 
 namespace ChefRisingStar.Views
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RecipesListPage : ContentPage
     {
         RecipesViewModel _viewModel;
@@ -19,16 +20,19 @@ namespace ChefRisingStar.Views
         public RecipesListPage()
         {
             InitializeComponent();
-
             BindingContext = _viewModel = new RecipesViewModel();
 
         }
-
-        protected override void OnAppearing()
+        
+        private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            base.OnAppearing();
-            _viewModel.OnAppearing();
-        }
+            if (e.SelectedItem is Recipe selectedRecipe)
+            {
+                ListView listView = (ListView)sender;
+                listView.SelectedItem = null;
 
+                await Navigation.PushAsync(new RecipeDetailPage(selectedRecipe));
+            }
+        }
     }
 }
