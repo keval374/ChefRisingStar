@@ -13,6 +13,7 @@ namespace ChefRisingStar
         {
             InitializeComponent();
             DependencyService.Register<MockDataStore>();
+            DependencyService.Register<MockAchievementConditionDataStore>();
             DependencyService.Register<MockAchievementDataStore>();
             //DependencyService.Register<MockRecipeDataStore>();
             MainPage = new AppShell();
@@ -20,6 +21,7 @@ namespace ChefRisingStar
 
         protected override void OnStart()
         {
+            
         }
 
         protected override void OnSleep()

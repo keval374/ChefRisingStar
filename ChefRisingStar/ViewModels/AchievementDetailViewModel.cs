@@ -1,6 +1,8 @@
 ﻿using ChefRisingStar.Models;
 using ChefRisingStar.Services;
 using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -10,41 +12,47 @@ namespace ChefRisingStar.ViewModels
     [QueryProperty(nameof(Id), nameof(Id))]
     public class AchievementDetailViewModel : BaseDataViewModel<Achievement, int>
     {
-        private int id;
-        private string text;
-        private string description;
+        private int _id;
+        private string _description;
+        private Achievement _achievement;
 
         public override IDataStore<Achievement, int> DataStore { get; protected set; }
-               
-        
-        public string Text
-        {
-            get => text;
-            set => SetProperty(ref text, value);
-        }
+
+        //TODO: Make readonly
+        public ObservableCollection<AchievementStep> AchievementSteps { get; protected set; }
+
+        //public List<AchievementStep> AchievementSteps
+        //{
+        //    get => _achievementConditions;
+        //    set => SetProperty(ref _achievementConditions, value);
+        //}
 
         public string Description
         {
-            get => description;
-            set => SetProperty(ref description, value);
+            get => _description;
+            set => SetProperty(ref _description, value);
         }
 
         public int Id
         {
             get
             {
-                return id;
+                return _id;
             }
             set
             {
-                id = value;
-                LoadItemId(value);
+                if (value != _id)
+                {
+                    _id = value;
+                    LoadItemId(value);
+                }
             }
         }
 
         public AchievementDetailViewModel()
         {
             DataStore = DependencyService.Get<IDataStore<Achievement, int>>();
+            AchievementSteps = new ObservableCollection<AchievementStep>();
         }
 
         public async void LoadItemId(int itemId)
@@ -52,13 +60,17 @@ namespace ChefRisingStar.ViewModels
             try
             {
                 var item = await DataStore.GetItemAsync(itemId);
+                _achievement = item;
                 Id = item.Id;
-                Text = item.Description;
+                Title = item.Name;
                 Description = item.Description;
+
+                foreach(AchievementStep ac in item.AchievementSteps)
+                    AchievementSteps.Add(ac);
             }
             catch (Exception)
             {
-                Debug.WriteLine("Failed to Load Item");
+                Debug.WriteLine($"Failed to Load Item: {itemId}");
             }
         }
     }

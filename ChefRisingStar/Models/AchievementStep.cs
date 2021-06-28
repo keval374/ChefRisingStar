@@ -4,10 +4,10 @@ using System.Diagnostics;
 
 namespace ChefRisingStar.Models
 {
-    [DebuggerDisplay(nameof(GetDebuggerDisplay))]
-    public class AchievementCondition : IEquatable<AchievementCondition>
+    [DebuggerDisplay("{GetDebuggerDisplay}")]
+    public class AchievementStep : IEquatable<AchievementStep>
     {
-        public AchievementCondition(int id, string name, string description)
+        public AchievementStep(int id, string name, string description)
         {
             if (string.IsNullOrEmpty(name))
             {
@@ -24,7 +24,7 @@ namespace ChefRisingStar.Models
             Description = description;
         }
         
-        public AchievementCondition(int id, string name, string description, DateTime completionDate) : this(id, name, description)
+        public AchievementStep(int id, string name, string description, DateTime completionDate) : this(id, name, description)
         {
             CompletionDate = completionDate;
         }
@@ -34,12 +34,17 @@ namespace ChefRisingStar.Models
         public string Description { get; set; }
         public DateTime CompletionDate { get; set; }
 
-        public override bool Equals(object obj)
+        public string ImageSrc 
         {
-            return Equals(obj as AchievementCondition);
+            get { return CompletionDate == DateTime.MinValue ? "emptycheckbox64.png" : "checkmark64.png"; }
         }
 
-        public bool Equals(AchievementCondition other)
+        public override bool Equals(object obj)
+        {
+            return Equals(obj as AchievementStep);
+        }
+
+        public bool Equals(AchievementStep other)
         {
             return other != null &&
                    Id == other.Id &&

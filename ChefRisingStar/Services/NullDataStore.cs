@@ -1,6 +1,7 @@
 ﻿using ChefRisingStar.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -41,6 +42,11 @@ namespace ChefRisingStar.Services
         Task<IEnumerable<bool>> IDataStore<bool, byte>.GetItemsAsync(bool forceRefresh)
         {
             throw new NotImplementedException();
+        }
+
+        public ReadOnlyCollection<bool> GetItems(bool forceRefresh = false)
+        {
+            return new ReadOnlyCollection<bool>(new[]{ true, false });
         }
     }
 }
