@@ -6,43 +6,67 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Newtonsoft.Json;
+
 
 namespace ChefRisingStar.ViewModels
 {
     public class RecipesViewModel : BaseViewModel
     {
-        private Recipe _selectedItem;
-        public ObservableCollection<Recipe> recipesList { get; }
-        public Command LoadItemsCommand { get; }
-        public Command AddItemCommand { get; }
-        public Command<Achievement> ItemTapped { get; }
-        public IDataStore<Recipe, int> RecipeDataStore => DependencyService.Get<IDataStore<Recipe, int>>();
+        #region Properties
+
+        public ObservableCollection<Recipe> Recipes { get; }
+
+        #endregion 
+
+        #region Commands
+
+        public Command LoadRecipesCommand { get; }
+
+        #endregion 
+
+        #region Constructors
 
         public RecipesViewModel()
         {
-            
-            Title = "RecipesList";
-            recipesList = new ObservableCollection<Recipe>();
-            LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
+            Title = "Recipes";
+            Recipes = new ObservableCollection<Recipe>();
 
+            LoadRecipesCommand = new Command(async () => await ExecuteLoadRecipesCommand());
         }
 
-        async Task ExecuteLoadItemsCommand()
+        #endregion 
+
+        #region Methods
+
+        async Task ExecuteLoadRecipesCommand()
         {
+            if (IsBusy)
+                return;
+
             IsBusy = true;
 
             try
             {
-                recipesList.Clear();
-                var items = await RecipeDataStore.GetItemsAsync(true);
-                foreach (var item in items)
+                string jsonRecipes = await Client.GetStringAsync("https://openrecipes.s3.amazonaws.com/openrecipes.txt");
+                char[] separator = { '\n' };
+                string[] lines = jsonRecipes.Split(separator);
+                Recipe[] recipes = new Recipe[lines.Length];
+                
+                for (int i = 0; i < 50; i++)
                 {
-                    recipesList.Add(item);
+                    Recipe recipe = JsonConvert.DeserializeObject<Recipe>(lines[i], Converter.Settings);
+                    recipes[i] = recipe;
                 }
+
+                Recipes.Clear();
+                foreach (var recipe in recipes)
+                    Recipes.Add(recipe);
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex);
+                Debug.WriteLine($"Unable to get recipes: {ex.Message}");
+                await Application.Current.MainPage.DisplayAlert("Error!", ex.Message, "OK");
             }
             finally
             {
@@ -50,49 +74,8 @@ namespace ChefRisingStar.ViewModels
             }
         }
 
-        public void OnAppearing()
-        {
-            IsBusy = true;
-            SelectedItem = null;
-
-            //recipesList.ItemSource = null;
-            //recipesList.ItemSource = App.AllRecipes;
-        }
-
-        public Recipe SelectedItem
-        {
-            get => _selectedItem;
-            set
-            {
-                SetProperty(ref _selectedItem, value);
-                OnItemSelected(value);
-            }
-        }
-
-        async void OnItemSelected(Recipe recipe)
-        {
-            if (recipe == null)
-                return;
-
-            // This will push the ItemDetailPage onto the navigation stack
-            //TODO: This detail
-            await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={recipe.Id}");
-        }
-
-        /*
-        async void Add_Clicked(object sender, System.EventArgs e)
-        {
-            var editPage = new RecipeEditPage();
-
-            var editNavPage = new NavigationPage(editPage)
-            {
-                BarBackgroundColor = Color.FromHex("#01487E"),
-                BarTextColor = Color.White
-            };
-
-            await Navigation.PushModalAsync(editNavPage);
-        }
-        */
+        #endregion 
     }
+
 }
 
