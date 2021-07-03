@@ -5,12 +5,21 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Xamarin.Forms;
+using System.Net.Http;
 
 namespace ChefRisingStar.ViewModels
 {
     public abstract class BaseViewModel : INotifyPropertyChanged
-    {   
+    {
+        #region Service
+
+        private HttpClient _httpClient;
+        protected HttpClient Client => _httpClient ?? (_httpClient = new HttpClient());
+
+        #endregion
+
         bool isBusy = false;
+        public bool IsNotBusy => !IsBusy;
         public bool IsBusy
         {
             get { return isBusy; }
@@ -36,6 +45,11 @@ namespace ChefRisingStar.ViewModels
             OnPropertyChanged(propertyName);
             return true;
         }
+
+        #region Constructors
+
+        
+        #endregion 
 
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
