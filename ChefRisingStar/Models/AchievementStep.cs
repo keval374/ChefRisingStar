@@ -7,6 +7,10 @@ namespace ChefRisingStar.Models
     [DebuggerDisplay("{GetDebuggerDisplay}")]
     public class AchievementStep : IEquatable<AchievementStep>
     {
+        public const string CompleteImage = "checkmark64.png";
+        public const string IncompleteImage = "emptycheckbox64.png";
+
+
         public AchievementStep(int id, string name, string description)
         {
             if (string.IsNullOrEmpty(name))
@@ -36,7 +40,12 @@ namespace ChefRisingStar.Models
 
         public string ImageSrc 
         {
-            get { return CompletionDate == DateTime.MinValue ? "emptycheckbox64.png" : "checkmark64.png"; }
+            get { return CompletionDate == DateTime.MinValue ? IncompleteImage : CompleteImage; }
+        }
+        
+        public bool IsComplete 
+        {
+            get { return CompletionDate == DateTime.MinValue ? false : true; }
         }
 
         public override bool Equals(object obj)

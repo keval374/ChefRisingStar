@@ -7,7 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChefRisingStar.Android", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChefRisingStar.iOS", "ChefRisingStar.iOS\ChefRisingStar.iOS.csproj", "{577E83C1-CD50-48F7-B387-7A94A9F51BFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChefRisingStar", "ChefRisingStar\ChefRisingStar.csproj", "{E425E057-4625-4566-9BF1-27F5087484E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChefRisingStar", "ChefRisingStar\ChefRisingStar.csproj", "{E425E057-4625-4566-9BF1-27F5087484E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D29F6B5C-E8E9-43E9-B721-7629382B5A54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChefRisingStar.UnitTests", "ChefRisingStar.UnitTests\ChefRisingStar.UnitTests.csproj", "{B2E7431B-B119-435C-9519-662CF650D6CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,9 +77,24 @@ Global
 		{E425E057-4625-4566-9BF1-27F5087484E2}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{E425E057-4625-4566-9BF1-27F5087484E2}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{E425E057-4625-4566-9BF1-27F5087484E2}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
+		{B2E7431B-B119-435C-9519-662CF650D6CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2E7431B-B119-435C-9519-662CF650D6CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2E7431B-B119-435C-9519-662CF650D6CA}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{B2E7431B-B119-435C-9519-662CF650D6CA}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{B2E7431B-B119-435C-9519-662CF650D6CA}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{B2E7431B-B119-435C-9519-662CF650D6CA}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{B2E7431B-B119-435C-9519-662CF650D6CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2E7431B-B119-435C-9519-662CF650D6CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2E7431B-B119-435C-9519-662CF650D6CA}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{B2E7431B-B119-435C-9519-662CF650D6CA}.Release|iPhone.Build.0 = Release|Any CPU
+		{B2E7431B-B119-435C-9519-662CF650D6CA}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{B2E7431B-B119-435C-9519-662CF650D6CA}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B2E7431B-B119-435C-9519-662CF650D6CA} = {D29F6B5C-E8E9-43E9-B721-7629382B5A54}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8565B1C4-0BC3-4F47-987B-EAAC48C8A0F6}

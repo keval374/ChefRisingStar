@@ -1,4 +1,5 @@
 ﻿Icons:
+============================
 https://www.flaticon.com/free-icon/chef_350446?related_id=350446&origin=search
 <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
@@ -10,3 +11,28 @@ https://www.flaticon.com/free-icon/chef_350446?related_id=350446&origin=search
 
 Check box:
 https://www.flaticon.com/free-icon/check-mark_64489?related_id=64489&origin=pack#
+
+API Lists:
+==========
+https://www.programmableweb.com/
+https://rapidapi.com/search/recipe
+https://rapidapi.com/blog/recipe-apis/
+
+Recipes:
+=========
+http://www.recipekey.com/?id=searchresults
+
+Recipe ML
+---------
+https://towardsdatascience.com/using-machine-learning-to-generate-recipes-that-actually-works-b2331c85ab72
+
+Recipe APIs
+-----------
+
+https://rapidapi.com/apidojo/api/tasty
+
+Barcode Ingredient
+https://www.programmableweb.com/api/food-repo-rest-api-v30
+https://www.foodrepo.org/api-docs/swaggers/v3
+
+https://spoonacular.com/food-api

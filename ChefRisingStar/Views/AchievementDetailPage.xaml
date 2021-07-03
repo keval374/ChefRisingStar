@@ -3,11 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ChefRisingStar.Views.AchievementDetailPage"
              xmlns:local="clr-namespace:ChefRisingStar.ViewModels"  
-             xmlns:model="clr-namespace:ChefRisingStar.Models"
-             Title="{Binding Title}">
-
+             xmlns:model="clr-namespace:ChefRisingStar.Models" 
+             xmlns:behaviours="clr-namespace:ChefRisingStar.Behaviours"
+             Title="{Binding Title}">    
     <Grid Margin="5">
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
@@ -37,7 +38,16 @@
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                            <Image  Grid.Row="0" Grid.Column="0" Source="{Binding ImageSrc}" WidthRequest="32" />
+                            <!--BindingContext="{Binding Source={RelativeSource AncestorType={x:Type model:AchievementStep}}}"-->
+                            <ImageButton Grid.Row="0" Grid.Column="0" Source="{Binding ImageSrc}" CommandParameter="{Binding .}" WidthRequest="28">
+                                <!--<ImageButton.BindingContext>
+                                    <model:AchievementStep />
+                                </ImageButton.BindingContext>-->
+                                <ImageButton.Behaviors>
+                                    <!--<behaviours:LongPressBehaviour LongPressed="MyButton_LongPressed" BindingContext="{Binding Source={RelativeSource AncestorType={x:Type ImageButton}}}" CommandParameter="{Binding ImageSrc}" />-->
+                                    <behaviours:LongPressBehaviour LongPressed="MyButton_LongPressed" CommandParameter="{Binding ImageSrc}" />
+                                </ImageButton.Behaviors>
+                            </ImageButton>
                             <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" />                            
                             <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Text="{Binding Description}" 
                             LineBreakMode="NoWrap"
@@ -48,5 +58,6 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </RefreshView>
-    </Grid>
+        <Label Text="{Binding RestResponse}" Grid.Row="5" FontSize="Small"/>
+    </Grid>    
 </ContentPage>
