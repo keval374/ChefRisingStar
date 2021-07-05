@@ -37,20 +37,21 @@ namespace ChefRisingStar.ViewModels
         public RecipeDetailViewModel()
         {
             Title = "Details";
-            LoadUrlCommand = new Command(async () => await ExecuteLoadUrlCommand());
+            //LoadUrlCommand = new Command(async () => await ExecuteLoadUrlCommand());
         }
 
         public RecipeDetailViewModel(Recipe recipe)
         {
-            Title = recipe.name;
+            Title = recipe.Title;
             Recipe = recipe;
-            LoadUrlCommand = new Command(async () => await ExecuteLoadUrlCommand());
+            //LoadUrlCommand = new Command(async () => await ExecuteLoadUrlCommand());
         }
 
         #endregion 
 
         #region Methods
 
+        /*
         async Task ExecuteLoadUrlCommand()
         {
             if (IsBusy)
@@ -71,7 +72,7 @@ namespace ChefRisingStar.ViewModels
             {
                 IsBusy = false;
             }
-        }
+        }*/
 
         #endregion
     }

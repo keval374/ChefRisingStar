@@ -7,7 +7,7 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Newtonsoft.Json;
-
+using System.IO;
 
 namespace ChefRisingStar.ViewModels
 {
@@ -48,20 +48,19 @@ namespace ChefRisingStar.ViewModels
 
             try
             {
-                string jsonRecipes = await Client.GetStringAsync("https://openrecipes.s3.amazonaws.com/openrecipes.txt");
-                char[] separator = { '\n' };
-                string[] lines = jsonRecipes.Split(separator);
-                Recipe[] recipes = new Recipe[lines.Length];
-                
-                for (int i = 0; i < 50; i++)
-                {
-                    Recipe recipe = JsonConvert.DeserializeObject<Recipe>(lines[i], Converter.Settings);
-                    recipes[i] = recipe;
-                }
+                string api = "https://api.spoonacular.com/recipes/random?apiKey=SPECIFYYOURAPIKEYHERE&number=2&tags=vegetarian";
+                string jsonRecipes = await Client.GetStringAsync(api);
 
-                Recipes.Clear();
-                foreach (var recipe in recipes)
+                Newtonsoft.Json.Linq.JObject jObject = Newtonsoft.Json.Linq.JObject.Parse(jsonRecipes);
+
+                var jArray = jObject["recipes"] as Newtonsoft.Json.Linq.JArray;
+
+                foreach (Newtonsoft.Json.Linq.JObject item in jArray)
+                {
+                    string s = item.ToString();
+                    Recipe recipe = JsonConvert.DeserializeObject<Recipe>(s, Converter.Settings);
                     Recipes.Add(recipe);
+                }
             }
             catch (Exception ex)
             {
