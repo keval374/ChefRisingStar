@@ -48,7 +48,7 @@
                             </Grid.ColumnDefinitions>
 
                             <controls:CircleImage
-                                Source="{Binding image}"
+                                Source="{Binding Image}"
                                 Aspect="AspectFill"
                                 BorderColor="Black"
                                 BorderThickness="3"
@@ -61,8 +61,8 @@
                                 Grid.Column="1"
                                 VerticalOptions="Center">
 
-                                <Label Text="{Binding name}"/>
-                                <Label Text="{Binding description}"/>
+                                <Label Text="{Binding Title}"/>
+                                <Label Text="{Binding Summary}"/>
                             </StackLayout>
                         </Grid>
                     </ViewCell>

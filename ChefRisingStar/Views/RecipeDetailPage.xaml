@@ -39,7 +39,7 @@
                     Margin="0,50,0,0">
 
                     <controls:CircleImage 
-                        Source="{Binding Recipe.image}" 
+                        Source="{Binding Recipe.Image}" 
                         Aspect="AspectFill"
                         FillColor="White"
                         BorderColor="White"
@@ -61,7 +61,7 @@
                     Grid.Row="2" 
                     Grid.Column="0" 
                     FontSize="Micro" 
-                    Text="{Binding Recipe.cookTime}" 
+                    Text="{Binding Recipe.ReadyInMinutes}" 
                     HorizontalOptions="Center"  
                     Margin="5"/>
 
@@ -76,13 +76,13 @@
                     Grid.Row="2" 
                     Grid.Column="2"
                     FontSize="Micro" 
-                    Text="{Binding Recipe.recipeYield}" 
+                    Text="{Binding Recipe.Servings}" 
                     HorizontalOptions="Center"
                     Margin="5"/>
             </Grid>
 
             <Label 
-                Text="{Binding Recipe.name}" 
+                Text="{Binding Recipe.Title}" 
                 HorizontalOptions="Center" 
                 FontSize="Medium" 
                 FontAttributes="Bold"/>
@@ -95,13 +95,13 @@
                 Text="Description:"
                 Font="Bold,15"/>
             <Label
-                Text="{Binding Recipe.description}"
+                Text="{Binding Recipe.Summary}"
                 Margin="10,0"/>
             <Label
                 Text="Ingredients:"
                 Font="Bold,15"/>
             <Label
-                Text="{Binding Recipe.ingredients}" 
+                Text="{Binding Recipe.Instructions}" 
                 Margin="10,0"/>
 
             <Button 
