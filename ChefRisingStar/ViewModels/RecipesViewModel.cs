@@ -8,6 +8,10 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Newtonsoft.Json;
 using System.IO;
+using System.Web;
+using System.Reflection;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Hosting.Internal;
 
 namespace ChefRisingStar.ViewModels
 {
@@ -23,6 +27,8 @@ namespace ChefRisingStar.ViewModels
 
         public Command LoadRecipesCommand { get; }
 
+        public IHostingEnvironment env;
+
         #endregion 
 
         #region Constructors
@@ -31,13 +37,15 @@ namespace ChefRisingStar.ViewModels
         {
             Title = "Recipes";
             Recipes = new ObservableCollection<Recipe>();
-
             LoadRecipesCommand = new Command(async () => await ExecuteLoadRecipesCommand());
+
         }
 
         #endregion 
 
         #region Methods
+
+        
 
         async Task ExecuteLoadRecipesCommand()
         {
@@ -48,8 +56,17 @@ namespace ChefRisingStar.ViewModels
 
             try
             {
-                string api = "https://api.spoonacular.com/recipes/random?apiKey=SPECIFYYOURAPIKEYHERE&number=2&tags=vegetarian";
+                string api = "https://api.spoonacular.com/recipes/random?apiKey=4f1ec6d27f5240a18921a16686659406&number=1&tags=vegetarian";
                 string jsonRecipes = await Client.GetStringAsync(api);
+                //string jsonRecipes = "";
+                //string file = "recipes.json";
+
+                //using (var reader = new System.IO.StreamReader(stream))
+                //{
+                //    jsonRecipes = reader.ReadToEnd();
+                //}
+
+                //string jsonRecipes = File.ReadAllText(@"~/bin/recipes.json");
 
                 Newtonsoft.Json.Linq.JObject jObject = Newtonsoft.Json.Linq.JObject.Parse(jsonRecipes);
 

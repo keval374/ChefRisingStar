@@ -44,6 +44,7 @@ namespace ChefRisingStar.ViewModels
         {
             Title = recipe.Title;
             Recipe = recipe;
+
             //LoadUrlCommand = new Command(async () => await ExecuteLoadUrlCommand());
         }
 

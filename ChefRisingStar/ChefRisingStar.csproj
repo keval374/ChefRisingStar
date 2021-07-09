@@ -13,6 +13,10 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,5 +29,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Newtonsoft.Json" />
+    <None Remove="Xamarin.Forms.PancakeView" />
+    <None Remove="Xamarin.CommunityToolkit" />
+    <None Remove="SystemWebPackage" />
+    <None Remove="Microsoft.AspNet.WebApi.Core" />
+    <None Remove="Microsoft.AspNetCore.Hosting" />
+    <None Remove="Microsoft.AspNetCore.Hosting.Abstractions" />
   </ItemGroup>
 </Project>
