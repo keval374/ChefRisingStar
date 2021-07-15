@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.Globalization;
 using System.Collections.Generic;
-
+using System.Diagnostics;
 
 namespace ChefRisingStar.Models
 {
@@ -52,8 +52,8 @@ namespace ChefRisingStar.Models
     }
 
     */
-
-    public partial class Recipe
+    [DebuggerDisplay("{GetDebuggerDisplay}")]
+    public class Recipe
     {
         [JsonProperty("vegetarian")]
         public bool Vegetarian { get; set; }
@@ -159,24 +159,36 @@ namespace ChefRisingStar.Models
 
         [JsonProperty("spoonacularSourceUrl")]
         public Uri SpoonacularSourceUrl { get; set; }
+
+        private string GetDebuggerDisplay()
+        {
+            return $"{Id} - {Title}";
+        }
     }
 
-    public partial class AnalyzedInstruction
+    [DebuggerDisplay("{GetDebuggerDisplay}")]
+    public class AnalyzedInstruction
     {
         [JsonProperty("name")]
         public string Name { get; set; }
 
         [JsonProperty("steps")]
         public Step[] Steps { get; set; }
+
+        private string GetDebuggerDisplay()
+        {
+            return $"{Name} - # steps {Steps.Length}";
+        }
     }
 
-    public partial class Step
+    [DebuggerDisplay("{GetDebuggerDisplay}")]
+    public class Step
     {
         [JsonProperty("number")]
         public long Number { get; set; }
 
         [JsonProperty("step")]
-        public string StepStep { get; set; }
+        public string Instruction { get; set; }
 
         [JsonProperty("ingredients")]
         public Ent[] Ingredients { get; set; }
@@ -186,9 +198,15 @@ namespace ChefRisingStar.Models
 
         [JsonProperty("length", NullValueHandling = NullValueHandling.Ignore)]
         public Length Length { get; set; }
+
+        private string GetDebuggerDisplay()
+        {
+            return $"#{Number} : {Instruction}";
+        }
     }
 
-    public partial class Ent
+    [DebuggerDisplay("{GetDebuggerDisplay}")]
+    public class Ent
     {
         [JsonProperty("id")]
         public long Id { get; set; }
@@ -201,18 +219,30 @@ namespace ChefRisingStar.Models
 
         [JsonProperty("image")]
         public string Image { get; set; }
+
+        private string GetDebuggerDisplay()
+        {
+            return $"{Id} - {Name}";
+        }
     }
 
-    public partial class Length
+    [DebuggerDisplay("{GetDebuggerDisplay}")]
+    public class Length
     {
         [JsonProperty("number")]
         public long Number { get; set; }
 
         [JsonProperty("unit")]
         public string Unit { get; set; }
+        
+        private string GetDebuggerDisplay()
+        {
+            return $"{Number}{Unit}";
+        }
     }
 
-    public partial class ExtendedIngredient
+    [DebuggerDisplay("{GetDebuggerDisplay}")]
+    public class ExtendedIngredient
     {
         [JsonProperty("id")]
         public long Id { get; set; }
@@ -222,6 +252,11 @@ namespace ChefRisingStar.Models
 
         [JsonProperty("image")]
         public string Image { get; set; }
+
+        public string ImageSrc
+        {
+            get { return $"https://spoonacular.com/cdn/ingredients_100x100/{Image}"; }
+        }
 
         [JsonProperty("consistency")]
         public string Consistency { get; set; }
@@ -255,6 +290,11 @@ namespace ChefRisingStar.Models
 
         [JsonProperty("measures")]
         public Measures Measures { get; set; }
+
+        private string GetDebuggerDisplay()
+        {
+            return $"{Id} - {Name}";
+        }
     }
 
     public partial class Measures

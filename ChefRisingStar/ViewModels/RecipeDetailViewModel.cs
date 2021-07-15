@@ -1,5 +1,6 @@
 ﻿using ChefRisingStar.Models;
 using System;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
@@ -10,7 +11,7 @@ namespace ChefRisingStar.ViewModels
     public class RecipeDetailViewModel : BaseViewModel
     {
         #region Properties
-        private Recipe recipe;
+        private Recipe recipe;        
         public Recipe Recipe
         {
             get => recipe;
@@ -24,6 +25,8 @@ namespace ChefRisingStar.ViewModels
             }
         }
 
+        public ObservableCollection<Step> Instructions { get; protected set; }
+
         #endregion 
 
         #region Commands
@@ -34,18 +37,18 @@ namespace ChefRisingStar.ViewModels
 
         #region Constructors
 
-        public RecipeDetailViewModel()
-        {
-            Title = "Details";
-            //LoadUrlCommand = new Command(async () => await ExecuteLoadUrlCommand());
-        }
-
         public RecipeDetailViewModel(Recipe recipe)
         {
             Title = recipe.Title;
             Recipe = recipe;
 
-            //LoadUrlCommand = new Command(async () => await ExecuteLoadUrlCommand());
+            Instructions = new ObservableCollection<Step>();
+
+            foreach(AnalyzedInstruction ins in Recipe.AnalyzedInstructions)
+            {
+                foreach (Step step in ins.Steps)
+                    Instructions.Add(step);
+            }
         }
 
         #endregion 

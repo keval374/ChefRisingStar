@@ -37,6 +37,14 @@ namespace ChefRisingStar.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public DateTime CompletionDate { get; set; }
+        
+        public string DateEarnedString
+        {
+            get
+            {
+                return CompletionDate == DateTime.MinValue ? string.Empty : CompletionDate.ToShortDateString();
+            }
+        }
 
         public string ImageSrc 
         {
