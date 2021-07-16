@@ -1,8 +1,8 @@
-﻿using ChefRisingStar.ViewModels;
-using ChefRisingStar.Models;
+﻿using ChefRisingStar.Models;
+using ChefRisingStar.ViewModels;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using System;
 
 namespace ChefRisingStar.Views
 {

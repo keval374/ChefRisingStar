@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 
@@ -11,7 +10,7 @@ namespace ChefRisingStar.Services
         Task<bool> UpdateItemAsync(T item);
         Task<bool> DeleteItemAsync(K id);
         Task<T> GetItemAsync(K id);
-        
+
         Task<IEnumerable<T>> GetItemsAsync(bool forceRefresh = false);
         ReadOnlyCollection<T> GetItems(bool forceRefresh = false);
     }

@@ -89,9 +89,6 @@
     </FlyoutItem>
     <FlyoutItem Title="Achievements" Icon="trophy64.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AchievementsPage}" />
-    </FlyoutItem>    
-    <FlyoutItem Title="Browse" Icon="icon_feed.png">
-        <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Preferences" Icon="icon_feed.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />

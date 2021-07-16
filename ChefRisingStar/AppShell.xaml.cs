@@ -1,7 +1,5 @@
-﻿using ChefRisingStar.ViewModels;
-using ChefRisingStar.Views;
+﻿using ChefRisingStar.Views;
 using System;
-using System.Collections.Generic;
 using Xamarin.Forms;
 
 namespace ChefRisingStar

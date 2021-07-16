@@ -1,10 +1,8 @@
-﻿using System;
-using System.IO;
+﻿using ChefRisingStar.Models;
+using NUnit.Framework;
+using System;
 using System.Linq;
 using System.Text.Json;
-using ChefRisingStar.Models;
-using NUnit.Framework;
-using Xamarin.Forms.Platform.Android;
 using Xamarin.UITest;
 using Xamarin.UITest.Queries;
 using Platform = Xamarin.UITest.Platform;
@@ -37,13 +35,13 @@ namespace ChefRisingStar.UnitTests
 
             Assert.IsTrue(results.Any());
         }
-        
+
         [Test]
         public void DeserializeTest()
         {
             try
-            {  
-                string strResponse = "{\"status\":\"success\",\"ingredient\":\"butter\",\"substitutes\":[\"1 cup = 7 / 8 cup shortening and 1 / 2 tsp salt\",\"1 cup = 7 / 8 cup vegetable oil + 1 / 2 tsp salt\",\"1 / 2 cup = 1 / 4 cup buttermilk +1 / 4 cup unsweetened applesauce\",\"1 cup = 1 cup margarine\"],\"message\":\"Found 4 substitutes for the ingredient.\"}";             
+            {
+                string strResponse = "{\"status\":\"success\",\"ingredient\":\"butter\",\"substitutes\":[\"1 cup = 7 / 8 cup shortening and 1 / 2 tsp salt\",\"1 cup = 7 / 8 cup vegetable oil + 1 / 2 tsp salt\",\"1 / 2 cup = 1 / 4 cup buttermilk +1 / 4 cup unsweetened applesauce\",\"1 cup = 1 cup margarine\"],\"message\":\"Found 4 substitutes for the ingredient.\"}";
                 var substitution = JsonSerializer.Deserialize<Substitution>(strResponse);
 
                 Assert.IsNotNull(substitution);

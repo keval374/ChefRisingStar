@@ -25,9 +25,7 @@
                 <Label Text="How to achieve:" Grid.Row="2" Margin="5,15,5,5" FontSize="Small"/>
 
                 <RefreshView Grid.Row="3" x:DataType="local:AchievementDetailViewModel" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
-                    <CollectionView x:Name="AchievemenConditionsListView"
-                ItemsSource="{Binding AchievementSteps}"
-                SelectionMode="None">
+                    <CollectionView x:Name="AchievemenConditionsListView" ItemsSource="{Binding AchievementSteps}" SelectionMode="None">
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
                                 <Grid x:DataType="model:AchievementStep" Padding="5,10">
@@ -48,10 +46,7 @@
                                     </ImageButton>
                                     <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}" LineBreakMode="TailTruncation" Style="{DynamicResource ListItemTextStyle}" FontSize="16" />
                                     <Label Grid.Row="0" Grid.Column="2" Text="{Binding DateEarnedString}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" />
-                                    <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Text="{Binding Description}" 
-                            LineBreakMode="NoWrap"
-                            Style="{DynamicResource ListItemDetailTextStyle}"
-                            FontSize="13" />
+                                    <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Text="{Binding Description}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemDetailTextStyle}" FontSize="13" />
                                 </Grid>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>

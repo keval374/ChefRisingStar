@@ -63,7 +63,7 @@ namespace ChefRisingStar.Services
         {
             return await Task.FromResult(items);
         }
-        
+
         public ReadOnlyCollection<Achievement> GetItems(bool forceRefresh = false)
         {
             return items.AsReadOnly();

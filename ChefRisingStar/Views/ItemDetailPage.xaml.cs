@@ -1,5 +1,4 @@
 ﻿using ChefRisingStar.ViewModels;
-using System.ComponentModel;
 using Xamarin.Forms;
 
 namespace ChefRisingStar.Views
