@@ -1,0 +1,429 @@
+﻿[
+    {
+        "ingredients": [ "beans", "apples", "oatmeal", "beer" ],
+        "totalCO2": 56.1,
+        "car_miles": 142.2,
+        "water_usage": 72,
+        "parking_space": 15
+    },
+    {
+        "ingredients": [ "beans", "apples", "oatmeal", "coffee" ],
+        "totalCO2": 37.8,
+        "car_miles": 95.8,
+        "water_usage": 65,
+        "parking_space": 13
+    },
+    {
+        "ingredients": [ "beans", "apples", "oatmeal", "dairy milk" ],
+        "totalCO2": 54,
+        "car_miles": 137,
+        "water_usage": 147,
+        "parking_space": 20
+    },
+    {
+        "ingredients": [ "beans", "apples", "oatmeal", "soy milk" ],
+        "totalCO2": 31.4,
+        "car_miles": 79.3,
+        "water_usage": 69,
+        "parking_space": 13
+    },
+    {
+        "ingredients": [ "beans", "apples", "oatmeal", "rice milk" ],
+        "totalCO2": 33.5,
+        "car_miles": 84.8,
+        "water_usage": 100,
+        "parking_space": 13
+    },
+    {
+        "ingredients": [ "beans", "apples", "oatmeal", "rice milk" ],
+        "totalCO2": 33.5,
+        "car_miles": 84.8,
+        "water_usage": 100,
+        "parking_space": 13
+    },
+    {
+        "ingredients": [ "beans", "apples", "pasta", "beer" ],
+        "totalCO2": 56.8,
+        "car_miles": 144.1,
+        "water_usage": 96,
+        "parking_space": 15
+    },
+    {
+        "ingredients": [ "beans", "apples", "pasta", "beer" ],
+        "totalCO2": 56.8,
+        "car_miles": 144.1,
+        "water_usage": 96,
+        "parking_space": 15
+    },
+    {
+        "ingredients": [ "beans", "apples", "pasta", "coffee" ],
+        "totalCO2": 38.6,
+        "car_miles": 97.7,
+        "water_usage": 90,
+        "parking_space": 14
+    },
+    {
+        "ingredients": [ "beans", "apples", "pasta", "dairy milk" ],
+        "totalCO2": 54.8,
+        "car_miles": 138.9,
+        "water_usage": 171,
+        "parking_space": 20
+    },
+    {
+        "ingredients": [ "beans", "apples", "pasta", "soy milk" ],
+        "totalCO2": 32.1,
+        "car_miles": 81.2,
+        "water_usage": 93,
+        "parking_space": 13
+    },
+    {
+        "ingredients": [ "beans", "apples", "pasta", "wine" ],
+        "totalCO2": 38.3,
+        "car_miles": 96.8,
+        "water_usage": 98,
+        "parking_space": 14
+    },
+    {
+        "ingredients": [ "beans", "apples", "pasta", "tea" ],
+        "totalCO2": 23.3,
+        "car_miles": 58.7,
+        "water_usage": 89,
+        "parking_space": 13
+    },
+    {
+        "ingredients": [ "beans", "apples", "pasta", "almond milk" ],
+        "totalCO2": 29.3,
+        "car_miles": 73.9,
+        "water_usage": 138,
+        "parking_space": 13
+    },
+    {
+        "ingredients": [ "beans", "apples", "pasta", "oat milk" ],
+        "totalCO2": 31.4,
+        "car_miles": 79.3,
+        "water_usage": 96,
+        "parking_space": 13
+    },
+    {
+        "ingredients": [ "beans", "apples", "pasta", "rice milk" ],
+        "totalCO2": 34.3,
+        "car_miles": 86.7,
+        "water_usage": 124,
+        "parking_space": 13
+    },
+    {
+        "ingredients": [ "beans", "apples", "potatoes", "beer" ],
+        "totalCO2": 53,
+        "car_miles": 134.3,
+        "water_usage": 62,
+        "parking_space": 14
+    },
+    {
+        "ingredients": [ "beans", "apples", "potatoes", "coffee" ],
+        "totalCO2": 34.7,
+        "car_miles": 87.9,
+        "water_usage": 56,
+        "parking_space": 12
+    },
+    {
+        "ingredients": [ "beans", "apples", "potatoes", "dairy milk" ],
+        "totalCO2": 50.9,
+        "car_miles": 129.1,
+        "water_usage": 137,
+        "parking_space": 19
+    },
+    {
+        "ingredients": [ "beans", "apples", "potatoes", "soy milk" ],
+        "totalCO2": 28.3,
+        "car_miles": 71.4,
+        "water_usage": 59,
+        "parking_space": 12
+    },
+    {
+        "ingredients": [ "beans", "apples", "potatoes", "wine" ],
+        "totalCO2": 34.4,
+        "car_miles": 87,
+        "water_usage": 65,
+        "parking_space": 13
+    },
+    {
+        "ingredients": [ "beans", "apples", "potatoes", "tea" ],
+        "totalCO2": 19.5,
+        "car_miles": 48.9,
+        "water_usage": 56,
+        "parking_space": 11
+    },
+    {
+        "ingredients": [ "beans", "apples", "potatoes", "oat milk" ],
+        "totalCO2": 27.5,
+        "car_miles": 69.5,
+        "water_usage": 62,
+        "parking_space": 12
+    },
+    {
+        "ingredients": [ "beans", "apples", "potatoes", "almond milk" ],
+        "totalCO2": 25.4,
+        "car_miles": 64.1,
+        "water_usage": 104,
+        "parking_space": 12
+    },
+    {
+        "ingredients": [ "beans", "apples", "potatoes", "rice milk" ],
+        "totalCO2": 30.4,
+        "car_miles": 76.9,
+        "water_usage": 91,
+        "parking_space": 11
+    },
+    {
+        "ingredients": [ "beans", "apples", "rice", "beer" ],
+        "totalCO2": 67.9,
+        "car_miles": 172.4,
+        "water_usage": 168,
+        "parking_space": 15
+    },
+    {
+        "ingredients": [ "beans", "apples", "rice", "coffee" ],
+        "totalCO2": 49.7,
+        "car_miles": 126,
+        "water_usage": 162,
+        "parking_space": 13
+    },
+    {
+        "ingredients": [ "beans", "apples", "rice", "dairy milk" ],
+        "totalCO2": 65.9,
+        "car_miles": 167.2,
+        "water_usage": 243,
+        "parking_space": 20
+    },
+    {
+        "ingredients": [ "beans", "apples", "rice", "soy milk" ],
+        "totalCO2": 43.2,
+        "car_miles": 109.5,
+        "water_usage": 165,
+        "parking_space": 12
+    },
+    {
+        "ingredients": [ "beans", "apples", "rice", "tea" ],
+        "totalCO2": 34.4,
+        "car_miles": 87,
+        "water_usage": 161,
+        "parking_space": 12
+    },
+    {
+        "ingredients": [ "beans", "apples", "rice", "almond milk" ],
+        "totalCO2": 40.4,
+        "car_miles": 102.2,
+        "water_usage": 210,
+        "parking_space": 12
+    },
+    {
+        "ingredients": [ "beans", "apples", "rice", "oat milk" ],
+        "totalCO2": 42.5,
+        "car_miles": 107.6,
+        "water_usage": 168,
+        "parking_space": 12
+    },
+    {
+        "ingredients": [ "beans", "apples", "rice", "rice milk" ],
+        "totalCO2": 45.4,
+        "car_miles": 115,
+        "water_usage": 197,
+        "parking_space": 12
+    },
+    {
+        "ingredients": [ "beans", "apples", "bread", "beer" ],
+        "totalCO2": 53.7,
+        "car_miles": 136.1,
+        "water_usage": 74,
+        "parking_space": 14
+    },
+    {
+        "ingredients": [ "beans", "apples", "bread", "coffee" ],
+        "totalCO2": 35.4,
+        "car_miles": 89.7,
+        "water_usage": 68,
+        "parking_space": 13
+    },
+    {
+        "ingredients": [ "beans", "apples", "bread", "dairy milk" ],
+        "totalCO2": 51.6,
+        "car_miles": 130.9,
+        "water_usage": 150,
+        "parking_space": 20
+    },
+    {
+        "ingredients": [ "beans", "apples", "bread", "soy milk" ],
+        "totalCO2": 29,
+        "car_miles": 73.3,
+        "water_usage": 72,
+        "parking_space": 12
+    },
+    {
+        "ingredients": [ "beans", "apples", "bread", "wine" ],
+        "totalCO2": 35.1,
+        "car_miles": 88.8,
+        "water_usage": 77,
+        "parking_space": 13
+    },
+    {
+        "ingredients": [ "beans", "apples", "bread", "tea" ],
+        "totalCO2": 20.2,
+        "car_miles": 50.7,
+        "water_usage": 68,
+        "parking_space": 12
+    },
+    {
+        "ingredients": [ "beans", "apples", "bread", "almond milk" ],
+        "totalCO2": 26.1,
+        "car_miles": 65.9,
+        "water_usage": 116,
+        "parking_space": 12
+    },
+    {
+        "ingredients": [ "beans", "apples", "bread", "oat milk" ],
+        "totalCO2": 28.2,
+        "car_miles": 71.3,
+        "water_usage": 74,
+        "parking_space": 12
+    },
+    {
+        "ingredients": [ "beans", "apples", "bread", "rice milk" ],
+        "totalCO2": 31.1,
+        "car_miles": 78.7,
+        "water_usage": 103,
+        "parking_space": 12
+    },
+    {
+        "ingredients": [ "beef", "apples", "oatmeal", "beer" ],
+        "totalCO2": 430.1,
+        "car_miles": 1096.4,
+        "water_usage": 100,
+        "parking_space": 115
+    },
+    {
+        "ingredients": [ "beef", "apples", "oatmeal", "coffee" ],
+        "totalCO2": 411.9,
+        "car_miles": 1050,
+        "water_usage": 94,
+        "parking_space": 113
+    },
+    {
+        "ingredients": [ "beef", "apples", "oatmeal", "dairy milk" ],
+        "totalCO2": 428,
+        "car_miles": 1091.2,
+        "water_usage": 175,
+        "parking_space": 120
+    },
+    {
+        "ingredients": [ "beef", "apples", "oatmeal", "soy milk" ],
+        "totalCO2": 405.4,
+        "car_miles": 1033.5,
+        "water_usage": 97,
+        "parking_space": 113
+    },
+    {
+        "ingredients": [ "beef", "apples", "oatmeal", "wine" ],
+        "totalCO2": 411.5,
+        "car_miles": 1049.1,
+        "water_usage": 102,
+        "parking_space": 114
+    },
+    {
+        "ingredients": [ "beef", "apples", "oatmeal", "tea" ],
+        "totalCO2": 396.6,
+        "car_miles": 1011,
+        "water_usage": 94,
+        "parking_space": 112
+    },
+    {
+        "ingredients": [ "beef", "apples", "oatmeal", "almond milk" ],
+        "totalCO2": 402.6,
+        "car_miles": 1026.4,
+        "water_usage": 142,
+        "parking_space": 113
+    },
+    {
+        "ingredients": [ "beef", "apples", "oatmeal", "oat milk" ],
+        "totalCO2": 404.6,
+        "car_miles": 1031.4,
+        "water_usage": 100,
+        "parking_space": 113
+    },
+    {
+        "ingredients": [ "beef", "apples", "oatmeal", "rice milk" ],
+        "totalCO2": 407.1,
+        "car_miles": 1039.4,
+        "water_usage": 129,
+        "parking_space": 112
+    },
+    {
+        "ingredients": [ "cheese", "apples", "rice", "dairy milk" ],
+        "totalCO2": 89.1,
+        "car_miles": 226.4,
+        "water_usage": 310,
+        "parking_space": 21
+    },
+    {
+        "ingredients": [ "chicken", "apples", "rice", "dairy milk" ],
+        "totalCO2": 90.4,
+        "car_miles": 229.4,
+        "water_usage": 233,
+        "parking_space": 13
+    },
+    {
+        "ingredients": [ "egg", "apples", "rice", "dairy milk" ],
+        "totalCO2": 77.1,
+        "car_miles": 197.4,
+        "water_usage": 240,
+        "parking_space": 12
+    },
+    {
+        "ingredients": [ "lamb", "apples", "rice", "dairy milk" ],
+        "totalCO2": 206.8,
+        "car_miles": 526.9,
+        "water_usage": 289,
+        "parking_space": 134
+    },
+    {
+        "ingredients": [ "pork", "apples", "rice", "dairy milk" ],
+        "totalCO2": 99.9,
+        "car_miles": 254.4,
+        "water_usage": 288,
+        "parking_space": 15
+    },
+    {
+        "ingredients": [ "shrimp", "apples", "rice", "dairy milk" ],
+        "totalCO2": 169.3,
+        "car_miles": 431.4,
+        "water_usage": 393,
+        "parking_space": 10
+    },
+    {
+        "ingredients": [ "tofu", "apples", "rice", "dairy milk" ],
+        "totalCO2": 68.1,
+        "car_miles": 173.4,
+        "water_usage": 210,
+        "parking_space": 11
+    },
+    {
+        "ingredients": [ "beef", "avocados", "bread", "beer" ],
+        "totalCO2": 436.2,
+        "car_miles": 1112.8,
+        "water_usage": 122,
+        "parking_space": 115
+    },
+    {
+        "ingredients": [ "lamb", "avocados", "bread", "wine" ],
+        "totalCO2": 184.1,
+        "car_miles": 471.4,
+        "water_usage": 142,
+        "parking_space": 128
+    },
+    {
+        "ingredients": [ "beef", "avocados", "bread", "beer" ],
+        "totalCO2": 77.1,
+        "car_miles": 197.4,
+        "water_usage": 240,
+        "parking_space": 12
+    }
+]

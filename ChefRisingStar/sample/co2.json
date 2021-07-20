@@ -1,0 +1,464 @@
+﻿[
+    {
+        "ingredient": "artichokes",
+        "product_emission": 0.12,
+        "transport_emission": 0.02,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "asparagus",
+        "product_emission": 0.40,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "chinese long bean",
+        "product_emission": 0.12,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "snap beans",
+        "product_emission": 0.11,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "bittermelon",
+        "product_emission": 0.05,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "broccoli",
+        "product_emission": 0.16,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "broccoli organic",
+        "product_emission": 0.19,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "brussels sprouts",
+        "product_emission": 0.12,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "cabbage",
+        "product_emission": 0.06,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "cauliflower",
+        "product_emission": 0.14,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "celery",
+        "product_emission": 0.05,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "cucumber",
+        "product_emission": 0.06,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "cucurbits",
+        "product_emission": 0.03,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "egg plants",
+        "product_emission": 0.23,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "garlic",
+        "product_emission": 0.43,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "lemongrass",
+        "product_emission": 0.03,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "lettuce",
+        "product_emission": 4.46,
+        "transport_emission": 0.06,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "mushroom",
+        "product_emission": 0.00,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "okra",
+        "product_emission": 0.11,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "onions",
+        "product_emission": 0.04,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "parsley",
+        "product_emission": 0.07,
+        "transport_emission": 0.06,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "peppers",
+        "product_emission": 0.12,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "pumpkin",
+        "product_emission": 0.07,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "spinach",
+        "product_emission": 0.15,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "squash",
+        "product_emission": 0.16,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "sweet potatoes",
+        "product_emission": 0.19,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "radish",
+        "product_emission": 0.07,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "peanuts",
+        "product_emission": 0.26,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "cocoa butter",
+        "product_emission": 0.52,
+        "transport_emission": 0.06,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "cocoa powder",
+        "product_emission": 0.09,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "all purpose flour",
+        "product_emission": 0.29,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "bread flour",
+        "product_emission": 0.25,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "cooking oil",
+        "product_emission": 0.79,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "salad oil",
+        "product_emission": 0.79,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "corn feed",
+        "product_emission": 0.07,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "corn oil",
+        "product_emission": 0.12,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "corn syrup",
+        "product_emission": 0.15,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "ham",
+        "product_emission": 4.23,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "icecream",
+        "product_emission": 0.83,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "malt whisky",
+        "product_emission": 1.24,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "malted barley",
+        "product_emission": 0.39,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "margarine",
+        "product_emission": 0.80,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "marinara sauce",
+        "product_emission": 0.38,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "mashed potato flakes",
+        "product_emission": 2.05,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "mashed potato granules",
+        "product_emission": 1.96,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "vegetable oil",
+        "product_emission": 0.81,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "pastry flour",
+        "product_emission": 0.24,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "pepperoni",
+        "product_emission": 5.93,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "pita bread",
+        "product_emission": 0.38,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "pizza dough",
+        "product_emission": 0.33,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "sausages",
+        "product_emission": 4.25,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "palm oil",
+        "product_emission": 0.41,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "peanut oil",
+        "product_emission": 1.77,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "rapeseed oil",
+        "product_emission": 0.77,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "canola oil",
+        "product_emission": 0.77,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "soybean oil",
+        "product_emission": 0.67,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "sunflower oil",
+        "product_emission": 0.67,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "turkey",
+        "product_emission": 2.12,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "strawberry",
+        "product_emission": 0.12,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "raspberries",
+        "product_emission": 0.12,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "prunes",
+        "product_emission": 0.23,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "pomegranates",
+        "product_emission": 0.20,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "plums",
+        "product_emission": 0.10,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "pears",
+        "product_emission": 0.15,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "peaches",
+        "product_emission": 0.10,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "olives",
+        "product_emission": 0.09,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "nectarines",
+        "product_emission": 0.10,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "melons",
+        "product_emission": 0.06,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "lemons",
+        "product_emission": 0.04,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "guava",
+        "product_emission": 0.07,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "figs",
+        "product_emission": 0.70,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "dates",
+        "product_emission": 0.20,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "cherries",
+        "product_emission": 0.11,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "apricots",
+        "product_emission": 0.11,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "yogurt",
+        "product_emission": 0.41,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "cream",
+        "product_emission": 0.07,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    },
+    {
+        "ingredient": "butter",
+        "product_emission": 0.53,
+        "transport_emission": 0.05,
+        "waste_emission": 0.01
+    }
+]
