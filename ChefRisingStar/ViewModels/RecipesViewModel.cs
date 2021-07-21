@@ -5,7 +5,6 @@ using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace ChefRisingStar.ViewModels
@@ -16,10 +15,10 @@ namespace ChefRisingStar.ViewModels
 
         private string _selectedCuisines;
         private bool _isSelectCuisineVisible;
-        
+
         public ObservableCollection<Recipe> Recipes { get; }
         public ObservableCollection<SelectableFilter> Cuisines { get; }
-        
+
         public string SelectedCuisines
         {
             get { return _selectedCuisines; }
@@ -88,7 +87,7 @@ namespace ChefRisingStar.ViewModels
 
             try
             {
-                string api = "https://api.spoonacular.com/recipes/random?apiKey=4f1ec6d27f5240a18921a16686659406&number=1&tags=vegetarian";
+                string api = "https://api.spoonacular.com/recipes/random?apiKey=4f1ec6d27f5240a18921a16686659406&number=5&tags=vegetarian";
                 string jsonRecipes = await Client.GetStringAsync(api);
                 //string jsonRecipes = "";
                 //string file = "recipes.json";
@@ -107,8 +106,16 @@ namespace ChefRisingStar.ViewModels
                 foreach (Newtonsoft.Json.Linq.JObject item in jArray)
                 {
                     string s = item.ToString();
-                    Recipe recipe = JsonConvert.DeserializeObject<Recipe>(s, Converter.Settings);
-                    Recipes.Add(recipe);
+
+                    try
+                    {
+                        Recipe recipe = JsonConvert.DeserializeObject<Recipe>(s, Converter.Settings);
+                        Recipes.Add(recipe);
+                    }
+                    catch (Exception e)
+                    {
+                        Debug.WriteLine($"Unable to get deserialize recipe: {e.Message}");
+                    }
                 }
             }
             catch (Exception ex)

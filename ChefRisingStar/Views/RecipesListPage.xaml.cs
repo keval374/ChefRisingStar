@@ -32,8 +32,8 @@ namespace ChefRisingStar.Views
         private void CloseCuisineClicked(object sender, EventArgs e)
         {
             StringBuilder selectedCuisined = new StringBuilder();
-            
-            foreach(SelectableFilter filter in _viewModel.Cuisines)
+
+            foreach (SelectableFilter filter in _viewModel.Cuisines)
             {
                 if (filter.IsSelected)
                     selectedCuisined.Append($"{filter.Text}, ");

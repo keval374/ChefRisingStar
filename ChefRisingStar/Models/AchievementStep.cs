@@ -5,11 +5,14 @@ using System.Diagnostics;
 namespace ChefRisingStar.Models
 {
     [DebuggerDisplay("{GetDebuggerDisplay}")]
-    public class AchievementStep : IEquatable<AchievementStep>
+    public class AchievementStep : BaseNotifyModel, IEquatable<AchievementStep>
     {
+        private DateTime _completionDate;
+        private string _imageSrc;
+
+
         public const string CompleteImage = "checkmark64.png";
         public const string IncompleteImage = "emptycheckbox64.png";
-
 
         public AchievementStep(int id, string name, string description)
         {
@@ -26,17 +29,26 @@ namespace ChefRisingStar.Models
             Id = id;
             Name = name;
             Description = description;
+            CompletionDate = DateTime.MinValue;
+            ImageSrc = _completionDate == DateTime.MinValue ? IncompleteImage : CompleteImage;
         }
 
         public AchievementStep(int id, string name, string description, DateTime completionDate) : this(id, name, description)
         {
             CompletionDate = completionDate;
+            ImageSrc = _completionDate == DateTime.MinValue ? IncompleteImage : CompleteImage;
         }
 
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public DateTime CompletionDate { get; set; }
+
+
+        public DateTime CompletionDate
+        {
+            get { return _completionDate; }
+            set { SetProperty(ref _completionDate, value); }
+        }
 
         public string DateEarnedString
         {
@@ -48,7 +60,8 @@ namespace ChefRisingStar.Models
 
         public string ImageSrc
         {
-            get { return CompletionDate == DateTime.MinValue ? IncompleteImage : CompleteImage; }
+            get { return _imageSrc; }
+            set { SetProperty(ref _imageSrc, value); }
         }
 
         public bool IsComplete

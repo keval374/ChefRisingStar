@@ -16,19 +16,22 @@ namespace ChefRisingStar.Services
         {
             items = new List<Achievement>()
             {
-                new Achievement(1, 10, "First Achievement", "This is an Achievement description.", "trophy64.png", AchievementTypes.Skill, DateTime.Now.AddMonths(-1)),
-                new Achievement(2, 20, "Second Achievement", "This is an Achievement description.", "trophy64.png", AchievementTypes.Progress),
-                new Achievement(3, 30, "Thrid Achievement", "This is an Achievement description.", "trophy64.png", AchievementTypes.Social),
-                new Achievement(4, 40, "Forth Achievement", "This is an Achievement description.", "trophy64.png", AchievementTypes.Skill),
+                new Achievement(1, 10, "First Achievement", "You earn this Achievement just by downloading the App and starting to use it! Well done!", "trophy64.png", AchievementTypes.Progress, DateTime.Now.AddDays(-1)),
+                new Achievement(2, 20, "Register Achievement", "Register and add your preferences.", "trophy64.png", AchievementTypes.Progress),
+                new Achievement(3, 30, "Post a cooking selfie!", "Show off your cooking outfit and earn this badge", "trophy64.png", AchievementTypes.Social),
+                new Achievement(4, 40, "Start cooking!", "Cook a your first meal this week to get this achievement. Start your cooking adventure and make your first meal!", "trophy64.png", AchievementTypes.Skill),
+                new Achievement(5, 80, "Continue cooking", "Cook a two meals this week to get this achievement.", "trophy64.png", AchievementTypes.Skill),
             };
 
             IDataStore<AchievementStep, int> achievmentsConditionDs = DependencyService.Get<MockAchievementConditionDataStore>();
             ReadOnlyCollection<AchievementStep> achievmentConditions = achievmentsConditionDs.GetItems();
 
-            items[2].AchievementSteps.Add(achievmentConditions[0]);
-            items[2].AchievementSteps.Add(achievmentConditions[2]);
-            items[2].AchievementSteps.Add(achievmentConditions[4]);
-            items[3].AchievementSteps.Add(achievmentConditions[1]);
+            items[1].AchievementSteps.Add(achievmentConditions[9]);
+            items[1].AchievementSteps.Add(achievmentConditions[10]);
+            items[2].AchievementSteps.Add(achievmentConditions[1]);
+            items[3].AchievementSteps.Add(achievmentConditions[2]);
+            items[4].AchievementSteps.Add(achievmentConditions[2]);
+            items[4].AchievementSteps.Add(achievmentConditions[3]);
         }
 
         public async Task<bool> AddItemAsync(Achievement item)

@@ -278,6 +278,14 @@ namespace ChefRisingStar.Models
         [JsonProperty("amount")]
         public double Amount { get; set; }
 
+        public string AmountString
+        {
+            get
+            {
+                return Amount.ToString("0.##");
+            }
+        }
+
         [JsonProperty("unit")]
         public string Unit { get; set; }
 

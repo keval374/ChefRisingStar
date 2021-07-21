@@ -19,10 +19,9 @@
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                <Grid Grid.Row="0" Grid.Column="0">
                     <Entry  Placeholder="Select Cuisine(s)" Text="{Binding SelectedCuisines}" />
                     <BoxView  />
                     <Grid.GestureRecognizers>
@@ -30,7 +29,7 @@
                     </Grid.GestureRecognizers>
                 </Grid>
                 
-                <ListView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" ItemsSource="{Binding Recipes}" HasUnevenRows="True" CachingStrategy="RecycleElement" ItemSelected="ListView_ItemSelected">
+                <ListView Grid.Row="1" Grid.Column="0" ItemsSource="{Binding Recipes}" HasUnevenRows="True" CachingStrategy="RecycleElement" ItemSelected="ListView_ItemSelected">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -42,8 +41,12 @@
 
                                     <controls:CircleImage Source="{Binding Image}" Aspect="AspectFill" BorderColor="Black" BorderThickness="3" WidthRequest="60" HeightRequest="60" HorizontalOptions="Center" VerticalOptions="Center"/>
                                     <StackLayout Grid.Column="1" VerticalOptions="Center">
-                                        <Label Text="{Binding Title}"/>
-                                        <Label Text="{Binding Summary}"/>
+                                        <Label Text="{Binding Title}"/>                                        
+                                        <WebView HeightRequest="50" InputTransparent="True" Visual="Material">
+                                            <WebView.Source>
+                                                <HtmlWebViewSource Html="{Binding Summary}" />
+                                            </WebView.Source>
+                                        </WebView>
                                     </StackLayout>
                                 </Grid>
                             </ViewCell>
@@ -51,10 +54,10 @@
                     </ListView.ItemTemplate>
                 </ListView>
 
-                <Button Grid.Row="2" Grid.ColumnSpan="2" Text="Load Recipes" Command="{Binding LoadRecipesCommand}" IsEnabled="{Binding IsNotBusy}"/>
-                <ActivityIndicator Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+                <Button Grid.Row="2" Grid.Column="0" Text="Load Recipes" Margin="10" Command="{Binding LoadRecipesCommand}" IsEnabled="{Binding IsNotBusy}"/>
+                <ActivityIndicator Grid.Row="0" Grid.Column="0" IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
             </Grid>
-            <ContentView x:Name="popupViewCuisines" BackgroundColor="#C0808080" Padding="30, 0" IsVisible="{Binding IsSelectCuisineVisible}" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">                
+            <ContentView x:Name="popupViewCuisines" BackgroundColor="#C0808080" Padding="20, 0" IsVisible="{Binding IsSelectCuisineVisible}" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">                
                     <StackLayout Orientation="Vertical" BackgroundColor="White" Margin="10">
                     <ScrollView>
                         <ListView x:Name="cuisineList" ItemsSource="{Binding Cuisines}" SelectionMode="None" ItemTapped="cuisineList_ItemTapped">

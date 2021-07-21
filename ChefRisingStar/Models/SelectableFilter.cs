@@ -14,7 +14,7 @@ namespace ChefRisingStar.Models
             set { SetProperty(ref _isSelected, value); }
         }
 
-        
+
         public string Text
         {
             get { return _text; }

@@ -14,10 +14,12 @@ namespace ChefRisingStar.Services
             ReadOnlyCollection<Achievement> achievments = achievmentDs.GetItems();
             ReadOnlyCollection<AchievementStep> achievmentConditions = achievmentsConditionDs.GetItems();
 
-            achievments[2].AchievementSteps.Add(achievmentConditions[0]);
-            achievments[2].AchievementSteps.Add(achievmentConditions[2]);
-            achievments[2].AchievementSteps.Add(achievmentConditions[4]);
+            achievments[1].AchievementSteps.Add(achievmentConditions[9]);
+            achievments[1].AchievementSteps.Add(achievmentConditions[10]);
+            achievments[2].AchievementSteps.Add(achievmentConditions[1]);
             achievments[3].AchievementSteps.Add(achievmentConditions[1]);
+            achievments[4].AchievementSteps.Add(achievmentConditions[4]);
+
 
             //Not needed
             //achievmentDs.UpdateItemAsync(achievments[2]);

@@ -46,146 +46,146 @@
             <Setter
 			    Property="TabStripPlacement"
 			    Value="Top" />
-        </Style>
-    </ResourceDictionary>
+        </Style>            
+        </ResourceDictionary>
         </ContentPage.Resources>
 
     <ContentPage.Content>
-        <RefreshView Grid.Row="3" x:DataType="local:RecipeDetailViewModel" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
-            <Grid>
-                <StackLayout VerticalOptions="FillAndExpand">
+        <AbsoluteLayout Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <RefreshView x:DataType="local:RecipeDetailViewModel" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+                <StackLayout>
                     <Grid>
-                        <Frame BackgroundColor="Black" HeightRequest="200" Padding="0">
-                            <Image Source="{Binding Recipe.Image}" Aspect="AspectFill" Opacity="0.6"/>
-                        </Frame>
-                        <StackLayout VerticalOptions="EndAndExpand" Margin="15,15,15,25">
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="*"/>
-                                    <RowDefinition Height="*"/>
-                                </Grid.RowDefinitions>
-                                <Label Text="{Binding Recipe.Title}" Grid.Row="0" TextColor="White"
-                                   FontAttributes="Bold" FontSize="24" Padding="0" />
-                                <StackLayout Grid.Row="1" Margin="0,0,-10,10">
-                                    <Grid>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Label Text="CookTime:" Grid.Column="0"
-                                   TextColor="White" FontAttributes="Bold" FontSize="16" />
-                                        <Label Text="{Binding Recipe.ReadyInMinutes}" Grid.Column="1" TextColor="White"
-                                   FontAttributes="Bold" FontSize="16" Margin="-20,0"/>
-                                        <Label Text="Servings:" Grid.Column="2" 
-                                   TextColor="White" FontAttributes="Bold" FontSize="16" />
-                                        <Label Text="{Binding Recipe.Servings}" Grid.Column="3" TextColor="White"
-                                       FontAttributes="Bold" FontSize="16" Margin="-30,0"/>
-                                    </Grid>
-                                </StackLayout>
-                            </Grid>
-
-                        </StackLayout>
-                    </Grid>
-                    <Grid VerticalOptions="FillAndExpand" Margin="0,-30,0,0" Padding="0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                            <Frame BackgroundColor="Black" HeightRequest="200" Padding="0">
+                                <Image Source="{Binding Recipe.Image}" Aspect="AspectFill" Opacity="0.6"/>
+                            </Frame>
+                            <StackLayout VerticalOptions="EndAndExpand" Margin="15,15,15,25">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{Binding Recipe.Title}" Grid.Row="0" TextColor="White" FontAttributes="Bold" FontSize="24" Padding="0" />
+                                    <StackLayout Grid.Row="1" Margin="0,0,-10,10">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Text="CookTime:" Grid.Column="0" TextColor="White" FontAttributes="Bold" FontSize="16" />
+                                            <Label Text="{Binding Recipe.ReadyInMinutes}" Grid.Column="1" TextColor="White" FontAttributes="Bold" FontSize="16" Margin="-20,0"/>
+                                            <Label Text="Servings:" Grid.Column="2" TextColor="White" FontAttributes="Bold" FontSize="16" />
+                                            <Label Text="{Binding Recipe.Servings}" Grid.Column="3" TextColor="White" FontAttributes="Bold" FontSize="16" Margin="-30,0"/>
+                                        </Grid>
+                                    </StackLayout>
+                                </Grid>
+                            </StackLayout>
+                        </Grid>
+                        <Grid Grid.Row="1" VerticalOptions="FillAndExpand" Margin="0,-30,0,0" Padding="0">
                         <Frame CornerRadius="25">
                             <Grid>
-                                <xyt:TabView Style="{StaticResource CustomTabStyle}">
-                                    <xyt:TabViewItem ControlTemplate="{StaticResource CustomTab}"
-                                Text="Ingredients" TextColorSelected="Black">
-                                        <Grid BackgroundColor="White" >
-                                            <Frame CornerRadius="25" BackgroundColor="Beige">
-                                                <ScrollView >
-                                                    <CollectionView x:Name="IngredientsListView" ItemsSource="{Binding Recipe.ExtendedIngredients}" SelectionMode="None">
-                                                        <CollectionView.ItemTemplate>
-                                                            <DataTemplate>
-                                                                <Grid x:DataType="model:ExtendedIngredient" Padding="5,10">
-                                                                    <Grid.RowDefinitions>
-                                                                        <RowDefinition Height="*" />
-                                                                    </Grid.RowDefinitions>
-                                                                    <Grid.ColumnDefinitions>
-                                                                        <ColumnDefinition Width="Auto" />
-                                                                        <ColumnDefinition Width="Auto" />
-                                                                        <ColumnDefinition Width="Auto" />
-                                                                        <ColumnDefinition Width="*" />
-                                                                    </Grid.ColumnDefinitions>
-                                                                    <Image Grid.Row="0" Grid.Column="0" Source="{Binding ImageSrc}" WidthRequest="32" />
-                                                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Amount}" LineBreakMode="TailTruncation" FontSize="Medium" />
-                                                                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Unit}" LineBreakMode="NoWrap" FontSize="Medium" />
-                                                                    <Label Grid.Row="0" Grid.Column="3" Text="{Binding Name}" LineBreakMode="NoWrap" FontSize="Medium" FontAttributes="Bold" TextColor="DarkBlue" TextType="Html">
-                                                                        <!--<Label.Behaviors>
-                                                                            <behaviours:LongPressBehaviour LongPressed="IngredientLongPressed" CommandParameter="{Binding Name}" />
-                                                                        </Label.Behaviors>-->
-                                                                    </Label>
-                                                                </Grid>
-                                                            </DataTemplate>
-                                                        </CollectionView.ItemTemplate>
-                                                    </CollectionView>
-                                                </ScrollView>
-                                            </Frame>
-                                        </Grid>
-                                    </xyt:TabViewItem>
-                                    <xyt:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Instructions" TextColorSelected="DarkGray">
-                                        <Grid BackgroundColor="White">
-                                            <Frame CornerRadius="25" BackgroundColor="LightBlue">
-                                                <ScrollView>
-                                                    <CollectionView x:Name="InstructionsListView" ItemsSource="{Binding Instructions}" SelectionMode="None">
-                                                        <CollectionView.ItemTemplate>
-                                                            <DataTemplate>
-                                                                <Grid x:DataType="model:Step" Padding="5,10">
-                                                                    <Grid.RowDefinitions>
-                                                                        <RowDefinition Height="*" />
-                                                                    </Grid.RowDefinitions>
-                                                                    <Grid.ColumnDefinitions>
-                                                                        <ColumnDefinition Width="Auto" />
-                                                                        <ColumnDefinition Width="Auto" />
-                                                                        <ColumnDefinition Width="*" />
-                                                                    </Grid.ColumnDefinitions>
-                                                                    <Label Grid.Row="0" Grid.Column="0" Text="{Binding Number}" LineBreakMode="WordWrap" FontSize="Medium" />
-                                                                    <Label Grid.Row="0" Grid.Column="1" Text=" - " LineBreakMode="WordWrap" FontSize="Medium" />
-                                                                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Instruction}" LineBreakMode="WordWrap" FontSize="Medium" />
-                                                                </Grid>
-                                                            </DataTemplate>
-                                                        </CollectionView.ItemTemplate>
-                                                    </CollectionView>
-                                                </ScrollView>
-                                            </Frame>
-                                        </Grid>
-                                    </xyt:TabViewItem>
-                                </xyt:TabView>
-                            </Grid>
+                                    <xyt:TabView Style="{StaticResource CustomTabStyle}" HeightRequest="300">
+                                        <xyt:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Ingredients" TextColorSelected="Black">
+                                            <Grid BackgroundColor="White" >
+                                                <Frame BackgroundColor="Beige">
+                                                    <ScrollView >
+                                                        <CollectionView x:Name="IngredientsListView" ItemsSource="{Binding Recipe.ExtendedIngredients}" SelectionMode="None">
+                                                            <CollectionView.ItemTemplate>
+                                                                <DataTemplate>
+                                                                    <Grid x:DataType="model:ExtendedIngredient" Margin="0">
+                                                                        <Grid.RowDefinitions>
+                                                                            <RowDefinition Height="*" />
+                                                                        </Grid.RowDefinitions>
+                                                                        <Grid.ColumnDefinitions>
+                                                                            <ColumnDefinition Width="32" />
+                                                                            <ColumnDefinition Width="Auto" />
+                                                                            <ColumnDefinition Width="Auto" />
+                                                                            <ColumnDefinition Width="*" />
+                                                                        </Grid.ColumnDefinitions>
+                                                                        <Image Grid.Row="0" Grid.Column="0" Source="{Binding ImageSrc}" WidthRequest="32" />
+                                                                        <Label Grid.Row="0" Grid.Column="1" Text="{Binding AmountString}" LineBreakMode="TailTruncation" FontSize="Medium" VerticalTextAlignment="Center" />
+                                                                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Unit}" LineBreakMode="NoWrap" FontSize="Medium" VerticalTextAlignment="Center" />
+                                                                    <Button Grid.Row="0" Grid.Column="3" Text="{Binding Name}" FontSize="Small" FontAttributes="Bold" TextColor="DarkBlue" BackgroundColor="Beige" HorizontalOptions="Start" VerticalOptions="Center">
+                                                                            <Button.Behaviors>
+                                                                                <behaviours:ButtonLongPressBehaviour LongPressed="IngredientLongPressed" CommandParameter="{Binding .}" />
+                                                                            </Button.Behaviors>
+                                                                        </Button>
+                                                                    </Grid>
+                                                                </DataTemplate>
+                                                            </CollectionView.ItemTemplate>
+                                                        </CollectionView>
+                                                    </ScrollView>
+                                                </Frame>
+                                            </Grid>
+                                        </xyt:TabViewItem>
+                                        <xyt:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Instructions" TextColorSelected="DarkGray">
+                                            <Grid BackgroundColor="White">
+                                                <Frame CornerRadius="25" BackgroundColor="LightBlue">
+                                                    <ScrollView>                                                       
+                                                            <CollectionView x:Name="InstructionsListView" ItemsSource="{Binding Instructions}" SelectionMode="None">
+                                                                <CollectionView.ItemTemplate>
+                                                                    <DataTemplate>
+                                                                        <Grid x:DataType="model:Step" Padding="5,10">
+                                                                            <Grid.RowDefinitions>
+                                                                                <RowDefinition Height="*" />
+                                                                            </Grid.RowDefinitions>
+                                                                            <Grid.ColumnDefinitions>
+                                                                                <ColumnDefinition Width="Auto" />
+                                                                                <ColumnDefinition Width="Auto" />
+                                                                                <ColumnDefinition Width="*" />
+                                                                            </Grid.ColumnDefinitions>
+                                                                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding Number}" LineBreakMode="WordWrap" FontSize="Medium" />
+                                                                            <Label Grid.Row="0" Grid.Column="1" Text=" - " LineBreakMode="WordWrap" FontSize="Medium" />
+                                                                            <Label Grid.Row="0" Grid.Column="2" Text="{Binding Instruction}" LineBreakMode="WordWrap" FontSize="Medium" />
+                                                                        </Grid>
+                                                                    </DataTemplate>
+                                                                </CollectionView.ItemTemplate>
+                                                            </CollectionView>                                                        
+                                                    </ScrollView>
+                                                </Frame>
+                                            </Grid>
+                                        </xyt:TabViewItem>
+                                    </xyt:TabView>
+                                </Grid>
 
-                        </Frame>
-                        <pancake:PancakeView CornerRadius="50" Margin="15,-20,20,0"
-                       HeightRequest="35" WidthRequest="35" Padding="2"
-                       HorizontalOptions="EndAndExpand" VerticalOptions="Start"
-                                     BackgroundColor="White" >
-                            <pancake:PancakeView.Shadow>
-                                <pancake:DropShadow Color="Black" BlurRadius="10" Offset="1,1"/>
-                            </pancake:PancakeView.Shadow>
-                            <Image Source="https://www.iconpacks.net/icons/1/free-heart-icon-492-thumb.png"
-                               Aspect="AspectFit" Margin="5"/>
-                        </pancake:PancakeView>
-                        <pancake:PancakeView CornerRadius="50" Margin="15,-20,70,0"
-                       HeightRequest="35" WidthRequest="35" Padding="2"
-                       HorizontalOptions="EndAndExpand" VerticalOptions="Start"
-                                     BackgroundColor="White" >
-                            <pancake:PancakeView.Shadow>
-                                <pancake:DropShadow Color="Black" BlurRadius="10" Offset="1,1"/>
-                            </pancake:PancakeView.Shadow>
-                            <Image Source="https://cdn.iconscout.com/icon/premium/png-256-thumb/save-2037779-1723249.png" Aspect="AspectFit" Margin="5"/>
-                        </pancake:PancakeView>
+                            </Frame>
+                            <pancake:PancakeView CornerRadius="50" Margin="15,-20,20,0" HeightRequest="35" WidthRequest="35" Padding="2" HorizontalOptions="EndAndExpand" VerticalOptions="Start" BackgroundColor="White" >
+                                <pancake:PancakeView.Shadow>
+                                    <pancake:DropShadow Color="Black" BlurRadius="10" Offset="1,1"/>
+                                </pancake:PancakeView.Shadow>
+                                <Image Source="https://www.iconpacks.net/icons/1/free-heart-icon-492-thumb.png" Aspect="AspectFit" Margin="5"/>
+                            </pancake:PancakeView>
+                            <pancake:PancakeView CornerRadius="50" Margin="15,-20,70,0" HeightRequest="35" WidthRequest="35" Padding="2" HorizontalOptions="EndAndExpand" VerticalOptions="Start" BackgroundColor="White" >
+                                <pancake:PancakeView.Shadow>
+                                    <pancake:DropShadow Color="Black" BlurRadius="10" Offset="1,1"/>
+                                </pancake:PancakeView.Shadow>
+                                <Image Source="https://cdn.iconscout.com/icon/premium/png-256-thumb/save-2037779-1723249.png" Aspect="AspectFit" Margin="5"/>
+                            </pancake:PancakeView>
+                        </Grid>
                     </Grid>
+
+                <pancake:PancakeView Grid.Row="2" BackgroundColor="CornflowerBlue" HeightRequest="45" Padding="0" CornerRadius="20,20,0,0" VerticalOptions="EndAndExpand">
+                            <Label Text="Make this dish!" FontSize="20" TextColor="MintCream" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                        </pancake:PancakeView>
+                    
                 </StackLayout>
-                <StackLayout  HeightRequest="45" VerticalOptions="EndAndExpand">
-                    <pancake:PancakeView BackgroundColor="CornflowerBlue" HeightRequest="45" Padding="0" CornerRadius="20,20,0,0"
-                                    VerticalOptions="EndAndExpand">
-                        <Label Text="Make this dish!" FontSize="20" TextColor="MintCream" FontAttributes="Bold" 
-                        HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
-                    </pancake:PancakeView>
+            </RefreshView>
+            <ContentView x:Name="popupViewSubstitutions" BackgroundColor="#C0808080" Padding="30, 0" IsVisible="{Binding IsSubstitutionVisible}" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White" Margin="10">
+                        <ListView x:Name="sampleList" ItemsSource="{Binding Substitutions}" SelectedItem="{Binding SelectedSubstitution}" />
+                        <Button Text="Use selected substitute" Clicked="UseSubstituteClicked" Margin="10,10,10,0"/>
+                        <Button Text="Cancel" Clicked="CancelSubstituteClicked" Margin="10" />
+                    </StackLayout>
                 </StackLayout>
-            </Grid>
-        </RefreshView>
-    </ContentPage.Content>    
+            </ContentView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
 </ContentPage>

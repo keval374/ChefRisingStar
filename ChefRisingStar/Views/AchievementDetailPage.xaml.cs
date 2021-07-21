@@ -14,12 +14,21 @@ namespace ChefRisingStar.Views
             BindingContext = new AchievementDetailViewModel();
         }
 
-        private async void MyButton_LongPressed(object sender, EventArgs e)
+        private async void AchievementStepPressed(object sender, EventArgs e)
         {
-            popupViewSubstitutions.IsVisible = true;
-
             LongPressBehaviour behave = sender as LongPressBehaviour;
-            var step = behave.AttachedButton.CommandParameter as AchievementStep;
+
+            AchievementStep step;
+
+            if (behave != null)
+            {
+                step = behave.AttachedButton.CommandParameter as AchievementStep;
+            }
+            else
+            {
+                ImageButton button = sender as ImageButton;
+                step = button.CommandParameter as AchievementStep;
+            }
 
             if (step.IsComplete)
             {
@@ -27,8 +36,8 @@ namespace ChefRisingStar.Views
 
                 if (result1)
                 {
-                    behave.AttachedButton.Source = AchievementStep.IncompleteImage;
                     step.CompletionDate = DateTime.MinValue;
+                    step.ImageSrc = AchievementStep.IncompleteImage;
                 }
 
                 return;
@@ -39,19 +48,9 @@ namespace ChefRisingStar.Views
 
             if (result)
             {
-                behave.AttachedButton.Source = AchievementStep.CompleteImage;
                 step.CompletionDate = DateTime.Now;
+                step.ImageSrc = AchievementStep.CompleteImage;
             }
-        }
-
-        private void UseSubstituteClicked(object sender, EventArgs e)
-        {
-            popupViewSubstitutions.IsVisible = false;
-        }
-
-        private void CancelSubstituteClicked(object sender, EventArgs e)
-        {
-            popupViewSubstitutions.IsVisible = false;
         }
     }
 }

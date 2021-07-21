@@ -5,7 +5,6 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Text.Json;
 using Xamarin.Forms;
 
 namespace ChefRisingStar.ViewModels
@@ -22,7 +21,7 @@ namespace ChefRisingStar.ViewModels
         public override IDataStore<Achievement, int> DataStore { get; protected set; }
 
         public ObservableCollection<AchievementStep> AchievementSteps { get; protected set; }
-        public ObservableCollection<string> Substitutions { get; protected set; }
+
 
         //public List<AchievementStep> AchievementSteps
         //{
@@ -69,10 +68,8 @@ namespace ChefRisingStar.ViewModels
         {
             DataStore = DependencyService.Get<IDataStore<Achievement, int>>();
             AchievementSteps = new ObservableCollection<AchievementStep>();
-            Substitutions = new ObservableCollection<string>();
 
             //MakeRestCall();
-            GetSubstitutions();
         }
 
         private void MakeRestCall()
@@ -104,33 +101,6 @@ namespace ChefRisingStar.ViewModels
                 {
                     Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
                     Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
-                }
-            }
-        }
-
-        private async void GetSubstitutions()
-        {
-            using (HttpClient client = new HttpClient())
-            {
-                try
-                {
-                    //client.BaseAddress = new Uri("https://api.spoonacular.com/food/ingredients/substitutes");
-                    //client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json")); // Add an Accept header for JSON format.
-                    //var streamTask = client.GetStreamAsync("?apiKey=61f0c9888f5542a6b3604a030707b8ad&ingredientName=butter");
-
-                    //var substitution = await JsonSerializer.DeserializeAsync<Substitution>(await streamTask);
-
-                    string strResponse = "{\"status\":\"success\",\"ingredient\":\"butter\",\"substitutes\":[\"1 cup = 7 / 8 cup shortening and 1 / 2 tsp salt\",\"1 cup = 7 / 8 cup vegetable oil + 1 / 2 tsp salt\",\"1 / 2 cup = 1 / 4 cup buttermilk +1 / 4 cup unsweetened applesauce\",\"1 cup = 1 cup margarine\"],\"message\":\"Found 4 substitutes for the ingredient.\"}";
-                    var substitution = JsonSerializer.Deserialize<Substitution>(strResponse);
-
-                    foreach (string s in substitution.Substitutes)
-                    {
-                        Substitutions.Add(s);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    RestResponse = ex.ToString();
                 }
             }
         }
