@@ -1,9 +1,8 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using System.Globalization;
-using System.Collections.Generic;
+using System;
 using System.Diagnostics;
+using System.Globalization;
 
 namespace ChefRisingStar.Models
 {
@@ -234,7 +233,7 @@ namespace ChefRisingStar.Models
 
         [JsonProperty("unit")]
         public string Unit { get; set; }
-        
+
         private string GetDebuggerDisplay()
         {
             return $"{Number}{Unit}";

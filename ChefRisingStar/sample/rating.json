@@ -1,0 +1,35 @@
+﻿{
+    "protien": {
+        "beans": 2,
+        "beef": 11,
+        "cheese": 5,
+        "chicken": 6,
+        "egg": 4,
+        "fish": 8,
+        "lamb": 10,
+        "nuts": 1,
+        "pork": 7,
+        "shrimp": 9,
+        "tofu": 3,
+
+    },
+    "starch": {
+        "oatmeal": 3,
+        "pasta": 4,
+        "potatoes": 1,
+        "rice": 5,
+        "bread": 2
+    },
+    "drink": {
+        "beer": 9,
+        "coffee": 7,
+        "dairy milk": 8,
+        "soy milk": 4,
+        "wine": 6,
+        "tea": 1,
+        "almond milk": 2,
+        "oat milk": 3,
+        "rice milk": 5,
+    }
+
+}

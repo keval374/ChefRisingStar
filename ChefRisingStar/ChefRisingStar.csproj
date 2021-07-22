@@ -36,4 +36,7 @@
     <None Remove="Microsoft.AspNetCore.Hosting" />
     <None Remove="Microsoft.AspNetCore.Hosting.Abstractions" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Converters\" />
+  </ItemGroup>
 </Project>

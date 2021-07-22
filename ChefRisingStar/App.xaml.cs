@@ -1,8 +1,5 @@
 ﻿using ChefRisingStar.Services;
-using ChefRisingStar.Views;
-using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace ChefRisingStar
 {
@@ -21,7 +18,7 @@ namespace ChefRisingStar
 
         protected override void OnStart()
         {
-            
+
         }
 
         protected override void OnSleep()

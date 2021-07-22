@@ -1,7 +1,5 @@
-﻿using ChefRisingStar.ViewModels;
-using ChefRisingStar.Views;
+﻿using ChefRisingStar.Views;
 using System;
-using System.Collections.Generic;
 using Xamarin.Forms;
 
 namespace ChefRisingStar
@@ -14,6 +12,7 @@ namespace ChefRisingStar
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(AchievementDetailPage), typeof(AchievementDetailPage));
+            Routing.RegisterRoute(nameof(FoodPrintsDetailPage), typeof(FoodPrintsDetailPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)

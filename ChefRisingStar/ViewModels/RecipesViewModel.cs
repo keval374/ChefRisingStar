@@ -1,17 +1,12 @@
 ﻿using ChefRisingStar.Models;
-using ChefRisingStar.Services;
-using ChefRisingStar.Views;
+using Microsoft.AspNetCore.Hosting;
+using Newtonsoft.Json;
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
-using Newtonsoft.Json;
-using System.IO;
-using System.Web;
-using System.Reflection;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Hosting.Internal;
 
 namespace ChefRisingStar.ViewModels
 {
@@ -19,13 +14,30 @@ namespace ChefRisingStar.ViewModels
     {
         #region Properties
 
+        private string _selectedCuisines;
+        private bool _isSelectCuisineVisible;
+        
         public ObservableCollection<Recipe> Recipes { get; }
+        public ObservableCollection<SelectableFilter> Cuisines { get; }
+        
+        public string SelectedCuisines
+        {
+            get { return _selectedCuisines; }
+            set { SetProperty(ref _selectedCuisines, value); }
+        }
+
+        public bool IsSelectCuisineVisible
+        {
+            get { return _isSelectCuisineVisible; }
+            set { SetProperty(ref _isSelectCuisineVisible, value); }
+        }
 
         #endregion 
 
         #region Commands
 
         public Command LoadRecipesCommand { get; }
+        public Command OpenCuisinesCommand { get; }
 
         public IHostingEnvironment env;
 
@@ -37,6 +49,12 @@ namespace ChefRisingStar.ViewModels
         {
             Title = "Recipes";
             Recipes = new ObservableCollection<Recipe>();
+
+            SelectableFilter[] cuisines = { new SelectableFilter("African"), new SelectableFilter("American"), new SelectableFilter("British"), new SelectableFilter("Cajun"), new SelectableFilter("Caribbean"), new SelectableFilter("Chinese"), new SelectableFilter("Eastern European"), new SelectableFilter("European"), new SelectableFilter("French"), new SelectableFilter("German"), new SelectableFilter("Greek"), new SelectableFilter("Indian"), new SelectableFilter("Irish"), new SelectableFilter("Italian"), new SelectableFilter("Japanese"), new SelectableFilter("Jewish"), new SelectableFilter("Korean"), new SelectableFilter("Latin American"), new SelectableFilter("Mediterranean"), new SelectableFilter("Mexican"), new SelectableFilter("Middle Eastern"), new SelectableFilter("Nordic"), new SelectableFilter("Southern"), new SelectableFilter("Spanish"), new SelectableFilter("Thai"), new SelectableFilter("Vietnamese") };
+            Cuisines = new ObservableCollection<SelectableFilter>(cuisines);
+            _selectedCuisines = string.Empty;
+            OpenCuisinesCommand = new Command(OpenCuisines);
+
             LoadRecipesCommand = new Command(async () => await ExecuteLoadRecipesCommand());
 
         }
@@ -45,7 +63,21 @@ namespace ChefRisingStar.ViewModels
 
         #region Methods
 
-        
+        private void OpenCuisines()
+        {
+            if (IsBusy)
+                return;
+
+            IsBusy = true;
+
+            IsSelectCuisineVisible = true;
+
+            //OnPropertyChanged("SelectedCuisines");
+
+            IsBusy = false;
+        }
+
+
 
         async Task ExecuteLoadRecipesCommand()
         {

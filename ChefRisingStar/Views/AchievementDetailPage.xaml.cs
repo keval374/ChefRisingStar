@@ -2,7 +2,6 @@
 using ChefRisingStar.Models;
 using ChefRisingStar.ViewModels;
 using System;
-using System.ComponentModel;
 using Xamarin.Forms;
 
 namespace ChefRisingStar.Views
@@ -18,7 +17,7 @@ namespace ChefRisingStar.Views
         private async void MyButton_LongPressed(object sender, EventArgs e)
         {
             popupViewSubstitutions.IsVisible = true;
-            
+
             LongPressBehaviour behave = sender as LongPressBehaviour;
             var step = behave.AttachedButton.CommandParameter as AchievementStep;
 
@@ -38,7 +37,7 @@ namespace ChefRisingStar.Views
 
             var result = await DisplayAlert("Claim objective", "Do you want to claim this objective?", "Claim", "Cancel");
 
-            if(result)
+            if (result)
             {
                 behave.AttachedButton.Source = AchievementStep.CompleteImage;
                 step.CompletionDate = DateTime.Now;
@@ -49,7 +48,7 @@ namespace ChefRisingStar.Views
         {
             popupViewSubstitutions.IsVisible = false;
         }
-        
+
         private void CancelSubstituteClicked(object sender, EventArgs e)
         {
             popupViewSubstitutions.IsVisible = false;

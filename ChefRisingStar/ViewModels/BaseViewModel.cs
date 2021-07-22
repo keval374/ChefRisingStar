@@ -1,11 +1,8 @@
-﻿using ChefRisingStar.Models;
-using ChefRisingStar.Services;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using Xamarin.Forms;
 using System.Net.Http;
+using System.Runtime.CompilerServices;
 
 namespace ChefRisingStar.ViewModels
 {
@@ -48,8 +45,8 @@ namespace ChefRisingStar.ViewModels
 
         #region Constructors
 
-        
-        #endregion 
+
+        #endregion
 
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;

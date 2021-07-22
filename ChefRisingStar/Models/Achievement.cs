@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Text;
 
 namespace ChefRisingStar.Models
 {
@@ -19,8 +18,8 @@ namespace ChefRisingStar.Models
 
             AchievementSteps = new List<AchievementStep>();
         }
-        
-        public Achievement(int id, int value, string name, string description, string imageSrc, AchievementTypes achievementType, DateTime dateEarned): this (id, value, name, description, imageSrc, achievementType)
+
+        public Achievement(int id, int value, string name, string description, string imageSrc, AchievementTypes achievementType, DateTime dateEarned) : this(id, value, name, description, imageSrc, achievementType)
         {
             DateEarned = dateEarned;
         }
@@ -32,16 +31,16 @@ namespace ChefRisingStar.Models
         public string ImageSrc { get; set; }
 
         public DateTime DateEarned { get; set; }
-        public string DateEarnedString 
-        { 
+        public string DateEarnedString
+        {
             get
             {
                 return DateEarned == DateTime.MinValue ? "Never" : DateEarned.ToShortDateString();
             }
         }
-        
-        public double ImageOpacity 
-        { 
+
+        public double ImageOpacity
+        {
             get
             {
                 return DateEarned == DateTime.MinValue ? 0.3 : 1;

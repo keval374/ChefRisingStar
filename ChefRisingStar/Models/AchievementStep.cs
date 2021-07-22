@@ -27,7 +27,7 @@ namespace ChefRisingStar.Models
             Name = name;
             Description = description;
         }
-        
+
         public AchievementStep(int id, string name, string description, DateTime completionDate) : this(id, name, description)
         {
             CompletionDate = completionDate;
@@ -37,7 +37,7 @@ namespace ChefRisingStar.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public DateTime CompletionDate { get; set; }
-        
+
         public string DateEarnedString
         {
             get
@@ -46,12 +46,12 @@ namespace ChefRisingStar.Models
             }
         }
 
-        public string ImageSrc 
+        public string ImageSrc
         {
             get { return CompletionDate == DateTime.MinValue ? IncompleteImage : CompleteImage; }
         }
-        
-        public bool IsComplete 
+
+        public bool IsComplete
         {
             get { return CompletionDate == DateTime.MinValue ? false : true; }
         }
@@ -66,7 +66,7 @@ namespace ChefRisingStar.Models
             return other != null &&
                    Id == other.Id &&
                    Name == other.Name &&
-                   Description == other.Description && 
+                   Description == other.Description &&
                    CompletionDate == other.CompletionDate;
         }
 

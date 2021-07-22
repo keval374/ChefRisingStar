@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChefRisingStar.ViewModels"
+             xmlns:model="clr-namespace:ChefRisingStar.Models"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="True"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:xyt="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="ChefRisingStar.Views.FoodPrintsDetailPage"
+             xmlns:behaviours="clr-namespace:ChefRisingStar.Behaviours"
+             Title="{Binding section}">
+
+   <ContentPage.Content>
+        <RefreshView Grid.Row="3" x:DataType="local:FoodPrintViewModel" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+            <Grid>
+                <StackLayout VerticalOptions="FillAndExpand">
+                    <Grid>
+                        <Label Text="{Binding Title}" TextDecorations="Underline"  />
+                    </Grid>
+                 </StackLayout>
+            </Grid>
+        </RefreshView>
+           </ContentPage.Content>
+</ContentPage>

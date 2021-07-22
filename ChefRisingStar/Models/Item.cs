@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ChefRisingStar.Models
+﻿namespace ChefRisingStar.Models
 {
     public class Item
     {

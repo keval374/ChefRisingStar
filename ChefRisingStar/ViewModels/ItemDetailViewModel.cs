@@ -2,7 +2,6 @@
 using ChefRisingStar.Services;
 using System;
 using System.Diagnostics;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace ChefRisingStar.ViewModels

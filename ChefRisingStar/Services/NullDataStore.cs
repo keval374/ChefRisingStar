@@ -1,21 +1,19 @@
-﻿using ChefRisingStar.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace ChefRisingStar.Services
 {
     public class NullDataStore : IDataStore<bool, byte>
-    {   
+    {
         public async Task<bool> AddItemAsync(byte item)
         {
             return await Task.FromResult(true);
         }
 
         public async Task<bool> UpdateItemAsync(byte item)
-        {   
+        {
             return await Task.FromResult(true);
         }
 
@@ -28,7 +26,7 @@ namespace ChefRisingStar.Services
         {
             return await Task.FromResult(true);
         }
-       
+
         public Task<bool> AddItemAsync(bool item)
         {
             return Task.FromResult(true);
@@ -46,7 +44,7 @@ namespace ChefRisingStar.Services
 
         public ReadOnlyCollection<bool> GetItems(bool forceRefresh = false)
         {
-            return new ReadOnlyCollection<bool>(new[]{ true, false });
+            return new ReadOnlyCollection<bool>(new[] { true, false });
         }
     }
 }

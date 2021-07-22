@@ -1,13 +1,11 @@
 ﻿using ChefRisingStar.Models;
 using ChefRisingStar.Services;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace ChefRisingStar.ViewModels
@@ -20,9 +18,9 @@ namespace ChefRisingStar.ViewModels
         private string _selectedSubstitution;
         private string _restResponse;
         private Achievement _achievement;
-        
+
         public override IDataStore<Achievement, int> DataStore { get; protected set; }
-        
+
         public ObservableCollection<AchievementStep> AchievementSteps { get; protected set; }
         public ObservableCollection<string> Substitutions { get; protected set; }
 
@@ -37,19 +35,19 @@ namespace ChefRisingStar.ViewModels
             get => _description;
             set => SetProperty(ref _description, value);
         }
-        
+
         public string SelectedSubstitution
         {
             get => _selectedSubstitution;
             set => SetProperty(ref _selectedSubstitution, value);
         }
-        
+
         public string RestResponse
         {
             get => _restResponse;
             set => SetProperty(ref _restResponse, value);
-        }       
-        
+        }
+
 
         public int Id
         {
@@ -125,12 +123,12 @@ namespace ChefRisingStar.ViewModels
                     string strResponse = "{\"status\":\"success\",\"ingredient\":\"butter\",\"substitutes\":[\"1 cup = 7 / 8 cup shortening and 1 / 2 tsp salt\",\"1 cup = 7 / 8 cup vegetable oil + 1 / 2 tsp salt\",\"1 / 2 cup = 1 / 4 cup buttermilk +1 / 4 cup unsweetened applesauce\",\"1 cup = 1 cup margarine\"],\"message\":\"Found 4 substitutes for the ingredient.\"}";
                     var substitution = JsonSerializer.Deserialize<Substitution>(strResponse);
 
-                    foreach(string s in substitution.Substitutes)
+                    foreach (string s in substitution.Substitutes)
                     {
                         Substitutions.Add(s);
                     }
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     RestResponse = ex.ToString();
                 }
@@ -147,7 +145,7 @@ namespace ChefRisingStar.ViewModels
                 Title = item.Name;
                 Description = item.Description;
 
-                foreach(AchievementStep ac in item.AchievementSteps)
+                foreach (AchievementStep ac in item.AchievementSteps)
                     AchievementSteps.Add(ac);
             }
             catch (Exception)

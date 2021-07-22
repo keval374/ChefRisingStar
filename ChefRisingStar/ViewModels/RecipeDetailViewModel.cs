@@ -1,9 +1,5 @@
 ﻿using ChefRisingStar.Models;
-using System;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.Threading.Tasks;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace ChefRisingStar.ViewModels
@@ -11,7 +7,7 @@ namespace ChefRisingStar.ViewModels
     public class RecipeDetailViewModel : BaseViewModel
     {
         #region Properties
-        private Recipe recipe;        
+        private Recipe recipe;
         public Recipe Recipe
         {
             get => recipe;
@@ -44,7 +40,7 @@ namespace ChefRisingStar.ViewModels
 
             Instructions = new ObservableCollection<Step>();
 
-            foreach(AnalyzedInstruction ins in Recipe.AnalyzedInstructions)
+            foreach (AnalyzedInstruction ins in Recipe.AnalyzedInstructions)
             {
                 foreach (Step step in ins.Steps)
                     Instructions.Add(step);

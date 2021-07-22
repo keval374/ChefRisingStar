@@ -30,7 +30,7 @@ namespace ChefRisingStar.Behaviours
 
         public static readonly BindableProperty CommandParameterProperty =
             BindableProperty.Create(nameof(CommandParameter), typeof(object), typeof(LongPressBehaviour));
-        
+
         //public static readonly BindableProperty ContextProperty =
         //    BindableProperty.Create(nameof(Context), typeof(object), typeof(LongPressBehaviour));
 

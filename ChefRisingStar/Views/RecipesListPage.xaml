@@ -2,89 +2,82 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodel="clr-namespace:ChefRisingStar.ViewModels"
+             xmlns:model="clr-namespace:ChefRisingStar.Models"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="True"
              x:Class="ChefRisingStar.Views.RecipesListPage"
              Title="{Binding Title}">
+    <ContentPage.Content x:DataType="viewmodel:RecipesViewModel">
+        <AbsoluteLayout Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid Margin="5" CompressedLayout.IsHeadless="True">
 
-    <ContentPage.BindingContext>
-        <viewmodel:RecipesViewModel/>
-    </ContentPage.BindingContext>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
 
-    <Grid 
-        RowSpacing="0"
-        ColumnSpacing="5" 
-        CompressedLayout.IsHeadless="True">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                    <Entry  Placeholder="Select Cuisine(s)" Text="{Binding SelectedCuisines}" />
+                    <BoxView  />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding OpenCuisinesCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+                
+                <ListView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" ItemsSource="{Binding Recipes}" HasUnevenRows="True" CachingStrategy="RecycleElement" ItemSelected="ListView_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid ColumnSpacing="10" Padding="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+                                    <controls:CircleImage Source="{Binding Image}" Aspect="AspectFill" BorderColor="Black" BorderThickness="3" WidthRequest="60" HeightRequest="60" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <StackLayout Grid.Column="1" VerticalOptions="Center">
+                                        <Label Text="{Binding Title}"/>
+                                        <Label Text="{Binding Summary}"/>
+                                    </StackLayout>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <ListView 
-            Grid.Row="0"
-            Grid.Column="0"
-            Grid.ColumnSpan="2"
-            ItemsSource="{Binding Recipes}"
-            HasUnevenRows="True"
-            CachingStrategy="RecycleElement"
-            ItemSelected="ListView_ItemSelected">
+                <Button Grid.Row="2" Grid.ColumnSpan="2" Text="Load Recipes" Command="{Binding LoadRecipesCommand}" IsEnabled="{Binding IsNotBusy}"/>
+                <ActivityIndicator Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+            </Grid>
+            <ContentView x:Name="popupViewCuisines" BackgroundColor="#C0808080" Padding="30, 0" IsVisible="{Binding IsSelectCuisineVisible}" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">                
+                    <StackLayout Orientation="Vertical" BackgroundColor="White" Margin="10">
+                    <ScrollView>
+                        <ListView x:Name="cuisineList" ItemsSource="{Binding Cuisines}" SelectionMode="None" ItemTapped="cuisineList_ItemTapped">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid ColumnSpacing="10" Padding="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
 
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Grid 
-                            ColumnSpacing="10" 
-                            Padding="10">
-                            
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="60"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-
-                            <controls:CircleImage
-                                Source="{Binding Image}"
-                                Aspect="AspectFill"
-                                BorderColor="Black"
-                                BorderThickness="3"
-                                WidthRequest="60"
-                                HeightRequest="60"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center"/>
-                            
-                            <StackLayout 
-                                Grid.Column="1"
-                                VerticalOptions="Center">
-
-                                <Label Text="{Binding Title}"/>
-                                <Label Text="{Binding Summary}"/>
-                            </StackLayout>
-                        </Grid>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-
-        <Button 
-            Grid.Row="1"
-            Grid.ColumnSpan="2"
-            Text="Load Recipes" 
-            Command="{Binding LoadRecipesCommand}"
-            IsEnabled="{Binding IsNotBusy}"/>
-
-        <ActivityIndicator 
-            Grid.Row="0"
-            Grid.RowSpan="2"
-            Grid.Column="0"
-            Grid.ColumnSpan="2"
-            IsVisible="{Binding IsBusy}"
-            IsRunning="{Binding IsBusy}"
-            HorizontalOptions="FillAndExpand"
-            VerticalOptions="CenterAndExpand"/>
-    </Grid>
+                                            <Label Grid.Column="0" Text="{Binding Text}" />
+                                            <CheckBox Grid.Column="1" IsChecked="{Binding IsSelected}" HorizontalOptions="EndAndExpand" />
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </ScrollView>
+                    <Button Text="Done" Clicked="CloseCuisineClicked" Margin="10" />
+                    </StackLayout>
+            </ContentView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
 </ContentPage>

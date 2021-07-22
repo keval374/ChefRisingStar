@@ -1,8 +1,5 @@
 ﻿using ChefRisingStar.Models;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Text;
 using Xamarin.Forms;
 
 namespace ChefRisingStar.Services
@@ -11,8 +8,8 @@ namespace ChefRisingStar.Services
     {
         public void LoadData()
         {
-            IDataStore<Achievement, int>  achievmentDs = DependencyService.Get<MockAchievementDataStore>();
-            IDataStore<AchievementStep, int>  achievmentsConditionDs = DependencyService.Get<MockAchievementConditionDataStore>();
+            IDataStore<Achievement, int> achievmentDs = DependencyService.Get<MockAchievementDataStore>();
+            IDataStore<AchievementStep, int> achievmentsConditionDs = DependencyService.Get<MockAchievementConditionDataStore>();
 
             ReadOnlyCollection<Achievement> achievments = achievmentDs.GetItems();
             ReadOnlyCollection<AchievementStep> achievmentConditions = achievmentsConditionDs.GetItems();
