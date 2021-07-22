@@ -1,6 +1,10 @@
 ﻿[
   {
+<<<<<<< HEAD
     "ingredient_category": "beans",
+=======
+    "ingredient": "beans",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.26,
     "farming": 8.49,
     "animal_feed": 0,
@@ -10,6 +14,7 @@
     "packaging": 2.7,
     "waste": 1.37,
     "totalCO2": 13.93,
+<<<<<<< HEAD
     "weight": 150,
     "measured_unit": "grams",    
     "diet_type": "protein",    
@@ -17,6 +22,12 @@
   },
   {
     "ingredient_category": "apples",
+=======
+    "quantity_in_grams": 150
+  },
+  {
+    "ingredient": "apples",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 0.94,
     "animal_feed": 0,
@@ -26,6 +37,7 @@
     "packaging": 0.19,
     "waste": 0.3,
     "totalCO2": 1.78,
+<<<<<<< HEAD
     "weight": 80,
     "measured_unit": "grams",    
     "diet_type": "fruit",    
@@ -33,6 +45,12 @@
   },
   {
     "ingredient_category": "oatmeal",
+=======
+    "quantity_in_grams": 80
+  },
+  {
+    "ingredient": "oatmeal",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.004,
     "farming": 4.16,
     "animal_feed": 0,
@@ -42,6 +60,7 @@
     "packaging": 0.2,
     "waste": 0.73,
     "totalCO2": 5.51,
+<<<<<<< HEAD
     "weight": 43,
     "measured_unit": "grams",    
     "diet_type": "starch",    
@@ -49,6 +68,12 @@
   },
   {
     "ingredient_category": "beer",
+=======
+    "quantity_in_grams": 
+  },
+  {
+    "ingredient": "beer",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.26,
     "farming": 5.21,
     "animal_feed": 0,
@@ -58,6 +83,7 @@
     "packaging": 14.67,
     "waste": 2.09,
     "totalCO2": 34.83,
+<<<<<<< HEAD
     "weight": 568,
     "measured_unit": "ml",    
     "diet_type": "drink",
@@ -65,6 +91,12 @@
   },
   {
     "ingredient_category": "beef",
+=======
+    "quantity_in_ml": 568
+  },
+  {
+    "ingredient": "beef",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 90.63,
     "farming": 219.29,
     "animal_feed": 10.46,
@@ -74,6 +106,7 @@
     "packaging": 1.37,
     "waste": 56.32,
     "totalCO2": 387.96,
+<<<<<<< HEAD
     "weight": 75,
     "measured_unit": "grams",    
     "diet_type": "protein",
@@ -81,6 +114,12 @@
   },
   {
     "ingredient_category": "avocados",
+=======
+    "quantity_in_grams": 75
+  },
+  {
+    "ingredient": "avocados",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 2.62,
     "farming": 3,
     "animal_feed": 0,
@@ -90,6 +129,7 @@
     "packaging": 0.19,
     "waste": 3.47,
     "totalCO2": 10.32,
+<<<<<<< HEAD
     "weight": 80,
     "measured_unit": "grams",    
     "diet_type": "vegetable",    
@@ -97,6 +137,12 @@
   },
   {
     "ingredient_category": "bread",
+=======
+    "quantity_in_grams": 80
+  },
+  {
+    "ingredient": "bread",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.19,
     "farming": 1.63,
     "animal_feed": 0,
@@ -106,6 +152,7 @@
     "packaging": 0.17,
     "waste": 0.35,
     "totalCO2": 3.12,
+<<<<<<< HEAD
     "weight": 38,
     "measured_unit": "grams",    
     "diet_type": "bakery",    
@@ -113,6 +160,12 @@
   },
   {
     "ingredient_category": "wine",
+=======
+    "quantity_in_grams": 38
+  },
+  {
+    "ingredient": "wine",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 5.7,
     "animal_feed": 0,
@@ -122,6 +175,7 @@
     "packaging": 6.82,
     "waste": 1.85,
     "totalCO2": 16.28,
+<<<<<<< HEAD
     "weight": 175,
     "measured_unit": "ml",    
     "diet_type": "drink",    
@@ -129,6 +183,12 @@
   },
   {
     "ingredient_category": "cheese",
+=======
+    "quantity_in_ml": 175
+  },
+  {
+    "ingredient": "cheese",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 6.97,
     "farming": 20.43,
     "animal_feed": 3.67,
@@ -138,6 +198,7 @@
     "packaging": 0.27,
     "waste": 4.02,
     "totalCO2": 37.25,
+<<<<<<< HEAD
     "weight": 30,
     "measured_unit": "grams",    
     "diet_type": "protein",    
@@ -145,6 +206,12 @@
   },
   {
     "ingredient_category": "bananas",
+=======
+    "quantity_in_grams": 30
+  },
+  {
+    "ingredient": "bananas",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 1.12,
     "animal_feed": 0,
@@ -154,6 +221,7 @@
     "packaging": 0.27,
     "waste": 0.73,
     "totalCO2": 3.59,
+<<<<<<< HEAD
     "weight": 80,
     "measured_unit": "grams",    
     "diet_type": "fruit",    
@@ -161,6 +229,12 @@
   },
   {
     "ingredient_category": "pasta",
+=======
+    "quantity_in_grams": 80
+  },
+  {
+    "ingredient": "pasta",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.39,
     "farming": 3.27,
     "animal_feed": 0,
@@ -170,6 +244,7 @@
     "packaging": 0.35,
     "waste": 0.71,
     "totalCO2": 6.28,
+<<<<<<< HEAD
     "weight": 75,
     "measured_unit": "grams",    
     "diet_type": "starch",    
@@ -177,6 +252,12 @@
   },
   {
     "ingredient_category": "coffee",
+=======
+    "quantity_in_grams": 75
+  },
+  {
+    "ingredient": "coffee",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 2.98,
     "farming": 8.39,
     "animal_feed": 0,
@@ -186,6 +267,7 @@
     "packaging": 1.32,
     "waste": 3.3,
     "totalCO2": 16.61,
+<<<<<<< HEAD
     "weight": 15,
     "measured_unit": "grams",    
     "diet_type": "drink",    
@@ -193,6 +275,12 @@
   },
   {
     "ingredient_category": "chicken",
+=======
+    "quantity_in_grams": 15
+  },
+  {
+    "ingredient": "chicken",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 13.68,
     "farming": 3.62,
     "animal_feed": 9.56,
@@ -202,6 +290,7 @@
     "packaging": 1.14,
     "waste": 5.66,
     "totalCO2": 38.48,
+<<<<<<< HEAD
     "weight": 75,
     "measured_unit": "grams",    
     "diet_type": "protein",    
@@ -209,6 +298,12 @@
   },
   {
     "ingredient_category": "berries",
+=======
+    "quantity_in_grams": 75
+  },
+  {
+    "ingredient": "berries",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.1,
     "farming": 2.99,
     "animal_feed": 0,
@@ -218,6 +313,7 @@
     "packaging": 0.88,
     "waste": 1.35,
     "totalCO2": 6.37,
+<<<<<<< HEAD
     "weight": 80,
     "measured_unit": "grams",    
     "diet_type": "fruit",    
@@ -225,6 +321,12 @@
   },
   {
     "ingredient_category": "grapes",
+=======
+    "quantity_in_grams": 80
+  },
+  {
+    "ingredient": "grapes",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.1,
     "farming": 2.99,
     "animal_feed": 0,
@@ -234,6 +336,7 @@
     "packaging": 0.88,
     "waste": 1.35,
     "totalCO2": 6.37,
+<<<<<<< HEAD
     "weight": 80,
     "measured_unit": "fruit",    
     "diet_type": "fruit",    
@@ -241,6 +344,13 @@
   },
   {
     "ingredient_category": "potatoe",
+=======
+    "quantity_in_grams": 80
+
+  },
+  {
+    "ingredient": "potatoes",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 1.01,
     "animal_feed": 0,
@@ -250,6 +360,7 @@
     "packaging": 0.23,
     "waste": 0.48,
     "totalCO2": 2.42,
+<<<<<<< HEAD
     "weight": 101,
     "measured_unit": "grams",    
     "diet_type": "vegetable",    
@@ -257,6 +368,12 @@
   },
   {
     "ingredient_category": "dairy milk",
+=======
+    "quantity_in_grams": 101
+  },
+  {
+    "ingredient": "dairy milk",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 5.33,
     "farming": 15.69,
     "animal_feed": 2.54,
@@ -266,6 +383,7 @@
     "packaging": 1.04,
     "waste": 2.85,
     "totalCO2": 32.78,
+<<<<<<< HEAD
     "weight": 200,
     "measured_unit": "ml",    
     "diet_type": "drink",    
@@ -273,6 +391,12 @@
   },
   {
     "ingredient_category": "egg",
+=======
+    "quantity_in_ml": 200
+  },
+  {
+    "ingredient": "egg",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 3.92,
     "farming": 7.27,
     "animal_feed": 12.15,
@@ -282,6 +406,7 @@
     "packaging": 0.89,
     "waste": 0.85,
     "totalCO2": 25.74,
+<<<<<<< HEAD
     "weight": 106,
     "measured_unit": "grams",    
     "diet_type": "protien",    
@@ -289,6 +414,12 @@
   },
   {
     "ingredient_category": "citrus",
+=======
+    "quantity_in_grams": 106
+  },
+  {
+    "ingredient": "citrus",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 1.28,
     "animal_feed": 0,
@@ -298,6 +429,7 @@
     "packaging": 0.19,
     "waste": 0.3,
     "totalCO2": 1.61,
+<<<<<<< HEAD
     "weight": 80,
     "measured_unit": "grams",    
     "diet_type": "vegetable",    
@@ -305,6 +437,12 @@
   },
   {
     "ingredient_category": "rice",
+=======
+    "quantity_in_grams": 80
+  },
+  {
+    "ingredient": "rice",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 13.86,
     "animal_feed": 0,
@@ -314,6 +452,7 @@
     "packaging": 0.33,
     "waste": 2.39,
     "totalCO2": 17.36,
+<<<<<<< HEAD
     "weight": 75,
     "measured_unit": "grams",    
     "diet_type": "starch",    
@@ -321,6 +460,12 @@
   },
   {
     "ingredient_category": "soy milk",
+=======
+    "quantity_in_grams": 75
+  },
+  {
+    "ingredient": "soy milk",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 1.87,
     "farming": 0.97,
     "animal_feed": 0,
@@ -330,6 +475,7 @@
     "packaging": 1.02,
     "waste": 0.64,
     "totalCO2": 10.14,
+<<<<<<< HEAD
     "weight": 200,
     "measured_unit": "ml",    
     "diet_type": "drink",    
@@ -337,6 +483,12 @@
   },
   {
     "ingredient_category": "fish",
+=======
+    "quantity_in_ml": 200
+  },
+  {
+    "ingredient": "fish",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 8.7,
     "farming": 58.65,
     "animal_feed": 13.36,
@@ -346,6 +498,7 @@
     "packaging": 1,
     "waste": 14.76,
     "totalCO2": 99.24,
+<<<<<<< HEAD
     "weight": 140,
     "measured_unit": "grams",    
     "diet_type": "protien",    
@@ -353,6 +506,12 @@
   },
   {
     "ingredient_category": "kiwi",
+=======
+    "quantity_in_grams": 140
+  },
+  {
+    "ingredient": "kiwi",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 2.3,
     "animal_feed": 0,
@@ -362,6 +521,7 @@
     "packaging": 0.19,
     "waste": 0.56,
     "totalCO2": 3.94,
+<<<<<<< HEAD
     "weight": 80,
     "measured_unit": "grams",    
     "diet_type": "fruit",    
@@ -369,6 +529,12 @@
   },
   {
     "ingredient_category": "tea",
+=======
+    "quantity_in_grams": 80
+  },
+  {
+    "ingredient": "tea",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 0.49,
     "animal_feed": 0,
@@ -378,6 +544,7 @@
     "packaging": 0.23,
     "waste": 0.22,
     "totalCO2": 1.34,
+<<<<<<< HEAD
     "weight": 2,
     "measured_unit": "grams",    
     "diet_type": "drink",    
@@ -385,6 +552,12 @@
   },
   {
     "ingredient_category": "lamb",
+=======
+    "quantity_in_grams": 2
+  },
+  {
+    "ingredient": "lamb",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 2.53,
     "farming": 105.4,
     "animal_feed": 12.8,
@@ -394,6 +567,7 @@
     "packaging": 1.36,
     "waste": 23,
     "totalCO2": 154.92,
+<<<<<<< HEAD
     "weight": 75,
     "measured_unit": "grams",    
     "diet_type": "protien",    
@@ -401,6 +575,12 @@
   },
   {
     "ingredient_category": "peas",
+=======
+    "quantity_in_grams": 75
+  },
+  {
+    "ingredient": "peas",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 2.98,
     "animal_feed": 0,
@@ -410,6 +590,7 @@
     "packaging": 0.19,
     "waste": 0.33,
     "totalCO2": 4.06,
+<<<<<<< HEAD
     "weight": 80,
     "measured_unit": "grams",    
     "diet_type": "vegetable",    
@@ -417,6 +598,12 @@
   },
   {
     "ingredient_category": "almond milk",
+=======
+    "quantity_in_grams": 80
+  },
+  {
+    "ingredient": "almond milk",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 4.65,
     "animal_feed": 0,
@@ -426,6 +613,7 @@
     "packaging": 3.67,
     "waste": 0.46,
     "totalCO2": 7.3,
+<<<<<<< HEAD
     "weight": 200,
     "measured_unit": "ml",    
     "diet_type": "drink",    
@@ -433,6 +621,12 @@
   },
   {
     "ingredient_category": "nuts",
+=======
+    "quantity_in_ml": 200
+  },
+  {
+    "ingredient": "nuts",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 5.26,
     "animal_feed": 0,
@@ -442,6 +636,7 @@
     "packaging": 0.19,
     "waste": 0,
     "totalCO2": 0.68,
+<<<<<<< HEAD
     "weight": 30,
     "measured_unit": "grams",    
     "diet_type": "protien",    
@@ -449,6 +644,12 @@
   },
   {
     "ingredient_category": "pineapple",
+=======
+    "quantity_in_grams": 30
+  },
+  {
+    "ingredient": "pineapple",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 1.09,
     "animal_feed": 0,
@@ -458,6 +659,7 @@
     "packaging": 0.23,
     "waste": 0.52,
     "totalCO2": 1.86,
+<<<<<<< HEAD
     "weight": 80,
     "measured_unit": "grams",    
     "diet_type": "fruit",    
@@ -465,6 +667,12 @@
   },
   {
     "ingredient_category": "oat milk",
+=======
+    "quantity_in_grams": 80
+  },
+  {
+    "ingredient": "oat milk",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.002,
     "farming": 5.42,
     "animal_feed": 0,
@@ -474,6 +682,7 @@
     "packaging": 1.29,
     "waste": 0.59,
     "totalCO2": 9.39,
+<<<<<<< HEAD
     "weight": 200,
     "measured_unit": "ml",    
     "diet_type": "drink",    
@@ -481,6 +690,12 @@
   },
   {
     "ingredient_category": "pork",
+=======
+    "quantity_in_ml": 200
+  },
+  {
+    "ingredient": "pork",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 8.75,
     "farming": 9.66,
     "animal_feed": 16.76,
@@ -490,6 +705,7 @@
     "packaging": 1.69,
     "waste": 6.47,
     "totalCO2": 47.99,
+<<<<<<< HEAD
     "weight": 75,
     "measured_unit": "grams",    
     "diet_type": "protien",    
@@ -497,6 +713,12 @@
   },
   {
     "ingredient_category": "carrots",
+=======
+    "quantity_in_grams": 75
+  },
+  {
+    "ingredient": "carrots",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.06,
     "farming": 0.65,
     "animal_feed": 0,
@@ -506,6 +728,7 @@
     "packaging": 0.19,
     "waste": 0.26,
     "totalCO2": 1.79,
+<<<<<<< HEAD
     "weight": 80,
     "measured_unit": "grams",    
     "diet_type": "vegetable",    
@@ -513,6 +736,12 @@
   },
   {
     "ingredient_category": "rice milk",
+=======
+    "quantity_in_grams": 80
+  },
+  {
+    "ingredient": "rice milk",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 4.26,
     "animal_feed": 0,
@@ -522,6 +751,7 @@
     "packaging": 1.14,
     "waste": 0.78,
     "totalCO2": 12.29,
+<<<<<<< HEAD
     "weight": 200,
     "measured_unit": "ml",    
     "diet_type": "drink",    
@@ -529,6 +759,12 @@
   },
   {
     "ingredient_category": "shrimp",
+=======
+    "quantity_in_ml": 200
+  },
+  {
+    "ingredient": "shrimp",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 1.44,
     "farming": 58.77,
     "animal_feed": 17.6,
@@ -538,6 +774,7 @@
     "packaging": 2.34,
     "waste": 34.21,
     "totalCO2": 117.35,
+<<<<<<< HEAD
     "weight": 84,
     "measured_unit": "grams",    
     "diet_type": "protien",    
@@ -545,6 +782,12 @@
   },
   {
     "ingredient_category": "tomatoes",
+=======
+    "quantity_in_grams": 84
+  },
+  {
+    "ingredient": "tomatoes",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 1.55,
     "farming": 2.94,
     "animal_feed": 0,
@@ -554,6 +797,7 @@
     "packaging": 0.61,
     "waste": 2.74,
     "totalCO2": 8.69,
+<<<<<<< HEAD
     "weight": 80,
     "measured_unit": "grams",    
     "diet_type": "vegetable",    
@@ -561,6 +805,12 @@
   },
   {
     "ingredient_category": "tofu",
+=======
+    "quantity_in_grams": 80
+  },
+  {
+    "ingredient": "tofu",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 4.98,
     "farming": 2.57,
     "animal_feed": 0,
@@ -570,6 +820,7 @@
     "packaging": 0.92,
     "waste": 1.51,
     "totalCO2": 16.44,
+<<<<<<< HEAD
     "weight": 100,
     "measured_unit": "grams",    
     "diet_type": "protien",    
@@ -3721,5 +3972,8 @@
     "measured_unit": "grams",
     "diet_type": "fish",
     "frequency": "daily"
+=======
+    "quantity_in_grams": 100
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
   }
 ]
