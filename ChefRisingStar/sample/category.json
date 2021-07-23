@@ -1,5 +1,169 @@
 ﻿[
   {
+<<<<<<< HEAD
+    "oils": [
+      "coconut oil",
+      "corn oil",
+      "cottonseed oil",
+      "groundnut oil",
+      "mustard oil",
+      "olive oil",
+      "palm oil",
+      "peanut oil",
+      "rapeseed oil",
+      "sesame oil",
+      "soy benan oil",
+      "vegetable oil",
+      "sunflower oil"
+    ],
+    "processed_foods": [ "chips", "baked beans", "corn crisps", "custard", "fisherman pie", "tomato paste" ],
+    "spreads_and_jams_and_honey": [
+      "chocolate spread",
+      "hazelnut spread",
+      "golden syrup",
+      "hazelnut paste",
+      "honey",
+      "jam",
+      "maple syrup",
+      "marmalade",
+      "peanut butter",
+      "treacle"
+    ],
+    "sauces_and_dressings": [
+      "apple sauce",
+      "barbeque sauce",
+      "chutney",
+      "bolognese sauce",
+      "fish sauce",
+      "hummus",
+      "marmite",
+      "mayonnaise",
+      "mirin",
+      "mustard sauce",
+      "oyster sauce",
+      "pesto",
+      "relish",
+      "salad cream",
+      "salad dressing",
+      "soy sauce",
+      "stir fry sauce",
+      "beef stock",
+      "chicken stock",
+      "lamb stock",
+      "vegetable stock",
+      "tahini",
+      "tamari",
+      "tomato ketchup",
+      "tomato sauce",
+      "vinegar",
+      "worcestershire sauce"
+    ],
+    "bakery": [
+      "bread",
+      "bagel",
+      "baguette",
+      "brown bread",
+      "rye bread",
+      "white bread",
+      "bread roll",
+      "cake",
+      "chocolate cake",
+      "fruit cake",
+      "sponge cake",
+      "cheesecake",
+      "crepe",
+      "crumpet",
+      "doughnut",
+      "fruit pie",
+      "muffin",
+      "naan plain bread",
+      "pancake",
+      "pastry",
+      "pitta bread",
+      "scones",
+      "tortilla wrap",
+      "waffle"
+    ],
+    "biscuits_and_confectionary": [
+      "biscuits",
+      "chocolate",
+      "chocolate biscuits",
+      "chocolate chips",
+      "crackers",
+      "flapjacks",
+      "fudge",
+      "gluten free biscuits",
+      "liquorice",
+      "marshmallows",
+      "mints",
+      "chocolate snake bar",
+      "museli snack bar",
+      "sweets",
+      "milk sweets",
+      "toffee"
+    ],
+    "cupboard": [
+      "all spices",
+      "almond extract",
+      "baking powder",
+      "basil",
+      "bay leaves",
+      "soda bicarbonate",
+      "black pepper",
+      "cereal",
+      "whole grain cereal",
+      "non whole grain cereal",
+      "cacao nibs",
+      "cacao powder",
+      "cassava starch",
+      "cayenne pepper",
+      "chilli flakes",
+      "chilli powder",
+      "chives",
+      "cinnamon",
+      "cloves",
+      "cocoa drink powder",
+      "coconut sugar",
+      "coffee beans",
+      "coriander",
+      "cornflour",
+      "cumin",
+      "dill",
+      "plain flour",
+      "rye flour",
+      "food colouring",
+      "garam masala",
+      "herbs",
+      "icing",
+      "lard",
+      "marzipan",
+      "mint",
+      "miso paste",
+      "museli",
+      "nutmeg",
+      "oatflakes",
+      "oregano",
+      "paprika",
+      "parsley",
+      "peppermint extract",
+      "porridge",
+      "rosemary",
+      "sage",
+      "salt",
+      "sugar",
+      "brown sugar",
+      "icing sugar",
+      "tapioca starch",
+      "thyme",
+      "turmeric",
+      "vanilla",
+      "vanilla extract",
+      "xanthan gum",
+      "yeast",
+      "yeast extract"
+    ],
+=======
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "beans": [
       "lima",
       "black eyed",
@@ -20,6 +184,163 @@
       "mung beans",
       "chickpeas",
       "adzuki beans",
+<<<<<<< HEAD
+      "anasazi beans",
+      "faba beans",
+      "haricot beans"s
+    ],
+    "meat": [
+      "beef",
+      "lamb",
+      "pork",
+      "bacon",
+      "cocktail sausage",
+      "duck",
+      "falafel",
+      "gammon",
+      "goat",
+      "goose",
+      "guinea fowl",
+      "pancetta",
+      "quorn",
+      "quorn vegan",
+      "rabit",
+      "steak",
+      "tempeh",
+      "turkey",
+      "valess",
+      "veal",
+      "vegetable patty",
+      "vension"
+    ],
+    "seafood": [ "shrimp" ],
+    "veggie_protien": [ "tofu" ],
+    "fruits": [
+      "apple",
+      "banana",
+      "grapes",
+      "kiwi",
+      "pineapple",
+      "apricot",
+      "berries",
+      "cherries",
+      "currants",
+      "date",
+      "grapefruits",
+      "mangoes",
+      "melons",
+      "nectarines",
+      "olives",
+      "papaya",
+      "peaches",
+      "pears",
+      "pineapple",
+      "passata",
+      "plums",
+      "raisins",
+      "oranges"
+    ],
+    "vegetable": [
+      "avocados",
+      "sweet potato",
+      "tomatoes",
+      "peas",
+      "carrot",
+      "potatoes",
+      "artichoke",
+      "asparagus",
+      "canned asparagus",
+      "frozen asparagus",
+      "aubergine",
+      "beetroot",
+      "beetroot pickle",
+      "broccoli",
+      "brussel sprouts",
+      "frozen brussel sprouts",
+      "cabbage",
+      "cabage pickle",
+      "canned carrot",
+      "frozen carrot",
+      "cauliflower",
+      "frozen cauliflower",
+      "celery",
+      "chilli pepper",
+      "jalepeno",
+      "courgette",
+      "cucumber",
+      "cucumber pickle",
+      "garlic",
+      "ginger",
+      "kale",
+      "lettuce",
+      "mushroom",
+      "onion",
+      "frozen onion",
+      "onion pickle",
+      "parsnips",
+      "peppers",
+      "green peppers",
+      "pepper pickle",
+      "red peppers",
+      "red onion",
+      "rhubarb",
+      "shallot",
+      "spinach",
+      "canned spinach",
+      "frozen spinach",
+      "spring onion",
+      "squash",
+      "swedes",
+      "sweet corn",
+      "canned sweetcorn",
+      "frozen sweetcorn",
+      "sweetcorn packaged",
+      "turnips",
+      "watercress"
+    ],
+    "starch": [
+      "oats",
+      "rice",
+      "bread",
+      "barley",
+      "buckwheat",
+      "bulgar",
+      "couscous",
+      "macaroni",
+      "maize",
+      "noodles",
+      "polenta",
+      "quinoa",
+      "basmati rice",
+      "brown rice",
+      "jasmine rice",ss
+      "long grain rice",
+      "sushi rice",
+      "tagliatelle",
+      "wheat",
+      "spaghetti"
+    ],
+    "drinks": [
+      "beer",
+      "wine",
+      "tea",
+      "coffee",
+      "dairy milk",
+      "soy milk",
+      "almond milk",
+      "oat milk",
+      "rice milk",
+      "americano",
+      "brandy",
+      "whiskey",
+      "rum",
+      "tequilla",
+      "vodka"
+    ],
+    "cheese": [
+      "Ambert",
+      "Anneau",
+=======
       "anasazi beans"
     ],
     "meat": [ "beef", "lamb", "pork" ],
@@ -32,6 +353,7 @@
     "cheese": [
       "Ambert",
       "Anneau",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Vic-Bilh",
       "Avaxtskyr",
       "Babybel",
@@ -50,11 +372,19 @@
       "Bergader",
       "Bleu",
       "d'Auvergne",
+<<<<<<< HEAD
+      "Bleu",
+      "Gex",
+      "Bleu",
+      "Laqueuzlle",
+      "Bleu",
+=======
       "Bleu",      
       "Gex",
       "Bleu",      
       "Laqueuzlle",
       "Bleu",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Causses",
       "Blue",
       "Castello",
@@ -66,18 +396,32 @@
       "Bouyssou",
       "Breakfast",
       "Cheese",
+<<<<<<< HEAD
+      "Brebis",
+      "Lavort",
+      "Brebis",
+      "Lochois",
+      "Brebis",
+=======
       "Brebis",      
       "Lavort",
       "Brebis",      
       "Lochois",
       "Brebis",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Puyfaucon",
       "Bresse",
       "Bleu",
       "Brie",
+<<<<<<< HEAD
+      "Brie",
+      "Meaux",
+      "Brie",
+=======
       "Brie",      
       "Meaux",
       "Brie",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Melun",
       "Brin",
       "d' Amour",
@@ -86,16 +430,28 @@
       "Brinza",
       "(Burduf",
       "Brinza)",
+<<<<<<< HEAD
+      "Briquette",
+=======
       "Briquette",     
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Brebis",
       "Broccio",
       "Broccio",
       "Demi-Affine",
+<<<<<<< HEAD
+      "Brousse",
+      "Rove",
+      "Brusselae",
+      "Kaas",
+      "(Fromage",
+=======
       "Brousse",      
       "Rove",
       "Brusselae",
       "Kaas",
       "(Fromage",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Bruxelles)",
       "Bryndza",
       "Buchette",
@@ -110,14 +466,24 @@
       "Cachaille",
       "Caciocavallo",
       "Caciotta",
+<<<<<<< HEAD
+      "Camembert",
+      "Normandie",
+      "Caprice",
+=======
       "Camembert",      
       "Normandie",
       "Caprice",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Dieux",
       "Capricorn",
       "Goat",
       "Caravane",
+<<<<<<< HEAD
+      "Carre",
+=======
       "Carre",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "l'Est",
       "Cashel",
       "Blue",
@@ -128,6 +494,18 @@
       "d'Olivet",
       "Cerney",
       "Chabichou",
+<<<<<<< HEAD
+      "Chabichou",
+      "Poitou",
+      "Chabis",
+      "Gatine",
+      "Chaource",
+      "Civray",
+      "Coeur",
+      "Camembert",
+      "Calvados",
+      "Coeur",
+=======
       "Chabichou",      
       "Poitou",
       "Chabis",      
@@ -138,6 +516,7 @@
       "Camembert",      
       "Calvados",
       "Coeur",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Chevre",
       "Cold",
       "Pack",
@@ -158,19 +537,31 @@
       "Mexicana",
       "Creme",
       "Fraiche",
+<<<<<<< HEAD
+      "Crottin",
+=======
       "Crottin",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Chavignol",
       "Cuajada",
       "Cure",
       "Nantais",
       "Daralagjazsky",
+<<<<<<< HEAD
+      "Delice",
+=======
       "Delice",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Fiouves",
       "Dessertnyj",
       "Belyj",
       "Dolcelatte",
       "Doppelrhamstufel",
+<<<<<<< HEAD
+      "Dreux",
+=======
       "Dreux",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Feuille",
       "Dunbarra",
       "Emlett",
@@ -183,6 +574,19 @@
       "Figue",
       "Fin-de-Siecle",
       "Finn",
+<<<<<<< HEAD
+      "Fleur",
+      "Maquis",
+      "Flor",
+      "Guia",
+      "Flower",
+      "Marie",
+      "Fondant",
+      "Brebis",
+      "Fontainebleau",
+      "Fougerus",
+      "Fourme",
+=======
       "Fleur",      
       "Maquis",
       "Flor",      
@@ -194,6 +598,7 @@
       "Fontainebleau",
       "Fougerus",
       "Fourme",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Haute",
       "Loire",
       "Fresh",
@@ -208,7 +613,11 @@
       "Fruit",
       "Cream",
       "Cheese",
+<<<<<<< HEAD
+      "Galette",
+=======
       "Galette",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Paludier",
       "Galette",
       "Lyonnaise",
@@ -222,7 +631,11 @@
       "d' Areches",
       "Gratte-Paille",
       "Greuilh",
+<<<<<<< HEAD
+      "Gris",
+=======
       "Gris",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Lille",
       "Guerbigny",
       "Hereford",
@@ -243,8 +656,13 @@
       "Klosterkaese",
       "Kugelkase",
       "L'Aveyronnais",
+<<<<<<< HEAD
+      "L'Ecir de l'Aubrac",
+      "Taupiniere",
+=======
       "L'Ecir de l'Aubrac",      
       "Taupiniere",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Vache",
       "Qui",
       "Rit",
@@ -275,7 +693,11 @@
       "Metton",
       "(Cancoillotte)",
       "Mine-Gabhar",
+<<<<<<< HEAD
+      "Mothais",
+=======
       "Mothais", 
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Feuille",
       "Mozzarella",
       "Mozzarella",
@@ -291,24 +713,53 @@
       "Nantais",
       "Neufchatel",
       "Niolo",
+<<<<<<< HEAD
+      "Olivet",
+=======
       "Olivet",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Foin",
       "Olivet",
       "Cendre",
       "P'tit Berrichon",
+<<<<<<< HEAD
+      "Palet",
+=======
       "Palet",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Babligny",
       "Panela",
       "Pannerone",
       "Pant",
       "ys",
       "Gawn",
+<<<<<<< HEAD
+      "Pate",
+=======
       "Pate",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Fromage",
       "Patefine",
       "Fort",
       "Pave",
       "d'Affinois",
+<<<<<<< HEAD
+      "Pave",
+      "Chirac",
+      "Peekskill",
+      "Pyramid",
+      "Pelardon",
+      "Cevennes",
+      "Pelardon",
+      "Corbieres",
+      "Pencarreg",
+      "Petit-Suisse",
+      "Picodon",
+      "Chevre",
+      "Pithtviers",
+      "Foin",
+      "Plateau",
+=======
       "Pave",      
       "Chirac",
       "Peekskill",
@@ -324,6 +775,7 @@
       "Pithtviers",      
       "Foin",
       "Plateau",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Herve",
       "Poivre",
       "d'Ane",
@@ -340,7 +792,11 @@
       "Petit",
       "Queso",
       "Blanco",
+<<<<<<< HEAD
+      "Queso",
+=======
       "Queso",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Murcia",
       "Queso",
       "del",
@@ -354,7 +810,11 @@
       "Jalapeno",
       "Queso",
       "Quesadilla",
+<<<<<<< HEAD
+      "Regal",
+=======
       "Regal", 
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Dombes",
       "Requeson",
       "Richelieu",
@@ -365,7 +825,11 @@
       "Romans",
       "Part",
       "Dieu",
+<<<<<<< HEAD
+      "Rouleau",
+=======
       "Rouleau",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Beaulieu",
       "Rustinu",
       "Saga",
@@ -391,13 +855,21 @@
       "Cheese",
       "Timboon",
       "Brie",
+<<<<<<< HEAD
+      "Tomme",
+=======
       "Tomme",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Chouans",
       "Torta",
       "del",
       "Casar",
       "Trois",
+<<<<<<< HEAD
+      "Cornes",
+=======
       "Cornes",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Vendee",
       "Truffe",
       "Tupi",
@@ -428,10 +900,17 @@
       "Cendre",
       "American",
       "Cheese",
+<<<<<<< HEAD
+      "Ami",
+      "Chambertin",
+      "Aromes",
+      "Gene",
+=======
       "Ami",      
       "Chambertin",
       "Aromes",      
       "Gene",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Marc",
       "Asadero",
       "Autun",
@@ -462,7 +941,11 @@
       "Celtic",
       "Promise",
       "Charolais",
+<<<<<<< HEAD
+      "Chevrotin",
+=======
       "Chevrotin",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Aravis",
       "Colby",
       "Cougar",
@@ -484,8 +967,13 @@
       "d'Aosta",
       "Fresh",
       "Jack",
+<<<<<<< HEAD
+      "Fromage",
+      "Montagne",
+=======
       "Fromage",      
       "Montagne",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Savoie",
       "Gubbeen",
       "Havarti",
@@ -516,7 +1004,11 @@
       "Cheeses",
       "Morbier",
       "Morbier",
+<<<<<<< HEAD
+      "Cru",
+=======
       "Cru",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Montagne",
       "Mozzarella",
       "(Australian)",
@@ -530,7 +1022,11 @@
       "d'Auge",
       "Pepper",
       "jack",
+<<<<<<< HEAD
+      "Picos",
+=======
       "Picos",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Europa",
       "Pinconning",
       "Polkolbin",
@@ -561,15 +1057,25 @@
       "Taleggio",
       "Tamie",
       "Tetilla",
+<<<<<<< HEAD
+      "Tomme",
+      "Chevre",
+      "Tomme",
+=======
       "Tomme",      
       "Chevre",
       "Tomme",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Savoie",
       "Tronchon",
       "Ulloa",
       "Waterloo",
       "Wigmore",
+<<<<<<< HEAD
+      "Abbaye",
+=======
       "Abbaye",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Belloc",
       "Abondance",
       "Airedale",
@@ -582,7 +1088,11 @@
       "Beaufort",
       "Bierkase",
       "Blarney",
+<<<<<<< HEAD
+      "Bleu",
+=======
       "Bleu",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Septmoncel",
       "Braudostur",
       "Brick",
@@ -685,18 +1195,30 @@
       "Log",
       "Testouri",
       "Tete",
+<<<<<<< HEAD
+
+=======
       
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Moine",
       "Tibet",
       "Tilsit",
       "Toma",
       "Tomme",
+<<<<<<< HEAD
+
+=======
       
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Romans",
       "Tommes",
       "Toscanello",
       "Touree",
+<<<<<<< HEAD
+
+=======
       
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "L'Aubier",
       "Tourmalet",
       "Trappe",
@@ -708,8 +1230,13 @@
       "Blue",
       "Yorkshire",
       "Blue",
+<<<<<<< HEAD
+      "Abbaye",
+      "Mont",
+=======
       "Abbaye",      
       "Mont",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Cats",
       "Abertam",
       "Ackawi",
@@ -749,9 +1276,15 @@
       "Cotherstone",
       "Cotija",
       "Coverdale",
+<<<<<<< HEAD
+      "Crayeux",
+      "Roncq",
+      "Crottin",
+=======
       "Crayeux",      
       "Roncq",
       "Crottin",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Chavignol",
       "Curworthy",
       "Cwmtawe",
@@ -776,7 +1309,11 @@
       "(Commissiekaas)",
       "Emmental",
       "Etorki",
+<<<<<<< HEAD
+      "Evora",
+=======
       "Evora",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "L'Alentejo",
       "Finlandia",
       "Swiss",
@@ -789,7 +1326,11 @@
       "Four",
       "Herb",
       "Gouda",
+<<<<<<< HEAD
+      "Fourme",
+=======
       "Fourme",      
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "Montbrison",
       "Fribourgeois",
       "Friesekaas",
@@ -961,11 +1502,21 @@
       "Parmigiano",
       "Reggiano"
     ],
+<<<<<<< HEAD
+    "poultry": [ "chicken", "egg", "turkey", "duck", "ham" ],
+    "dairy": [
+      "cream",
+      "ice cream"
+      "milk",
+      "butter",
+      "butter milk",
+=======
     "poultry": ["chicken", "egg", "turkey", "duck", "ham"],
     "dairy": [
       "cream",
       "milk",
       "butter",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
       "yogurt",
       "condensed milk",
       "custard",
@@ -973,7 +1524,12 @@
       "khoa",
       "kulfi",
       "paneer",
+<<<<<<< HEAD
+      "whey",
+      "almond milk"
+=======
       "whey"
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     ],
     "fish": [
       "carp",
@@ -1001,7 +1557,51 @@
       "tilefish",
       "sardines",
       "alaskan pollock",
+<<<<<<< HEAD
+      "artic char",
+      "anchovies",
+      "clams",
+      "cockles",
+      "cod",
+      "coley",
+      "crab",
+      "crayfish",
+      "Eel",
+      "flatfish",
+      "flounder",
+      "haddock",
+      "hake",
+      "halibut",
+      "herring",
+      "hoki",
+      "kipper",
+      "krill",
+      "lemon sole",
+      "lobster",
+      "mackerel",
+      "mussels",
+      "octopus",
+      "oysters",
+      "pangasius",
+      "plaice",
+      "pollock",
+      "prawn",
+      "salmon",
+      "sardines",
+      "scallops",
+      "scampi",
+      "sea bass",
+      "shrimp",
+      "sea weed",
+      "skate",
+      "squid",
+      "trout",
+      "tuna",
+      "whitebait",
+      "whiting"
+=======
       "artic char"
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     ],
     "nuts": [
       "cashew",
@@ -1025,7 +1625,15 @@
       "acorn",
       "coconut",
       "ginkgo",
+<<<<<<< HEAD
+      "chia",
+      "fennel",
+      "mixed nuts",
+      "mixed seeds",
+      "sesame seeds"
+=======
 
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     ],
     "pastas": [
       "angels hair",
@@ -1070,7 +1678,12 @@
       "ugli",
       "buddha's hand",
       "Calamondin",
+<<<<<<< HEAD
+      "Kinnow"
+      s
+=======
       "Kinnow"s
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     ]
   }
 ]

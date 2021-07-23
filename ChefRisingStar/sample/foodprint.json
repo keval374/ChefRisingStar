@@ -1,6 +1,10 @@
 ﻿[
   {
+<<<<<<< HEAD
+    "ingredient_category": "beans",
+=======
     "ingredient": "beans",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.26,
     "farming": 8.49,
     "animal_feed": 0,
@@ -10,10 +14,20 @@
     "packaging": 2.7,
     "waste": 1.37,
     "totalCO2": 13.93,
+<<<<<<< HEAD
+    "weight": 150,
+    "measured_unit": "grams",    
+    "diet_type": "protein",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "apples",
+=======
     "quantity_in_grams": 150
   },
   {
     "ingredient": "apples",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 0.94,
     "animal_feed": 0,
@@ -23,10 +37,20 @@
     "packaging": 0.19,
     "waste": 0.3,
     "totalCO2": 1.78,
+<<<<<<< HEAD
+    "weight": 80,
+    "measured_unit": "grams",    
+    "diet_type": "fruit",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "oatmeal",
+=======
     "quantity_in_grams": 80
   },
   {
     "ingredient": "oatmeal",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.004,
     "farming": 4.16,
     "animal_feed": 0,
@@ -36,10 +60,20 @@
     "packaging": 0.2,
     "waste": 0.73,
     "totalCO2": 5.51,
+<<<<<<< HEAD
+    "weight": 43,
+    "measured_unit": "grams",    
+    "diet_type": "starch",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "beer",
+=======
     "quantity_in_grams": 
   },
   {
     "ingredient": "beer",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.26,
     "farming": 5.21,
     "animal_feed": 0,
@@ -49,10 +83,20 @@
     "packaging": 14.67,
     "waste": 2.09,
     "totalCO2": 34.83,
+<<<<<<< HEAD
+    "weight": 568,
+    "measured_unit": "ml",    
+    "diet_type": "drink",
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "beef",
+=======
     "quantity_in_ml": 568
   },
   {
     "ingredient": "beef",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 90.63,
     "farming": 219.29,
     "animal_feed": 10.46,
@@ -62,10 +106,20 @@
     "packaging": 1.37,
     "waste": 56.32,
     "totalCO2": 387.96,
+<<<<<<< HEAD
+    "weight": 75,
+    "measured_unit": "grams",    
+    "diet_type": "protein",
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "avocados",
+=======
     "quantity_in_grams": 75
   },
   {
     "ingredient": "avocados",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 2.62,
     "farming": 3,
     "animal_feed": 0,
@@ -75,10 +129,20 @@
     "packaging": 0.19,
     "waste": 3.47,
     "totalCO2": 10.32,
+<<<<<<< HEAD
+    "weight": 80,
+    "measured_unit": "grams",    
+    "diet_type": "vegetable",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "bread",
+=======
     "quantity_in_grams": 80
   },
   {
     "ingredient": "bread",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.19,
     "farming": 1.63,
     "animal_feed": 0,
@@ -88,10 +152,20 @@
     "packaging": 0.17,
     "waste": 0.35,
     "totalCO2": 3.12,
+<<<<<<< HEAD
+    "weight": 38,
+    "measured_unit": "grams",    
+    "diet_type": "bakery",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "wine",
+=======
     "quantity_in_grams": 38
   },
   {
     "ingredient": "wine",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 5.7,
     "animal_feed": 0,
@@ -101,10 +175,20 @@
     "packaging": 6.82,
     "waste": 1.85,
     "totalCO2": 16.28,
+<<<<<<< HEAD
+    "weight": 175,
+    "measured_unit": "ml",    
+    "diet_type": "drink",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "cheese",
+=======
     "quantity_in_ml": 175
   },
   {
     "ingredient": "cheese",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 6.97,
     "farming": 20.43,
     "animal_feed": 3.67,
@@ -114,10 +198,20 @@
     "packaging": 0.27,
     "waste": 4.02,
     "totalCO2": 37.25,
+<<<<<<< HEAD
+    "weight": 30,
+    "measured_unit": "grams",    
+    "diet_type": "protein",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "bananas",
+=======
     "quantity_in_grams": 30
   },
   {
     "ingredient": "bananas",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 1.12,
     "animal_feed": 0,
@@ -127,10 +221,20 @@
     "packaging": 0.27,
     "waste": 0.73,
     "totalCO2": 3.59,
+<<<<<<< HEAD
+    "weight": 80,
+    "measured_unit": "grams",    
+    "diet_type": "fruit",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "pasta",
+=======
     "quantity_in_grams": 80
   },
   {
     "ingredient": "pasta",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.39,
     "farming": 3.27,
     "animal_feed": 0,
@@ -140,10 +244,20 @@
     "packaging": 0.35,
     "waste": 0.71,
     "totalCO2": 6.28,
+<<<<<<< HEAD
+    "weight": 75,
+    "measured_unit": "grams",    
+    "diet_type": "starch",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "coffee",
+=======
     "quantity_in_grams": 75
   },
   {
     "ingredient": "coffee",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 2.98,
     "farming": 8.39,
     "animal_feed": 0,
@@ -153,10 +267,20 @@
     "packaging": 1.32,
     "waste": 3.3,
     "totalCO2": 16.61,
+<<<<<<< HEAD
+    "weight": 15,
+    "measured_unit": "grams",    
+    "diet_type": "drink",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "chicken",
+=======
     "quantity_in_grams": 15
   },
   {
     "ingredient": "chicken",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 13.68,
     "farming": 3.62,
     "animal_feed": 9.56,
@@ -166,10 +290,20 @@
     "packaging": 1.14,
     "waste": 5.66,
     "totalCO2": 38.48,
+<<<<<<< HEAD
+    "weight": 75,
+    "measured_unit": "grams",    
+    "diet_type": "protein",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "berries",
+=======
     "quantity_in_grams": 75
   },
   {
     "ingredient": "berries",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.1,
     "farming": 2.99,
     "animal_feed": 0,
@@ -179,10 +313,20 @@
     "packaging": 0.88,
     "waste": 1.35,
     "totalCO2": 6.37,
+<<<<<<< HEAD
+    "weight": 80,
+    "measured_unit": "grams",    
+    "diet_type": "fruit",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "grapes",
+=======
     "quantity_in_grams": 80
   },
   {
     "ingredient": "grapes",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.1,
     "farming": 2.99,
     "animal_feed": 0,
@@ -192,11 +336,21 @@
     "packaging": 0.88,
     "waste": 1.35,
     "totalCO2": 6.37,
+<<<<<<< HEAD
+    "weight": 80,
+    "measured_unit": "fruit",    
+    "diet_type": "fruit",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "potatoe",
+=======
     "quantity_in_grams": 80
 
   },
   {
     "ingredient": "potatoes",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 1.01,
     "animal_feed": 0,
@@ -206,10 +360,20 @@
     "packaging": 0.23,
     "waste": 0.48,
     "totalCO2": 2.42,
+<<<<<<< HEAD
+    "weight": 101,
+    "measured_unit": "grams",    
+    "diet_type": "vegetable",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "dairy milk",
+=======
     "quantity_in_grams": 101
   },
   {
     "ingredient": "dairy milk",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 5.33,
     "farming": 15.69,
     "animal_feed": 2.54,
@@ -219,10 +383,20 @@
     "packaging": 1.04,
     "waste": 2.85,
     "totalCO2": 32.78,
+<<<<<<< HEAD
+    "weight": 200,
+    "measured_unit": "ml",    
+    "diet_type": "drink",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "egg",
+=======
     "quantity_in_ml": 200
   },
   {
     "ingredient": "egg",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 3.92,
     "farming": 7.27,
     "animal_feed": 12.15,
@@ -232,10 +406,20 @@
     "packaging": 0.89,
     "waste": 0.85,
     "totalCO2": 25.74,
+<<<<<<< HEAD
+    "weight": 106,
+    "measured_unit": "grams",    
+    "diet_type": "protien",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "citrus",
+=======
     "quantity_in_grams": 106
   },
   {
     "ingredient": "citrus",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 1.28,
     "animal_feed": 0,
@@ -245,10 +429,20 @@
     "packaging": 0.19,
     "waste": 0.3,
     "totalCO2": 1.61,
+<<<<<<< HEAD
+    "weight": 80,
+    "measured_unit": "grams",    
+    "diet_type": "vegetable",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "rice",
+=======
     "quantity_in_grams": 80
   },
   {
     "ingredient": "rice",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 13.86,
     "animal_feed": 0,
@@ -258,10 +452,20 @@
     "packaging": 0.33,
     "waste": 2.39,
     "totalCO2": 17.36,
+<<<<<<< HEAD
+    "weight": 75,
+    "measured_unit": "grams",    
+    "diet_type": "starch",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "soy milk",
+=======
     "quantity_in_grams": 75
   },
   {
     "ingredient": "soy milk",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 1.87,
     "farming": 0.97,
     "animal_feed": 0,
@@ -271,10 +475,20 @@
     "packaging": 1.02,
     "waste": 0.64,
     "totalCO2": 10.14,
+<<<<<<< HEAD
+    "weight": 200,
+    "measured_unit": "ml",    
+    "diet_type": "drink",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "fish",
+=======
     "quantity_in_ml": 200
   },
   {
     "ingredient": "fish",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 8.7,
     "farming": 58.65,
     "animal_feed": 13.36,
@@ -284,10 +498,20 @@
     "packaging": 1,
     "waste": 14.76,
     "totalCO2": 99.24,
+<<<<<<< HEAD
+    "weight": 140,
+    "measured_unit": "grams",    
+    "diet_type": "protien",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "kiwi",
+=======
     "quantity_in_grams": 140
   },
   {
     "ingredient": "kiwi",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 2.3,
     "animal_feed": 0,
@@ -297,10 +521,20 @@
     "packaging": 0.19,
     "waste": 0.56,
     "totalCO2": 3.94,
+<<<<<<< HEAD
+    "weight": 80,
+    "measured_unit": "grams",    
+    "diet_type": "fruit",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "tea",
+=======
     "quantity_in_grams": 80
   },
   {
     "ingredient": "tea",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 0.49,
     "animal_feed": 0,
@@ -310,10 +544,20 @@
     "packaging": 0.23,
     "waste": 0.22,
     "totalCO2": 1.34,
+<<<<<<< HEAD
+    "weight": 2,
+    "measured_unit": "grams",    
+    "diet_type": "drink",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "lamb",
+=======
     "quantity_in_grams": 2
   },
   {
     "ingredient": "lamb",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 2.53,
     "farming": 105.4,
     "animal_feed": 12.8,
@@ -323,10 +567,20 @@
     "packaging": 1.36,
     "waste": 23,
     "totalCO2": 154.92,
+<<<<<<< HEAD
+    "weight": 75,
+    "measured_unit": "grams",    
+    "diet_type": "protien",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "peas",
+=======
     "quantity_in_grams": 75
   },
   {
     "ingredient": "peas",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 2.98,
     "animal_feed": 0,
@@ -336,10 +590,20 @@
     "packaging": 0.19,
     "waste": 0.33,
     "totalCO2": 4.06,
+<<<<<<< HEAD
+    "weight": 80,
+    "measured_unit": "grams",    
+    "diet_type": "vegetable",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "almond milk",
+=======
     "quantity_in_grams": 80
   },
   {
     "ingredient": "almond milk",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 4.65,
     "animal_feed": 0,
@@ -349,10 +613,20 @@
     "packaging": 3.67,
     "waste": 0.46,
     "totalCO2": 7.3,
+<<<<<<< HEAD
+    "weight": 200,
+    "measured_unit": "ml",    
+    "diet_type": "drink",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "nuts",
+=======
     "quantity_in_ml": 200
   },
   {
     "ingredient": "nuts",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 5.26,
     "animal_feed": 0,
@@ -362,10 +636,20 @@
     "packaging": 0.19,
     "waste": 0,
     "totalCO2": 0.68,
+<<<<<<< HEAD
+    "weight": 30,
+    "measured_unit": "grams",    
+    "diet_type": "protien",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "pineapple",
+=======
     "quantity_in_grams": 30
   },
   {
     "ingredient": "pineapple",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 1.09,
     "animal_feed": 0,
@@ -375,10 +659,20 @@
     "packaging": 0.23,
     "waste": 0.52,
     "totalCO2": 1.86,
+<<<<<<< HEAD
+    "weight": 80,
+    "measured_unit": "grams",    
+    "diet_type": "fruit",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "oat milk",
+=======
     "quantity_in_grams": 80
   },
   {
     "ingredient": "oat milk",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.002,
     "farming": 5.42,
     "animal_feed": 0,
@@ -388,10 +682,20 @@
     "packaging": 1.29,
     "waste": 0.59,
     "totalCO2": 9.39,
+<<<<<<< HEAD
+    "weight": 200,
+    "measured_unit": "ml",    
+    "diet_type": "drink",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "pork",
+=======
     "quantity_in_ml": 200
   },
   {
     "ingredient": "pork",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 8.75,
     "farming": 9.66,
     "animal_feed": 16.76,
@@ -401,10 +705,20 @@
     "packaging": 1.69,
     "waste": 6.47,
     "totalCO2": 47.99,
+<<<<<<< HEAD
+    "weight": 75,
+    "measured_unit": "grams",    
+    "diet_type": "protien",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "carrots",
+=======
     "quantity_in_grams": 75
   },
   {
     "ingredient": "carrots",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0.06,
     "farming": 0.65,
     "animal_feed": 0,
@@ -414,10 +728,20 @@
     "packaging": 0.19,
     "waste": 0.26,
     "totalCO2": 1.79,
+<<<<<<< HEAD
+    "weight": 80,
+    "measured_unit": "grams",    
+    "diet_type": "vegetable",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "rice milk",
+=======
     "quantity_in_grams": 80
   },
   {
     "ingredient": "rice milk",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 0,
     "farming": 4.26,
     "animal_feed": 0,
@@ -427,10 +751,20 @@
     "packaging": 1.14,
     "waste": 0.78,
     "totalCO2": 12.29,
+<<<<<<< HEAD
+    "weight": 200,
+    "measured_unit": "ml",    
+    "diet_type": "drink",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "shrimp",
+=======
     "quantity_in_ml": 200
   },
   {
     "ingredient": "shrimp",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 1.44,
     "farming": 58.77,
     "animal_feed": 17.6,
@@ -440,10 +774,20 @@
     "packaging": 2.34,
     "waste": 34.21,
     "totalCO2": 117.35,
+<<<<<<< HEAD
+    "weight": 84,
+    "measured_unit": "grams",    
+    "diet_type": "protien",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "tomatoes",
+=======
     "quantity_in_grams": 84
   },
   {
     "ingredient": "tomatoes",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 1.55,
     "farming": 2.94,
     "animal_feed": 0,
@@ -453,10 +797,20 @@
     "packaging": 0.61,
     "waste": 2.74,
     "totalCO2": 8.69,
+<<<<<<< HEAD
+    "weight": 80,
+    "measured_unit": "grams",    
+    "diet_type": "vegetable",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "tofu",
+=======
     "quantity_in_grams": 80
   },
   {
     "ingredient": "tofu",
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
     "land_usage": 4.98,
     "farming": 2.57,
     "animal_feed": 0,
@@ -466,6 +820,3160 @@
     "packaging": 0.92,
     "waste": 1.51,
     "totalCO2": 16.44,
+<<<<<<< HEAD
+    "weight": 100,
+    "measured_unit": "grams",    
+    "diet_type": "protien",    
+    "frequency": "weekly"
+  },
+  {
+    "ingredient_category": "bagel",
+    "product_emission_percentage": 3.4,
+    "totalCO2": 103,
+    "weight": 85,
+    "measured_unit": "grams",    
+    "diet_type": "bakery",    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "baguette",
+    "product_emission_percentage": 3.0,
+    "totalCO2": 91,
+    "weight": 70,
+    "measured_unit": "grams",    
+    "diet_type": "bakery",    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "rye bread",
+    "product_emission_percentage": 2.8,
+    "totalCO2": 86,
+    "weight": 80,
+    "measured_unit": "grams",    
+    "diet_type": "bakery",    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "brown bread",
+    "product_emission_percentage": 2.9,
+    "totalCO2": 88,
+    "weight": 80,
+    "measured_unit": "grams",    
+    "diet_type": "bakery",    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "white bread",
+    "product_emission_percentage": 2.8,
+    "totalCO2": 86,
+    "weight": 80,
+    "measured_unit": "grams",    
+    "diet_type": "bakery",    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "bread crumbs",
+    "product_emission_percentage": 4.4,
+    "totalCO2": 134,
+    "weight": 110,
+    "measured_unit": "grams",    
+    "diet_type": "bakery",    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "bread roll",
+    "product_emission_percentage": 2.4,
+    "totalCO2": 73,
+    "weight": 60,
+    "measured_unit": "grams",    
+    "diet_type": "bakery",    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cake",
+    "product_emission_percentage": 8.0,
+    "totalCO2": 245,
+    "weight": 80,
+    "measured_unit": "grams",    
+    "diet_type": "bakery",    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "chocolate cake",
+    "product_emission_percentage": 9.6,
+    "totalCO2": 293,
+    "weight": 80,
+    "measured_unit": "grams",    
+    "diet_type": "bakery",    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "fruit cake",
+    "product_emission_percentage": 8.0,
+    "totalCO2": 245,
+    "weight": 80,
+    "measured_unit": "grams",    
+    "diet_type": "bakery",    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "sponge cake",
+    "product_emission_percentage": 8.0,
+    "totalCO2": 245,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "bakery",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cheese cake",
+    "product_emission_percentage": 14.4,
+    "totalCO2": 439,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "bakery",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "crepe",
+    "product_emission_percentage": 0.7,
+    "totalCO2": 21,
+    "weight": 30,
+    "measured_unit": "grams",
+    
+    "diet_type": "bakery",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "crumpet",
+    "product_emission_percentage": 2.0,
+    "totalCO2": 61,
+    "weight": 50,
+    "measured_unit": "grams",
+    
+    "diet_type": "bakery",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "doughnut",
+    "product_emission_percentage": 13.0,
+    "totalCO2": 395,
+    "weight": 60,
+    "measured_unit": "grams",
+    
+    "diet_type": "bakery",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "fruit pie",
+    "product_emission_percentage": 3.1,
+    "totalCO2": 95,
+    "weight": 60,
+    "measured_unit": "grams",
+    
+    "diet_type": "bakery",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "muffin",
+    "product_emission_percentage": 13.0,
+    "totalCO2": 395,
+    "weight": 60,
+    "measured_unit": "grams",
+    
+    "diet_type": "bakery",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "naan bread plain",
+    "product_emission_percentage": 2.8,
+    "totalCO2": 85,
+    "weight": 70,
+    "measured_unit": "grams",
+    
+    "diet_type": "bakery",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "pancake",
+    "product_emission_percentage": 1.2,
+    "totalCO2": 36,
+    "weight": 50,
+    "measured_unit": "grams",
+    
+    "diet_type": "bakery",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "pastry",
+    "product_emission_percentage": 13.0,
+    "totalCO2": 395,
+    "weight": 60,
+    "measured_unit": "grams",
+    
+    "diet_type": "bakery",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "pitta bread",
+    "product_emission_percentage": 2.4,
+    "totalCO2": 73,
+    "weight": 60,
+    "measured_unit": "grams",
+    
+    "diet_type": "bakery",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "scones",
+    "product_emission_percentage": 6.0,
+    "totalCO2": 184,
+    "weight": 60,
+    "measured_unit": "grams",
+    
+    "diet_type": "bakery",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "tortilla wrap",
+    "product_emission_percentage": 2.3,
+    "totalCO2": 70,
+    "weight": 65,
+    "measured_unit": "grams",
+    
+    "diet_type": "bakery",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "waffle",
+    "product_emission_percentage": 1.9,
+    "totalCO2": 57,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "bakery",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "biscuits",
+    "product_emission_percentage": 3.4,
+    "totalCO2": 104,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "biscuits_and_confectionary",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "chocolate",
+    "product_emission_percentage": 5.7,
+    "totalCO2": 173,
+    "weight": 30,
+    "measured_unit": "grams",
+    
+    "diet_type": "biscuits_and_confectionary",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "chocolate biscuit",
+    "product_emission_percentage": 7.1,
+    "totalCO2": 216,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "biscuits_and_confectionary",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "chocolate chips",
+    "product_emission_percentage": 15.1,
+    "totalCO2": 461,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "biscuits_and_confectionary",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "crackers",
+    "product_emission_percentage": 0.9,
+    "totalCO2": 28,
+    "weight": 24,
+    "measured_unit": "grams",
+    
+    "diet_type": "biscuits_and_confectionary",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "flapjacks",
+    "product_emission_percentage": 18.0,
+    "totalCO2": 547,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "biscuits_and_confectionary",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "fudge",
+    "product_emission_percentage": 6.3,
+    "totalCO2": 193,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "biscuits_and_confectionary",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "gluten free biscuit",
+    "product_emission_percentage": 8.7,
+    "totalCO2": 264,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "biscuits_and_confectionary",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "liquorice",
+    "product_emission_percentage": 6.3,
+    "totalCO2": 193,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "biscuits_and_confectionary",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "marshmallows",
+    "product_emission_percentage": 6.3,
+    "totalCO2": 193,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "biscuits_and_confectionary",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "mints",
+    "product_emission_percentage": 6.3,
+    "totalCO2": 193,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "biscuits_and_confectionary",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "snack bar chocolate",
+    "product_emission_percentage": 13.3,
+    "totalCO2": 406,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "biscuits_and_confectionary",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "snack bar museli",
+    "product_emission_percentage": 18.0,
+    "totalCO2": 547,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "biscuits_and_confectionary",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "sweets",
+    "product_emission_percentage": 6.3,
+    "totalCO2": 193,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "biscuits_and_confectionary",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "milk sweets",
+    "product_emission_percentage": 11.1,
+    "totalCO2": 337,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "biscuits_and_confectionary",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "toffee",
+    "product_emission_percentage": 4.0,
+    "totalCO2": 121,
+    "weight": 50,
+    "measured_unit": "grams",
+    
+    "diet_type": "biscuits_and_confectionary",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "all spices",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 3,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "almond extract",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 5,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "baking powder",
+    "product_emission_percentage": 0,
+    "totalCO2": 0,
+    "weight": 4,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "basil",
+    "product_emission_percentage": 1.5,
+    "totalCO2": 45,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "bay leaves",
+    "product_emission_percentage": 0.4,
+    "totalCO2": 11,
+    "weight": 10,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "soda bicarbonate",
+    "product_emission_percentage": 0,
+    "totalCO2": 0,
+    "weight": 4,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "black pepper",
+    "product_emission_percentage": 0.4,
+    "totalCO2": 11,
+    "weight": 10,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cereal",
+    "product_emission_percentage": 3.2,
+    "totalCO2": 96,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "whole grain cereal",
+    "product_emission_percentage": 3.1,
+    "totalCO2": 94,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "non whole grain cereal",
+    "product_emission_percentage": 5.3,
+    "totalCO2": 160,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cacao nibs",
+    "product_emission_percentage": 3.5,
+    "totalCO2": 106,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cacao powder",
+    "product_emission_percentage": 4.4,
+    "totalCO2": 133,
+    "weight": 30,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cassava starch",
+    "product_emission_percentage": 0.8,
+    "totalCO2": 24,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cayenne pepper",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 3,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "chilli flakes",
+    "product_emission_percentage": 0.4,
+    "totalCO2": 11,
+    "weight": 10,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "chilli powder",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 3,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "chives",
+    "product_emission_percentage": 0.4,
+    "totalCO2": 11,
+    "weight": 10,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cinnamon",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 3,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cloves",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 3,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cocoa drink powder",
+    "product_emission_percentage": 1.4,
+    "totalCO2": 44,
+    "weight": 10,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "coconut sugar",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 4,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "coffee beans",
+    "product_emission_percentage": 3.0,
+    "totalCO2": 90,
+    "weight": 20,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "coriander",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 3,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cornflour",
+    "product_emission_percentage": 0.3,
+    "totalCO2": 9,
+    "weight": 10,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "dill",
+    "product_emission_percentage": 0.4,
+    "totalCO2": 11,
+    "weight": 10,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "plain flour",
+    "product_emission_percentage": 1.2,
+    "totalCO2": 36,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "rye flour",
+    "product_emission_percentage": 0.9,
+    "totalCO2": 28,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "food colouring",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 5,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "garam masala",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 3,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "granola",
+    "product_emission_percentage": 5.3,
+    "totalCO2": 161,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "herbs",
+    "product_emission_percentage": 0.4,
+    "totalCO2": 11,
+    "weight": 10,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "icing",
+    "product_emission_percentage": 0.2,
+    "totalCO2": 7,
+    "weight": 10,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "lard",
+    "product_emission_percentage": 3.2,
+    "totalCO2": 98,
+    "weight": 16,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "marzipan",
+    "product_emission_percentage": 2.2,
+    "totalCO2": 66,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "mint",
+    "product_emission_percentage": 0.4,
+    "totalCO2": 11,
+    "weight": 10,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "miso paste",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 15,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "museli",
+    "product_emission_percentage": 1.3,
+    "totalCO2": 41,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "oatflakes",
+    "product_emission_percentage": 1.1,
+    "totalCO2": 32,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "oregano",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 3,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "paprika",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 3,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "parsley",
+    "product_emission_percentage": 0.4,
+    "totalCO2": 11,
+    "weight": 10,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "peppermint extract",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 5,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "porridge",
+    "product_emission_percentage": 5.8,
+    "totalCO2": 178,
+    "weight": 45,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "rosemary",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 3,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "sage",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 3,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "salt",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 3,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "brown sugar",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 4,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "icing sugar",
+    "product_emission_percentage": 0.2,
+    "totalCO2": 5,
+    "weight": 8,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "tapioca starch",
+    "product_emission_percentage": 0.2,
+    "totalCO2": 6,
+    "weight": 10,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "thyme",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 3,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "turmeric",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 3,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "vanilla",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 5,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "vanilla extract",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 5,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "xanthan gum",
+    "product_emission_percentage": 0,
+    "totalCO2": 0,
+    "weight": 4,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "yeast",
+    "product_emission_percentage": 0,
+    "totalCO2": 0,
+    "weight": 12,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "yeast extract",
+    "product_emission_percentage": 0,
+    "totalCO2": 0,
+    "weight": 4,
+    "measured_unit": "grams",
+    
+    "diet_type": "cupboard",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "artichoke",
+    "product_emission_percentage": 0.9,
+    "totalCO2": 27,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "asparagus",
+    "product_emission_percentage": 18.5,
+    "totalCO2": 563,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "canned asparagus",
+    "product_emission_percentage": 11.0,
+    "totalCO2": 335,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "frozen asparagus",
+    "product_emission_percentage": 8.0,
+    "totalCO2": 244,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "aubergine",
+    "product_emission_percentage": 8.1,
+    "totalCO2": 248,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "beetroot",
+    "product_emission_percentage": 3.0,
+    "totalCO2": 91,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "broccoli",
+    "product_emission_percentage": 2.8,
+    "totalCO2": 86,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "brussel sprouts",
+    "product_emission_percentage": 2.0,
+    "totalCO2": 60,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "frozen brussel sprouts",
+    "product_emission_percentage": 4.9,
+    "totalCO2": 150,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cabbage",
+    "product_emission_percentage": 1.6,
+    "totalCO2": 50,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cabbage pickle",
+    "product_emission_percentage": 6.8,
+    "totalCO2": 206,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "canned carrot",
+    "product_emission_percentage": 5.1,
+    "totalCO2": 154,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "frozen carrot",
+    "product_emission_percentage": 6.4,
+    "totalCO2": 195,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cauliflower",
+    "product_emission_percentage": 2.6,
+    "totalCO2": 78,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "frozen cauliflower",
+    "product_emission_percentage": 6.0,
+    "totalCO2": 182,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "celery",
+    "product_emission_percentage": 2.2,
+    "totalCO2": 68,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "chilli pepper",
+    "product_emission_percentage": 1,
+    "totalCO2": 30,
+    "weight": 15,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "jalepeno",
+    "product_emission_percentage": 1,
+    "totalCO2": 30,
+    "weight": 15,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "courgette",
+    "product_emission_percentage": 2.3,
+    "totalCO2": 69,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cucumber",
+    "product_emission_percentage": 5.1,
+    "totalCO2": 154,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cucumber pickle",
+    "product_emission_percentage": 10.7,
+    "totalCO2": 326,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "garlic",
+    "product_emission_percentage": 0,
+    "totalCO2": 1,
+    "weight": 3,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "ginger",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 3,
+    "weight": 7,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "kale",
+    "product_emission_percentage": 4.2,
+    "totalCO2": 129,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "lettuce",
+    "product_emission_percentage": 4.2,
+    "totalCO2": 129,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "mushroom",
+    "product_emission_percentage": 3.7,
+    "totalCO2": 112,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "onion",
+    "product_emission_percentage": 2.8,
+    "totalCO2": 84,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "frozen onion",
+    "product_emission_percentage": 6.1,
+    "totalCO2": 185,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "onion pickle",
+    "product_emission_percentage": 6.7,
+    "totalCO2": 203,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "parsnips",
+    "product_emission_percentage": 1.8,
+    "totalCO2": 54,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "pepper",
+    "product_emission_percentage": 5.3,
+    "totalCO2": 162,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "green pepper",
+    "product_emission_percentage": 5.3,
+    "totalCO2": 162,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "pepper pickle",
+    "product_emission_percentage": 10.1,
+    "totalCO2": 307,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "red pepper",
+    "product_emission_percentage": 5.3,
+    "totalCO2": 162,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "red onion",
+    "product_emission_percentage": 2.8,
+    "totalCO2": 84,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "rhubarb",
+    "product_emission_percentage": 2.2,
+    "totalCO2": 68,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "shallot",
+    "product_emission_percentage": 1.4,
+    "totalCO2": 42,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "spinach",
+    "product_emission_percentage": 3.8,
+    "totalCO2": 117,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "canned spinach",
+    "product_emission_percentage": 4.7,
+    "totalCO2": 143,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "frozen spinach",
+    "product_emission_percentage": 4.1,
+    "totalCO2": 126,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "spring onion",
+    "product_emission_percentage": 1.4,
+    "totalCO2": 41,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "squash",
+    "product_emission_percentage": 3.1,
+    "totalCO2": 93,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "swedes",
+    "product_emission_percentage": 1.8,
+    "totalCO2": 54,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "canned sweetcorn",
+    "product_emission_percentage": 6.8,
+    "totalCO2": 208,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "frozen sweetcorn",
+    "product_emission_percentage": 6.6,
+    "totalCO2": 202,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "turnips",
+    "product_emission_percentage": 1.8,
+    "totalCO2": 54,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "watercress",
+    "product_emission_percentage": 4.2,
+    "totalCO2": 129,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "sweetcorn packaged",
+    "product_emission_percentage": 6.3,
+    "totalCO2": 193,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "sweetcorn",
+    "product_emission_percentage": 4.1,
+    "totalCO2": 126,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "apple sauce",
+    "product_emission_percentage": 2.8,
+    "totalCO2": 86,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "barbeque sauce",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 4,
+    "weight": 18,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "bolognese sauce",
+    "product_emission_percentage": 14,
+    "totalCO2": 427,
+    "weight": 175,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "chutney",
+    "product_emission_percentage": 2.2,
+    "totalCO2": 66,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "fish sauce",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 4,
+    "weight": 18,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "hummus",
+    "product_emission_percentage": 0.5,
+    "totalCO2": 14,
+    "weight": 16,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "marmite",
+    "product_emission_percentage": 0.4,
+    "totalCO2": 13,
+    "weight": 8,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "mayonnaise",
+    "product_emission_percentage": 1.8,
+    "totalCO2": 56,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "mirin",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 4,
+    "weight": 16,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "mustard sauce",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 4,
+    "weight": 16,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "oyster sauce",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 4,
+    "weight": 18,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "pesto",
+    "product_emission_percentage": 1.1,
+    "totalCO2": 35,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "relish",
+    "product_emission_percentage": 2.2,
+    "totalCO2": 66,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "salad cream",
+    "product_emission_percentage": 1.8,
+    "totalCO2": 56,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "salad dressing",
+    "product_emission_percentage": 2.1,
+    "totalCO2": 64,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "soy sauce",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 4,
+    "weight": 18,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "stir fry sauce",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 4,
+    "weight": 18,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "beef stock",
+    "product_emission_percentage": 1.7,
+    "totalCO2": 53,
+    "weight": 240,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "chicken stock",
+    "product_emission_percentage": 1.7,
+    "totalCO2": 53,
+    "weight": 240,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "lamb stock",
+    "product_emission_percentage": 1.7,
+    "totalCO2": 53,
+    "weight": 240,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "vegetable stock",
+    "product_emission_percentage": 1.7,
+    "totalCO2": 53,
+    "weight": 240,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "tahini",
+    "product_emission_percentage": 0.5,
+    "totalCO2": 14,
+    "weight": 16,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "tamari",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 4,
+    "weight": 18,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "tomato ketchup",
+    "product_emission_percentage": 2.0,
+    "totalCO2": 62,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "tomato sauce",
+    "product_emission_percentage": 14,
+    "totalCO2": 426,
+    "weight": 175,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "vinegar",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 4,
+    "weight": 18,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "worcestershire sauce",
+    "product_emission_percentage": 0.1,
+    "totalCO2": 4,
+    "weight": 18,
+    "measured_unit": "grams",
+    
+    "diet_type": "sauces_and_dressings",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "chocolate spread",
+    "product_emission_percentage": 5.3,
+    "totalCO2": 162,
+    "weight": 37,
+    "measured_unit": "grams",
+    
+    "diet_type": "spreads_and_jams_and_honey",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "golden syrup",
+    "product_emission_percentage": 0.5,
+    "totalCO2": 14,
+    "weight": 22,
+    "measured_unit": "grams",
+    
+    "diet_type": "spreads_and_jams_and_honey",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "hazelnut paste",
+    "product_emission_percentage": 1.7,
+    "totalCO2": 51,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "spreads_and_jams_and_honey",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "hazelnut spread",
+    "product_emission_percentage": 3.5,
+    "totalCO2": 108,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "spreads_and_jams_and_honey",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "honey",
+    "product_emission_percentage": 2.2,
+    "totalCO2": 66,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "spreads_and_jams_and_honey",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "jam",
+    "product_emission_percentage": 2.8,
+    "totalCO2": 86,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "spreads_and_jams_and_honey",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "maple syrup",
+    "product_emission_percentage": 0.5,
+    "totalCO2": 14,
+    "weight": 22,
+    "measured_unit": "grams",
+    
+    "diet_type": "spreads_and_jams_and_honey",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "marmalade",
+    "product_emission_percentage": 2.8,
+    "totalCO2": 86,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "spreads_and_jams_and_honey",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "peanut butter",
+    "product_emission_percentage": 2.8,
+    "totalCO2": 84,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "spreads_and_jams_and_honey",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "treacle",
+    "product_emission_percentage": 0.5,
+    "totalCO2": 14,
+    "weight": 22,
+    "measured_unit": "grams",
+    
+    "diet_type": "spreads_and_jams_and_honey",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "chips",
+    "product_emission_percentage": 10,
+    "totalCO2": 306,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "processed_foods",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "baked beans",
+    "product_emission_percentage": 16.2,
+    "totalCO2": 493,
+    "weight": 200,
+    "measured_unit": "grams",
+    
+    "diet_type": "processed_foods",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "corn crisps",
+    "product_emission_percentage": 3.5,
+    "totalCO2": 106,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "processed_foods",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "custard",
+    "product_emission_percentage": 6.4,
+    "totalCO2": 196,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "processed_foods",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "fisherman pie",
+    "product_emission_percentage": 91.9,
+    "totalCO2": 2800,
+    "weight": 360,
+    "measured_unit": "grams",
+    
+    "diet_type": "processed_foods",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "tomato paste",
+    "product_emission_percentage": 12.5,
+    "totalCO2": 380,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "processed_foods",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "sweet potato",
+    "product_emission_percentage": 4.8,
+    "totalCO2": 146,
+    "weight": 115,
+    "measured_unit": "grams",
+    
+    "diet_type": "vegetable",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "coconut oil",
+    "product_emission_percentage": 1.1,
+    "totalCO2": 34,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "oils",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "corn oil",
+    "product_emission_percentage": 0.6,
+    "totalCO2": 17,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "oils",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cottonseed oil",
+    "product_emission_percentage": 1,
+    "totalCO2": 30,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "oils",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "groundnut oil",
+    "product_emission_percentage": 0.4,
+    "totalCO2": 13,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "oils",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "mustard oil",
+    "product_emission_percentage": 1.3,
+    "totalCO2": 41,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "oils",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "olive oil",
+    "product_emission_percentage": 1.1,
+    "totalCO2": 35,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "oils",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "palm oil",
+    "product_emission_percentage": 2.8,
+    "totalCO2": 86,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "oils",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "peanut oil",
+    "product_emission_percentage": 1.7,
+    "totalCO2": 51,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "oils",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "rapeseed oil",
+    "product_emission_percentage": 1.1,
+    "totalCO2": 34,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "oils",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "sesame oil",
+    "product_emission_percentage": 1.9,
+    "totalCO2": 59,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "oils",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "soybean oil",
+    "product_emission_percentage": 0.7,
+    "totalCO2": 22,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "oils",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "vegetable oil",
+    "product_emission_percentage": 1.5,
+    "totalCO2": 45,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "oils",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "sunflower oil",
+    "product_emission_percentage": 1.2,
+    "totalCO2": 36,
+    "weight": 14,
+    "measured_unit": "grams",
+    
+    "diet_type": "oils",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "bacon",
+    "product_emission_percentage": 16.3,
+    "totalCO2": 497,
+    "weight": 75,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "duck",
+    "product_emission_percentage": 26.6,
+    "totalCO2": 809,
+    "weight": 160,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "falafel",
+    "product_emission_percentage": 3.3,
+    "totalCO2": 100,
+    "weight": 40,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "goat",
+    "product_emission_percentage": 187.6,
+    "totalCO2": 5714,
+    "weight": 160,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "gammon",
+    "product_emission_percentage": 32.6,
+    "totalCO2": 994,
+    "weight": 150,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "goose",
+    "product_emission_percentage": 26.6,
+    "totalCO2": 809,
+    "weight": 160,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "ham",
+    "product_emission_percentage": 6.5,
+    "totalCO2": 199,
+    "weight": 30,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "guinea fowl",
+    "product_emission_percentage": 20.8,
+    "totalCO2": 632,
+    "weight": 125,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "pancetta",
+    "product_emission_percentage": 6.5,
+    "totalCO2": 199,
+    "weight": 30,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "quorn",
+    "product_emission_percentage": 7.9,
+    "totalCO2": 240,
+    "weight": 100,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "quorn vegan",
+    "product_emission_percentage": 3.7,
+    "totalCO2": 112,
+    "weight": 70,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "rabbit",
+    "product_emission_percentage": 57.9,
+    "totalCO2": 1763,
+    "weight": 160,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "steak",
+    "product_emission_percentage": 320.1,
+    "totalCO2": 9749,
+    "weight": 225,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "tempeh",
+    "product_emission_percentage": 2.9,
+    "totalCO2": 87,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "turkey",
+    "product_emission_percentage": 33.9,
+    "totalCO2": 1032,
+    "weight": 160,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "valess",
+    "product_emission_percentage": 13.2,
+    "totalCO2": 401,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "veal",
+    "product_emission_percentage": 77.7,
+    "totalCO2": 2367,
+    "weight": 125,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "vegetable patty",
+    "product_emission_percentage": 7.3,
+    "totalCO2": 221,
+    "weight": 75,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "vension",
+    "product_emission_percentage": 110.3,
+    "totalCO2": 3358,
+    "weight": 160,
+    "measured_unit": "grams",
+    
+    "diet_type": "meat",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "barley",
+    "product_emission_percentage": 2.9,
+    "totalCO2": 89,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "buckwheat",
+    "product_emission_percentage": 1.9,
+    "totalCO2": 57,
+    "weight": 80,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "bulgar",
+    "product_emission_percentage": 3,
+    "totalCO2": 91,
+    "weight": 120,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "couscous",
+    "product_emission_percentage": 9.6,
+    "totalCO2": 293,
+    "weight": 120,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "macaroni",
+    "product_emission_percentage": 3.4,
+    "totalCO2": 103,
+    "weight": 75,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "maize",
+    "product_emission_percentage": 2,
+    "totalCO2": 61,
+    "weight": 120,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "noodles",
+    "product_emission_percentage": 3.4,
+    "totalCO2": 103,
+    "weight": 75,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "polenta",
+    "product_emission_percentage": 3,
+    "totalCO2": 91,
+    "weight": 120,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "quinoa",
+    "product_emission_percentage": 3.2,
+    "totalCO2": 98,
+    "weight": 120,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "basmati rice",
+    "product_emission_percentage": 2.9,
+    "totalCO2": 88,
+    "weight": 65,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "brown rice",
+    "product_emission_percentage": 2.9,
+    "totalCO2": 88,
+    "weight": 65,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "jasmine rice",
+    "product_emission_percentage": 2.9,
+    "totalCO2": 88,
+    "weight": 65,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "long grain rice",
+    "product_emission_percentage": 2.9,
+    "totalCO2": 88,
+    "weight": 65,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "sushi rice",
+    "product_emission_percentage": 2.9,
+    "totalCO2": 88,
+    "weight": 65,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "tagliatelle",
+    "product_emission_percentage": 3.4,
+    "totalCO2": 103,
+    "weight": 75,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "wheat",
+    "product_emission_percentage": 1.5,
+    "totalCO2": 47,
+    "weight": 65,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "spaghetti",
+    "product_emission_percentage": 3.4,
+    "totalCO2": 103,
+    "weight": 75,
+    "measured_unit": "grams",
+    
+    "diet_type": "starch",
+    
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "apricot",
+    "product_emission_percentage": 1.1,
+    "totalCO2": 34,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fruit",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cherries",
+    "product_emission_percentage": 3,
+    "totalCO2": 92,
+    "weight": 32,
+    "measured_unit": "grams",
+    "diet_type": "fruit",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "currants",
+    "product_emission_percentage": 5.5,
+    "totalCO2": 168,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fruit",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "date",
+    "product_emission_percentage": 3.3,
+    "totalCO2": 101,
+    "weight": 48,
+    "measured_unit": "grams",
+    "diet_type": "fruit",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "mangoes",
+    "product_emission_percentage": 11.6,
+    "totalCO2": 352,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fruit",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "melons",
+    "product_emission_percentage": 2.4,
+    "totalCO2": 72,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fruit",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "nectarines",
+    "product_emission_percentage": 5,
+    "totalCO2": 152,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fruit",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "olives",
+    "product_emission_percentage": 0.3,
+    "totalCO2": 9,
+    "weight": 20,
+    "measured_unit": "grams",
+    "diet_type": "fruit",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "oranges",
+    "product_emission_percentage": 5,
+    "totalCO2": 152,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fruit",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "papaya",
+    "product_emission_percentage": 11.6,
+    "totalCO2": 352,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fruit",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "passata",
+    "product_emission_percentage": 5.2,
+    "totalCO2": 157,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fruit",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "peaches",
+    "product_emission_percentage": 5,
+    "totalCO2": 152,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fruit",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "pears",
+    "product_emission_percentage": 2.7,
+    "totalCO2": 82,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fruit",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "pineapples",
+    "product_emission_percentage": 4.5,
+    "totalCO2": 136,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fruit",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "plums",
+    "product_emission_percentage": 3,
+    "totalCO2": 90,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fruit",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "raisins",
+    "product_emission_percentage": 5.5,
+    "totalCO2": 168,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fruit",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "americano",
+    "product_emission_percentage": 2.8,
+    "totalCO2": 85,
+    "weight": 120,
+    "measured_unit": "grams",
+    "diet_type": "drinks",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "brandy",
+    "product_emission_percentage": 3.8,
+    "totalCO2": 116,
+    "weight": 50,
+    "measured_unit": "grams",
+    "diet_type": "drinks",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "rum",
+    "product_emission_percentage": 3.8,
+    "totalCO2": 116,
+    "weight": 50,
+    "measured_unit": "grams",
+    "diet_type": "drinks",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "tequilla",
+    "product_emission_percentage": 3.8,
+    "totalCO2": 116,
+    "weight": 50,
+    "measured_unit": "grams",
+    "diet_type": "drinks",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "whiskey",
+    "product_emission_percentage": 3.8,
+    "totalCO2": 116,
+    "weight": 50,
+    "measured_unit": "grams",
+    "diet_type": "drinks",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "vodka",
+    "product_emission_percentage": 3.8,
+    "totalCO2": 116,
+    "weight": 50,
+    "measured_unit": "grams",
+    "diet_type": "drinks",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "anchovies",
+    "product_emission_percentage": 11.1,
+    "totalCO2": 338,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "clams",
+    "product_emission_percentage": 8,
+    "totalCO2": 243,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cockles",
+    "product_emission_percentage": 8,
+    "totalCO2": 243,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "cod",
+    "product_emission_percentage": 17.9,
+    "totalCO2": 546,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "coley",
+    "product_emission_percentage": 24.4,
+    "totalCO2": 742,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "crab",
+    "product_emission_percentage": 46.6,
+    "totalCO2": 1420,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "crayfish",
+    "product_emission_percentage": 46.6,
+    "totalCO2": 1420,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "eel",
+    "product_emission_percentage": 11.1,
+    "totalCO2": 338,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "flatfish",
+    "product_emission_percentage": 24.4,
+    "totalCO2": 742,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "flounder",
+    "product_emission_percentage": 24.4,
+    "totalCO2": 742,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "haddock",
+    "product_emission_percentage": 24.4,
+    "totalCO2": 742,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "hake",
+    "product_emission_percentage": 24.4,
+    "totalCO2": 742,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "halibut",
+    "product_emission_percentage": 24.4,
+    "totalCO2": 742,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "herring",
+    "product_emission_percentage": 8.9,
+    "totalCO2": 270,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "hoki",
+    "product_emission_percentage": 24.4,
+    "totalCO2": 742,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "kipper",
+    "product_emission_percentage": 23.5,
+    "totalCO2": 717,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "krill",
+    "product_emission_percentage": 46.6,
+    "totalCO2": 1420,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "lemon sole",
+    "product_emission_percentage": 24.4,
+    "totalCO2": 742,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "lobster",
+    "product_emission_percentage": 99.1,
+    "totalCO2": 3017,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "mackerel",
+    "product_emission_percentage": 5,
+    "totalCO2": 152,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "mussels",
+    "product_emission_percentage": 8,
+    "totalCO2": 243,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "octopus",
+    "product_emission_percentage": 16.9,
+    "totalCO2": 516,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "oysters",
+    "product_emission_percentage": 8,
+    "totalCO2": 243,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "pangasius",
+    "product_emission_percentage": 11.5,
+    "totalCO2": 349,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "plaice",
+    "product_emission_percentage": 24.4,
+    "totalCO2": 742,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "pollock",
+    "product_emission_percentage": 17.9,
+    "totalCO2": 546,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "prawn",
+    "product_emission_percentage": 46.6,
+    "totalCO2": 1420,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "salmon",
+    "product_emission_percentage": 26.7,
+    "totalCO2": 814,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "sardines",
+    "product_emission_percentage": 11.1,
+    "totalCO2": 338,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "scallops",
+    "product_emission_percentage": 12,
+    "totalCO2": 364,
+    "weight": 120,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "scampi",
+    "product_emission_percentage": 46.6,
+    "totalCO2": 1420,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "sea bass",
+    "product_emission_percentage": 24.4,
+    "totalCO2": 742,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "shrimp",
+    "product_emission_percentage": 46.6,
+    "totalCO2": 1420,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "sea weed",
+    "product_emission_percentage": 8,
+    "totalCO2": 243,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "squid",
+    "product_emission_percentage": 16.9,
+    "totalCO2": 516,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "trout",
+    "product_emission_percentage": 23.5,
+    "totalCO2": 717,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "whitebait",
+    "product_emission_percentage": 11.1,
+    "totalCO2": 338,
+    "weight": 80,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "tuna",
+    "product_emission_percentage": 33.4,
+    "totalCO2": 1016,
+    "weight": 100,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+  },
+  {
+    "ingredient_category": "whiting",
+    "product_emission_percentage": 24.4,
+    "totalCO2": 742,
+    "weight": 170,
+    "measured_unit": "grams",
+    "diet_type": "fish",
+    "frequency": "daily"
+=======
     "quantity_in_grams": 100
+>>>>>>> 1eb1e136fcc336bbea164d10c3b2b6024338c75e
   }
 ]
