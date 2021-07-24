@@ -77,6 +77,7 @@ namespace ChefRisingStar.ViewModels
             OpenDishTypesCommand = new Command(OpenDishTypes);
 
             _selectedCuisines = _selectedCuisines.TrimEnd(',');
+            _selectedDishTypes = _selectedDishTypes.TrimEnd(',');
 
             LoadRecipesCommand = new Command(async () => await ExecuteLoadRecipesCommand(_selectedCuisines, _selectedDishTypes));
 
@@ -109,8 +110,6 @@ namespace ChefRisingStar.ViewModels
 
             IsSelectDishTypeVisible = true;
 
-            //OnPropertyChanged("SelectedCuisines");
-
             IsBusy = false;
         }
 
@@ -126,7 +125,7 @@ namespace ChefRisingStar.ViewModels
                 //Recipes = new ObservableCollection<Recipe>();
                 SearchRecipes = new ObservableCollection<SearchRecipe>();
 
-                string api = $"https://api.spoonacular.com/recipes/complexSearch?apiKey=4f1ec6d27f5240a18921a16686659406&cuisine={_selectedCuisines}&diet=vegetarian&instructionsRequired&number=3";
+                string api = $"https://api.spoonacular.com/recipes/complexSearch?apiKey=4f1ec6d27f5240a18921a16686659406&cuisine={_selectedCuisines}&diet=vegetarian&instructionsRequired&number=5";
                 string jsonRecipesResults = await Client.GetStringAsync(api);
 
                 Newtonsoft.Json.Linq.JObject jObject = Newtonsoft.Json.Linq.JObject.Parse(jsonRecipesResults);
