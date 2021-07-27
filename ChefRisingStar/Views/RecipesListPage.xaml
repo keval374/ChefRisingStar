@@ -14,6 +14,7 @@
 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
@@ -28,8 +29,15 @@
                         <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding OpenCuisinesCommand}" />
                     </Grid.GestureRecognizers>
                 </Grid>
+                <Grid Grid.Row="1" Grid.Column="0">
+                    <Entry  Placeholder="Select DishType(s)" Text="{Binding SelectedDishTypes}" />
+                    <BoxView  />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding OpenDishTypesCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
                 
-                <ListView Grid.Row="1" Grid.Column="0" ItemsSource="{Binding Recipes}" HasUnevenRows="True" CachingStrategy="RecycleElement" ItemSelected="ListView_ItemSelected">
+                <ListView Grid.Row="2" Grid.Column="0" ItemsSource="{Binding Recipes}" HasUnevenRows="True" CachingStrategy="RecycleElement" ItemSelected="ListView_ItemSelected">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -54,11 +62,11 @@
                     </ListView.ItemTemplate>
                 </ListView>
 
-                <Button Grid.Row="2" Grid.Column="0" Text="Load Recipes" Margin="10" Command="{Binding LoadRecipesCommand}" IsEnabled="{Binding IsNotBusy}"/>
+                <Button Grid.Row="3" Grid.Column="0" Text="Load Recipes" Margin="10" Command="{Binding LoadRecipesCommand}" IsEnabled="{Binding IsNotBusy}"/>
                 <ActivityIndicator Grid.Row="0" Grid.Column="0" IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
             </Grid>
             <ContentView x:Name="popupViewCuisines" BackgroundColor="#C0808080" Padding="20, 0" IsVisible="{Binding IsSelectCuisineVisible}" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">                
-                    <StackLayout Orientation="Vertical" BackgroundColor="White" Margin="10">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White" Margin="10,10,10,60">
                     <ScrollView>
                         <ListView x:Name="cuisineList" ItemsSource="{Binding Cuisines}" SelectionMode="None" ItemTapped="cuisineList_ItemTapped">
                             <ListView.ItemTemplate>
@@ -79,6 +87,30 @@
                         </ListView>
                     </ScrollView>
                     <Button Text="Done" Clicked="CloseCuisineClicked" Margin="10" />
+                    </StackLayout>
+            </ContentView>
+            <ContentView x:Name="popupViewDishTypes" BackgroundColor="#C0808080" Padding="20, 0" IsVisible="{Binding IsSelectDishTypeVisible}" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">                
+                    <StackLayout Orientation="Vertical" BackgroundColor="White" Margin="10,10,10,60">
+                    <ScrollView>
+                        <ListView x:Name="dishTypesList" ItemsSource="{Binding DishTypes}" SelectionMode="None" ItemTapped="dishTypeList_ItemTapped">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid ColumnSpacing="10" Padding="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Label Grid.Column="0" Text="{Binding Text}" />
+                                            <CheckBox Grid.Column="1" IsChecked="{Binding IsSelected}" HorizontalOptions="EndAndExpand" />
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </ScrollView>
+                    <Button Text="Done" Clicked="CloseDishTypeClicked" Margin="10" />
                     </StackLayout>
             </ContentView>
         </AbsoluteLayout>
