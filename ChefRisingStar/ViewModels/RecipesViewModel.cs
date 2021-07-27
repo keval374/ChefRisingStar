@@ -17,11 +17,15 @@ namespace ChefRisingStar.ViewModels
         private bool _isSelectCuisineVisible;
         private string _selectedDishTypes;
         private bool _isSelectDishTypeVisible;
+        
+        private string _selectedDiets;
+        private bool _isSelectDietVisible;
 
         public ObservableCollection<Recipe> Recipes { get; }
         public ObservableCollection<SearchRecipe> SearchRecipes { get; set; }
         public ObservableCollection<SelectableFilter> Cuisines { get; }
         public ObservableCollection<SelectableFilter> DishTypes { get; }
+        public ObservableCollection<SelectableFilter>DietTypes { get; }
 
         public string SelectedCuisines
         {
@@ -46,6 +50,18 @@ namespace ChefRisingStar.ViewModels
             get { return _isSelectDishTypeVisible; }
             set { SetProperty(ref _isSelectDishTypeVisible, value); }
         }
+        
+        public string SelectedDiets
+        {
+            get { return _selectedDiets; }
+            set { SetProperty(ref _selectedDiets, value); }
+        }
+
+        public bool IsSelectDietsVisible
+        {
+            get { return _isSelectDietVisible; }
+            set { SetProperty(ref _isSelectDietVisible, value); }
+        }
         #endregion 
 
         #region Commands
@@ -53,6 +69,7 @@ namespace ChefRisingStar.ViewModels
         public Command LoadRecipesCommand { get; }
         public Command OpenCuisinesCommand { get; }
         public Command OpenDishTypesCommand { get; }
+        public Command OpenDietTypesCommand { get; }
 
         //public IHostingEnvironment env;
 
@@ -75,12 +92,16 @@ namespace ChefRisingStar.ViewModels
             DishTypes = new ObservableCollection<SelectableFilter>(dishTypes);
             _selectedDishTypes = string.Empty;
             OpenDishTypesCommand = new Command(OpenDishTypes);
+            
+            SelectableFilter[] dietTypes = { new SelectableFilter("Gluten Free"), new SelectableFilter("Ketogenic"), new SelectableFilter("Vegetarian"), new SelectableFilter("Lacto-Vegetarian"), new SelectableFilter("Ovo-Vegetarian"), new SelectableFilter("Vegan"), new SelectableFilter("Pescetarian"), new SelectableFilter("Primal"), new SelectableFilter("Whole30")};
+            DietTypes = new ObservableCollection<SelectableFilter>(dietTypes);
+            _selectedDiets = string.Empty;
+            OpenDietTypesCommand = new Command(OpenDietTypes);
 
             _selectedCuisines = _selectedCuisines.TrimEnd(',');
             _selectedDishTypes = _selectedDishTypes.TrimEnd(',');
 
             LoadRecipesCommand = new Command(async () => await ExecuteLoadRecipesCommand(_selectedCuisines, _selectedDishTypes));
-
         }
 
         #endregion 
@@ -112,6 +133,18 @@ namespace ChefRisingStar.ViewModels
 
             IsBusy = false;
         }
+        
+        private void OpenDietTypes()
+        {
+            if (IsBusy)
+                return;
+
+            IsBusy = true;
+
+            IsSelectDietsVisible = true;
+
+            IsBusy = false;
+        }
 
         async Task ExecuteLoadRecipesCommand(string _selectedCuisines, string _selectedDishTypes)
         {
@@ -125,7 +158,17 @@ namespace ChefRisingStar.ViewModels
                 //Recipes = new ObservableCollection<Recipe>();
                 SearchRecipes = new ObservableCollection<SearchRecipe>();
 
-                string api = $"https://api.spoonacular.com/recipes/complexSearch?apiKey=4f1ec6d27f5240a18921a16686659406&cuisine={_selectedCuisines}&diet=vegetarian&instructionsRequired&number=5";
+                string api = $"https://api.spoonacular.com/recipes/complexSearch?apiKey=4f1ec6d27f5240a18921a16686659406&instructionsRequired&number=5";
+
+                if (!string.IsNullOrEmpty(_selectedCuisines))
+                    api += $"&cuisine={_selectedCuisines}";
+
+                if (!string.IsNullOrEmpty(_selectedDishTypes))
+                    api += $"&type={_selectedDishTypes}";
+                
+                if (!string.IsNullOrEmpty(_selectedDiets))
+                    api += $"&diet={_selectedDiets}";
+                
                 string jsonRecipesResults = await Client.GetStringAsync(api);
 
                 Newtonsoft.Json.Linq.JObject jObject = Newtonsoft.Json.Linq.JObject.Parse(jsonRecipesResults);

@@ -15,6 +15,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
@@ -37,7 +38,15 @@
                     </Grid.GestureRecognizers>
                 </Grid>
                 
-                <ListView Grid.Row="2" Grid.Column="0" ItemsSource="{Binding Recipes}" HasUnevenRows="True" CachingStrategy="RecycleElement" ItemSelected="ListView_ItemSelected">
+                <Grid Grid.Row="2" Grid.Column="0">
+                    <Entry  Placeholder="Select Diet(s)" Text="{Binding SelectedDiets}" />
+                    <BoxView  />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding OpenDietTypesCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+                
+                <ListView Grid.Row="3" Grid.Column="0" ItemsSource="{Binding Recipes}" HasUnevenRows="True" CachingStrategy="RecycleElement" ItemSelected="ListView_ItemSelected">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -62,7 +71,7 @@
                     </ListView.ItemTemplate>
                 </ListView>
 
-                <Button Grid.Row="3" Grid.Column="0" Text="Load Recipes" Margin="10" Command="{Binding LoadRecipesCommand}" IsEnabled="{Binding IsNotBusy}"/>
+                <Button Grid.Row="4" Grid.Column="0" Text="Load Recipes" Margin="10" Command="{Binding LoadRecipesCommand}" IsEnabled="{Binding IsNotBusy}"/>
                 <ActivityIndicator Grid.Row="0" Grid.Column="0" IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
             </Grid>
             <ContentView x:Name="popupViewCuisines" BackgroundColor="#C0808080" Padding="20, 0" IsVisible="{Binding IsSelectCuisineVisible}" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">                
@@ -111,6 +120,30 @@
                         </ListView>
                     </ScrollView>
                     <Button Text="Done" Clicked="CloseDishTypeClicked" Margin="10" />
+                    </StackLayout>
+            </ContentView>
+            <ContentView x:Name="popupViewDietTypes" BackgroundColor="#C0808080" Padding="20, 0" IsVisible="{Binding IsSelectDietsVisible}" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">                
+                    <StackLayout Orientation="Vertical" BackgroundColor="White" Margin="10,10,10,60">
+                    <ScrollView>
+                        <ListView x:Name="dietTypesList" ItemsSource="{Binding DietTypes}" SelectionMode="None" ItemTapped="FilterItemTapped">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid ColumnSpacing="10" Padding="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Label Grid.Column="0" Text="{Binding Text}" />
+                                            <CheckBox Grid.Column="1" IsChecked="{Binding IsSelected}" HorizontalOptions="EndAndExpand" />
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </ScrollView>
+                    <Button Text="Done" Clicked="CloseDietTypeClicked" Margin="10" />
                     </StackLayout>
             </ContentView>
         </AbsoluteLayout>

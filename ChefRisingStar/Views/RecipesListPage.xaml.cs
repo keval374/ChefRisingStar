@@ -67,6 +67,20 @@ namespace ChefRisingStar.Views
             _viewModel.SelectedDishTypes = selectedDishTypes.ToString();
             _viewModel.IsSelectDishTypeVisible = false;
         }
+        
+        private void CloseDietTypeClicked(object sender, EventArgs e)
+        {
+            StringBuilder selectedDietTypes = new StringBuilder();
+
+            foreach (SelectableFilter filter in _viewModel.DietTypes)
+            {
+                if (filter.IsSelected)
+                    selectedDietTypes.Append($"{filter.Text}, ");
+            }
+
+            _viewModel.SelectedDiets = selectedDietTypes.ToString();
+            _viewModel.IsSelectDietsVisible = false;
+        }
 
         private void SelectDishTypeClicked(object sender, EventArgs e)
         {
@@ -74,6 +88,12 @@ namespace ChefRisingStar.Views
         }
 
         private void dishTypeList_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            SelectableFilter item = e.Item as SelectableFilter;
+            item.IsSelected = !item.IsSelected;
+        }
+        
+        private void FilterItemTapped(object sender, ItemTappedEventArgs e)
         {
             SelectableFilter item = e.Item as SelectableFilter;
             item.IsSelected = !item.IsSelected;
