@@ -51,6 +51,7 @@ namespace ChefRisingStar.Models
     }
 
     */
+
     [DebuggerDisplay("{GetDebuggerDisplay}")]
     public class Recipe
     {
@@ -323,6 +324,22 @@ namespace ChefRisingStar.Models
 
         [JsonProperty("unitLong")]
         public string UnitLong { get; set; }
+    }
+
+    public partial class SearchRecipe
+    {
+        [JsonProperty("id")]
+        public long Id { get; set; }
+
+        [JsonProperty("title")]
+        public string Title { get; set; }
+
+        [JsonProperty("image")]
+        public Uri Image { get; set; }
+
+        [JsonProperty("imageType")]
+        public string ImageType { get; set; }
+
     }
 
     internal static class Converter
