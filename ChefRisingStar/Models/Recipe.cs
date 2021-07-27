@@ -5,52 +5,7 @@ using System.Diagnostics;
 using System.Globalization;
 
 namespace ChefRisingStar.Models
-{
-    /*
-
-    public class Recipe
-    {
-        [JsonProperty("name")]
-        public string name { get; set; }
-
-        [JsonProperty("ingredients")]
-        public string ingredients { get; set; }
-
-        [JsonProperty("url")]
-        public string url { get; set; }
-
-        [JsonProperty("image")]
-        public string image { get; set; }
-
-        [JsonProperty("cookTime")]
-        public string cookTime { get; set; }
-
-        [JsonProperty("recipeYield")]
-        public string recipeYield { get; set; }
-
-        [JsonProperty("datePublished")]
-        public string datePublished { get; set; }
-
-        [JsonProperty("prepTime")]
-        public string prepTime { get; set; }
-
-        [JsonProperty("description")]
-        public string description { get; set; }
-    }
-
-    internal static class Converter
-    {
-        public static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
-        {
-            MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
-            DateParseHandling = DateParseHandling.None,
-            Converters = {
-                new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
-            },
-        };
-    }
-
-    */
+{    
     [DebuggerDisplay("{GetDebuggerDisplay}")]
     public class Recipe
     {

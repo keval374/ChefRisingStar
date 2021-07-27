@@ -12,6 +12,8 @@ namespace ChefRisingStar
             DependencyService.Register<MockDataStore>();
             DependencyService.Register<MockAchievementConditionDataStore>();
             DependencyService.Register<MockAchievementDataStore>();
+            DependencyService.Register<SubstitutionCache>();
+            DependencyService.Register<IngredientCache>();
             //DependencyService.Register<MockRecipeDataStore>();
             MainPage = new AppShell();
         }

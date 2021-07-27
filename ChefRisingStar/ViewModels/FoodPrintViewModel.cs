@@ -1,16 +1,9 @@
 ﻿using ChefRisingStar.Models;
-using Microsoft.AspNetCore.Hosting;
 using Newtonsoft.Json;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
-using System.Reflection;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using Xamarin.Forms;
 
 namespace ChefRisingStar.ViewModels
 {
@@ -31,8 +24,8 @@ namespace ChefRisingStar.ViewModels
                 if (foodPrint == value)
                     return;
 
-            var response = File.ReadAllText("sample/foodprint.json");
-            foodPrint = JsonConvert.DeserializeObject<List<FoodPrint>>(response);
+                var response = File.ReadAllText("sample/foodprint.json");
+                foodPrint = JsonConvert.DeserializeObject<List<FoodPrint>>(response);
             }
         }
 
@@ -110,92 +103,92 @@ namespace ChefRisingStar.ViewModels
                 IsBusy = false;
             }
 
-        }           
+        }
 
-        
+
 
 
         public string checkCategories(ExtendedIngredient ingredient)
         {
             var exist = "";
-                foreach (var beans in categories.Bean)
+            foreach (var beans in categories.Bean)
+            {
+                if (ingredient.Name.Contains(beans))
                 {
-                    if (ingredient.Name.Contains(beans))
-                    {
-                        return beans;
-                    }
+                    return beans;
                 }
-                foreach (var item in categories.Cheese)
+            }
+            foreach (var item in categories.Cheese)
+            {
+                if (ingredient.Name.Contains(item))
                 {
-                    if (ingredient.Name.Contains(item))
-                    {
-                        return item;
-                    }
+                    return item;
                 }
-                foreach (var item in categories.CitrusFruits)
+            }
+            foreach (var item in categories.CitrusFruits)
+            {
+                if (ingredient.Name.Contains(item))
                 {
-                    if (ingredient.Name.Contains(item))
-                    {
-                        return item;
-                    }
+                    return item;
                 }
-                foreach (var item in categories.Dairy)
+            }
+            foreach (var item in categories.Dairy)
+            {
+                if (ingredient.Name.Contains(item))
                 {
-                    if (ingredient.Name.Contains(item))
-                    {
-                        return item;
-                    }
+                    return item;
                 }
-                foreach (var item in categories.Drink)
+            }
+            foreach (var item in categories.Drink)
+            {
+                if (ingredient.Name.Contains(item))
                 {
-                    if (ingredient.Name.Contains(item))
-                    {
-                        return item;
-                    }
+                    return item;
                 }
-                foreach (var item in categories.Fish)
+            }
+            foreach (var item in categories.Fish)
+            {
+                if (ingredient.Name.Contains(item))
                 {
-                    if (ingredient.Name.Contains(item))
-                    {
-                        return item;
-                    }
+                    return item;
                 }
-                foreach (var item in categories.Meat)
+            }
+            foreach (var item in categories.Meat)
+            {
+                if (ingredient.Name.Contains(item))
                 {
-                    if (ingredient.Name.Contains(item))
-                    {
-                        return item;
-                    }
+                    return item;
                 }
-                foreach (var item in categories.Nuts)
+            }
+            foreach (var item in categories.Nuts)
+            {
+                if (ingredient.Name.Contains(item))
                 {
-                    if (ingredient.Name.Contains(item))
-                    {
-                        return item;
-                    }
+                    return item;
                 }
-                foreach (var item in categories.Pasta)
+            }
+            foreach (var item in categories.Pasta)
+            {
+                if (ingredient.Name.Contains(item))
                 {
-                    if (ingredient.Name.Contains(item))
-                    {
-                        return item;
-                    }
+                    return item;
                 }
-                foreach (var item in categories.Poultry)
+            }
+            foreach (var item in categories.Poultry)
+            {
+                if (ingredient.Name.Contains(item))
                 {
-                    if (ingredient.Name.Contains(item))
-                    {
-                        return item;
-                    }
+                    return item;
                 }
-                foreach (var item in categories.Seafood)
+            }
+            foreach (var item in categories.Seafood)
+            {
+                if (ingredient.Name.Contains(item))
                 {
-                    if (ingredient.Name.Contains(item))
-                    {
-                        return item;
-                    }
+                    return item;
                 }
-            
+            }
+
             return exist;
         }
 

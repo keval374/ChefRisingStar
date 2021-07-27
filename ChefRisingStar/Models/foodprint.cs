@@ -1,8 +1,5 @@
 ﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using System;
 using System.Diagnostics;
-using System.Globalization;
 
 namespace ChefRisingStar.Models
 {

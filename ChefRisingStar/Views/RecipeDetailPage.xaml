@@ -112,9 +112,12 @@
                                                                         <Image Grid.Row="0" Grid.Column="0" Source="{Binding ImageSrc}" WidthRequest="32" />
                                                                         <Label Grid.Row="0" Grid.Column="1" Text="{Binding AmountString}" LineBreakMode="TailTruncation" FontSize="Medium" VerticalTextAlignment="Center" />
                                                                     <Label Grid.Row="0" Grid.Column="2" Text="{Binding Unit}" LineBreakMode="NoWrap" FontSize="Medium" VerticalTextAlignment="Center" />
-                                                                    <Button Grid.Row="0" Grid.Column="3" Text="{Binding Name}" FontSize="Small" FontAttributes="Bold" TextColor="DarkBlue" BackgroundColor="Beige" HorizontalOptions="Start" VerticalOptions="Center">
+                                                                    <Button Grid.Row="0" Grid.Column="3" Text="{Binding Name}" CommandParameter="{Binding .}" FontSize="Small" FontAttributes="Bold" TextColor="DarkBlue" BackgroundColor="Beige" HorizontalOptions="Start" VerticalOptions="Center">
                                                                             <Button.Behaviors>
                                                                                 <behaviours:ButtonLongPressBehaviour LongPressed="IngredientLongPressed" CommandParameter="{Binding .}" />
+                                                                                <!--
+                                                                                Eventually use bindings
+                                                                                <behaviours:ButtonLongPressBehaviour Command="{Binding OpenSubstitutionsCommand}" CommandParameter="{Binding .}" />-->
                                                                             </Button.Behaviors>
                                                                         </Button>
                                                                     </Grid>

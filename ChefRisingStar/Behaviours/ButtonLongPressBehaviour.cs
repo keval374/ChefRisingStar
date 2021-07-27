@@ -18,6 +18,8 @@ namespace ChefRisingStar.Behaviours
         //whether the button was released after press
         private volatile bool _isReleased;
 
+        private Button _attachedButton;
+
         /// <summary>
         /// Occurs when the associated button is long pressed.
         /// </summary>
@@ -47,10 +49,19 @@ namespace ChefRisingStar.Behaviours
             set => SetValue(CommandProperty, value);
         }
 
+        /// <summary>
+        /// Get the attached button
+        /// </summary>
+        public Button AttachedButton
+        {
+            get { return _attachedButton; }
+        }
+
         protected override void OnAttachedTo(Button button)
         {
             base.OnAttachedTo(button);
-            this.BindingContext = button.BindingContext;
+            BindingContext = button.BindingContext;
+            _attachedButton = button;
             button.Pressed += Button_Pressed;
             button.Released += Button_Released;
         }
@@ -58,7 +69,7 @@ namespace ChefRisingStar.Behaviours
         protected override void OnDetachingFrom(Button button)
         {
             base.OnDetachingFrom(button);
-            this.BindingContext = null;
+            BindingContext = null;
             button.Pressed -= Button_Pressed;
             button.Released -= Button_Released;
         }
