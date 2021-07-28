@@ -11,6 +11,7 @@ namespace ChefRisingStar.ViewModels
 
         public Action DisplayInvalidLoginPrompt;
         public Command LoginCommand { get; }
+        public Command RegisterCommand { get; protected set; }
 
         public string Email
         {
@@ -42,6 +43,7 @@ namespace ChefRisingStar.ViewModels
         public LoginViewModel()
         {
             LoginCommand = new Command(OnLoginClicked);
+            RegisterCommand = new Command(OnRegisterClicked);
         }
 
         private async void OnLoginClicked()
@@ -52,6 +54,11 @@ namespace ChefRisingStar.ViewModels
             }
             // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
             await Shell.Current.GoToAsync($"//{nameof(RecipesListPage)}");
+        }
+
+        private async void OnRegisterClicked()
+        {
+            await Shell.Current.GoToAsync($"{nameof(RegisterPage)}");
         }
     }
 }
