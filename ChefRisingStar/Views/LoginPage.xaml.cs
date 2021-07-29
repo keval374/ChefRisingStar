@@ -16,7 +16,7 @@ namespace ChefRisingStar.Views
 
             InitializeComponent();
 
-            Email.Completed += (object sender, EventArgs e) =>
+            Username.Completed += (object sender, EventArgs e) =>
             {
                 Password.Focus();
             };

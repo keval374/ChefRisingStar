@@ -1,28 +1,30 @@
 ﻿using ChefRisingStar.Views;
 using Xamarin.Forms;
 using System;
+using System.Net.Http;
+using System.Diagnostics;
 
 namespace ChefRisingStar.ViewModels
 {
     public class LoginViewModel : BaseViewModel
     {
-        private string email;
+        private string username;
         private string password;
 
         public Action DisplayInvalidLoginPrompt;
         public Command LoginCommand { get; }
         public Command RegisterCommand { get; protected set; }
 
-        public string Email
+        public string Username
         {
-            get => email;
+            get => username;
             set
             {
-                if (email == value)
+                if (username == value)
                     return;
 
-                email = value;
-                OnPropertyChanged("Email");
+                username = value;
+                OnPropertyChanged("Username");
             }
         }
 
@@ -48,12 +50,41 @@ namespace ChefRisingStar.ViewModels
 
         private async void OnLoginClicked()
         {
-            if (email != "keval374@gmail.com" || password != "password")
+
+            using (HttpClient client = new HttpClient())
             {
-                DisplayInvalidLoginPrompt();
+                try
+                {
+                    string userauth = username + ":" + password;
+                    client.DefaultRequestHeaders.Add("ContentType", "application/json");
+
+                    var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(userauth);
+                    string val = System.Convert.ToBase64String(plainTextBytes);
+                    client.DefaultRequestHeaders.Add("Authorization", "Basic " + val);
+
+                    HttpResponseMessage response = client.GetAsync("https://chefrisingstar-api.mybluemix.net/").Result;
+
+                    if (response.StatusCode.ToString() == "OK")
+                    {
+                        await Shell.Current.GoToAsync($"//{nameof(RecipesListPage)}");
+                    }
+                    else
+                    {
+                        DisplayInvalidLoginPrompt();
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"Error during login: {ex}");
+                    await Application.Current.MainPage.DisplayAlert("API Error:", ex.Message, "OK");
+                }
+                finally
+                {
+                    IsBusy = false;
+                }
             }
-            // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
-            await Shell.Current.GoToAsync($"//{nameof(RecipesListPage)}");
+
         }
 
         private async void OnRegisterClicked()

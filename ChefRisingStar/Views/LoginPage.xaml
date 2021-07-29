@@ -36,7 +36,7 @@
                                             <Image Source="https://www.nicepng.com/png/full/501-5010656_my-account-comments-my-account-icon-vector.png"
                                                    Aspect="AspectFit" Margin="5"/>
                                         </Frame>
-                                        <local:CustomEntry x:Name="Email" Text="{Binding Email}" Placeholder="Email" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+                                        <local:CustomEntry x:Name="Username" Text="{Binding Username}" Placeholder="Username" TextColor="Black" HorizontalOptions="FillAndExpand"/>
                                     </StackLayout>
                                 </Frame>
                                 <Frame BackgroundColor="Transparent" CornerRadius="60" HorizontalOptions="FillAndExpand"
