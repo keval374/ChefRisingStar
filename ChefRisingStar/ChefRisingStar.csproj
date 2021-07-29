@@ -35,9 +35,11 @@
     <None Remove="Microsoft.AspNet.WebApi.Core" />
     <None Remove="Microsoft.AspNetCore.Hosting" />
     <None Remove="Microsoft.AspNetCore.Hosting.Abstractions" />
+    <None Remove="CustomRenderer\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Converters\" />
     <Folder Include="Styles\" />
+    <Folder Include="CustomRenderer\" />
   </ItemGroup>
 </Project>

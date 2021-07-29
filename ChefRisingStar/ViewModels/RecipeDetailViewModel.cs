@@ -100,29 +100,6 @@ namespace ChefRisingStar.ViewModels
 
         #region Methods
 
-        /*
-        async Task ExecuteLoadUrlCommand()
-        {
-            if (IsBusy)
-                return;
-
-            IsBusy = true;
-
-            try
-            {
-                Launcher.OpenAsync(new Uri(recipe.url));
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine($"Unable to get recipes: {ex.Message}");
-                await Application.Current.MainPage.DisplayAlert("Error!", ex.Message, "OK");
-            }
-            finally
-            {
-                IsBusy = false;
-            }
-        }*/
-
         internal async Task GetSubstitutions(string ingredientName)
         {
             if (IsBusy)
