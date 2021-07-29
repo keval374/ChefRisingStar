@@ -2,10 +2,10 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="ChefRisingStar.Views.RegisterPage"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    x:Class="ChefRisingStar.Views.RegisterPage"
     xmlns:viewmodel="clr-namespace:ChefRisingStar.ViewModels"
     xmlns:local="clr-namespace:ChefRisingStar.CustomRenderer"
     x:DataType="viewmodel:RegisterViewModel"
@@ -26,43 +26,48 @@
                                 <Frame BackgroundColor="Transparent" CornerRadius="60" HorizontalOptions="FillAndExpand"
                                         BorderColor="CornflowerBlue" Padding="5" HeightRequest="40" Margin="5">
                                     <StackLayout Orientation="Horizontal">
-                                        <local:CustomEntry Placeholder="First Name" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+                                        <local:CustomEntry x:Name="FullName" Text="{Binding FullName}" Placeholder="Full Name" TextColor="Black" HorizontalOptions="FillAndExpand"/>
                                     </StackLayout>
                                 </Frame>
                                 <Frame BackgroundColor="Transparent" CornerRadius="60" HorizontalOptions="FillAndExpand"
                                         BorderColor="CornflowerBlue" Padding="5" HeightRequest="40" Margin="5">
                                     <StackLayout Orientation="Horizontal">
-                                        <local:CustomEntry Placeholder="Last Name" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+                                        <local:CustomEntry x:Name="Username" Text="{Binding Username}" Placeholder="UserName" TextColor="Black" HorizontalOptions="FillAndExpand"/>
                                     </StackLayout>
                                 </Frame>
                                 <Frame BackgroundColor="Transparent" CornerRadius="60" HorizontalOptions="FillAndExpand"
                                         BorderColor="CornflowerBlue" Padding="5" HeightRequest="40" Margin="5">
                                     <StackLayout Orientation="Horizontal">
-                                        <local:CustomEntry Placeholder="Email" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+                                        <local:CustomEntry x:Name="Email" Text="{Binding Email}" Placeholder="Email" TextColor="Black" HorizontalOptions="FillAndExpand"/>
                                     </StackLayout>
                                 </Frame>
                                 <Frame BackgroundColor="Transparent" CornerRadius="60" HorizontalOptions="FillAndExpand"
                                         BorderColor="CornflowerBlue" Padding="5" HeightRequest="40" Margin="5">
                                     <StackLayout Orientation="Horizontal">
-                                        <local:CustomEntry Placeholder="Password" IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+                                        <local:CustomEntry x:Name="Password" Text="{Binding Password}" Placeholder="Password" IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand"/>
                                     </StackLayout>
                                 </Frame>
                                 <Frame BackgroundColor="Transparent" CornerRadius="60" HorizontalOptions="FillAndExpand"
                                         BorderColor="CornflowerBlue" Padding="5" HeightRequest="40" Margin="5">
                                     <StackLayout Orientation="Horizontal">
-                                        <local:CustomEntry Placeholder="Confirm Password" IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+                                        <local:CustomEntry x:Name="ConfirmPassword" Text="{Binding ConfirmPassword}" Placeholder="Confirm Password" IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand"/>
                                     </StackLayout>
                                 </Frame>
                             </StackLayout>
 
                             <Button Text="Sign Up" CornerRadius="25" Margin="15,10,15,5" BackgroundColor="CornflowerBlue"
-                                    TextColor="White" FontAttributes="Bold" FontSize="16"/>
+                                    TextColor="White" FontAttributes="Bold" FontSize="16"
+                                    Command="{Binding RegistrationCommand}"/>
 
                             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                                 <Label Text="Already have an Account?" HorizontalTextAlignment="Center" TextColor="CornflowerBlue"
                                        VerticalTextAlignment="Center"/>
-                                <Label Text="Sign In" HorizontalTextAlignment="Center" TextColor="CornflowerBlue"
-                                       VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" FontAttributes="Bold"/>
+                                <Label Text="Sign In" TextColor="CornflowerBlue"
+                                       HorizontalOptions="EndAndExpand" FontAttributes="Bold">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding SignInCommand}" />
+                                </Label.GestureRecognizers>
+                                </Label>
 
                             </StackLayout>
 
