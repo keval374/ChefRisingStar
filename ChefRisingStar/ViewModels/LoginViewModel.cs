@@ -64,6 +64,8 @@ namespace ChefRisingStar.ViewModels
 
                     HttpResponseMessage response = client.GetAsync("https://chefrisingstar-api.mybluemix.net/").Result;
 
+                    response = client.GetAsync("https://chefrisingstar-api.mybluemix.net/api/login/").Result;
+
                     if (response.StatusCode.ToString() == "OK")
                     {
                         await Shell.Current.GoToAsync($"//{nameof(RecipesListPage)}");
