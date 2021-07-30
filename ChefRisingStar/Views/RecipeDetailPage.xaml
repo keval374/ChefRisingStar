@@ -94,7 +94,7 @@
                                     <xyt:TabView Style="{StaticResource CustomTabStyle}" HeightRequest="350">
                                         <xyt:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Ingredients" TextColorSelected="DarkGray">
                                             <Grid>
-                                                <Frame CornerRadius="25" Margin="0,-10,0,-10">
+                                                <Frame Margin="0,-10,0,-10">
                                                     <ScrollView >
                                                         <CollectionView x:Name="IngredientsListView" ItemsSource="{Binding Recipe.ExtendedIngredients}" SelectionMode="None">
                                                             <CollectionView.ItemTemplate>
@@ -130,7 +130,7 @@
                                         </xyt:TabViewItem>
                                         <xyt:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Instructions" TextColorSelected="DarkGray">
                                             <Grid BackgroundColor="White">
-                                                <Frame CornerRadius="25" Margin="0,-10,0,-10">
+                                                <Frame Margin="0,-10,0,-10">
                                                     <ScrollView>                                                       
                                                             <CollectionView x:Name="InstructionsListView" ItemsSource="{Binding Instructions}" SelectionMode="None">
                                                                 <CollectionView.ItemTemplate>
@@ -155,7 +155,34 @@
                                                 </Frame>
                                             </Grid>
                                         </xyt:TabViewItem>
-                                    </xyt:TabView>
+                                        <xyt:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Substitution Review" TextColorSelected="DarkGray">
+                                            <Grid>
+                                                <Frame Margin="0,-10,0,-10">
+                                                    <ScrollView >
+                                                        <CollectionView x:Name="NewIngredientsListView" ItemsSource="{Binding NewIngredients}" SelectionMode="None">
+                                                            <CollectionView.ItemTemplate>
+                                                                <DataTemplate>
+                                                                    <Grid x:DataType="model:ExtendedIngredient" Margin="0">
+                                                                        <Grid.RowDefinitions>
+                                                                            <RowDefinition Height="*" />
+                                                                        </Grid.RowDefinitions>
+                                                                        <Grid.ColumnDefinitions>
+                                                                            <ColumnDefinition Width="Auto" />
+                                                                            <ColumnDefinition Width="Auto" />
+                                                                            <ColumnDefinition Width="*" />
+                                                                        </Grid.ColumnDefinitions>                                                                        
+                                                                        <Label Grid.Row="0" Grid.Column="0" Text="{Binding Name}" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Center" />
+                                                                        <Label Grid.Row="0" Grid.Column="1" Text="->" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="Center" />
+                                                                        <Label Grid.Row="0" Grid.Column="2" Text="{Binding Name}" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Center" />
+                                                                    </Grid>
+                                                                </DataTemplate>
+                                                            </CollectionView.ItemTemplate>
+                                                        </CollectionView>
+                                                    </ScrollView>
+                                                </Frame>
+                                            </Grid>
+                                        </xyt:TabViewItem>
+                                    </xyt:TabView>                                    
                                 </Grid>
                             </Frame>
                             <pancake:PancakeView CornerRadius="50" Margin="15,-20,20,0" HeightRequest="35" WidthRequest="35" Padding="2" HorizontalOptions="EndAndExpand" VerticalOptions="Start" BackgroundColor="White" >

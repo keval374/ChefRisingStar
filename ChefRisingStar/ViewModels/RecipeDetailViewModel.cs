@@ -19,6 +19,10 @@ namespace ChefRisingStar.ViewModels
         private bool _isSubstitutionVisible;
         private Recipe _recipe;
         private string _selectedSubstitution;
+
+        private ExtendedIngredient _selectedIngredient;
+
+        private List<ExtendedIngredient> _newIngredients { get; set; }
         #endregion Members
 
         #region Properties
@@ -48,6 +52,16 @@ namespace ChefRisingStar.ViewModels
             }
         }
         
+        public ExtendedIngredient SelectedIngredient
+        {
+            get => _selectedIngredient;
+            set
+            {
+                _selectedIngredient = value;
+                OnPropertyChanged();
+            }
+        }
+        
         public string SelectedSubstitution
         {
             get => _selectedSubstitution;
@@ -59,6 +73,7 @@ namespace ChefRisingStar.ViewModels
         }
 
         public ObservableCollection<Step> Instructions { get; protected set; }
+        public ObservableCollection<ExtendedIngredient> NewIngredients { get; protected set; }
 
 
         #endregion Properties
@@ -79,11 +94,17 @@ namespace ChefRisingStar.ViewModels
 
             Instructions = new ObservableCollection<Step>();
             Substitutions = new ObservableCollection<string>();
+            NewIngredients = new ObservableCollection<ExtendedIngredient>();
 
             foreach (AnalyzedInstruction ins in Recipe.AnalyzedInstructions)
             {
                 foreach (Step step in ins.Steps)
                     Instructions.Add(step);
+            }
+
+            foreach(ExtendedIngredient ingredient in Recipe.ExtendedIngredients)
+            {
+                NewIngredients.Add(ingredient);
             }
 
             //Eventually use commanding
@@ -191,23 +212,17 @@ namespace ChefRisingStar.ViewModels
             }
         }
         
-        internal async Task GetIngredientByName(string ingredientName)
+        //internal async Task<IngredientSearch[]> GetIngredientByName(string ingredientName)
+        internal async Task<IngredientSearch> GetIngredientByName(string ingredientName)
         {
-            if (IsBusy)
-                return;
-
-            IsBusy = true;
-
             IngredientCache cache = DependencyService.Get<IngredientCache>();
 
             if (cache.Contains(ingredientName))
             {
+                IngredientSearch ingredient = cache.Get(ingredientName);
                 Substitutions.Clear();
-
-                cache.Get(ingredientName);
-                
                 IsBusy = false;
-                return;
+                return ingredient;
             }
 
             using (HttpClient client = new HttpClient())
@@ -223,6 +238,8 @@ namespace ChefRisingStar.ViewModels
 
                     if(ingredients != null && ingredients.Length >0)
                         cache.Add(ingredientName, ingredients[0]);
+
+                    return ingredients[0];
                 }
                 catch (Exception ex)
                 {
@@ -234,6 +251,32 @@ namespace ChefRisingStar.ViewModels
                     IsBusy = false;
                 }
             }
+
+            return null;
+        }
+
+        internal void ReplaceIngredient(SubstituteIngredient[] substitutes)
+        {
+            if (IsBusy)
+                return;
+
+            IsBusy = true;
+
+            //IngredientSearch[] ing = GetIngredientByName(substitutes[0].Name);
+
+
+
+            NewIngredients.Remove(SelectedIngredient);
+
+            foreach (var substituteIngredient in substitutes)
+            {
+                GetIngredientByName(substituteIngredient.Name);
+                //NewIngredients.Add(newIngredient);
+                //TODO: continue from here
+            }
+            
+
+            IsBusy = false;
         }
         #endregion
     }

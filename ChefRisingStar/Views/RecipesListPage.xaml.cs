@@ -48,12 +48,6 @@ namespace ChefRisingStar.Views
             _viewModel.IsSelectCuisineVisible = true;
         }
 
-        private void cuisineList_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            SelectableFilter item = e.Item as SelectableFilter;
-            item.IsSelected = !item.IsSelected;
-        }
-
         private void CloseDishTypeClicked(object sender, EventArgs e)
         {
             StringBuilder selectedDishTypes = new StringBuilder();
@@ -86,13 +80,6 @@ namespace ChefRisingStar.Views
         {
             _viewModel.IsSelectDishTypeVisible = true;
         }
-
-        private void dishTypeList_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            SelectableFilter item = e.Item as SelectableFilter;
-            item.IsSelected = !item.IsSelected;
-        }
-        
         private void FilterItemTapped(object sender, ItemTappedEventArgs e)
         {
             SelectableFilter item = e.Item as SelectableFilter;

@@ -29,6 +29,7 @@ namespace ChefRisingStar.Views
             if (behave != null)
             {
                 ExtendedIngredient ingredient = behave.AttachedButton.CommandParameter as ExtendedIngredient;
+                _viewModel.SelectedIngredient = ingredient;
                 _viewModel.IsSubstitutionVisible = true;
                 _viewModel.GetSubstitutions(ingredient.NameClean);
             }
@@ -43,15 +44,18 @@ namespace ChefRisingStar.Views
             _viewModel.IsSubstitutionVisible = false;
 
             SubstituteIngredient[] substitutes = SubstitutionHelper.ParseSubstitution(_viewModel.SelectedSubstitution);
-            
-            if(substitutes != null)
-                _viewModel.GetIngredientByName(substitutes[0].Name);
-            
+
+            if (substitutes != null)
+            {
+                _viewModel.ReplaceIngredient(substitutes);
+                
+            }            
         }
 
         private void CancelSubstituteClicked(object sender, EventArgs e)
         {
             _viewModel.IsSubstitutionVisible = false;
+            _viewModel.SelectedIngredient = null;
         }
     }
 }
