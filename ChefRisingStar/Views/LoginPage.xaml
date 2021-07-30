@@ -4,11 +4,83 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:viewmodel="clr-namespace:ChefRisingStar.ViewModels"
+             xmlns:local="clr-namespace:ChefRisingStar.CustomRenderer"
              x:Class="ChefRisingStar.Views.LoginPage"
+             x:DataType="viewmodel:LoginViewModel"
              Shell.NavBarIsVisible="False">
-    <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
-        </StackLayout>
-    </ContentPage.Content>
+
+
+    <StackLayout Padding="0" BackgroundColor="AliceBlue">
+            <Grid>
+                <StackLayout Padding="0" Margin="0">
+                    <Frame BackgroundColor="Black" HeightRequest="180"
+                           HorizontalOptions="FillAndExpand" Opacity="0.7" Padding="0">
+                        <Image Source="https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg" Aspect="AspectFill"/>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Margin="10,150,10,0" Padding="0" HorizontalOptions="FillAndExpand" >
+                    <Frame BackgroundColor="White" HasShadow="True" HeightRequest="400"
+                           HorizontalOptions="FillAndExpand" CornerRadius="25" Padding="0" Margin="0">
+                        <StackLayout>
+                            <StackLayout Margin="0,10,0,0" >
+                                <Label Text="Sign In" TextColor="Black" FontAttributes="Bold" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                            <StackLayout Padding="0" Margin="10">
+                                <Frame BackgroundColor="Transparent" CornerRadius="60" HorizontalOptions="FillAndExpand"
+                                        BorderColor="CornflowerBlue" Padding="5" HeightRequest="40" Margin="5">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="40" WidthRequest="40"
+                                               Margin="0" Padding="0" >
+                                            <Image Source="https://www.nicepng.com/png/full/501-5010656_my-account-comments-my-account-icon-vector.png"
+                                                   Aspect="AspectFit" Margin="5"/>
+                                        </Frame>
+                                        <local:CustomEntry x:Name="Username" Text="{Binding Username}" Placeholder="Username" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+                                    </StackLayout>
+                                </Frame>
+                                <Frame BackgroundColor="Transparent" CornerRadius="60" HorizontalOptions="FillAndExpand"
+                                        BorderColor="CornflowerBlue" Padding="5" HeightRequest="40" Margin="5">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="40" WidthRequest="40"
+                                               Margin="0" Padding="0" >
+                                            <Image Source="https://www.pikpng.com/pngl/m/288-2886738_cg-svg-icon-free-password-icon-png-clipart.png"
+                                                   Aspect="AspectFit" Margin="5"/>
+                                        </Frame>
+                                        <local:CustomEntry x:Name="Password" Text="{Binding Password}" Placeholder="Password" IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="20,-10,25,0" Padding="0">
+                                <CheckBox IsChecked="False" Color="CornflowerBlue"/>
+                                <Label Text="Remember Me" HorizontalTextAlignment="Start" TextColor="CornflowerBlue"
+                                       VerticalTextAlignment="Center"/>
+                                <Label Text="Forgot Password" HorizontalTextAlignment="Start" TextColor="CornflowerBlue"
+                                       VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" FontAttributes="Bold"/>
+
+                            </StackLayout>
+
+                            <Button Text="Sign In" Command="{Binding LoginCommand}" CornerRadius="25" Margin="15,10,15,5" BackgroundColor="CornflowerBlue"
+                                    TextColor="White" FontAttributes="Bold" FontSize="16"/>
+
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Label Text="Don't have an Account?" HorizontalTextAlignment="Center" TextColor="CornflowerBlue"
+                                       VerticalTextAlignment="Center"/>
+
+                                <Label Text="Register Here" TextColor="CornflowerBlue"
+                                       HorizontalOptions="EndAndExpand" FontAttributes="Bold">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding RegisterCommand}" />
+                                </Label.GestureRecognizers>
+                                </Label>
+
+                            </StackLayout>
+
+                        </StackLayout>
+                    </Frame>
+
+                </StackLayout>
+            </Grid>
+    </StackLayout>
 </ContentPage>
