@@ -1,8 +1,8 @@
 ﻿using ChefRisingStar.Views;
-using Xamarin.Forms;
 using System;
-using System.Net.Http;
 using System.Diagnostics;
+using System.Net.Http;
+using Xamarin.Forms;
 
 namespace ChefRisingStar.ViewModels
 {
@@ -39,7 +39,7 @@ namespace ChefRisingStar.ViewModels
                 password = value;
                 OnPropertyChanged("Password");
             }
-            
+
         }
 
         public LoginViewModel()

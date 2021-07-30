@@ -8,11 +8,14 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
-    <PackageReference Include="System.Text.Json" Version="5.0.2" />
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
-    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Syncfusion.Licensing" Version="19.2.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="19.2.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="19.2.0.49" />
+    <PackageReference Include="System.Text.Json" Version="5.0.2" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
@@ -29,6 +32,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Newtonsoft.Json" />
+    <None Remove="sample\IngredientSearch.json" />
     <None Remove="Xamarin.Forms.PancakeView" />
     <None Remove="Xamarin.CommunityToolkit" />
     <None Remove="SystemWebPackage" />
@@ -36,6 +40,9 @@
     <None Remove="Microsoft.AspNetCore.Hosting" />
     <None Remove="Microsoft.AspNetCore.Hosting.Abstractions" />
     <None Remove="CustomRenderer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="sample\IngredientSearch.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Converters\" />

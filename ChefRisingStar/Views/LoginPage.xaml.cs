@@ -1,7 +1,7 @@
 ﻿using ChefRisingStar.ViewModels;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using System;
 
 namespace ChefRisingStar.Views
 {
@@ -10,7 +10,7 @@ namespace ChefRisingStar.Views
     {
         public LoginPage()
         {
-            var login = new LoginViewModel();  
+            var login = new LoginViewModel();
             this.BindingContext = login;
             login.DisplayInvalidLoginPrompt += () => DisplayAlert("Error", "Invalid username or password, Please try again", "OK");
 

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using ChefRisingStar.ViewModels;
+﻿using ChefRisingStar.ViewModels;
 using Xamarin.Forms;
 
 

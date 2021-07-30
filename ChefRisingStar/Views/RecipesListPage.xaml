@@ -71,7 +71,7 @@
                     </ListView.ItemTemplate>
                 </ListView>
 
-                <Button Grid.Row="4" Grid.Column="0" Text="Load Recipes" Margin="10" Command="{Binding LoadRecipesCommand}" IsEnabled="{Binding IsNotBusy}"/>
+                <Button Grid.Row="4" Grid.Column="0" Text="Search Recipes" Margin="10" Command="{Binding LoadRecipesCommand}" IsEnabled="{Binding IsNotBusy}"/>
                 <ActivityIndicator Grid.Row="0" Grid.Column="0" IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
             </Grid>
             <ContentView x:Name="popupViewCuisines" BackgroundColor="#C0808080" Padding="20, 0" IsVisible="{Binding IsSelectCuisineVisible}" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">                

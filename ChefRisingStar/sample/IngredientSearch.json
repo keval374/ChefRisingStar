@@ -1,0 +1,16 @@
+[
+  {
+    "name": "ground turkey",
+    "image": "meat-ground.jpg",
+    "id": 5662,
+    "aisle": "Meat",
+    "possibleUnits": [ "patty", "pound", "g", "ounce", "oz", "cup", "serving" ]
+  },
+  {
+    "name": "ground chicken",
+    "image": "meat-ground.jpg",
+    "id": 5332,
+    "aisle": "Meat",
+    "possibleUnits": [ "oz crumbled", "piece", "g", "oz", "cup", "serving" ]
+  }
+]

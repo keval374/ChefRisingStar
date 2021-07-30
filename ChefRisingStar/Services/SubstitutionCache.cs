@@ -18,10 +18,12 @@ namespace ChefRisingStar.Services
 
         public bool Contains(string ingredient)
         {
-            if(!_isInitialized)
+            if (!_isInitialized)
             {
                 LoadSubstitutionsFromFile();
             }
+
+            ingredient = ingredient.ToLower();
 
             return _substitutions.ContainsKey(ingredient);
         }
@@ -33,7 +35,12 @@ namespace ChefRisingStar.Services
                 LoadSubstitutionsFromFile();
             }
 
-            if (string.IsNullOrEmpty(ingredient) || substitutions == null || substitutions.Count == 0 || _substitutions.ContainsKey(ingredient))
+            if (string.IsNullOrEmpty(ingredient) || substitutions == null || substitutions.Count == 0)
+                return;
+
+            ingredient = ingredient.ToLower();
+
+            if (_substitutions.ContainsKey(ingredient))
                 return;
 
             _substitutions.Add(ingredient, substitutions);
@@ -45,6 +52,8 @@ namespace ChefRisingStar.Services
             {
                 LoadSubstitutionsFromFile();
             }
+
+            ingredient = ingredient.ToLower();
 
             if (string.IsNullOrEmpty(ingredient) || !_substitutions.ContainsKey(ingredient))
                 return null;

@@ -51,7 +51,7 @@ namespace ChefRisingStar.ViewModels
                 OnPropertyChanged();
             }
         }
-        
+
         public ExtendedIngredient SelectedIngredient
         {
             get => _selectedIngredient;
@@ -61,7 +61,7 @@ namespace ChefRisingStar.ViewModels
                 OnPropertyChanged();
             }
         }
-        
+
         public string SelectedSubstitution
         {
             get => _selectedSubstitution;
@@ -74,6 +74,12 @@ namespace ChefRisingStar.ViewModels
 
         public ObservableCollection<Step> Instructions { get; protected set; }
         public ObservableCollection<ExtendedIngredient> NewIngredients { get; protected set; }
+
+        public ObservableCollection<FootprintModel> PolarData1 { get; set; }
+
+        public ObservableCollection<FootprintModel> PolarData2 { get; set; }
+
+        public ObservableCollection<FootprintModel> PolarData3 { get; set; }
 
 
         #endregion Properties
@@ -102,11 +108,18 @@ namespace ChefRisingStar.ViewModels
                     Instructions.Add(step);
             }
 
-            foreach(ExtendedIngredient ingredient in Recipe.ExtendedIngredients)
+            foreach (ExtendedIngredient ingredient in Recipe.ExtendedIngredients)
             {
                 NewIngredients.Add(ingredient);
             }
 
+
+            PolarData1 = new ObservableCollection<FootprintModel>
+            {
+                new FootprintModel{ LandUsage = 10, TotalCO2 = 15, Farming = 20, Waste = 22, Transport = 50 },
+                new FootprintModel{ LandUsage = 12, TotalCO2 = 25, Farming = 30, Waste = 12, Transport = 33 },
+                new FootprintModel{ LandUsage = 40, TotalCO2 = 55, Farming = 20, Waste = 30, Transport = 33 }
+            };
             //Eventually use commanding
             //OpenSubstitutionsCommand = new Command(async () => await GetSubstitutions<object>(null));
             //OpenSubstitutionsCommand = new Command<Type>(
@@ -130,7 +143,7 @@ namespace ChefRisingStar.ViewModels
 
             SubstitutionCache cache = DependencyService.Get<SubstitutionCache>();
 
-            if(cache.Contains(ingredientName))
+            if (cache.Contains(ingredientName))
             {
                 Substitutions.Clear();
 
@@ -157,8 +170,8 @@ namespace ChefRisingStar.ViewModels
                     // var substitution = JsonSerializer.Deserialize<Substitution>(strResponse);
 
                     Substitutions.Clear();
-                    
-                    if(substitution.Status.ToLower() == "failure")
+
+                    if (substitution.Status.ToLower() == "failure")
                     {
                         Substitutions.Add(substitution.Message);
                         cache.Add(ingredientName, SubstitutionHelper.GetNoSubstituteItem());
@@ -168,13 +181,13 @@ namespace ChefRisingStar.ViewModels
 
                     List<SubstituteIngredient[]> subs = new List<SubstituteIngredient[]>();
 
-                    foreach(string s in substitution.Substitutes)
+                    foreach (string s in substitution.Substitutes)
                     {
                         SubstituteIngredient[] substituteIngredients = SubstitutionHelper.ParseSubstitution(s);
                         subs.Add(substituteIngredients);
                         Substitutions.Add(SubstitutionHelper.StringFormat(substituteIngredients));
                     }
-                    
+
                     cache.Add(ingredientName, subs);
                 }
                 catch (Exception ex)
@@ -188,7 +201,7 @@ namespace ChefRisingStar.ViewModels
                 }
             }
         }
-        
+
         //internal async Task<IngredientSearch[]> GetIngredientByName(string ingredientName)
         internal async Task<IngredientSearch> GetIngredientByName(string ingredientName)
         {
@@ -213,7 +226,7 @@ namespace ChefRisingStar.ViewModels
                     var streamTask = client.GetStreamAsync($"?apiKey=61f0c9888f5542a6b3604a030707b8ad&query={ingredientName}&number=1&metaInformation=true");
                     var ingredients = await JsonSerializer.DeserializeAsync<IngredientSearch[]>(await streamTask);
 
-                    if(ingredients != null && ingredients.Length >0)
+                    if (ingredients != null && ingredients.Length > 0)
                         cache.Add(ingredientName, ingredients[0]);
 
                     return ingredients[0];
@@ -232,8 +245,24 @@ namespace ChefRisingStar.ViewModels
             return null;
         }
 
-        internal void ReplaceIngredient(SubstituteIngredient[] substitutes)
+        internal void ReplaceIngredient()
         {
+            //SubstituteIngredient[] substitutes = SubstitutionHelper.ParseSubstitution(SelectedSubstitution);
+
+            //if (substitutes != null)
+            //{
+            //    ReplaceIngredient(substitutes);
+            //}
+
+            IngredientCache cache = DependencyService.Get<IngredientCache>();
+            IngredientSearch ing = cache.Get(SelectedSubstitution);
+            SelectedIngredient.Name = $"{SelectedSubstitution}";
+            SelectedIngredient.Image = ing.Image;
+        }
+        
+            
+        internal void ReplaceIngredient(SubstituteIngredient[] substitutes)
+        {   
             if (IsBusy)
                 return;
 
@@ -241,20 +270,22 @@ namespace ChefRisingStar.ViewModels
 
             //IngredientSearch[] ing = GetIngredientByName(substitutes[0].Name);
 
+            SelectedIngredient.Name = substitutes[0].Name;
 
+            //NewIngredients.Remove(SelectedIngredient);
 
-            NewIngredients.Remove(SelectedIngredient);
+            //foreach (var substituteIngredient in substitutes)
+            //{
+            //    GetIngredientByName(substituteIngredient.Name);
+            //    //NewIngredients.Add(newIngredient);
+            //    //TODO: continue from here
+            //}
 
-            foreach (var substituteIngredient in substitutes)
-            {
-                GetIngredientByName(substituteIngredient.Name);
-                //NewIngredients.Add(newIngredient);
-                //TODO: continue from here
-            }
-            
 
             IsBusy = false;
         }
+
+
         #endregion
     }
 }

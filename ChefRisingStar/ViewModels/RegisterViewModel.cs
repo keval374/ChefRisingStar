@@ -1,11 +1,9 @@
-﻿using System;
+﻿using ChefRisingStar.Views;
+using Newtonsoft.Json;
+using System;
 using System.Diagnostics;
-using System.IO;
-using System.Net;
 using System.Net.Http;
 using System.Text;
-using ChefRisingStar.Views;
-using Newtonsoft.Json;
 using Xamarin.Forms;
 
 namespace ChefRisingStar.ViewModels
@@ -21,7 +19,7 @@ namespace ChefRisingStar.ViewModels
 
         public Command RegistrationCommand { get; }
         public Command SignInCommand { get; }
-        
+
         public string FullName
         {
             get => fullName;
@@ -123,7 +121,7 @@ namespace ChefRisingStar.ViewModels
 
                     if (response.StatusCode.ToString() == "OK")
                     {
-                        await Application.Current.MainPage.DisplayAlert("Success", username+" successfully registered!", "OK");
+                        await Application.Current.MainPage.DisplayAlert("Success", username + " successfully registered!", "OK");
                     }
                     else
                     {
@@ -143,14 +141,14 @@ namespace ChefRisingStar.ViewModels
             }
         }
 
-        
+
 
         private async void OnSignInClicked()
         {
             await Shell.Current.GoToAsync($"{nameof(LoginPage)}");
         }
-          
-            
+
+
     }
 }
 

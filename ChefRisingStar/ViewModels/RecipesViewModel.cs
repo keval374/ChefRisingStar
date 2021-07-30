@@ -1,5 +1,4 @@
 ﻿using ChefRisingStar.Models;
-using Microsoft.AspNetCore.Hosting;
 using Newtonsoft.Json;
 using System;
 using System.Collections.ObjectModel;
@@ -17,15 +16,17 @@ namespace ChefRisingStar.ViewModels
         private bool _isSelectCuisineVisible;
         private string _selectedDishTypes;
         private bool _isSelectDishTypeVisible;
-        
+
         private string _selectedDiets;
+        private string _selectedIngredients;
         private bool _isSelectDietVisible;
 
         public ObservableCollection<Recipe> Recipes { get; }
         public ObservableCollection<SearchRecipe> SearchRecipes { get; set; }
         public ObservableCollection<SelectableFilter> Cuisines { get; }
         public ObservableCollection<SelectableFilter> DishTypes { get; }
-        public ObservableCollection<SelectableFilter>DietTypes { get; }
+        public ObservableCollection<SelectableFilter> DietTypes { get; }
+        public ObservableCollection<SelectableFilter> Ingredients { get; }
 
         public string SelectedCuisines
         {
@@ -44,13 +45,19 @@ namespace ChefRisingStar.ViewModels
             get { return _selectedDishTypes; }
             set { SetProperty(ref _selectedDishTypes, value); }
         }
+        
+        public string SelectedIngredients
+        {
+            get { return _selectedIngredients; }
+            set { SetProperty(ref _selectedIngredients, value); }
+        }
 
         public bool IsSelectDishTypeVisible
         {
             get { return _isSelectDishTypeVisible; }
             set { SetProperty(ref _isSelectDishTypeVisible, value); }
         }
-        
+
         public string SelectedDiets
         {
             get { return _selectedDiets; }
@@ -88,15 +95,17 @@ namespace ChefRisingStar.ViewModels
             _selectedCuisines = string.Empty;
             OpenCuisinesCommand = new Command(OpenCuisines);
 
-            SelectableFilter[] dishTypes = { new SelectableFilter("main course"), new SelectableFilter("side dish"), new SelectableFilter("dessert"), new SelectableFilter("appetizer"), new SelectableFilter("salad"), new SelectableFilter("bread"), new SelectableFilter("breakfast"), new SelectableFilter("soup"), new SelectableFilter("beverage"), new SelectableFilter("sauce"), new SelectableFilter("marinade"), new SelectableFilter("fingerfood"), new SelectableFilter("Irish"), new SelectableFilter("snack"), new SelectableFilter("drink")};
+            SelectableFilter[] dishTypes = { new SelectableFilter("Main course"), new SelectableFilter("Side dish"), new SelectableFilter("Dessert"), new SelectableFilter("Appetizer"), new SelectableFilter("Salad"), new SelectableFilter("Bread"), new SelectableFilter("Breakfast"), new SelectableFilter("Soup"), new SelectableFilter("Beverage"), new SelectableFilter("Sauce"), new SelectableFilter("Marinade"), new SelectableFilter("Fingerfood"), new SelectableFilter("Snack"), new SelectableFilter("Drink") };
             DishTypes = new ObservableCollection<SelectableFilter>(dishTypes);
             _selectedDishTypes = string.Empty;
             OpenDishTypesCommand = new Command(OpenDishTypes);
-            
-            SelectableFilter[] dietTypes = { new SelectableFilter("Gluten Free"), new SelectableFilter("Ketogenic"), new SelectableFilter("Vegetarian"), new SelectableFilter("Lacto-Vegetarian"), new SelectableFilter("Ovo-Vegetarian"), new SelectableFilter("Vegan"), new SelectableFilter("Pescetarian"), new SelectableFilter("Primal"), new SelectableFilter("Whole30")};
+
+            SelectableFilter[] dietTypes = { new SelectableFilter("Gluten Free"), new SelectableFilter("Ketogenic"), new SelectableFilter("Vegetarian"), new SelectableFilter("Lacto-Vegetarian"), new SelectableFilter("Ovo-Vegetarian"), new SelectableFilter("Vegan"), new SelectableFilter("Pescetarian"), new SelectableFilter("Primal"), new SelectableFilter("Whole30") };
             DietTypes = new ObservableCollection<SelectableFilter>(dietTypes);
             _selectedDiets = string.Empty;
             OpenDietTypesCommand = new Command(OpenDietTypes);
+
+            Ingredients = new ObservableCollection<SelectableFilter>();
 
             _selectedCuisines = _selectedCuisines.TrimEnd(',');
             _selectedDishTypes = _selectedDishTypes.TrimEnd(',');
@@ -133,7 +142,7 @@ namespace ChefRisingStar.ViewModels
 
             IsBusy = false;
         }
-        
+
         private void OpenDietTypes()
         {
             if (IsBusy)
@@ -158,6 +167,8 @@ namespace ChefRisingStar.ViewModels
                 //Recipes = new ObservableCollection<Recipe>();
                 SearchRecipes = new ObservableCollection<SearchRecipe>();
 
+                _selectedIngredients = "beef"; // todo: remove temp only for demo
+
                 string api = $"https://api.spoonacular.com/recipes/complexSearch?apiKey=4f1ec6d27f5240a18921a16686659406&instructionsRequired&number=5";
 
                 if (!string.IsNullOrEmpty(_selectedCuisines))
@@ -165,10 +176,13 @@ namespace ChefRisingStar.ViewModels
 
                 if (!string.IsNullOrEmpty(_selectedDishTypes))
                     api += $"&type={_selectedDishTypes}";
-                
+
                 if (!string.IsNullOrEmpty(_selectedDiets))
                     api += $"&diet={_selectedDiets}";
                 
+                if (!string.IsNullOrEmpty(_selectedIngredients))
+                    api += $"&includeIngredients={_selectedIngredients}";
+
                 string jsonRecipesResults = await Client.GetStringAsync(api);
 
                 Newtonsoft.Json.Linq.JObject jObject = Newtonsoft.Json.Linq.JObject.Parse(jsonRecipesResults);

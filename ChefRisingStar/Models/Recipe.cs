@@ -241,8 +241,11 @@ namespace ChefRisingStar.Models
     }
 
     [DebuggerDisplay("{GetDebuggerDisplay}")]
-    public class ExtendedIngredient
+    public class ExtendedIngredient : BaseNotifyModel
     {
+        private string _name;
+        private string _image;
+
         [JsonProperty("id")]
         public long Id { get; set; }
 
@@ -250,7 +253,11 @@ namespace ChefRisingStar.Models
         public string Aisle { get; set; }
 
         [JsonProperty("image")]
-        public string Image { get; set; }
+        public string Image
+        {
+            get { return _image; }
+            set { SetProperty(ref _image, value); }
+        }
 
         public string ImageSrc
         {
@@ -261,7 +268,11 @@ namespace ChefRisingStar.Models
         public string Consistency { get; set; }
 
         [JsonProperty("name")]
-        public string Name { get; set; }
+        public string Name
+        {
+            get { return _name; }
+            set { SetProperty(ref _name, value); }
+        }
 
         [JsonProperty("nameClean")]
         public string NameClean { get; set; }

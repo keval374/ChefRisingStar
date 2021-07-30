@@ -69,13 +69,14 @@ namespace ChefRisingStar.Models
 
         [JsonPropertyName("amount")]
         public string Amount { get; set; }
-        
+
         [JsonPropertyName("conversion")]
         public string Conversion { get; set; }
 
         public override string ToString()
         {
-            return $"{Amount} {Unit} - {Name}";
+            //return $"{Amount} {Unit} - {Name}";
+            return $"{Name}";
         }
 
         private string GetDebuggerDisplay()

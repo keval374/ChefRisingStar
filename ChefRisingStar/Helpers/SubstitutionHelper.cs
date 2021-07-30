@@ -12,15 +12,15 @@ namespace ChefRisingStar.Helpers
 
         private static List<string> measureTerms = new List<string> { "cup", "tbsp", "tsp", "oz", "g", "gr", "gram" };
         public static SubstituteIngredient[] ParseSubstitution(string substituion)
-        {   
+        {
             if (string.IsNullOrEmpty(substituion) || string.IsNullOrWhiteSpace(substituion))
                 return null;
 
             string[] split = substituion.Split('=');
             split[0] = split[0].Trim();
             split[1] = split[1].Trim();
-            
-            if(split[1].Contains(" and ") || split[1].Contains(" + "))
+
+            if (split[1].Contains(" and ") || split[1].Contains(" + "))
             {
                 return ProcessMultiSubstitution(split[0], split[1]);
             }
@@ -41,13 +41,13 @@ namespace ChefRisingStar.Helpers
 
             return NoSubstitutes;
         }
-        
+
         public static string StringFormat(SubstituteIngredient[] substitutes)
         {
             StringBuilder sb = new StringBuilder();
             bool first = true;
 
-            foreach(SubstituteIngredient sub in substitutes)
+            foreach (SubstituteIngredient sub in substitutes)
             {
                 if (first)
                 {
@@ -82,14 +82,14 @@ namespace ChefRisingStar.Helpers
                         break;
                 }
 
-                if(foundIndex > 0)
+                if (foundIndex > 0)
                     amount = split[foundIndex - 1];
 
                 unit = split[foundIndex];
 
                 bool first = true;
 
-                for (int j = foundIndex + 1 ; j <= split.Length-foundIndex; j++)
+                for (int j = foundIndex + 1; j <= split.Length - foundIndex; j++)
                 {
                     if (first)
                     {
@@ -102,7 +102,7 @@ namespace ChefRisingStar.Helpers
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Debug.WriteLine($"Error ProcessSingleSubstitution: {ex}");
             }
@@ -116,11 +116,11 @@ namespace ChefRisingStar.Helpers
         {
             string[] split = multiSubstituion.Split('+');
 
-            if(split.Length <= 1)
+            if (split.Length <= 1)
                 split = multiSubstituion.Split(new[] { "and" }, StringSplitOptions.RemoveEmptyEntries);
 
             //Clean up whitespace
-            for(int i = 0; i < split.Length; i++)
+            for (int i = 0; i < split.Length; i++)
             {
                 split[i] = split[i].Trim();
             }
@@ -129,7 +129,7 @@ namespace ChefRisingStar.Helpers
 
             List<SubstituteIngredient> substitutes = new List<SubstituteIngredient>();
 
-            foreach(string s in split)
+            foreach (string s in split)
             {
                 substitutes.Add(ProcessSingleSubstitution(conversion, s));
             }

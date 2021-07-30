@@ -1,6 +1,7 @@
 ﻿using ChefRisingStar.Models;
 using ChefRisingStar.ViewModels;
 using System;
+using System.Collections.ObjectModel;
 using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -31,16 +32,32 @@ namespace ChefRisingStar.Views
 
         private void CloseCuisineClicked(object sender, EventArgs e)
         {
-            StringBuilder selectedCuisined = new StringBuilder();
+            string selected = AppendSelected(_viewModel.Cuisines);
 
-            foreach (SelectableFilter filter in _viewModel.Cuisines)
+            _viewModel.SelectedCuisines = selected;
+            _viewModel.IsSelectCuisineVisible = false;
+        }
+
+        private string AppendSelected(ObservableCollection<SelectableFilter> filters)
+        {
+            StringBuilder sb = new StringBuilder();
+            bool first = true;
+
+            foreach (SelectableFilter filter in filters)
             {
                 if (filter.IsSelected)
-                    selectedCuisined.Append($"{filter.Text}, ");
+                {
+                    if (first)
+                    {
+                        sb.Append($"{filter.Text}");
+                        first = false;
+                    }
+                    else
+                        sb.Append($", {filter.Text}");
+                }
             }
 
-            _viewModel.SelectedCuisines = selectedCuisined.ToString();
-            _viewModel.IsSelectCuisineVisible = false;
+            return sb.ToString();
         }
 
         private void SelectCuisineClicked(object sender, EventArgs e)
@@ -50,29 +67,17 @@ namespace ChefRisingStar.Views
 
         private void CloseDishTypeClicked(object sender, EventArgs e)
         {
-            StringBuilder selectedDishTypes = new StringBuilder();
+            string selected = AppendSelected(_viewModel.DishTypes);
 
-            foreach (SelectableFilter filter in _viewModel.DishTypes)
-            {
-                if (filter.IsSelected)
-                    selectedDishTypes.Append($"{filter.Text}, ");
-            }
-
-            _viewModel.SelectedDishTypes = selectedDishTypes.ToString();
+            _viewModel.SelectedDishTypes = selected;
             _viewModel.IsSelectDishTypeVisible = false;
         }
-        
+
         private void CloseDietTypeClicked(object sender, EventArgs e)
         {
-            StringBuilder selectedDietTypes = new StringBuilder();
+            string selected = AppendSelected(_viewModel.DietTypes);
 
-            foreach (SelectableFilter filter in _viewModel.DietTypes)
-            {
-                if (filter.IsSelected)
-                    selectedDietTypes.Append($"{filter.Text}, ");
-            }
-
-            _viewModel.SelectedDiets = selectedDietTypes.ToString();
+            _viewModel.SelectedDiets = selected;
             _viewModel.IsSelectDietsVisible = false;
         }
 

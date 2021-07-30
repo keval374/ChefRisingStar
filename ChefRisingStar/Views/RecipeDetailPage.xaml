@@ -8,7 +8,7 @@
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              xmlns:xyt="http://xamarin.com/schemas/2020/toolkit"
              x:Class="ChefRisingStar.Views.RecipeDetailPage"
-             xmlns:behaviours="clr-namespace:ChefRisingStar.Behaviours"
+             xmlns:behaviours="clr-namespace:ChefRisingStar.Behaviours" xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
              Title="{Binding Title}">
     
     <ContentPage.Resources>
@@ -91,7 +91,7 @@
                         <Grid Grid.Row="1" VerticalOptions="FillAndExpand" Margin="0,-30,0,30">
                         <Frame CornerRadius="25" >
                             <Grid>
-                                    <xyt:TabView Style="{StaticResource CustomTabStyle}" HeightRequest="350">
+                                    <xyt:TabView Style="{StaticResource CustomTabStyle}" HeightRequest="340">
                                         <xyt:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Ingredients" TextColorSelected="DarkGray">
                                             <Grid>
                                                 <Frame Margin="0,-10,0,-10">
@@ -112,7 +112,7 @@
                                                                         <Image Grid.Row="0" Grid.Column="0" Source="{Binding ImageSrc}" WidthRequest="32" />
                                                                         <Label Grid.Row="0" Grid.Column="1" Text="{Binding AmountString}" LineBreakMode="TailTruncation" FontSize="Medium" VerticalTextAlignment="Center" />
                                                                     <Label Grid.Row="0" Grid.Column="2" Text="{Binding Unit}" LineBreakMode="NoWrap" FontSize="Medium" VerticalTextAlignment="Center" />
-                                                                    <Button Grid.Row="0" Grid.Column="3" Text="{Binding Name}" CommandParameter="{Binding .}" FontSize="Small" FontAttributes="Bold" TextColor="DarkBlue" BackgroundColor="Beige" HorizontalOptions="Start" VerticalOptions="Center">
+                                                                    <Button Grid.Row="0" Grid.Column="3" Text="{Binding Name}" CommandParameter="{Binding .}" FontSize="Small" FontAttributes="Bold" TextColor="DarkBlue" BackgroundColor="Beige" HorizontalOptions="Start" VerticalOptions="Center" Padding="-1">
                                                                             <Button.Behaviors>
                                                                                 <behaviours:ButtonLongPressBehaviour LongPressed="IngredientLongPressed" CommandParameter="{Binding .}" />
                                                                                 <!--
@@ -150,39 +150,36 @@
                                                                         </Grid>
                                                                     </DataTemplate>
                                                                 </CollectionView.ItemTemplate>
-                                                            </CollectionView>                                                        
+                                                            </CollectionView>
                                                     </ScrollView>
                                                 </Frame>
                                             </Grid>
                                         </xyt:TabViewItem>
-                                        <xyt:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Substitution Review" TextColorSelected="DarkGray">
+                                        <xyt:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Review" TextColorSelected="DarkGray">
                                             <Grid>
-                                                <Frame Margin="0,-10,0,-10">
-                                                    <ScrollView >
-                                                        <CollectionView x:Name="NewIngredientsListView" ItemsSource="{Binding NewIngredients}" SelectionMode="None">
-                                                            <CollectionView.ItemTemplate>
-                                                                <DataTemplate>
-                                                                    <Grid x:DataType="model:ExtendedIngredient" Margin="0">
-                                                                        <Grid.RowDefinitions>
-                                                                            <RowDefinition Height="*" />
-                                                                        </Grid.RowDefinitions>
-                                                                        <Grid.ColumnDefinitions>
-                                                                            <ColumnDefinition Width="Auto" />
-                                                                            <ColumnDefinition Width="Auto" />
-                                                                            <ColumnDefinition Width="*" />
-                                                                        </Grid.ColumnDefinitions>                                                                        
-                                                                        <Label Grid.Row="0" Grid.Column="0" Text="{Binding Name}" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Center" />
-                                                                        <Label Grid.Row="0" Grid.Column="1" Text="->" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="Center" />
-                                                                        <Label Grid.Row="0" Grid.Column="2" Text="{Binding Name}" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Center" />
-                                                                    </Grid>
-                                                                </DataTemplate>
-                                                            </CollectionView.ItemTemplate>
-                                                        </CollectionView>
-                                                    </ScrollView>
+                                                <Frame>
+                                                    <Image x:Name="imgFootprint" Source="FootPrintCompare.PNG">
+                                                        <Image.GestureRecognizers>
+                                                            <PanGestureRecognizer PanUpdated="OnPanUpdated" />
+                                                        </Image.GestureRecognizers>
+                                                    </Image>
+                                                    <!--<chart:SfChart>
+
+                                                        <chart:SfChart.PrimaryAxis>
+                                                            <chart:CategoryAxis/>
+                                                        </chart:SfChart.PrimaryAxis>
+
+                                                        <chart:SfChart.SecondaryAxis>
+                                                            <chart:NumericalAxis/>
+                                                        </chart:SfChart.SecondaryAxis>
+
+                                                        <chart:PolarSeries ItemsSource="{Binding PolarData1}" XBindingPath="LandUsage" YBindingPath="TotalCO2"/>
+
+                                                    </chart:SfChart>-->
                                                 </Frame>
                                             </Grid>
                                         </xyt:TabViewItem>
-                                    </xyt:TabView>                                    
+                                    </xyt:TabView>
                                 </Grid>
                             </Frame>
                             <pancake:PancakeView CornerRadius="50" Margin="15,-20,20,0" HeightRequest="35" WidthRequest="35" Padding="2" HorizontalOptions="EndAndExpand" VerticalOptions="Start" BackgroundColor="White" >
@@ -209,7 +206,16 @@
             <ContentView x:Name="popupViewSubstitutions" BackgroundColor="#C0808080" Padding="30, 0" IsVisible="{Binding IsSubstitutionVisible}" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
                 <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
                     <StackLayout Orientation="Vertical" BackgroundColor="White" Margin="10">
-                        <ListView x:Name="sampleList" ItemsSource="{Binding Substitutions}" SelectedItem="{Binding SelectedSubstitution}" />
+                        <ListView x:Name="sampleList" ItemsSource="{Binding Substitutions}" SelectedItem="{Binding SelectedSubstitution}">
+                        <!--<ListView x:Name="sampleList" ItemsSource="{Binding Substitutions}" SelectedItem="{Binding SelectedSubstitution}" x:DataType="model:SubstituteIngredient">-->
+                            <!--<ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout>
+                                        <Label Text="{Binding }"
+                                    </StackLayout>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>-->
+                        </ListView>
                         <Button Text="Use selected substitute" Clicked="UseSubstituteClicked" Margin="10,10,10,0"/>
                         <Button Text="Cancel" Clicked="CancelSubstituteClicked" Margin="10" />
                     </StackLayout>

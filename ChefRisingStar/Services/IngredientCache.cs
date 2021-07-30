@@ -1,6 +1,10 @@
 ﻿using ChefRisingStar.Models;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
+using System.Reflection;
+using System.Text.Json;
 
 namespace ChefRisingStar.Services
 {
@@ -17,10 +21,12 @@ namespace ChefRisingStar.Services
 
         public bool Contains(string ingredient)
         {
-            if(!_isInitialized)
+            if (!_isInitialized)
             {
                 LoadIngredientsFromFile();
             }
+
+            ingredient = ingredient.ToLower();
 
             return _ingredients.ContainsKey(ingredient);
         }
@@ -32,7 +38,12 @@ namespace ChefRisingStar.Services
                 LoadIngredientsFromFile();
             }
 
-            if (string.IsNullOrEmpty(ingredient) || ingredientSearch == null || _ingredients.ContainsKey(ingredient))
+            if (string.IsNullOrEmpty(ingredient) || ingredientSearch == null)
+                return;
+
+            ingredient = ingredient.ToLower();
+
+            if(_ingredients.ContainsKey(ingredient))
                 return;
 
             _ingredients.Add(ingredient, ingredientSearch);
@@ -45,6 +56,8 @@ namespace ChefRisingStar.Services
                 LoadIngredientsFromFile();
             }
 
+            ingredient = ingredient.ToLower();
+
             if (string.IsNullOrEmpty(ingredient) || !_ingredients.ContainsKey(ingredient))
                 return null;
 
@@ -55,12 +68,26 @@ namespace ChefRisingStar.Services
         {
             //TODO: this implementation
             try
-            {
+            {   
+                var assembly = typeof(Views.RecipeDetailPage).GetTypeInfo().Assembly;
+                //string[] resources = assembly.GetManifestResourceNames();
+                Stream stream = assembly.GetManifestResourceStream("ChefRisingStar.sample.IngredientSearch.json");
 
+                using (var reader = new StreamReader(stream))
+                {
+
+                    var json = reader.ReadToEnd();
+                    var data = JsonSerializer.Deserialize<IngredientSearch[]>(json);
+
+                    foreach (IngredientSearch i in data)
+                    {
+                        Add(i.Name, i);
+                    }
+                }
             }
-            catch
+            catch(Exception ex)
             {
-
+                Debug.WriteLine($"Error loading ingredient cache: {ex}");
             }
             finally
             {
