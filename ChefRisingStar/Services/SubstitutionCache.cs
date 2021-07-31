@@ -1,7 +1,11 @@
-﻿using ChefRisingStar.Models;
+﻿using ChefRisingStar.Helpers;
+using ChefRisingStar.Models;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.IO;
+using System.Reflection;
 
 namespace ChefRisingStar.Services
 {
@@ -63,20 +67,18 @@ namespace ChefRisingStar.Services
 
         public void LoadSubstitutionsFromFile()
         {
-            //TODO: this implementation
             try
             {
-
+                Substitution[] data = JsonFileLoader.GetCollection<Substitution>("Substitutions.json");
             }
-            catch
+            catch (Exception ex)
             {
-
+                Debug.WriteLine($"Error loading ingredient cache: {ex}");
             }
             finally
             {
                 _isInitialized = true;
             }
-
         }
 
         private string GetDebuggerDisplay()

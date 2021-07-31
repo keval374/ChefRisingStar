@@ -47,7 +47,15 @@ namespace ChefRisingStar.Models
         public DateTime CompletionDate
         {
             get { return _completionDate; }
-            set { SetProperty(ref _completionDate, value); }
+            set 
+            { 
+                SetProperty(ref _completionDate, value); 
+
+                if(_completionDate > DateTime.MinValue)
+                {
+                    ImageSrc = CompleteImage;
+                }
+            }
         }
 
         public string DateEarnedString

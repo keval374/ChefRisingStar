@@ -21,7 +21,7 @@ namespace ChefRisingStar
             MainPage = new AppShell();
 
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NDgyMDA4QDMxMzkyZTMyMmUzMGR6SENOV0phWVo5STZmcmtrY3YrMHcvTER0cmorb1V1T3JXcmRYWkhEUEU9");
-            
+
         }
 
         protected override void OnStart()

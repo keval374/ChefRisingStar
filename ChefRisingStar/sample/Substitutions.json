@@ -1,0 +1,26 @@
+[
+  {
+    "status": "success",
+    "ingredient": "butter",
+    "substitutes": [ "1 cup = 7/8 cup shortening and 1/2 tsp salt", "1 cup = 7/8 cup vegetable oil + 1/2 tsp salt", "1/2 cup = 1/4 cup buttermilk + 1/4 cup unsweetened applesauce", "1 cup = 1 cup margarine" ],
+    "message": "Found 4 substitutes for the ingredient."
+  },
+  {
+    "status": "success",
+    "ingredient": "wheat flour",
+    "substitutes": [ "1 cup = 1 cup rice flour" ],
+    "message": "Found 1 substitutes for the ingredient."
+  },
+  {
+    "status": "success",
+    "ingredient": "milk",
+    "substitutes": [ "1 cup = 1 soy milk", "1 cup = 1 oat milk", "1 cup = 1 almond milk", "1 cup = 1 rice milk" ],
+    "message": "Found 4 substitutes for the ingredient."
+  },
+  {
+    "status": "success",
+    "ingredient": "cheddar",
+    "substitutes": [ "1 cup = 1 cup American cheese", "1 cup = 1 cup shredded Colby cheddar", "1 cup = 1 cup shredded Monterey Jack cheese", "1 cup = 1 cup Colby cheese" ],
+    "message": "Found 4 substitutes for the ingredient."
+  }
+]

@@ -253,16 +253,39 @@ namespace ChefRisingStar.ViewModels
             //{
             //    ReplaceIngredient(substitutes);
             //}
+            try
+            {
+                IngredientCache cache = DependencyService.Get<IngredientCache>();
+                IngredientSearch ing = cache.Get(SelectedSubstitution);
+                SelectedIngredient.Name = $"{SelectedSubstitution}";
 
-            IngredientCache cache = DependencyService.Get<IngredientCache>();
-            IngredientSearch ing = cache.Get(SelectedSubstitution);
-            SelectedIngredient.Name = $"{SelectedSubstitution}";
-            SelectedIngredient.Image = ing.Image;
+                if (ing != null)
+                {
+                    SelectedIngredient.Image = ing.Image;
+                    SelectedIngredient.ImageSrc = ing.Image;
+                }
+
+                CheckAchievments();
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine($"Error replacing ingredient '{SelectedIngredient.Name}' with {SelectedSubstitution}: {ex}");
+            }
         }
-        
-            
+
+        private void CheckAchievments()
+        {
+            IDataStore<Achievement, int> achievmentDs = DependencyService.Get<MockAchievementDataStore>();
+            IDataStore<AchievementStep, int> achievmentsConditionDs = DependencyService.Get<MockAchievementConditionDataStore>();
+
+            ReadOnlyCollection<Achievement> achievments = achievmentDs.GetItems();
+            ReadOnlyCollection<AchievementStep> achievmentConditions = achievmentsConditionDs.GetItems();
+
+            achievments[5].AchievementSteps[0].CompletionDate = DateTime.Now;
+        }
+
         internal void ReplaceIngredient(SubstituteIngredient[] substitutes)
-        {   
+        {
             if (IsBusy)
                 return;
 

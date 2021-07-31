@@ -245,6 +245,8 @@ namespace ChefRisingStar.Models
     {
         private string _name;
         private string _image;
+        private string _imageSrc;
+        public const string BaseImageSrc = "https://spoonacular.com/cdn/ingredients_100x100/";
 
         [JsonProperty("id")]
         public long Id { get; set; }
@@ -261,7 +263,8 @@ namespace ChefRisingStar.Models
 
         public string ImageSrc
         {
-            get { return $"https://spoonacular.com/cdn/ingredients_100x100/{Image}"; }
+            get { return $"{BaseImageSrc}{Image}"; }
+            set { SetProperty(ref _imageSrc, value); }
         }
 
         [JsonProperty("consistency")]

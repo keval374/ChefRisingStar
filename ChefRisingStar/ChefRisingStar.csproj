@@ -33,6 +33,8 @@
   <ItemGroup>
     <None Remove="Newtonsoft.Json" />
     <None Remove="sample\IngredientSearch.json" />
+    <None Remove="sample\SubstituteIngredients.json" />
+    <None Remove="sample\Substitutions.json" />
     <None Remove="Xamarin.Forms.PancakeView" />
     <None Remove="Xamarin.CommunityToolkit" />
     <None Remove="SystemWebPackage" />
@@ -42,7 +44,9 @@
     <None Remove="CustomRenderer\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="sample\SubstituteIngredients.json" />
     <EmbeddedResource Include="sample\IngredientSearch.json" />
+    <EmbeddedResource Include="sample\Substitutions.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Converters\" />

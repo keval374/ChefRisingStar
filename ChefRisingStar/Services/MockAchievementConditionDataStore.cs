@@ -26,6 +26,8 @@ namespace ChefRisingStar.Services
                 new AchievementStep(10, "Add Preferences", "Tell us what you like!"),
                 new AchievementStep(11, "Favorite a Recipe", "Tell us what you like!"),
                 new AchievementStep(12, "Use the recipe search", "Find something new to cook"),
+                new AchievementStep(13, "Swap Ingredients", "Find a more sustainable ingredient and substitute into a recipe"),
+                new AchievementStep(14, "Post Review", "Post a review for a recipe modification you have made"),
             };
         }
 

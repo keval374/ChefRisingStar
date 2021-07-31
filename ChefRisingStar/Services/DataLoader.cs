@@ -1,11 +1,6 @@
 ﻿using ChefRisingStar.Models;
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.IO;
-using System.Reflection;
-using System.Text.Json;
 using Xamarin.Forms;
 
 namespace ChefRisingStar.Services
@@ -32,14 +27,15 @@ namespace ChefRisingStar.Services
             //achievmentDs.UpdateItemAsync(achievments[3]);
 
             SubstitutionCache cache = DependencyService.Get<SubstitutionCache>();
-            SubstituteIngredient groundChicken = new SubstituteIngredient { Name = "Ground Chicken" };
-            SubstituteIngredient groundTurkey = new SubstituteIngredient { Name = "Ground Turkey" };
-            SubstituteIngredient groundTofu = new SubstituteIngredient { Name = "Ground Tofu" };
+            SubstituteIngredient groundChicken = new SubstituteIngredient { Id = 5332, Name = "Ground Chicken", Image = "meat-ground.jpg" };
+            SubstituteIngredient groundTurkey = new SubstituteIngredient { Id = 5662, Name = "Ground Turkey", Image = "meat-ground.jpg" };
+            SubstituteIngredient groundTofu = new SubstituteIngredient { Id = 98891, Name = "Tofu", Image = "tofu.png" };
 
             List<SubstituteIngredient[]> subs = new List<SubstituteIngredient[]> { new SubstituteIngredient[] { groundChicken }, new SubstituteIngredient[] { groundTurkey }, new SubstituteIngredient[] { groundTofu } };
+            cache.Add("ground beef", subs);
             cache.Add("lean ground beef", subs);
             cache.Add("95 percent lean ground beef", subs);
-                    
-        }       
+
+        }
     }
 }

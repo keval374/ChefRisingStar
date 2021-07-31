@@ -21,6 +21,7 @@ namespace ChefRisingStar.Services
                 new Achievement(3, 30, "Post a cooking selfie!", "Show off your cooking outfit and earn this badge", "trophy64.png", AchievementTypes.Social),
                 new Achievement(4, 40, "Start cooking!", "Cook a your first meal this week to get this achievement. Start your cooking adventure and make your first meal!", "trophy64.png", AchievementTypes.Skill),
                 new Achievement(5, 80, "Continue cooking", "Cook a two meals this week to get this achievement.", "trophy64.png", AchievementTypes.Skill),
+                new Achievement(6, 200, "Sustainable cooking", "Cook a cook a meal with a smaller eco footprint to get this achievement.", "trophy64.png", AchievementTypes.Skill),
             };
 
             IDataStore<AchievementStep, int> achievmentsConditionDs = DependencyService.Get<MockAchievementConditionDataStore>();
@@ -28,10 +29,12 @@ namespace ChefRisingStar.Services
 
             items[1].AchievementSteps.Add(achievmentConditions[9]);
             items[1].AchievementSteps.Add(achievmentConditions[10]);
-            items[2].AchievementSteps.Add(achievmentConditions[1]);
+            items[2].AchievementSteps.Add(achievmentConditions[0]);
             items[3].AchievementSteps.Add(achievmentConditions[2]);
             items[4].AchievementSteps.Add(achievmentConditions[2]);
             items[4].AchievementSteps.Add(achievmentConditions[3]);
+            items[5].AchievementSteps.Add(achievmentConditions[12]);
+            items[5].AchievementSteps.Add(achievmentConditions[13]);
         }
 
         public async Task<bool> AddItemAsync(Achievement item)

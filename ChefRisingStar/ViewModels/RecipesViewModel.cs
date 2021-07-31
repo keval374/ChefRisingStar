@@ -45,7 +45,7 @@ namespace ChefRisingStar.ViewModels
             get { return _selectedDishTypes; }
             set { SetProperty(ref _selectedDishTypes, value); }
         }
-        
+
         public string SelectedIngredients
         {
             get { return _selectedIngredients; }
@@ -169,7 +169,7 @@ namespace ChefRisingStar.ViewModels
 
                 _selectedIngredients = "beef"; // todo: remove temp only for demo
 
-                string api = $"https://api.spoonacular.com/recipes/complexSearch?apiKey=4f1ec6d27f5240a18921a16686659406&instructionsRequired&number=5";
+                string api = $"https://api.spoonacular.com/recipes/complexSearch?apiKey=7c3c0325397543628dcdedaee2e1fe40&instructionsRequired&number=5";
 
                 if (!string.IsNullOrEmpty(_selectedCuisines))
                     api += $"&cuisine={_selectedCuisines}";
@@ -179,7 +179,7 @@ namespace ChefRisingStar.ViewModels
 
                 if (!string.IsNullOrEmpty(_selectedDiets))
                     api += $"&diet={_selectedDiets}";
-                
+
                 if (!string.IsNullOrEmpty(_selectedIngredients))
                     api += $"&includeIngredients={_selectedIngredients}";
 
@@ -206,7 +206,7 @@ namespace ChefRisingStar.ViewModels
 
                 foreach (var recipeResult in SearchRecipes)
                 {
-                    string jsonRecipesInfo = await Client.GetStringAsync($"https://api.spoonacular.com/recipes/{recipeResult.Id}/information?apiKey=4f1ec6d27f5240a18921a16686659406&includeNutrition=false");
+                    string jsonRecipesInfo = await Client.GetStringAsync($"https://api.spoonacular.com/recipes/{recipeResult.Id}/information?apiKey=7c3c0325397543628dcdedaee2e1fe40&includeNutrition=false");
                     string s = jsonRecipesInfo.ToString();
                     Recipe recipe = JsonConvert.DeserializeObject<Recipe>(s);
                     Recipes.Add(recipe);

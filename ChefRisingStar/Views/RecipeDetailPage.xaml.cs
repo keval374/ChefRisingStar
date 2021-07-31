@@ -1,5 +1,4 @@
 ﻿using ChefRisingStar.Behaviours;
-using ChefRisingStar.Helpers;
 using ChefRisingStar.Models;
 using ChefRisingStar.ViewModels;
 using System;

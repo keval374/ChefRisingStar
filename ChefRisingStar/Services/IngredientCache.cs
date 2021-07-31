@@ -13,6 +13,7 @@ namespace ChefRisingStar.Services
     {
         private Dictionary<string, IngredientSearch> _ingredients;
         private bool _isInitialized;
+        private bool _isInitializing;
 
         public IngredientCache()
         {
@@ -33,17 +34,12 @@ namespace ChefRisingStar.Services
 
         public void Add(string ingredient, IngredientSearch ingredientSearch)
         {
-            if (!_isInitialized)
-            {
-                LoadIngredientsFromFile();
-            }
-
             if (string.IsNullOrEmpty(ingredient) || ingredientSearch == null)
                 return;
 
             ingredient = ingredient.ToLower();
 
-            if(_ingredients.ContainsKey(ingredient))
+            if (_ingredients.ContainsKey(ingredient))
                 return;
 
             _ingredients.Add(ingredient, ingredientSearch);
@@ -66,9 +62,8 @@ namespace ChefRisingStar.Services
 
         public void LoadIngredientsFromFile()
         {
-            //TODO: this implementation
             try
-            {   
+            {
                 var assembly = typeof(Views.RecipeDetailPage).GetTypeInfo().Assembly;
                 //string[] resources = assembly.GetManifestResourceNames();
                 Stream stream = assembly.GetManifestResourceStream("ChefRisingStar.sample.IngredientSearch.json");
@@ -85,7 +80,7 @@ namespace ChefRisingStar.Services
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Debug.WriteLine($"Error loading ingredient cache: {ex}");
             }
@@ -93,7 +88,6 @@ namespace ChefRisingStar.Services
             {
                 _isInitialized = true;
             }
-
         }
 
         private string GetDebuggerDisplay()
