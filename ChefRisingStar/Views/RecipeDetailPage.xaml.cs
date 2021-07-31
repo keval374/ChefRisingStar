@@ -28,13 +28,27 @@ namespace ChefRisingStar.Views
             {
                 ExtendedIngredient ingredient = behave.AttachedButton.CommandParameter as ExtendedIngredient;
                 _viewModel.SelectedIngredient = ingredient;
-                _viewModel.IsSubstitutionVisible = true;
+                _viewModel.IsContextMenuVisible = true;
                 _viewModel.GetSubstitutions(ingredient.NameClean);
             }
             else
             {
                 Debug.WriteLine($"Error getting button for ingredient longpress sender: {sender}");
             }
+            
+            //var behave = sender as ButtonLongPressBehaviour;
+
+            //if (behave != null)
+            //{
+            //    ExtendedIngredient ingredient = behave.AttachedButton.CommandParameter as ExtendedIngredient;
+            //    _viewModel.SelectedIngredient = ingredient;
+            //    _viewModel.IsSubstitutionVisible = true;
+            //    _viewModel.GetSubstitutions(ingredient.NameClean);
+            //}
+            //else
+            //{
+            //    Debug.WriteLine($"Error getting button for ingredient longpress sender: {sender}");
+            //}
         }
 
         private void UseSubstituteClicked(object sender, EventArgs e)
@@ -47,6 +61,17 @@ namespace ChefRisingStar.Views
         {
             _viewModel.IsSubstitutionVisible = false;
             _viewModel.SelectedIngredient = null;
+        }
+
+        private void CloseContextMenu(object sender, EventArgs e)
+        {
+            _viewModel.IsContextMenuVisible = false;
+        }
+
+        private void ViewSubstitutesClicked(object sender, EventArgs e)
+        {
+            _viewModel.IsContextMenuVisible = false;
+            _viewModel.IsSubstitutionVisible = true;
         }
 
         private void OnPanUpdated(object sender, PanUpdatedEventArgs e)

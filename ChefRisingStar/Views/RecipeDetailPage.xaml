@@ -112,7 +112,7 @@
                                                                         <Image Grid.Row="0" Grid.Column="0" Source="{Binding ImageSrc}" WidthRequest="32" />
                                                                         <Label Grid.Row="0" Grid.Column="1" Text="{Binding AmountString}" LineBreakMode="TailTruncation" FontSize="Medium" VerticalTextAlignment="Center" />
                                                                     <Label Grid.Row="0" Grid.Column="2" Text="{Binding Unit}" LineBreakMode="NoWrap" FontSize="Medium" VerticalTextAlignment="Center" />
-                                                                    <Button Grid.Row="0" Grid.Column="3" Text="{Binding Name}" CommandParameter="{Binding .}" FontSize="Small" FontAttributes="Bold" TextColor="DarkBlue" BackgroundColor="Beige" HorizontalOptions="Start" VerticalOptions="Center" Padding="-1">
+                                                                    <Button Grid.Row="0" Grid.Column="3" Text="{Binding Name}" CommandParameter="{Binding .}" FontSize="Small" FontAttributes="Bold" TextColor="DarkBlue" BackgroundColor="Beige" HorizontalOptions="Start" VerticalOptions="Center" HeightRequest="20" Padding="-1">
                                                                             <Button.Behaviors>
                                                                                 <behaviours:ButtonLongPressBehaviour LongPressed="IngredientLongPressed" CommandParameter="{Binding .}" />
                                                                                 <!--
@@ -219,6 +219,14 @@
                         <Button Text="Use selected substitute" Clicked="UseSubstituteClicked" Margin="10,10,10,0"/>
                         <Button Text="Cancel" Clicked="CancelSubstituteClicked" Margin="10" />
                     </StackLayout>
+                </StackLayout>
+            </ContentView>
+            <ContentView x:Name="popupContextMenu" BackgroundColor="#C0808080" Padding="30, 0" IsVisible="{Binding IsContextMenuVisible}" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">                    
+                    <Button Text="Learn More..." Clicked="UseSubstituteClicked" Margin="10,10,10,0"/>
+                    <Button Text="View Substitutes" Clicked="ViewSubstitutesClicked" Margin="10,10,10,0"/>
+                    <Button Text="View Footprint" Clicked="UseSubstituteClicked" Margin="10,10,10,0"/>
+                    <Button Text="Close" Clicked="CloseContextMenu" Margin="10" />
                 </StackLayout>
             </ContentView>
         </AbsoluteLayout>

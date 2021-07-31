@@ -28,6 +28,12 @@ namespace ChefRisingStar.Services
                 new AchievementStep(12, "Use the recipe search", "Find something new to cook"),
                 new AchievementStep(13, "Swap Ingredients", "Find a more sustainable ingredient and substitute into a recipe"),
                 new AchievementStep(14, "Post Review", "Post a review for a recipe modification you have made"),
+                new AchievementStep(15, "Post Weekly report", "Post your report for the progress you made this week"),
+                new AchievementStep(16, "Substitute meat in dish", "Swap out the meat protein in the recipe for a plant based alternative"),
+                new AchievementStep(17, "Use less water", "Swap recipe ingredients to reduce water foot print"),
+                new AchievementStep(18, "Use less land", "Swap recipe ingredients to reduce land usage foot print"),
+                new AchievementStep(19, "Use less packaging", "Swap recipe ingredients to reduce packaging foot print"),
+                new AchievementStep(20, "Use less fuel", "Swap recipe ingredients to reduce transportation foot print"),
             };
         }
 

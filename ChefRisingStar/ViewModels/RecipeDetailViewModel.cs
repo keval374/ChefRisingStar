@@ -17,6 +17,7 @@ namespace ChefRisingStar.ViewModels
     {
         #region Members
         private bool _isSubstitutionVisible;
+        private bool _isContextMenuVisible;
         private Recipe _recipe;
         private string _selectedSubstitution;
 
@@ -48,6 +49,16 @@ namespace ChefRisingStar.ViewModels
             set
             {
                 _isSubstitutionVisible = value;
+                OnPropertyChanged();
+            }
+        }
+        
+        public bool IsContextMenuVisible
+        {
+            get => _isContextMenuVisible;
+            set
+            {
+                _isContextMenuVisible = value;
                 OnPropertyChanged();
             }
         }
