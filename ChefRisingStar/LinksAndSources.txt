@@ -36,3 +36,16 @@ https://www.programmableweb.com/api/food-repo-rest-api-v30
 https://www.foodrepo.org/api-docs/swaggers/v3
 
 https://spoonacular.com/food-api
+https://spoonacular.com/food-api/docs#Cuisines
+https://spoonacular.com/food-api/docs#Search-Recipes-Complex
+
+Charts:
+https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/polar-chart
+https://help.syncfusion.com/xamarin-android/sfchart/charttypes
+https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/RadarChart/RadarChart.xaml
+
+Collapse Region (filters)
+https://stackoverflow.com/questions/39620775/xamarin-forms-collapsable-stacklayout
+
+Commanding:
+https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-binding/commanding
