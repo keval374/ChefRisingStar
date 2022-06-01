@@ -1,14 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              xmlns:local="clr-namespace:ChefRisingStar.ViewModels"
              xmlns:model="clr-namespace:ChefRisingStar.Models"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="True"
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-             xmlns:xyt="http://xamarin.com/schemas/2020/toolkit"
              x:Class="ChefRisingStar.Views.RecipeDetailPage"
-             xmlns:behaviours="clr-namespace:ChefRisingStar.Behaviours" xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
              Title="{Binding Title}">
     
     <ContentPage.Resources>
@@ -33,7 +32,7 @@
         </ControlTemplate>
         <Style
             x:Key="CustomTabStyle"
-            TargetType="xyt:TabView">
+            TargetType="xct:TabView">
             <Setter
 			    Property="IsTabTransitionEnabled"
 			    Value="True" />
@@ -91,11 +90,11 @@
                         <Grid Grid.Row="1" VerticalOptions="FillAndExpand" Margin="0,-30,0,30">
                         <Frame CornerRadius="25" >
                             <Grid>
-                                    <xyt:TabView Style="{StaticResource CustomTabStyle}" HeightRequest="340">
-                                        <xyt:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Ingredients" TextColorSelected="DarkGray">
-                                            <Grid>
-                                                <Frame Margin="0,-10,0,-10">
-                                                    <ScrollView >
+                                <xct:TabView Style="{StaticResource CustomTabStyle}" HeightRequest="340">
+                                    <xct:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Ingredients" TextColorSelected="DarkGray">
+                                        <Grid>
+                                            <Frame Margin="0,-10,0,-10">
+                                                <ScrollView >
                                                         <CollectionView x:Name="IngredientsListView" ItemsSource="{Binding Recipe.ExtendedIngredients}" SelectionMode="None">
                                                             <CollectionView.ItemTemplate>
                                                                 <DataTemplate>
@@ -113,9 +112,10 @@
                                                                         <Label Grid.Row="0" Grid.Column="1" Text="{Binding AmountString}" LineBreakMode="TailTruncation" FontSize="Medium" VerticalTextAlignment="Center" />
                                                                     <Label Grid.Row="0" Grid.Column="2" Text="{Binding Unit}" LineBreakMode="NoWrap" FontSize="Medium" VerticalTextAlignment="Center" />
                                                                     <Button Grid.Row="0" Grid.Column="3" Text="{Binding Name}" CommandParameter="{Binding .}" FontSize="Small" FontAttributes="Bold" TextColor="DarkBlue" BackgroundColor="Beige" HorizontalOptions="Start" VerticalOptions="Center" HeightRequest="20" Padding="-1">
-                                                                            <Button.Behaviors>
-                                                                                <behaviours:ButtonLongPressBehaviour LongPressed="IngredientLongPressed" CommandParameter="{Binding .}" />
-                                                                                <!--
+                                                                         put back     
+                                                                        <Button.Behaviors>
+                                                                                <!--<behaviours:ButtonLongPressBehaviour LongPressed="IngredientLongPressed" CommandParameter="{Binding .}" />
+                                                                                
                                                                                 Eventually use bindings
                                                                                 <behaviours:ButtonLongPressBehaviour Command="{Binding OpenSubstitutionsCommand}" CommandParameter="{Binding .}" />-->
                                                                             </Button.Behaviors>
@@ -127,8 +127,8 @@
                                                     </ScrollView>
                                                 </Frame>
                                             </Grid>
-                                        </xyt:TabViewItem>
-                                        <xyt:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Instructions" TextColorSelected="DarkGray">
+                                        </xct:TabViewItem>
+                                        <xct:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Instructions" TextColorSelected="DarkGray">
                                             <Grid BackgroundColor="White">
                                                 <Frame Margin="0,-10,0,-10">
                                                     <ScrollView>                                                       
@@ -154,32 +154,19 @@
                                                     </ScrollView>
                                                 </Frame>
                                             </Grid>
-                                        </xyt:TabViewItem>
-                                        <xyt:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Review" TextColorSelected="DarkGray">
+                                        </xct:TabViewItem>
+                                        <xct:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Review" TextColorSelected="DarkGray">
                                             <Grid>
                                                 <Frame>
                                                     <Image x:Name="imgFootprint" Source="FootPrintCompare.PNG">
                                                         <Image.GestureRecognizers>
                                                             <PanGestureRecognizer PanUpdated="OnPanUpdated" />
                                                         </Image.GestureRecognizers>
-                                                    </Image>
-                                                    <!--<chart:SfChart>
-
-                                                        <chart:SfChart.PrimaryAxis>
-                                                            <chart:CategoryAxis/>
-                                                        </chart:SfChart.PrimaryAxis>
-
-                                                        <chart:SfChart.SecondaryAxis>
-                                                            <chart:NumericalAxis/>
-                                                        </chart:SfChart.SecondaryAxis>
-
-                                                        <chart:PolarSeries ItemsSource="{Binding PolarData1}" XBindingPath="LandUsage" YBindingPath="TotalCO2"/>
-
-                                                    </chart:SfChart>-->
+                                                    </Image>                                                    
                                                 </Frame>
                                             </Grid>
-                                        </xyt:TabViewItem>
-                                    </xyt:TabView>
+                                        </xct:TabViewItem>
+                                    </xct:TabView>
                                 </Grid>
                             </Frame>
                             <pancake:PancakeView CornerRadius="50" Margin="15,-20,20,0" HeightRequest="35" WidthRequest="35" Padding="2" HorizontalOptions="EndAndExpand" VerticalOptions="Start" BackgroundColor="White" >

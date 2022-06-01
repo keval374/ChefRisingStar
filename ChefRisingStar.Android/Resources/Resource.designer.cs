@@ -25,40 +25,6 @@ namespace ChefRisingStar.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar1 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar1;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar10 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar10;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar11 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar11;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar12 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar12;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar13 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar13;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar14 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar14;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar15 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar15;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar16 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar16;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar17 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar17;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar18 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar18;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar19 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar19;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar2 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar2;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar20 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar20;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar21 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar21;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar22 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar22;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar23 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar23;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar24 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar24;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar25 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar25;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar26 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar26;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar27 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar27;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar28 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar28;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar29 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar29;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar3 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar3;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar30 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar30;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar4 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar4;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar5 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar5;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar6 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar6;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar7 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar7;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar8 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar8;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar9 = global::ChefRisingStar.Droid.Resource.Drawable.Avatar9;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.input_layout_drop_down_icon = global::ChefRisingStar.Droid.Resource.Drawable.input_layout_drop_down_icon;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.inputlayout_togglecollapseicon = global::ChefRisingStar.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.inputlayout_togglevisibleicon = global::ChefRisingStar.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
-			global::Syncfusion.XForms.Android.Core.Resource.Drawable.clear_button_icon = global::ChefRisingStar.Droid.Resource.Drawable.clear_button_icon;
 			global::Com.Syncfusion.Charts.Resource.Animation.SfChart_Fade_In = global::ChefRisingStar.Droid.Resource.Animation.SfChart_Fade_In;
 			global::Com.Syncfusion.Charts.Resource.Animation.SfChart_Fade_Out = global::ChefRisingStar.Droid.Resource.Animation.SfChart_Fade_Out;
 			global::Com.Syncfusion.Charts.Resource.Animation.SfChart_Scale_In = global::ChefRisingStar.Droid.Resource.Animation.SfChart_Scale_In;
@@ -369,54 +335,6 @@ namespace ChefRisingStar.Droid
 			global::Com.Syncfusion.Charts.Resource.Styleable.SfDateTimeRangeNavigator_tooltipFormat = global::ChefRisingStar.Droid.Resource.Styleable.SfDateTimeRangeNavigator_tooltipFormat;
 			global::Com.Syncfusion.Charts.Resource.Styleable.SfDateTimeRangeNavigator_viewRangeEnd = global::ChefRisingStar.Droid.Resource.Styleable.SfDateTimeRangeNavigator_viewRangeEnd;
 			global::Com.Syncfusion.Charts.Resource.Styleable.SfDateTimeRangeNavigator_viewRangeStart = global::ChefRisingStar.Droid.Resource.Styleable.SfDateTimeRangeNavigator_viewRangeStart;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.SfChart_Fade_In = global::ChefRisingStar.Droid.Resource.Animation.SfChart_Fade_In;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.SfChart_Scale_In = global::ChefRisingStar.Droid.Resource.Animation.SfChart_Scale_In;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.SfChart_Fade_Out = global::ChefRisingStar.Droid.Resource.Animation.SfChart_Fade_Out;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.SfChart_Scale_Out = global::ChefRisingStar.Droid.Resource.Animation.SfChart_Scale_Out;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.annotationLayout = global::ChefRisingStar.Droid.Resource.Id.annotationLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.axisLayout = global::ChefRisingStar.Droid.Resource.Id.axisLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.bottom_labels = global::ChefRisingStar.Droid.Resource.Id.bottom_labels;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.chartBehaviorLayout = global::ChefRisingStar.Droid.Resource.Id.chartBehaviorLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.chartLegendScrollView = global::ChefRisingStar.Droid.Resource.Id.chartLegendScrollView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.content = global::ChefRisingStar.Droid.Resource.Id.content;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.dataMarkerLayout = global::ChefRisingStar.Droid.Resource.Id.dataMarkerLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.gridLineLayout = global::ChefRisingStar.Droid.Resource.Id.gridLineLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.gridLinesLayout = global::ChefRisingStar.Droid.Resource.Id.gridLinesLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.iconView = global::ChefRisingStar.Droid.Resource.Id.iconView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.label = global::ChefRisingStar.Droid.Resource.Id.label;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendHeader = global::ChefRisingStar.Droid.Resource.Id.legendHeader;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendItemsLayout = global::ChefRisingStar.Droid.Resource.Id.legendItemsLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendLayout = global::ChefRisingStar.Droid.Resource.Id.legendLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendScrollView = global::ChefRisingStar.Droid.Resource.Id.legendScrollView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendViewGroup = global::ChefRisingStar.Droid.Resource.Id.legendViewGroup;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.rootLayout = global::ChefRisingStar.Droid.Resource.Id.rootLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.seriesLayout = global::ChefRisingStar.Droid.Resource.Id.seriesLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.stripLinesLayout = global::ChefRisingStar.Droid.Resource.Id.stripLinesLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.technicalIndicatorLayout = global::ChefRisingStar.Droid.Resource.Id.technicalIndicatorLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.thumbLayout = global::ChefRisingStar.Droid.Resource.Id.thumbLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.titleLayout = global::ChefRisingStar.Droid.Resource.Id.titleLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.top_labels = global::ChefRisingStar.Droid.Resource.Id.top_labels;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.chart_layout = global::ChefRisingStar.Droid.Resource.Layout.chart_layout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.chart_legend = global::ChefRisingStar.Droid.Resource.Layout.chart_legend;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.chart_legend_item = global::ChefRisingStar.Droid.Resource.Layout.chart_legend_item;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.range_navigator_layout = global::ChefRisingStar.Droid.Resource.Layout.range_navigator_layout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.q = global::ChefRisingStar.Droid.Resource.String.q;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.quarter = global::ChefRisingStar.Droid.Resource.String.quarter;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_close_label = global::ChefRisingStar.Droid.Resource.String.sfchart_close_label;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_high_label = global::ChefRisingStar.Droid.Resource.String.sfchart_high_label;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_low_label = global::ChefRisingStar.Droid.Resource.String.sfchart_low_label;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_open_label = global::ChefRisingStar.Droid.Resource.String.sfchart_open_label;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.w = global::ChefRisingStar.Droid.Resource.String.w;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.week = global::ChefRisingStar.Droid.Resource.String.week;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_others_label = global::ChefRisingStar.Droid.Resource.String.sfchart_others_label;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_increase_label = global::ChefRisingStar.Droid.Resource.String.sfchart_increase_label;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_decrease_label = global::ChefRisingStar.Droid.Resource.String.sfchart_decrease_label;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_total_label = global::ChefRisingStar.Droid.Resource.String.sfchart_total_label;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_maximum_label = global::ChefRisingStar.Droid.Resource.String.sfchart_maximum_label;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_minimum_label = global::ChefRisingStar.Droid.Resource.String.sfchart_minimum_label;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_Q1_label = global::ChefRisingStar.Droid.Resource.String.sfchart_Q1_label;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_Q3_label = global::ChefRisingStar.Droid.Resource.String.sfchart_Q3_label;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_Median_label = global::ChefRisingStar.Droid.Resource.String.sfchart_Median_label;
 			global::Xamarin.CommunityToolkit.Resource.Animation.abc_fade_in = global::ChefRisingStar.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.CommunityToolkit.Resource.Animation.abc_fade_out = global::ChefRisingStar.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.CommunityToolkit.Resource.Animation.abc_grow_fade_in_from_bottom = global::ChefRisingStar.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -449,13 +367,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Animation.EnterFromRight = global::ChefRisingStar.Droid.Resource.Animation.EnterFromRight;
 			global::Xamarin.CommunityToolkit.Resource.Animation.ExitToLeft = global::ChefRisingStar.Droid.Resource.Animation.ExitToLeft;
 			global::Xamarin.CommunityToolkit.Resource.Animation.ExitToRight = global::ChefRisingStar.Droid.Resource.Animation.ExitToRight;
-			global::Xamarin.CommunityToolkit.Resource.Animation.fragment_close_enter = global::ChefRisingStar.Droid.Resource.Animation.fragment_close_enter;
-			global::Xamarin.CommunityToolkit.Resource.Animation.fragment_close_exit = global::ChefRisingStar.Droid.Resource.Animation.fragment_close_exit;
-			global::Xamarin.CommunityToolkit.Resource.Animation.fragment_fade_enter = global::ChefRisingStar.Droid.Resource.Animation.fragment_fade_enter;
-			global::Xamarin.CommunityToolkit.Resource.Animation.fragment_fade_exit = global::ChefRisingStar.Droid.Resource.Animation.fragment_fade_exit;
 			global::Xamarin.CommunityToolkit.Resource.Animation.fragment_fast_out_extra_slow_in = global::ChefRisingStar.Droid.Resource.Animation.fragment_fast_out_extra_slow_in;
-			global::Xamarin.CommunityToolkit.Resource.Animation.fragment_open_enter = global::ChefRisingStar.Droid.Resource.Animation.fragment_open_enter;
-			global::Xamarin.CommunityToolkit.Resource.Animation.fragment_open_exit = global::ChefRisingStar.Droid.Resource.Animation.fragment_open_exit;
 			global::Xamarin.CommunityToolkit.Resource.Animation.mtrl_bottom_sheet_slide_in = global::ChefRisingStar.Droid.Resource.Animation.mtrl_bottom_sheet_slide_in;
 			global::Xamarin.CommunityToolkit.Resource.Animation.mtrl_bottom_sheet_slide_out = global::ChefRisingStar.Droid.Resource.Animation.mtrl_bottom_sheet_slide_out;
 			global::Xamarin.CommunityToolkit.Resource.Animation.mtrl_card_lowers_interpolator = global::ChefRisingStar.Droid.Resource.Animation.mtrl_card_lowers_interpolator;
@@ -466,7 +378,6 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Animator.mtrl_btn_unelevated_state_list_anim = global::ChefRisingStar.Droid.Resource.Animator.mtrl_btn_unelevated_state_list_anim;
 			global::Xamarin.CommunityToolkit.Resource.Animator.mtrl_card_state_list_anim = global::ChefRisingStar.Droid.Resource.Animator.mtrl_card_state_list_anim;
 			global::Xamarin.CommunityToolkit.Resource.Animator.mtrl_chip_state_list_anim = global::ChefRisingStar.Droid.Resource.Animator.mtrl_chip_state_list_anim;
-			global::Xamarin.CommunityToolkit.Resource.Animator.mtrl_extended_fab_change_size_motion_spec = global::ChefRisingStar.Droid.Resource.Animator.mtrl_extended_fab_change_size_motion_spec;
 			global::Xamarin.CommunityToolkit.Resource.Animator.mtrl_extended_fab_hide_motion_spec = global::ChefRisingStar.Droid.Resource.Animator.mtrl_extended_fab_hide_motion_spec;
 			global::Xamarin.CommunityToolkit.Resource.Animator.mtrl_extended_fab_show_motion_spec = global::ChefRisingStar.Droid.Resource.Animator.mtrl_extended_fab_show_motion_spec;
 			global::Xamarin.CommunityToolkit.Resource.Animator.mtrl_extended_fab_state_list_animator = global::ChefRisingStar.Droid.Resource.Animator.mtrl_extended_fab_state_list_animator;
@@ -543,6 +454,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Attribute.barLength = global::ChefRisingStar.Droid.Resource.Attribute.barLength;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.behavior_autoHide = global::ChefRisingStar.Droid.Resource.Attribute.behavior_autoHide;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.behavior_autoShrink = global::ChefRisingStar.Droid.Resource.Attribute.behavior_autoShrink;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.behavior_draggable = global::ChefRisingStar.Droid.Resource.Attribute.behavior_draggable;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.behavior_expandedOffset = global::ChefRisingStar.Droid.Resource.Attribute.behavior_expandedOffset;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.behavior_fitToContents = global::ChefRisingStar.Droid.Resource.Attribute.behavior_fitToContents;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.behavior_halfExpandedRatio = global::ChefRisingStar.Droid.Resource.Attribute.behavior_halfExpandedRatio;
@@ -565,6 +477,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Attribute.boxCornerRadiusTopEnd = global::ChefRisingStar.Droid.Resource.Attribute.boxCornerRadiusTopEnd;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.boxCornerRadiusTopStart = global::ChefRisingStar.Droid.Resource.Attribute.boxCornerRadiusTopStart;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.boxStrokeColor = global::ChefRisingStar.Droid.Resource.Attribute.boxStrokeColor;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.boxStrokeErrorColor = global::ChefRisingStar.Droid.Resource.Attribute.boxStrokeErrorColor;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.boxStrokeWidth = global::ChefRisingStar.Droid.Resource.Attribute.boxStrokeWidth;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.boxStrokeWidthFocused = global::ChefRisingStar.Droid.Resource.Attribute.boxStrokeWidthFocused;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.buttonBarButtonStyle = global::ChefRisingStar.Droid.Resource.Attribute.buttonBarButtonStyle;
@@ -726,6 +639,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Attribute.enforceMaterialTheme = global::ChefRisingStar.Droid.Resource.Attribute.enforceMaterialTheme;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.enforceTextAppearance = global::ChefRisingStar.Droid.Resource.Attribute.enforceTextAppearance;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.ensureMinTouchTargetSize = global::ChefRisingStar.Droid.Resource.Attribute.ensureMinTouchTargetSize;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.errorContentDescription = global::ChefRisingStar.Droid.Resource.Attribute.errorContentDescription;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.errorEnabled = global::ChefRisingStar.Droid.Resource.Attribute.errorEnabled;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.errorIconDrawable = global::ChefRisingStar.Droid.Resource.Attribute.errorIconDrawable;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.errorIconTint = global::ChefRisingStar.Droid.Resource.Attribute.errorIconTint;
@@ -770,7 +684,10 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Attribute.fontWeight = global::ChefRisingStar.Droid.Resource.Attribute.fontWeight;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.foregroundInsidePadding = global::ChefRisingStar.Droid.Resource.Attribute.foregroundInsidePadding;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.gapBetweenBars = global::ChefRisingStar.Droid.Resource.Attribute.gapBetweenBars;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.gestureInsetBottomIgnored = global::ChefRisingStar.Droid.Resource.Attribute.gestureInsetBottomIgnored;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.goIcon = global::ChefRisingStar.Droid.Resource.Attribute.goIcon;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.haloColor = global::ChefRisingStar.Droid.Resource.Attribute.haloColor;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.haloRadius = global::ChefRisingStar.Droid.Resource.Attribute.haloRadius;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.headerLayout = global::ChefRisingStar.Droid.Resource.Attribute.headerLayout;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.height = global::ChefRisingStar.Droid.Resource.Attribute.height;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.helperText = global::ChefRisingStar.Droid.Resource.Attribute.helperText;
@@ -786,6 +703,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Attribute.hintTextColor = global::ChefRisingStar.Droid.Resource.Attribute.hintTextColor;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.homeAsUpIndicator = global::ChefRisingStar.Droid.Resource.Attribute.homeAsUpIndicator;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.homeLayout = global::ChefRisingStar.Droid.Resource.Attribute.homeLayout;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.horizontalOffset = global::ChefRisingStar.Droid.Resource.Attribute.horizontalOffset;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.hoveredFocusedTranslationZ = global::ChefRisingStar.Droid.Resource.Attribute.hoveredFocusedTranslationZ;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.icon = global::ChefRisingStar.Droid.Resource.Attribute.icon;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.iconEndPadding = global::ChefRisingStar.Droid.Resource.Attribute.iconEndPadding;
@@ -827,6 +745,8 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Attribute.itemTextAppearanceInactive = global::ChefRisingStar.Droid.Resource.Attribute.itemTextAppearanceInactive;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.itemTextColor = global::ChefRisingStar.Droid.Resource.Attribute.itemTextColor;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.keylines = global::ChefRisingStar.Droid.Resource.Attribute.keylines;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.labelBehavior = global::ChefRisingStar.Droid.Resource.Attribute.labelBehavior;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.labelStyle = global::ChefRisingStar.Droid.Resource.Attribute.labelStyle;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.labelVisibilityMode = global::ChefRisingStar.Droid.Resource.Attribute.labelVisibilityMode;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.lastBaselineToBottomHeight = global::ChefRisingStar.Droid.Resource.Attribute.lastBaselineToBottomHeight;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.layout = global::ChefRisingStar.Droid.Resource.Attribute.layout;
@@ -886,6 +806,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Attribute.maxButtonHeight = global::ChefRisingStar.Droid.Resource.Attribute.maxButtonHeight;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.maxCharacterCount = global::ChefRisingStar.Droid.Resource.Attribute.maxCharacterCount;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.maxImageSize = global::ChefRisingStar.Droid.Resource.Attribute.maxImageSize;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.maxLines = global::ChefRisingStar.Droid.Resource.Attribute.maxLines;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.measureWithLargestChild = global::ChefRisingStar.Droid.Resource.Attribute.measureWithLargestChild;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.menu = global::ChefRisingStar.Droid.Resource.Attribute.menu;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.minTouchTargetSize = global::ChefRisingStar.Droid.Resource.Attribute.minTouchTargetSize;
@@ -898,7 +819,10 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Attribute.numericModifiers = global::ChefRisingStar.Droid.Resource.Attribute.numericModifiers;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.overlapAnchor = global::ChefRisingStar.Droid.Resource.Attribute.overlapAnchor;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.paddingBottomNoButtons = global::ChefRisingStar.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.paddingBottomSystemWindowInsets = global::ChefRisingStar.Droid.Resource.Attribute.paddingBottomSystemWindowInsets;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.paddingEnd = global::ChefRisingStar.Droid.Resource.Attribute.paddingEnd;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.paddingLeftSystemWindowInsets = global::ChefRisingStar.Droid.Resource.Attribute.paddingLeftSystemWindowInsets;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.paddingRightSystemWindowInsets = global::ChefRisingStar.Droid.Resource.Attribute.paddingRightSystemWindowInsets;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.paddingStart = global::ChefRisingStar.Droid.Resource.Attribute.paddingStart;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.paddingTopNoTitle = global::ChefRisingStar.Droid.Resource.Attribute.paddingTopNoTitle;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.panelBackground = global::ChefRisingStar.Droid.Resource.Attribute.panelBackground;
@@ -909,10 +833,16 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Attribute.passwordToggleEnabled = global::ChefRisingStar.Droid.Resource.Attribute.passwordToggleEnabled;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.passwordToggleTint = global::ChefRisingStar.Droid.Resource.Attribute.passwordToggleTint;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.passwordToggleTintMode = global::ChefRisingStar.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.placeholderText = global::ChefRisingStar.Droid.Resource.Attribute.placeholderText;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.placeholderTextAppearance = global::ChefRisingStar.Droid.Resource.Attribute.placeholderTextAppearance;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.placeholderTextColor = global::ChefRisingStar.Droid.Resource.Attribute.placeholderTextColor;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.popupMenuBackground = global::ChefRisingStar.Droid.Resource.Attribute.popupMenuBackground;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.popupMenuStyle = global::ChefRisingStar.Droid.Resource.Attribute.popupMenuStyle;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.popupTheme = global::ChefRisingStar.Droid.Resource.Attribute.popupTheme;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.popupWindowStyle = global::ChefRisingStar.Droid.Resource.Attribute.popupWindowStyle;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.prefixText = global::ChefRisingStar.Droid.Resource.Attribute.prefixText;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.prefixTextAppearance = global::ChefRisingStar.Droid.Resource.Attribute.prefixTextAppearance;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.prefixTextColor = global::ChefRisingStar.Droid.Resource.Attribute.prefixTextColor;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.preserveIconSpacing = global::ChefRisingStar.Droid.Resource.Attribute.preserveIconSpacing;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.pressedTranslationZ = global::ChefRisingStar.Droid.Resource.Attribute.pressedTranslationZ;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.progressBarPadding = global::ChefRisingStar.Droid.Resource.Attribute.progressBarPadding;
@@ -937,6 +867,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Attribute.seekBarStyle = global::ChefRisingStar.Droid.Resource.Attribute.seekBarStyle;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.selectableItemBackground = global::ChefRisingStar.Droid.Resource.Attribute.selectableItemBackground;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.selectableItemBackgroundBorderless = global::ChefRisingStar.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.selectionRequired = global::ChefRisingStar.Droid.Resource.Attribute.selectionRequired;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.shapeAppearance = global::ChefRisingStar.Droid.Resource.Attribute.shapeAppearance;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.shapeAppearanceLargeComponent = global::ChefRisingStar.Droid.Resource.Attribute.shapeAppearanceLargeComponent;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.shapeAppearanceMediumComponent = global::ChefRisingStar.Droid.Resource.Attribute.shapeAppearanceMediumComponent;
@@ -951,8 +882,10 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Attribute.singleChoiceItemLayout = global::ChefRisingStar.Droid.Resource.Attribute.singleChoiceItemLayout;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.singleLine = global::ChefRisingStar.Droid.Resource.Attribute.singleLine;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.singleSelection = global::ChefRisingStar.Droid.Resource.Attribute.singleSelection;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.sliderStyle = global::ChefRisingStar.Droid.Resource.Attribute.sliderStyle;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.snackbarButtonStyle = global::ChefRisingStar.Droid.Resource.Attribute.snackbarButtonStyle;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.snackbarStyle = global::ChefRisingStar.Droid.Resource.Attribute.snackbarStyle;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.snackbarTextViewStyle = global::ChefRisingStar.Droid.Resource.Attribute.snackbarTextViewStyle;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.spanCount = global::ChefRisingStar.Droid.Resource.Attribute.spanCount;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.spinBars = global::ChefRisingStar.Droid.Resource.Attribute.spinBars;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.spinnerDropDownItemStyle = global::ChefRisingStar.Droid.Resource.Attribute.spinnerDropDownItemStyle;
@@ -982,6 +915,9 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Attribute.subtitleTextAppearance = global::ChefRisingStar.Droid.Resource.Attribute.subtitleTextAppearance;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.subtitleTextColor = global::ChefRisingStar.Droid.Resource.Attribute.subtitleTextColor;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.subtitleTextStyle = global::ChefRisingStar.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.suffixText = global::ChefRisingStar.Droid.Resource.Attribute.suffixText;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.suffixTextAppearance = global::ChefRisingStar.Droid.Resource.Attribute.suffixTextAppearance;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.suffixTextColor = global::ChefRisingStar.Droid.Resource.Attribute.suffixTextColor;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.suggestionRowLayout = global::ChefRisingStar.Droid.Resource.Attribute.suggestionRowLayout;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.swipeRefreshLayoutProgressSpinnerBackgroundColor = global::ChefRisingStar.Droid.Resource.Attribute.swipeRefreshLayoutProgressSpinnerBackgroundColor;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.switchMinWidth = global::ChefRisingStar.Droid.Resource.Attribute.switchMinWidth;
@@ -1040,15 +976,22 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Attribute.textColorAlertDialogListItem = global::ChefRisingStar.Droid.Resource.Attribute.textColorAlertDialogListItem;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.textColorSearchUrl = global::ChefRisingStar.Droid.Resource.Attribute.textColorSearchUrl;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.textEndPadding = global::ChefRisingStar.Droid.Resource.Attribute.textEndPadding;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.textInputLayoutFocusedRectEnabled = global::ChefRisingStar.Droid.Resource.Attribute.textInputLayoutFocusedRectEnabled;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.textInputStyle = global::ChefRisingStar.Droid.Resource.Attribute.textInputStyle;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.textLocale = global::ChefRisingStar.Droid.Resource.Attribute.textLocale;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.textStartPadding = global::ChefRisingStar.Droid.Resource.Attribute.textStartPadding;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.theme = global::ChefRisingStar.Droid.Resource.Attribute.theme;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.themeLineHeight = global::ChefRisingStar.Droid.Resource.Attribute.themeLineHeight;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.thickness = global::ChefRisingStar.Droid.Resource.Attribute.thickness;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.thumbColor = global::ChefRisingStar.Droid.Resource.Attribute.thumbColor;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.thumbElevation = global::ChefRisingStar.Droid.Resource.Attribute.thumbElevation;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.thumbRadius = global::ChefRisingStar.Droid.Resource.Attribute.thumbRadius;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.thumbTextPadding = global::ChefRisingStar.Droid.Resource.Attribute.thumbTextPadding;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.thumbTint = global::ChefRisingStar.Droid.Resource.Attribute.thumbTint;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.thumbTintMode = global::ChefRisingStar.Droid.Resource.Attribute.thumbTintMode;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.tickColor = global::ChefRisingStar.Droid.Resource.Attribute.tickColor;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.tickColorActive = global::ChefRisingStar.Droid.Resource.Attribute.tickColorActive;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.tickColorInactive = global::ChefRisingStar.Droid.Resource.Attribute.tickColorInactive;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.tickMark = global::ChefRisingStar.Droid.Resource.Attribute.tickMark;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.tickMarkTint = global::ChefRisingStar.Droid.Resource.Attribute.tickMarkTint;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.tickMarkTintMode = global::ChefRisingStar.Droid.Resource.Attribute.tickMarkTintMode;
@@ -1070,13 +1013,21 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Attribute.toolbarStyle = global::ChefRisingStar.Droid.Resource.Attribute.toolbarStyle;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.tooltipForegroundColor = global::ChefRisingStar.Droid.Resource.Attribute.tooltipForegroundColor;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.tooltipFrameBackground = global::ChefRisingStar.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.tooltipStyle = global::ChefRisingStar.Droid.Resource.Attribute.tooltipStyle;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.tooltipText = global::ChefRisingStar.Droid.Resource.Attribute.tooltipText;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.track = global::ChefRisingStar.Droid.Resource.Attribute.track;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.trackColor = global::ChefRisingStar.Droid.Resource.Attribute.trackColor;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.trackColorActive = global::ChefRisingStar.Droid.Resource.Attribute.trackColorActive;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.trackColorInactive = global::ChefRisingStar.Droid.Resource.Attribute.trackColorInactive;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.trackHeight = global::ChefRisingStar.Droid.Resource.Attribute.trackHeight;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.trackTint = global::ChefRisingStar.Droid.Resource.Attribute.trackTint;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.trackTintMode = global::ChefRisingStar.Droid.Resource.Attribute.trackTintMode;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.transitionShapeAppearance = global::ChefRisingStar.Droid.Resource.Attribute.transitionShapeAppearance;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.ttcIndex = global::ChefRisingStar.Droid.Resource.Attribute.ttcIndex;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.useCompatPadding = global::ChefRisingStar.Droid.Resource.Attribute.useCompatPadding;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.useMaterialThemeColors = global::ChefRisingStar.Droid.Resource.Attribute.useMaterialThemeColors;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.values = global::ChefRisingStar.Droid.Resource.Attribute.values;
+			global::Xamarin.CommunityToolkit.Resource.Attribute.verticalOffset = global::ChefRisingStar.Droid.Resource.Attribute.verticalOffset;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.viewInflaterClass = global::ChefRisingStar.Droid.Resource.Attribute.viewInflaterClass;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.voiceIcon = global::ChefRisingStar.Droid.Resource.Attribute.voiceIcon;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.windowActionBar = global::ChefRisingStar.Droid.Resource.Attribute.windowActionBar;
@@ -1093,7 +1044,6 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Attribute.yearStyle = global::ChefRisingStar.Droid.Resource.Attribute.yearStyle;
 			global::Xamarin.CommunityToolkit.Resource.Attribute.yearTodayStyle = global::ChefRisingStar.Droid.Resource.Attribute.yearTodayStyle;
 			global::Xamarin.CommunityToolkit.Resource.Boolean.abc_action_bar_embed_tabs = global::ChefRisingStar.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
-			global::Xamarin.CommunityToolkit.Resource.Boolean.abc_allow_stacked_button_bar = global::ChefRisingStar.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
 			global::Xamarin.CommunityToolkit.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::ChefRisingStar.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
 			global::Xamarin.CommunityToolkit.Resource.Boolean.mtrl_btn_textappearance_all_caps = global::ChefRisingStar.Droid.Resource.Boolean.mtrl_btn_textappearance_all_caps;
 			global::Xamarin.CommunityToolkit.Resource.Color.abc_background_cache_hint_selector_material_dark = global::ChefRisingStar.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
@@ -1215,10 +1165,13 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Color.material_on_surface_disabled = global::ChefRisingStar.Droid.Resource.Color.material_on_surface_disabled;
 			global::Xamarin.CommunityToolkit.Resource.Color.material_on_surface_emphasis_high_type = global::ChefRisingStar.Droid.Resource.Color.material_on_surface_emphasis_high_type;
 			global::Xamarin.CommunityToolkit.Resource.Color.material_on_surface_emphasis_medium = global::ChefRisingStar.Droid.Resource.Color.material_on_surface_emphasis_medium;
-			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_bottom_nav_colored_item_tint = global::ChefRisingStar.Droid.Resource.Color.mtrl_bottom_nav_colored_item_tint;
-			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_bottom_nav_colored_ripple_color = global::ChefRisingStar.Droid.Resource.Color.mtrl_bottom_nav_colored_ripple_color;
-			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_bottom_nav_item_tint = global::ChefRisingStar.Droid.Resource.Color.mtrl_bottom_nav_item_tint;
-			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_bottom_nav_ripple_color = global::ChefRisingStar.Droid.Resource.Color.mtrl_bottom_nav_ripple_color;
+			global::Xamarin.CommunityToolkit.Resource.Color.material_on_surface_stroke = global::ChefRisingStar.Droid.Resource.Color.material_on_surface_stroke;
+			global::Xamarin.CommunityToolkit.Resource.Color.material_slider_active_tick_marks_color = global::ChefRisingStar.Droid.Resource.Color.material_slider_active_tick_marks_color;
+			global::Xamarin.CommunityToolkit.Resource.Color.material_slider_active_track_color = global::ChefRisingStar.Droid.Resource.Color.material_slider_active_track_color;
+			global::Xamarin.CommunityToolkit.Resource.Color.material_slider_halo_color = global::ChefRisingStar.Droid.Resource.Color.material_slider_halo_color;
+			global::Xamarin.CommunityToolkit.Resource.Color.material_slider_inactive_tick_marks_color = global::ChefRisingStar.Droid.Resource.Color.material_slider_inactive_tick_marks_color;
+			global::Xamarin.CommunityToolkit.Resource.Color.material_slider_inactive_track_color = global::ChefRisingStar.Droid.Resource.Color.material_slider_inactive_track_color;
+			global::Xamarin.CommunityToolkit.Resource.Color.material_slider_thumb_color = global::ChefRisingStar.Droid.Resource.Color.material_slider_thumb_color;
 			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_btn_bg_color_selector = global::ChefRisingStar.Droid.Resource.Color.mtrl_btn_bg_color_selector;
 			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_btn_ripple_color = global::ChefRisingStar.Droid.Resource.Color.mtrl_btn_ripple_color;
 			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_btn_stroke_color_selector = global::ChefRisingStar.Droid.Resource.Color.mtrl_btn_stroke_color_selector;
@@ -1233,13 +1186,14 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_card_view_ripple = global::ChefRisingStar.Droid.Resource.Color.mtrl_card_view_ripple;
 			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_chip_background_color = global::ChefRisingStar.Droid.Resource.Color.mtrl_chip_background_color;
 			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_chip_close_icon_tint = global::ChefRisingStar.Droid.Resource.Color.mtrl_chip_close_icon_tint;
-			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_chip_ripple_color = global::ChefRisingStar.Droid.Resource.Color.mtrl_chip_ripple_color;
 			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_chip_surface_color = global::ChefRisingStar.Droid.Resource.Color.mtrl_chip_surface_color;
 			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_chip_text_color = global::ChefRisingStar.Droid.Resource.Color.mtrl_chip_text_color;
 			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_choice_chip_background_color = global::ChefRisingStar.Droid.Resource.Color.mtrl_choice_chip_background_color;
 			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_choice_chip_ripple_color = global::ChefRisingStar.Droid.Resource.Color.mtrl_choice_chip_ripple_color;
 			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_choice_chip_text_color = global::ChefRisingStar.Droid.Resource.Color.mtrl_choice_chip_text_color;
 			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_error = global::ChefRisingStar.Droid.Resource.Color.mtrl_error;
+			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_fab_bg_color_selector = global::ChefRisingStar.Droid.Resource.Color.mtrl_fab_bg_color_selector;
+			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_fab_icon_text_color_selector = global::ChefRisingStar.Droid.Resource.Color.mtrl_fab_icon_text_color_selector;
 			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_fab_ripple_color = global::ChefRisingStar.Droid.Resource.Color.mtrl_fab_ripple_color;
 			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_filled_background_color = global::ChefRisingStar.Droid.Resource.Color.mtrl_filled_background_color;
 			global::Xamarin.CommunityToolkit.Resource.Color.mtrl_filled_icon_tint = global::ChefRisingStar.Droid.Resource.Color.mtrl_filled_icon_tint;
@@ -1275,6 +1229,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Color.primary_text_default_material_light = global::ChefRisingStar.Droid.Resource.Color.primary_text_default_material_light;
 			global::Xamarin.CommunityToolkit.Resource.Color.primary_text_disabled_material_dark = global::ChefRisingStar.Droid.Resource.Color.primary_text_disabled_material_dark;
 			global::Xamarin.CommunityToolkit.Resource.Color.primary_text_disabled_material_light = global::ChefRisingStar.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Xamarin.CommunityToolkit.Resource.Color.radiobutton_themeable_attribute_color = global::ChefRisingStar.Droid.Resource.Color.radiobutton_themeable_attribute_color;
 			global::Xamarin.CommunityToolkit.Resource.Color.ripple_material_dark = global::ChefRisingStar.Droid.Resource.Color.ripple_material_dark;
 			global::Xamarin.CommunityToolkit.Resource.Color.ripple_material_light = global::ChefRisingStar.Droid.Resource.Color.ripple_material_light;
 			global::Xamarin.CommunityToolkit.Resource.Color.secondary_text_default_material_dark = global::ChefRisingStar.Droid.Resource.Color.secondary_text_default_material_dark;
@@ -1539,6 +1494,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_card_spacing = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_card_spacing;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_chip_pressed_translation_z = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_chip_pressed_translation_z;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_chip_text_size = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_chip_text_size;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_edittext_rectangle_top_offset = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_edittext_rectangle_top_offset;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_exposed_dropdown_menu_popup_elevation = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_exposed_dropdown_menu_popup_elevation;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_exposed_dropdown_menu_popup_vertical_offset = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_exposed_dropdown_menu_popup_vertical_offset;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_exposed_dropdown_menu_popup_vertical_padding = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_exposed_dropdown_menu_popup_vertical_padding;
@@ -1582,6 +1538,16 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_shape_corner_size_large_component = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_shape_corner_size_large_component;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_shape_corner_size_medium_component = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_shape_corner_size_medium_component;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_shape_corner_size_small_component = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_shape_corner_size_small_component;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_slider_halo_radius = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_slider_halo_radius;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_slider_label_padding = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_slider_label_padding;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_slider_label_radius = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_slider_label_radius;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_slider_label_square_side = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_slider_label_square_side;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_slider_thumb_elevation = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_slider_thumb_elevation;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_slider_thumb_radius = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_slider_thumb_radius;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_slider_track_height = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_slider_track_height;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_slider_track_side_padding = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_slider_track_side_padding;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_slider_track_top = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_slider_track_top;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_slider_widget_height = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_slider_widget_height;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_snackbar_action_text_color_alpha = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_snackbar_action_text_color_alpha;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_snackbar_background_corner_radius = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_snackbar_background_corner_radius;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_snackbar_background_overlay_color_alpha = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_snackbar_background_overlay_color_alpha;
@@ -1592,10 +1558,17 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_textinput_box_label_cutout_padding = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_textinput_box_label_cutout_padding;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_textinput_box_stroke_width_default = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_default;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_textinput_box_stroke_width_focused = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_focused;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_textinput_counter_margin_start = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_textinput_counter_margin_start;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_textinput_end_icon_margin_start = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_textinput_end_icon_margin_start;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_textinput_start_icon_margin_end = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_textinput_start_icon_margin_end;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_toolbar_default_height = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_toolbar_default_height;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_tooltip_arrowSize = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_tooltip_arrowSize;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_tooltip_cornerSize = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_tooltip_cornerSize;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_tooltip_minHeight = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_tooltip_minHeight;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_tooltip_minWidth = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_tooltip_minWidth;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_tooltip_padding = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_tooltip_padding;
+			global::Xamarin.CommunityToolkit.Resource.Dimension.mtrl_transition_shared_axis_slide_distance = global::ChefRisingStar.Droid.Resource.Dimension.mtrl_transition_shared_axis_slide_distance;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.notification_action_icon_size = global::ChefRisingStar.Droid.Resource.Dimension.notification_action_icon_size;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.notification_action_text_size = global::ChefRisingStar.Droid.Resource.Dimension.notification_action_text_size;
 			global::Xamarin.CommunityToolkit.Resource.Dimension.notification_big_circle_margin = global::ChefRisingStar.Droid.Resource.Dimension.notification_big_circle_margin;
@@ -1653,12 +1626,6 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::ChefRisingStar.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::ChefRisingStar.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_ic_search_api_material = global::ChefRisingStar.Droid.Resource.Drawable.abc_ic_search_api_material;
-			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_ic_star_black_16dp = global::ChefRisingStar.Droid.Resource.Drawable.abc_ic_star_black_16dp;
-			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_ic_star_black_36dp = global::ChefRisingStar.Droid.Resource.Drawable.abc_ic_star_black_36dp;
-			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_ic_star_black_48dp = global::ChefRisingStar.Droid.Resource.Drawable.abc_ic_star_black_48dp;
-			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_ic_star_half_black_16dp = global::ChefRisingStar.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
-			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_ic_star_half_black_36dp = global::ChefRisingStar.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
-			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_ic_star_half_black_48dp = global::ChefRisingStar.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_ic_voice_search_api_material = global::ChefRisingStar.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_item_background_holo_dark = global::ChefRisingStar.Droid.Resource.Drawable.abc_item_background_holo_dark;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_item_background_holo_light = global::ChefRisingStar.Droid.Resource.Drawable.abc_item_background_holo_light;
@@ -1699,12 +1666,6 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::ChefRisingStar.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_textfield_search_material = global::ChefRisingStar.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_text_cursor_material = global::ChefRisingStar.Droid.Resource.Drawable.abc_text_cursor_material;
-			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::ChefRisingStar.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
-			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::ChefRisingStar.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
-			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::ChefRisingStar.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
-			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::ChefRisingStar.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
-			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::ChefRisingStar.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
-			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::ChefRisingStar.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.abc_vector_test = global::ChefRisingStar.Droid.Resource.Drawable.abc_vector_test;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.avd_hide_password = global::ChefRisingStar.Droid.Resource.Drawable.avd_hide_password;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.avd_show_password = global::ChefRisingStar.Droid.Resource.Drawable.avd_show_password;
@@ -1716,7 +1677,6 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::ChefRisingStar.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.btn_radio_on_mtrl = global::ChefRisingStar.Droid.Resource.Drawable.btn_radio_on_mtrl;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::ChefRisingStar.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
-			global::Xamarin.CommunityToolkit.Resource.Drawable.design_bottom_navigation_item_background = global::ChefRisingStar.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.design_fab_background = global::ChefRisingStar.Droid.Resource.Drawable.design_fab_background;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.design_ic_visibility = global::ChefRisingStar.Droid.Resource.Drawable.design_ic_visibility;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.design_ic_visibility_off = global::ChefRisingStar.Droid.Resource.Drawable.design_ic_visibility_off;
@@ -1726,6 +1686,13 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Drawable.ic_mtrl_chip_checked_black = global::ChefRisingStar.Droid.Resource.Drawable.ic_mtrl_chip_checked_black;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.ic_mtrl_chip_checked_circle = global::ChefRisingStar.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.ic_mtrl_chip_close_circle = global::ChefRisingStar.Droid.Resource.Drawable.ic_mtrl_chip_close_circle;
+			global::Xamarin.CommunityToolkit.Resource.Drawable.material_ic_calendar_black_24dp = global::ChefRisingStar.Droid.Resource.Drawable.material_ic_calendar_black_24dp;
+			global::Xamarin.CommunityToolkit.Resource.Drawable.material_ic_clear_black_24dp = global::ChefRisingStar.Droid.Resource.Drawable.material_ic_clear_black_24dp;
+			global::Xamarin.CommunityToolkit.Resource.Drawable.material_ic_edit_black_24dp = global::ChefRisingStar.Droid.Resource.Drawable.material_ic_edit_black_24dp;
+			global::Xamarin.CommunityToolkit.Resource.Drawable.material_ic_keyboard_arrow_left_black_24dp = global::ChefRisingStar.Droid.Resource.Drawable.material_ic_keyboard_arrow_left_black_24dp;
+			global::Xamarin.CommunityToolkit.Resource.Drawable.material_ic_keyboard_arrow_right_black_24dp = global::ChefRisingStar.Droid.Resource.Drawable.material_ic_keyboard_arrow_right_black_24dp;
+			global::Xamarin.CommunityToolkit.Resource.Drawable.material_ic_menu_arrow_down_black_24dp = global::ChefRisingStar.Droid.Resource.Drawable.material_ic_menu_arrow_down_black_24dp;
+			global::Xamarin.CommunityToolkit.Resource.Drawable.material_ic_menu_arrow_up_black_24dp = global::ChefRisingStar.Droid.Resource.Drawable.material_ic_menu_arrow_up_black_24dp;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.mtrl_dialog_background = global::ChefRisingStar.Droid.Resource.Drawable.mtrl_dialog_background;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.mtrl_dropdown_arrow = global::ChefRisingStar.Droid.Resource.Drawable.mtrl_dropdown_arrow;
 			global::Xamarin.CommunityToolkit.Resource.Drawable.mtrl_ic_arrow_drop_down = global::ChefRisingStar.Droid.Resource.Drawable.mtrl_ic_arrow_drop_down;
@@ -1833,6 +1800,9 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Id.checkbox = global::ChefRisingStar.Droid.Resource.Id.checkbox;
 			global::Xamarin.CommunityToolkit.Resource.Id.@checked = global::ChefRisingStar.Droid.Resource.Id.@checked;
 			global::Xamarin.CommunityToolkit.Resource.Id.chip = global::ChefRisingStar.Droid.Resource.Id.chip;
+			global::Xamarin.CommunityToolkit.Resource.Id.chip1 = global::ChefRisingStar.Droid.Resource.Id.chip1;
+			global::Xamarin.CommunityToolkit.Resource.Id.chip2 = global::ChefRisingStar.Droid.Resource.Id.chip2;
+			global::Xamarin.CommunityToolkit.Resource.Id.chip3 = global::ChefRisingStar.Droid.Resource.Id.chip3;
 			global::Xamarin.CommunityToolkit.Resource.Id.chip_group = global::ChefRisingStar.Droid.Resource.Id.chip_group;
 			global::Xamarin.CommunityToolkit.Resource.Id.chronometer = global::ChefRisingStar.Droid.Resource.Id.chronometer;
 			global::Xamarin.CommunityToolkit.Resource.Id.clear_text = global::ChefRisingStar.Droid.Resource.Id.clear_text;
@@ -1874,12 +1844,14 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Id.fill_vertical = global::ChefRisingStar.Droid.Resource.Id.fill_vertical;
 			global::Xamarin.CommunityToolkit.Resource.Id.fitToContents = global::ChefRisingStar.Droid.Resource.Id.fitToContents;
 			global::Xamarin.CommunityToolkit.Resource.Id.@fixed = global::ChefRisingStar.Droid.Resource.Id.@fixed;
+			global::Xamarin.CommunityToolkit.Resource.Id.floating = global::ChefRisingStar.Droid.Resource.Id.floating;
 			global::Xamarin.CommunityToolkit.Resource.Id.flyoutcontent_appbar = global::ChefRisingStar.Droid.Resource.Id.flyoutcontent_appbar;
 			global::Xamarin.CommunityToolkit.Resource.Id.forever = global::ChefRisingStar.Droid.Resource.Id.forever;
 			global::Xamarin.CommunityToolkit.Resource.Id.fragment_container_view_tag = global::ChefRisingStar.Droid.Resource.Id.fragment_container_view_tag;
 			global::Xamarin.CommunityToolkit.Resource.Id.FUNCTION = global::ChefRisingStar.Droid.Resource.Id.FUNCTION;
 			global::Xamarin.CommunityToolkit.Resource.Id.ghost_view = global::ChefRisingStar.Droid.Resource.Id.ghost_view;
 			global::Xamarin.CommunityToolkit.Resource.Id.ghost_view_holder = global::ChefRisingStar.Droid.Resource.Id.ghost_view_holder;
+			global::Xamarin.CommunityToolkit.Resource.Id.gone = global::ChefRisingStar.Droid.Resource.Id.gone;
 			global::Xamarin.CommunityToolkit.Resource.Id.group_divider = global::ChefRisingStar.Droid.Resource.Id.group_divider;
 			global::Xamarin.CommunityToolkit.Resource.Id.hideable = global::ChefRisingStar.Droid.Resource.Id.hideable;
 			global::Xamarin.CommunityToolkit.Resource.Id.home = global::ChefRisingStar.Droid.Resource.Id.home;
@@ -1892,7 +1864,6 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Id.italic = global::ChefRisingStar.Droid.Resource.Id.italic;
 			global::Xamarin.CommunityToolkit.Resource.Id.item_touch_helper_previous_elevation = global::ChefRisingStar.Droid.Resource.Id.item_touch_helper_previous_elevation;
 			global::Xamarin.CommunityToolkit.Resource.Id.labeled = global::ChefRisingStar.Droid.Resource.Id.labeled;
-			global::Xamarin.CommunityToolkit.Resource.Id.largeLabel = global::ChefRisingStar.Droid.Resource.Id.largeLabel;
 			global::Xamarin.CommunityToolkit.Resource.Id.left = global::ChefRisingStar.Droid.Resource.Id.left;
 			global::Xamarin.CommunityToolkit.Resource.Id.line1 = global::ChefRisingStar.Droid.Resource.Id.line1;
 			global::Xamarin.CommunityToolkit.Resource.Id.line3 = global::ChefRisingStar.Droid.Resource.Id.line3;
@@ -1926,6 +1897,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Id.mtrl_card_checked_layer_id = global::ChefRisingStar.Droid.Resource.Id.mtrl_card_checked_layer_id;
 			global::Xamarin.CommunityToolkit.Resource.Id.mtrl_child_content_container = global::ChefRisingStar.Droid.Resource.Id.mtrl_child_content_container;
 			global::Xamarin.CommunityToolkit.Resource.Id.mtrl_internal_children_alpha_tag = global::ChefRisingStar.Droid.Resource.Id.mtrl_internal_children_alpha_tag;
+			global::Xamarin.CommunityToolkit.Resource.Id.mtrl_motion_snapshot_view = global::ChefRisingStar.Droid.Resource.Id.mtrl_motion_snapshot_view;
 			global::Xamarin.CommunityToolkit.Resource.Id.mtrl_picker_fullscreen = global::ChefRisingStar.Droid.Resource.Id.mtrl_picker_fullscreen;
 			global::Xamarin.CommunityToolkit.Resource.Id.mtrl_picker_header = global::ChefRisingStar.Droid.Resource.Id.mtrl_picker_header;
 			global::Xamarin.CommunityToolkit.Resource.Id.mtrl_picker_header_selection_text = global::ChefRisingStar.Droid.Resource.Id.mtrl_picker_header_selection_text;
@@ -1960,6 +1932,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Id.right_icon = global::ChefRisingStar.Droid.Resource.Id.right_icon;
 			global::Xamarin.CommunityToolkit.Resource.Id.right_side = global::ChefRisingStar.Droid.Resource.Id.right_side;
 			global::Xamarin.CommunityToolkit.Resource.Id.rounded = global::ChefRisingStar.Droid.Resource.Id.rounded;
+			global::Xamarin.CommunityToolkit.Resource.Id.row_index_key = global::ChefRisingStar.Droid.Resource.Id.row_index_key;
 			global::Xamarin.CommunityToolkit.Resource.Id.save_non_transition_alpha = global::ChefRisingStar.Droid.Resource.Id.save_non_transition_alpha;
 			global::Xamarin.CommunityToolkit.Resource.Id.save_overlay_view = global::ChefRisingStar.Droid.Resource.Id.save_overlay_view;
 			global::Xamarin.CommunityToolkit.Resource.Id.scale = global::ChefRisingStar.Droid.Resource.Id.scale;
@@ -1991,7 +1964,6 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Id.skipCollapsed = global::ChefRisingStar.Droid.Resource.Id.skipCollapsed;
 			global::Xamarin.CommunityToolkit.Resource.Id.slide = global::ChefRisingStar.Droid.Resource.Id.slide;
 			global::Xamarin.CommunityToolkit.Resource.Id.sliding_tabs = global::ChefRisingStar.Droid.Resource.Id.sliding_tabs;
-			global::Xamarin.CommunityToolkit.Resource.Id.smallLabel = global::ChefRisingStar.Droid.Resource.Id.smallLabel;
 			global::Xamarin.CommunityToolkit.Resource.Id.snackbar_action = global::ChefRisingStar.Droid.Resource.Id.snackbar_action;
 			global::Xamarin.CommunityToolkit.Resource.Id.snackbar_text = global::ChefRisingStar.Droid.Resource.Id.snackbar_text;
 			global::Xamarin.CommunityToolkit.Resource.Id.snap = global::ChefRisingStar.Droid.Resource.Id.snap;
@@ -2018,12 +1990,17 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Id.tag_unhandled_key_listeners = global::ChefRisingStar.Droid.Resource.Id.tag_unhandled_key_listeners;
 			global::Xamarin.CommunityToolkit.Resource.Id.test_checkbox_android_button_tint = global::ChefRisingStar.Droid.Resource.Id.test_checkbox_android_button_tint;
 			global::Xamarin.CommunityToolkit.Resource.Id.test_checkbox_app_button_tint = global::ChefRisingStar.Droid.Resource.Id.test_checkbox_app_button_tint;
+			global::Xamarin.CommunityToolkit.Resource.Id.test_radiobutton_android_button_tint = global::ChefRisingStar.Droid.Resource.Id.test_radiobutton_android_button_tint;
+			global::Xamarin.CommunityToolkit.Resource.Id.test_radiobutton_app_button_tint = global::ChefRisingStar.Droid.Resource.Id.test_radiobutton_app_button_tint;
 			global::Xamarin.CommunityToolkit.Resource.Id.text = global::ChefRisingStar.Droid.Resource.Id.text;
 			global::Xamarin.CommunityToolkit.Resource.Id.text2 = global::ChefRisingStar.Droid.Resource.Id.text2;
 			global::Xamarin.CommunityToolkit.Resource.Id.textEnd = global::ChefRisingStar.Droid.Resource.Id.textEnd;
 			global::Xamarin.CommunityToolkit.Resource.Id.textinput_counter = global::ChefRisingStar.Droid.Resource.Id.textinput_counter;
 			global::Xamarin.CommunityToolkit.Resource.Id.textinput_error = global::ChefRisingStar.Droid.Resource.Id.textinput_error;
 			global::Xamarin.CommunityToolkit.Resource.Id.textinput_helper_text = global::ChefRisingStar.Droid.Resource.Id.textinput_helper_text;
+			global::Xamarin.CommunityToolkit.Resource.Id.textinput_placeholder = global::ChefRisingStar.Droid.Resource.Id.textinput_placeholder;
+			global::Xamarin.CommunityToolkit.Resource.Id.textinput_prefix_text = global::ChefRisingStar.Droid.Resource.Id.textinput_prefix_text;
+			global::Xamarin.CommunityToolkit.Resource.Id.textinput_suffix_text = global::ChefRisingStar.Droid.Resource.Id.textinput_suffix_text;
 			global::Xamarin.CommunityToolkit.Resource.Id.textSpacerNoButtons = global::ChefRisingStar.Droid.Resource.Id.textSpacerNoButtons;
 			global::Xamarin.CommunityToolkit.Resource.Id.textSpacerNoTitle = global::ChefRisingStar.Droid.Resource.Id.textSpacerNoTitle;
 			global::Xamarin.CommunityToolkit.Resource.Id.textStart = global::ChefRisingStar.Droid.Resource.Id.textStart;
@@ -2053,8 +2030,10 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Id.view_tree_saved_state_registry_owner = global::ChefRisingStar.Droid.Resource.Id.view_tree_saved_state_registry_owner;
 			global::Xamarin.CommunityToolkit.Resource.Id.visible = global::ChefRisingStar.Droid.Resource.Id.visible;
 			global::Xamarin.CommunityToolkit.Resource.Id.visible_removing_fragment_view_tag = global::ChefRisingStar.Droid.Resource.Id.visible_removing_fragment_view_tag;
+			global::Xamarin.CommunityToolkit.Resource.Id.withinBounds = global::ChefRisingStar.Droid.Resource.Id.withinBounds;
 			global::Xamarin.CommunityToolkit.Resource.Id.withText = global::ChefRisingStar.Droid.Resource.Id.withText;
 			global::Xamarin.CommunityToolkit.Resource.Id.wrap_content = global::ChefRisingStar.Droid.Resource.Id.wrap_content;
+			global::Xamarin.CommunityToolkit.Resource.Id.zero_corner_chip = global::ChefRisingStar.Droid.Resource.Id.zero_corner_chip;
 			global::Xamarin.CommunityToolkit.Resource.Integer.abc_config_activityDefaultDur = global::ChefRisingStar.Droid.Resource.Integer.abc_config_activityDefaultDur;
 			global::Xamarin.CommunityToolkit.Resource.Integer.abc_config_activityShortDur = global::ChefRisingStar.Droid.Resource.Integer.abc_config_activityShortDur;
 			global::Xamarin.CommunityToolkit.Resource.Integer.app_bar_elevation_anim_duration = global::ChefRisingStar.Droid.Resource.Integer.app_bar_elevation_anim_duration;
@@ -2189,7 +2168,9 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Layout.support_simple_spinner_dropdown_item = global::ChefRisingStar.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
 			global::Xamarin.CommunityToolkit.Resource.Layout.Tabbar = global::ChefRisingStar.Droid.Resource.Layout.Tabbar;
 			global::Xamarin.CommunityToolkit.Resource.Layout.test_action_chip = global::ChefRisingStar.Droid.Resource.Layout.test_action_chip;
+			global::Xamarin.CommunityToolkit.Resource.Layout.test_chip_zero_corner_radius = global::ChefRisingStar.Droid.Resource.Layout.test_chip_zero_corner_radius;
 			global::Xamarin.CommunityToolkit.Resource.Layout.test_design_checkbox = global::ChefRisingStar.Droid.Resource.Layout.test_design_checkbox;
+			global::Xamarin.CommunityToolkit.Resource.Layout.test_design_radiobutton = global::ChefRisingStar.Droid.Resource.Layout.test_design_radiobutton;
 			global::Xamarin.CommunityToolkit.Resource.Layout.test_reflow_chipgroup = global::ChefRisingStar.Droid.Resource.Layout.test_reflow_chipgroup;
 			global::Xamarin.CommunityToolkit.Resource.Layout.test_toolbar = global::ChefRisingStar.Droid.Resource.Layout.test_toolbar;
 			global::Xamarin.CommunityToolkit.Resource.Layout.test_toolbar_custom_background = global::ChefRisingStar.Droid.Resource.Layout.test_toolbar_custom_background;
@@ -2246,8 +2227,12 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.String.fallback_menu_item_share_link = global::ChefRisingStar.Droid.Resource.String.fallback_menu_item_share_link;
 			global::Xamarin.CommunityToolkit.Resource.String.hide_bottom_view_on_scroll_behavior = global::ChefRisingStar.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
 			global::Xamarin.CommunityToolkit.Resource.String.icon_content_description = global::ChefRisingStar.Droid.Resource.String.icon_content_description;
+			global::Xamarin.CommunityToolkit.Resource.String.item_view_role_description = global::ChefRisingStar.Droid.Resource.String.item_view_role_description;
+			global::Xamarin.CommunityToolkit.Resource.String.material_slider_range_end = global::ChefRisingStar.Droid.Resource.String.material_slider_range_end;
+			global::Xamarin.CommunityToolkit.Resource.String.material_slider_range_start = global::ChefRisingStar.Droid.Resource.String.material_slider_range_start;
 			global::Xamarin.CommunityToolkit.Resource.String.mtrl_badge_numberless_content_description = global::ChefRisingStar.Droid.Resource.String.mtrl_badge_numberless_content_description;
 			global::Xamarin.CommunityToolkit.Resource.String.mtrl_chip_close_icon_content_description = global::ChefRisingStar.Droid.Resource.String.mtrl_chip_close_icon_content_description;
+			global::Xamarin.CommunityToolkit.Resource.String.mtrl_exceed_max_badge_number_content_description = global::ChefRisingStar.Droid.Resource.String.mtrl_exceed_max_badge_number_content_description;
 			global::Xamarin.CommunityToolkit.Resource.String.mtrl_exceed_max_badge_number_suffix = global::ChefRisingStar.Droid.Resource.String.mtrl_exceed_max_badge_number_suffix;
 			global::Xamarin.CommunityToolkit.Resource.String.mtrl_picker_a11y_next_month = global::ChefRisingStar.Droid.Resource.String.mtrl_picker_a11y_next_month;
 			global::Xamarin.CommunityToolkit.Resource.String.mtrl_picker_a11y_prev_month = global::ChefRisingStar.Droid.Resource.String.mtrl_picker_a11y_prev_month;
@@ -2290,6 +2275,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.String.status_bar_notification_info_overflow = global::ChefRisingStar.Droid.Resource.String.status_bar_notification_info_overflow;
 			global::Xamarin.CommunityToolkit.Resource.Style.AlertDialog_AppCompat = global::ChefRisingStar.Droid.Resource.Style.AlertDialog_AppCompat;
 			global::Xamarin.CommunityToolkit.Resource.Style.AlertDialog_AppCompat_Light = global::ChefRisingStar.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Xamarin.CommunityToolkit.Resource.Style.AndroidThemeColorAccentYellow = global::ChefRisingStar.Droid.Resource.Style.AndroidThemeColorAccentYellow;
 			global::Xamarin.CommunityToolkit.Resource.Style.Animation_AppCompat_Dialog = global::ChefRisingStar.Droid.Resource.Style.Animation_AppCompat_Dialog;
 			global::Xamarin.CommunityToolkit.Resource.Style.Animation_AppCompat_DropDownUp = global::ChefRisingStar.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
 			global::Xamarin.CommunityToolkit.Resource.Style.Animation_AppCompat_Tooltip = global::ChefRisingStar.Droid.Resource.Style.Animation_AppCompat_Tooltip;
@@ -2368,6 +2354,8 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::ChefRisingStar.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog = global::ChefRisingStar.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog;
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert = global::ChefRisingStar.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Xamarin.CommunityToolkit.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert_Framework = global::ChefRisingStar.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert_Framework;
+			global::Xamarin.CommunityToolkit.Resource.Style.Base_ThemeOverlay_MaterialComponents_Light_Dialog_Alert_Framework = global::ChefRisingStar.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Light_Dialog_Alert_Framework;
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_ThemeOverlay_MaterialComponents_MaterialAlertDialog = global::ChefRisingStar.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_MaterialAlertDialog;
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_Theme_AppCompat = global::ChefRisingStar.Droid.Resource.Style.Base_Theme_AppCompat;
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::ChefRisingStar.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
@@ -2419,6 +2407,10 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::ChefRisingStar.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_V21_Theme_AppCompat_Light = global::ChefRisingStar.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::ChefRisingStar.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.CommunityToolkit.Resource.Style.Base_V21_Theme_MaterialComponents = global::ChefRisingStar.Droid.Resource.Style.Base_V21_Theme_MaterialComponents;
+			global::Xamarin.CommunityToolkit.Resource.Style.Base_V21_Theme_MaterialComponents_Dialog = global::ChefRisingStar.Droid.Resource.Style.Base_V21_Theme_MaterialComponents_Dialog;
+			global::Xamarin.CommunityToolkit.Resource.Style.Base_V21_Theme_MaterialComponents_Light = global::ChefRisingStar.Droid.Resource.Style.Base_V21_Theme_MaterialComponents_Light;
+			global::Xamarin.CommunityToolkit.Resource.Style.Base_V21_Theme_MaterialComponents_Light_Dialog = global::ChefRisingStar.Droid.Resource.Style.Base_V21_Theme_MaterialComponents_Light_Dialog;
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_V22_Theme_AppCompat = global::ChefRisingStar.Droid.Resource.Style.Base_V22_Theme_AppCompat;
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_V22_Theme_AppCompat_Light = global::ChefRisingStar.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_V23_Theme_AppCompat = global::ChefRisingStar.Droid.Resource.Style.Base_V23_Theme_AppCompat;
@@ -2502,6 +2494,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_ContextMenu = global::ChefRisingStar.Droid.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_ContextMenu;
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_ListPopupWindow = global::ChefRisingStar.Droid.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_ListPopupWindow;
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_Overflow = global::ChefRisingStar.Droid.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_Overflow;
+			global::Xamarin.CommunityToolkit.Resource.Style.Base_Widget_MaterialComponents_Slider = global::ChefRisingStar.Droid.Resource.Style.Base_Widget_MaterialComponents_Slider;
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText = global::ChefRisingStar.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText;
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout = global::ChefRisingStar.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout;
 			global::Xamarin.CommunityToolkit.Resource.Style.Base_Widget_MaterialComponents_TextView = global::ChefRisingStar.Droid.Resource.Style.Base_Widget_MaterialComponents_TextView;
@@ -2575,6 +2568,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Style.ShapeAppearance_MaterialComponents_MediumComponent = global::ChefRisingStar.Droid.Resource.Style.ShapeAppearance_MaterialComponents_MediumComponent;
 			global::Xamarin.CommunityToolkit.Resource.Style.ShapeAppearance_MaterialComponents_SmallComponent = global::ChefRisingStar.Droid.Resource.Style.ShapeAppearance_MaterialComponents_SmallComponent;
 			global::Xamarin.CommunityToolkit.Resource.Style.ShapeAppearance_MaterialComponents_Test = global::ChefRisingStar.Droid.Resource.Style.ShapeAppearance_MaterialComponents_Test;
+			global::Xamarin.CommunityToolkit.Resource.Style.ShapeAppearance_MaterialComponents_Tooltip = global::ChefRisingStar.Droid.Resource.Style.ShapeAppearance_MaterialComponents_Tooltip;
 			global::Xamarin.CommunityToolkit.Resource.Style.TestStyleWithLineHeight = global::ChefRisingStar.Droid.Resource.Style.TestStyleWithLineHeight;
 			global::Xamarin.CommunityToolkit.Resource.Style.TestStyleWithLineHeightAppearance = global::ChefRisingStar.Droid.Resource.Style.TestStyleWithLineHeightAppearance;
 			global::Xamarin.CommunityToolkit.Resource.Style.TestStyleWithoutLineHeight = global::ChefRisingStar.Droid.Resource.Style.TestStyleWithoutLineHeight;
@@ -2650,7 +2644,10 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_Design_Error = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_Design_Error;
 			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_Design_HelperText = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_Design_HelperText;
 			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_Design_Hint = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_Design_Placeholder = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_Design_Placeholder;
+			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_Design_Prefix = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_Design_Prefix;
 			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_Design_Snackbar_Message = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_Design_Suffix = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_Design_Suffix;
 			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_Design_Tab = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_Design_Tab;
 			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_MaterialComponents_Badge = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_MaterialComponents_Badge;
 			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_MaterialComponents_Body1 = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_MaterialComponents_Body1;
@@ -2667,9 +2664,11 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_MaterialComponents_Overline = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_MaterialComponents_Overline;
 			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_MaterialComponents_Subtitle1 = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1;
 			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_MaterialComponents_Subtitle2 = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2;
+			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_MaterialComponents_Tooltip = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_MaterialComponents_Tooltip;
 			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
 			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
 			global::Xamarin.CommunityToolkit.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::ChefRisingStar.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarin.CommunityToolkit.Resource.Style.ThemeOverlayColorAccentRed = global::ChefRisingStar.Droid.Resource.Style.ThemeOverlayColorAccentRed;
 			global::Xamarin.CommunityToolkit.Resource.Style.ThemeOverlay_AppCompat = global::ChefRisingStar.Droid.Resource.Style.ThemeOverlay_AppCompat;
 			global::Xamarin.CommunityToolkit.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::ChefRisingStar.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::Xamarin.CommunityToolkit.Resource.Style.ThemeOverlay_AppCompat_Dark = global::ChefRisingStar.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
@@ -2697,8 +2696,9 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Style.ThemeOverlay_MaterialComponents_DayNight_BottomSheetDialog = global::ChefRisingStar.Droid.Resource.Style.ThemeOverlay_MaterialComponents_DayNight_BottomSheetDialog;
 			global::Xamarin.CommunityToolkit.Resource.Style.ThemeOverlay_MaterialComponents_Dialog = global::ChefRisingStar.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog;
 			global::Xamarin.CommunityToolkit.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert = global::ChefRisingStar.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Xamarin.CommunityToolkit.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert_Framework = global::ChefRisingStar.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert_Framework;
 			global::Xamarin.CommunityToolkit.Resource.Style.ThemeOverlay_MaterialComponents_Light = global::ChefRisingStar.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Light;
-			global::Xamarin.CommunityToolkit.Resource.Style.ThemeOverlay_MaterialComponents_Light_BottomSheetDialog = global::ChefRisingStar.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Light_BottomSheetDialog;
+			global::Xamarin.CommunityToolkit.Resource.Style.ThemeOverlay_MaterialComponents_Light_Dialog_Alert_Framework = global::ChefRisingStar.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Light_Dialog_Alert_Framework;
 			global::Xamarin.CommunityToolkit.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog = global::ChefRisingStar.Droid.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog;
 			global::Xamarin.CommunityToolkit.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Centered = global::ChefRisingStar.Droid.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Centered;
 			global::Xamarin.CommunityToolkit.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date = global::ChefRisingStar.Droid.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date;
@@ -2876,6 +2876,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::ChefRisingStar.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_Design_Snackbar = global::ChefRisingStar.Droid.Resource.Style.Widget_Design_Snackbar;
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_Design_TabLayout = global::ChefRisingStar.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Xamarin.CommunityToolkit.Resource.Style.Widget_Design_TextInputEditText = global::ChefRisingStar.Droid.Resource.Style.Widget_Design_TextInputEditText;
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_Design_TextInputLayout = global::ChefRisingStar.Droid.Resource.Style.Widget_Design_TextInputLayout;
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_ActionBar_Primary = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_ActionBar_Primary;
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_ActionBar_PrimarySurface = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_ActionBar_PrimarySurface;
@@ -2947,8 +2948,11 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_PopupMenu_ContextMenu = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_PopupMenu_ContextMenu;
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_PopupMenu_ListPopupWindow = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_PopupMenu_ListPopupWindow;
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_PopupMenu_Overflow = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_PopupMenu_Overflow;
+			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_ShapeableImageView = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_ShapeableImageView;
+			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_Slider = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_Slider;
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_Snackbar = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_Snackbar;
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth;
+			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_Snackbar_TextView = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_Snackbar_TextView;
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_TabLayout = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_TabLayout;
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_TabLayout_Colored = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_TabLayout_Colored;
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_TabLayout_PrimarySurface = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_TabLayout_PrimarySurface;
@@ -2969,6 +2973,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_Toolbar_Primary = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_Toolbar_Primary;
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_Toolbar_PrimarySurface = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_Toolbar_PrimarySurface;
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_Toolbar_Surface = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_Toolbar_Surface;
+			global::Xamarin.CommunityToolkit.Resource.Style.Widget_MaterialComponents_Tooltip = global::ChefRisingStar.Droid.Resource.Style.Widget_MaterialComponents_Tooltip;
 			global::Xamarin.CommunityToolkit.Resource.Style.Widget_Support_CoordinatorLayout = global::ChefRisingStar.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ActionBar = global::ChefRisingStar.Droid.Resource.Styleable.ActionBar;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ActionBarLayout = global::ChefRisingStar.Droid.Resource.Styleable.ActionBarLayout;
@@ -3226,8 +3231,10 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Badge_backgroundColor = global::ChefRisingStar.Droid.Resource.Styleable.Badge_backgroundColor;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Badge_badgeGravity = global::ChefRisingStar.Droid.Resource.Styleable.Badge_badgeGravity;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Badge_badgeTextColor = global::ChefRisingStar.Droid.Resource.Styleable.Badge_badgeTextColor;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Badge_horizontalOffset = global::ChefRisingStar.Droid.Resource.Styleable.Badge_horizontalOffset;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Badge_maxCharacterCount = global::ChefRisingStar.Droid.Resource.Styleable.Badge_maxCharacterCount;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Badge_number = global::ChefRisingStar.Droid.Resource.Styleable.Badge_number;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Badge_verticalOffset = global::ChefRisingStar.Droid.Resource.Styleable.Badge_verticalOffset;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomAppBar = global::ChefRisingStar.Droid.Resource.Styleable.BottomAppBar;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomAppBar_backgroundTint = global::ChefRisingStar.Droid.Resource.Styleable.BottomAppBar_backgroundTint;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomAppBar_elevation = global::ChefRisingStar.Droid.Resource.Styleable.BottomAppBar_elevation;
@@ -3237,22 +3244,15 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius = global::ChefRisingStar.Droid.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset = global::ChefRisingStar.Droid.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomAppBar_hideOnScroll = global::ChefRisingStar.Droid.Resource.Styleable.BottomAppBar_hideOnScroll;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomAppBar_paddingBottomSystemWindowInsets = global::ChefRisingStar.Droid.Resource.Styleable.BottomAppBar_paddingBottomSystemWindowInsets;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomAppBar_paddingLeftSystemWindowInsets = global::ChefRisingStar.Droid.Resource.Styleable.BottomAppBar_paddingLeftSystemWindowInsets;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomAppBar_paddingRightSystemWindowInsets = global::ChefRisingStar.Droid.Resource.Styleable.BottomAppBar_paddingRightSystemWindowInsets;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomNavigationView = global::ChefRisingStar.Droid.Resource.Styleable.BottomNavigationView;
-			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomNavigationView_backgroundTint = global::ChefRisingStar.Droid.Resource.Styleable.BottomNavigationView_backgroundTint;
-			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomNavigationView_elevation = global::ChefRisingStar.Droid.Resource.Styleable.BottomNavigationView_elevation;
-			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomNavigationView_itemBackground = global::ChefRisingStar.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled = global::ChefRisingStar.Droid.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled;
-			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomNavigationView_itemIconSize = global::ChefRisingStar.Droid.Resource.Styleable.BottomNavigationView_itemIconSize;
-			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomNavigationView_itemIconTint = global::ChefRisingStar.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
-			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomNavigationView_itemRippleColor = global::ChefRisingStar.Droid.Resource.Styleable.BottomNavigationView_itemRippleColor;
-			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive = global::ChefRisingStar.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive;
-			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive = global::ChefRisingStar.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive;
-			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomNavigationView_itemTextColor = global::ChefRisingStar.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
-			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomNavigationView_labelVisibilityMode = global::ChefRisingStar.Droid.Resource.Styleable.BottomNavigationView_labelVisibilityMode;
-			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomNavigationView_menu = global::ChefRisingStar.Droid.Resource.Styleable.BottomNavigationView_menu;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomSheetBehavior_Layout = global::ChefRisingStar.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomSheetBehavior_Layout_android_elevation = global::ChefRisingStar.Droid.Resource.Styleable.BottomSheetBehavior_Layout_android_elevation;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomSheetBehavior_Layout_backgroundTint = global::ChefRisingStar.Droid.Resource.Styleable.BottomSheetBehavior_Layout_backgroundTint;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomSheetBehavior_Layout_behavior_draggable = global::ChefRisingStar.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_draggable;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomSheetBehavior_Layout_behavior_expandedOffset = global::ChefRisingStar.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_expandedOffset;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents = global::ChefRisingStar.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomSheetBehavior_Layout_behavior_halfExpandedRatio = global::ChefRisingStar.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_halfExpandedRatio;
@@ -3260,6 +3260,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::ChefRisingStar.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomSheetBehavior_Layout_behavior_saveFlags = global::ChefRisingStar.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_saveFlags;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::ChefRisingStar.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomSheetBehavior_Layout_gestureInsetBottomIgnored = global::ChefRisingStar.Droid.Resource.Styleable.BottomSheetBehavior_Layout_gestureInsetBottomIgnored;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomSheetBehavior_Layout_shapeAppearance = global::ChefRisingStar.Droid.Resource.Styleable.BottomSheetBehavior_Layout_shapeAppearance;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.BottomSheetBehavior_Layout_shapeAppearanceOverlay = global::ChefRisingStar.Droid.Resource.Styleable.BottomSheetBehavior_Layout_shapeAppearanceOverlay;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ButtonBarLayout = global::ChefRisingStar.Droid.Resource.Styleable.ButtonBarLayout;
@@ -3284,6 +3285,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ChipGroup_chipSpacing = global::ChefRisingStar.Droid.Resource.Styleable.ChipGroup_chipSpacing;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::ChefRisingStar.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ChipGroup_chipSpacingVertical = global::ChefRisingStar.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.ChipGroup_selectionRequired = global::ChefRisingStar.Droid.Resource.Styleable.ChipGroup_selectionRequired;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ChipGroup_singleLine = global::ChefRisingStar.Droid.Resource.Styleable.ChipGroup_singleLine;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ChipGroup_singleSelection = global::ChefRisingStar.Droid.Resource.Styleable.ChipGroup_singleSelection;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Chip_android_checkable = global::ChefRisingStar.Droid.Resource.Styleable.Chip_android_checkable;
@@ -3294,6 +3296,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Chip_android_textColor = global::ChefRisingStar.Droid.Resource.Styleable.Chip_android_textColor;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Chip_checkedIcon = global::ChefRisingStar.Droid.Resource.Styleable.Chip_checkedIcon;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Chip_checkedIconEnabled = global::ChefRisingStar.Droid.Resource.Styleable.Chip_checkedIconEnabled;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Chip_checkedIconTint = global::ChefRisingStar.Droid.Resource.Styleable.Chip_checkedIconTint;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Chip_checkedIconVisible = global::ChefRisingStar.Droid.Resource.Styleable.Chip_checkedIconVisible;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Chip_chipBackgroundColor = global::ChefRisingStar.Droid.Resource.Styleable.Chip_chipBackgroundColor;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Chip_chipCornerRadius = global::ChefRisingStar.Droid.Resource.Styleable.Chip_chipCornerRadius;
@@ -3340,6 +3343,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.CollapsingToolbarLayout_Layout = global::ChefRisingStar.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::ChefRisingStar.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::ChefRisingStar.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.CollapsingToolbarLayout_maxLines = global::ChefRisingStar.Droid.Resource.Styleable.CollapsingToolbarLayout_maxLines;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::ChefRisingStar.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::ChefRisingStar.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::ChefRisingStar.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
@@ -3387,6 +3391,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ExtendedFloatingActionButton_showMotionSpec = global::ChefRisingStar.Droid.Resource.Styleable.ExtendedFloatingActionButton_showMotionSpec;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ExtendedFloatingActionButton_shrinkMotionSpec = global::ChefRisingStar.Droid.Resource.Styleable.ExtendedFloatingActionButton_shrinkMotionSpec;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.FloatingActionButton = global::ChefRisingStar.Droid.Resource.Styleable.FloatingActionButton;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.FloatingActionButton_android_enabled = global::ChefRisingStar.Droid.Resource.Styleable.FloatingActionButton_android_enabled;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.FloatingActionButton_backgroundTint = global::ChefRisingStar.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::ChefRisingStar.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::ChefRisingStar.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
@@ -3453,6 +3458,10 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.GradientColor_android_startY = global::ChefRisingStar.Droid.Resource.Styleable.GradientColor_android_startY;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.GradientColor_android_tileMode = global::ChefRisingStar.Droid.Resource.Styleable.GradientColor_android_tileMode;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.GradientColor_android_type = global::ChefRisingStar.Droid.Resource.Styleable.GradientColor_android_type;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Insets = global::ChefRisingStar.Droid.Resource.Styleable.Insets;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Insets_paddingBottomSystemWindowInsets = global::ChefRisingStar.Droid.Resource.Styleable.Insets_paddingBottomSystemWindowInsets;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Insets_paddingLeftSystemWindowInsets = global::ChefRisingStar.Droid.Resource.Styleable.Insets_paddingLeftSystemWindowInsets;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Insets_paddingRightSystemWindowInsets = global::ChefRisingStar.Droid.Resource.Styleable.Insets_paddingRightSystemWindowInsets;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ItemsViewRendererTheme = global::ChefRisingStar.Droid.Resource.Styleable.ItemsViewRendererTheme;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ItemsViewRendererTheme_collectionViewStyle = global::ChefRisingStar.Droid.Resource.Styleable.ItemsViewRendererTheme_collectionViewStyle;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.LinearLayoutCompat = global::ChefRisingStar.Droid.Resource.Styleable.LinearLayoutCompat;
@@ -3484,10 +3493,14 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialAlertDialog_backgroundInsetEnd = global::ChefRisingStar.Droid.Resource.Styleable.MaterialAlertDialog_backgroundInsetEnd;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialAlertDialog_backgroundInsetStart = global::ChefRisingStar.Droid.Resource.Styleable.MaterialAlertDialog_backgroundInsetStart;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialAlertDialog_backgroundInsetTop = global::ChefRisingStar.Droid.Resource.Styleable.MaterialAlertDialog_backgroundInsetTop;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialAutoCompleteTextView = global::ChefRisingStar.Droid.Resource.Styleable.MaterialAutoCompleteTextView;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialAutoCompleteTextView_android_inputType = global::ChefRisingStar.Droid.Resource.Styleable.MaterialAutoCompleteTextView_android_inputType;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialButton = global::ChefRisingStar.Droid.Resource.Styleable.MaterialButton;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialButtonToggleGroup = global::ChefRisingStar.Droid.Resource.Styleable.MaterialButtonToggleGroup;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialButtonToggleGroup_checkedButton = global::ChefRisingStar.Droid.Resource.Styleable.MaterialButtonToggleGroup_checkedButton;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialButtonToggleGroup_selectionRequired = global::ChefRisingStar.Droid.Resource.Styleable.MaterialButtonToggleGroup_selectionRequired;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialButtonToggleGroup_singleSelection = global::ChefRisingStar.Droid.Resource.Styleable.MaterialButtonToggleGroup_singleSelection;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialButton_android_background = global::ChefRisingStar.Droid.Resource.Styleable.MaterialButton_android_background;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialButton_android_checkable = global::ChefRisingStar.Droid.Resource.Styleable.MaterialButton_android_checkable;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialButton_android_insetBottom = global::ChefRisingStar.Droid.Resource.Styleable.MaterialButton_android_insetBottom;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialButton_android_insetLeft = global::ChefRisingStar.Droid.Resource.Styleable.MaterialButton_android_insetLeft;
@@ -3544,6 +3557,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialCheckBox_buttonTint = global::ChefRisingStar.Droid.Resource.Styleable.MaterialCheckBox_buttonTint;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialCheckBox_useMaterialThemeColors = global::ChefRisingStar.Droid.Resource.Styleable.MaterialCheckBox_useMaterialThemeColors;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialRadioButton = global::ChefRisingStar.Droid.Resource.Styleable.MaterialRadioButton;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialRadioButton_buttonTint = global::ChefRisingStar.Droid.Resource.Styleable.MaterialRadioButton_buttonTint;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialRadioButton_useMaterialThemeColors = global::ChefRisingStar.Droid.Resource.Styleable.MaterialRadioButton_useMaterialThemeColors;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialShape = global::ChefRisingStar.Droid.Resource.Styleable.MaterialShape;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.MaterialShape_shapeAppearance = global::ChefRisingStar.Droid.Resource.Styleable.MaterialShape_shapeAppearance;
@@ -3624,6 +3638,8 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::ChefRisingStar.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.PopupWindow_android_popupBackground = global::ChefRisingStar.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.PopupWindow_overlapAnchor = global::ChefRisingStar.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.RangeSlider = global::ChefRisingStar.Droid.Resource.Styleable.RangeSlider;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.RangeSlider_values = global::ChefRisingStar.Droid.Resource.Styleable.RangeSlider_values;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.RecycleListView = global::ChefRisingStar.Droid.Resource.Styleable.RecycleListView;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::ChefRisingStar.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::ChefRisingStar.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
@@ -3664,6 +3680,11 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.SearchView_submitBackground = global::ChefRisingStar.Droid.Resource.Styleable.SearchView_submitBackground;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.SearchView_suggestionRowLayout = global::ChefRisingStar.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.SearchView_voiceIcon = global::ChefRisingStar.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.ShapeableImageView = global::ChefRisingStar.Droid.Resource.Styleable.ShapeableImageView;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.ShapeableImageView_shapeAppearance = global::ChefRisingStar.Droid.Resource.Styleable.ShapeableImageView_shapeAppearance;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.ShapeableImageView_shapeAppearanceOverlay = global::ChefRisingStar.Droid.Resource.Styleable.ShapeableImageView_shapeAppearanceOverlay;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.ShapeableImageView_strokeColor = global::ChefRisingStar.Droid.Resource.Styleable.ShapeableImageView_strokeColor;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.ShapeableImageView_strokeWidth = global::ChefRisingStar.Droid.Resource.Styleable.ShapeableImageView_strokeWidth;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ShapeAppearance = global::ChefRisingStar.Droid.Resource.Styleable.ShapeAppearance;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ShapeAppearance_cornerFamily = global::ChefRisingStar.Droid.Resource.Styleable.ShapeAppearance_cornerFamily;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ShapeAppearance_cornerFamilyBottomLeft = global::ChefRisingStar.Droid.Resource.Styleable.ShapeAppearance_cornerFamilyBottomLeft;
@@ -3675,16 +3696,39 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ShapeAppearance_cornerSizeBottomRight = global::ChefRisingStar.Droid.Resource.Styleable.ShapeAppearance_cornerSizeBottomRight;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ShapeAppearance_cornerSizeTopLeft = global::ChefRisingStar.Droid.Resource.Styleable.ShapeAppearance_cornerSizeTopLeft;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ShapeAppearance_cornerSizeTopRight = global::ChefRisingStar.Droid.Resource.Styleable.ShapeAppearance_cornerSizeTopRight;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider = global::ChefRisingStar.Droid.Resource.Styleable.Slider;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_android_enabled = global::ChefRisingStar.Droid.Resource.Styleable.Slider_android_enabled;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_android_stepSize = global::ChefRisingStar.Droid.Resource.Styleable.Slider_android_stepSize;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_android_value = global::ChefRisingStar.Droid.Resource.Styleable.Slider_android_value;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_android_valueFrom = global::ChefRisingStar.Droid.Resource.Styleable.Slider_android_valueFrom;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_android_valueTo = global::ChefRisingStar.Droid.Resource.Styleable.Slider_android_valueTo;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_haloColor = global::ChefRisingStar.Droid.Resource.Styleable.Slider_haloColor;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_haloRadius = global::ChefRisingStar.Droid.Resource.Styleable.Slider_haloRadius;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_labelBehavior = global::ChefRisingStar.Droid.Resource.Styleable.Slider_labelBehavior;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_labelStyle = global::ChefRisingStar.Droid.Resource.Styleable.Slider_labelStyle;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_thumbColor = global::ChefRisingStar.Droid.Resource.Styleable.Slider_thumbColor;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_thumbElevation = global::ChefRisingStar.Droid.Resource.Styleable.Slider_thumbElevation;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_thumbRadius = global::ChefRisingStar.Droid.Resource.Styleable.Slider_thumbRadius;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_tickColor = global::ChefRisingStar.Droid.Resource.Styleable.Slider_tickColor;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_tickColorActive = global::ChefRisingStar.Droid.Resource.Styleable.Slider_tickColorActive;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_tickColorInactive = global::ChefRisingStar.Droid.Resource.Styleable.Slider_tickColorInactive;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_trackColor = global::ChefRisingStar.Droid.Resource.Styleable.Slider_trackColor;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_trackColorActive = global::ChefRisingStar.Droid.Resource.Styleable.Slider_trackColorActive;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_trackColorInactive = global::ChefRisingStar.Droid.Resource.Styleable.Slider_trackColorInactive;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Slider_trackHeight = global::ChefRisingStar.Droid.Resource.Styleable.Slider_trackHeight;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Snackbar = global::ChefRisingStar.Droid.Resource.Styleable.Snackbar;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.SnackbarLayout = global::ChefRisingStar.Droid.Resource.Styleable.SnackbarLayout;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.SnackbarLayout_actionTextColorAlpha = global::ChefRisingStar.Droid.Resource.Styleable.SnackbarLayout_actionTextColorAlpha;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.SnackbarLayout_android_maxWidth = global::ChefRisingStar.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.SnackbarLayout_animationMode = global::ChefRisingStar.Droid.Resource.Styleable.SnackbarLayout_animationMode;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.SnackbarLayout_backgroundOverlayColorAlpha = global::ChefRisingStar.Droid.Resource.Styleable.SnackbarLayout_backgroundOverlayColorAlpha;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.SnackbarLayout_backgroundTint = global::ChefRisingStar.Droid.Resource.Styleable.SnackbarLayout_backgroundTint;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.SnackbarLayout_backgroundTintMode = global::ChefRisingStar.Droid.Resource.Styleable.SnackbarLayout_backgroundTintMode;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.SnackbarLayout_elevation = global::ChefRisingStar.Droid.Resource.Styleable.SnackbarLayout_elevation;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::ChefRisingStar.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Snackbar_snackbarButtonStyle = global::ChefRisingStar.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Snackbar_snackbarStyle = global::ChefRisingStar.Droid.Resource.Styleable.Snackbar_snackbarStyle;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Snackbar_snackbarTextViewStyle = global::ChefRisingStar.Droid.Resource.Styleable.Snackbar_snackbarTextViewStyle;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Spinner = global::ChefRisingStar.Droid.Resource.Styleable.Spinner;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Spinner_android_dropDownWidth = global::ChefRisingStar.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Spinner_android_entries = global::ChefRisingStar.Droid.Resource.Styleable.Spinner_android_entries;
@@ -3766,7 +3810,10 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextAppearance_fontVariationSettings = global::ChefRisingStar.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextAppearance_textAllCaps = global::ChefRisingStar.Droid.Resource.Styleable.TextAppearance_textAllCaps;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextAppearance_textLocale = global::ChefRisingStar.Droid.Resource.Styleable.TextAppearance_textLocale;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputEditText = global::ChefRisingStar.Droid.Resource.Styleable.TextInputEditText;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputEditText_textInputLayoutFocusedRectEnabled = global::ChefRisingStar.Droid.Resource.Styleable.TextInputEditText_textInputLayoutFocusedRectEnabled;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_android_enabled = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_android_enabled;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_android_hint = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_android_hint;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_android_textColorHint = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_boxBackgroundColor = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_boxBackgroundColor;
@@ -3777,6 +3824,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_boxStrokeColor = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_boxStrokeColor;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_boxStrokeErrorColor = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_boxStrokeErrorColor;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_boxStrokeWidth = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_boxStrokeWidth;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_boxStrokeWidthFocused = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_boxStrokeWidthFocused;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_counterEnabled = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
@@ -3791,6 +3839,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_endIconMode = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_endIconMode;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_endIconTint = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_endIconTint;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_endIconTintMode = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_endIconTintMode;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_errorContentDescription = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_errorContentDescription;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_errorEnabled = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_errorIconDrawable = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_errorIconDrawable;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_errorIconTint = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_errorIconTint;
@@ -3810,6 +3859,12 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_passwordToggleTint = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_placeholderText = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_placeholderText;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_placeholderTextAppearance = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_placeholderTextAppearance;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_placeholderTextColor = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_placeholderTextColor;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_prefixText = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_prefixText;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_prefixTextAppearance = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_prefixTextAppearance;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_prefixTextColor = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_prefixTextColor;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_shapeAppearance = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_shapeAppearance;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_shapeAppearanceOverlay = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_shapeAppearanceOverlay;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_startIconCheckable = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_startIconCheckable;
@@ -3817,6 +3872,9 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_startIconDrawable = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_startIconDrawable;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_startIconTint = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_startIconTint;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_startIconTintMode = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_startIconTintMode;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_suffixText = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_suffixText;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_suffixTextAppearance = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_suffixTextAppearance;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.TextInputLayout_suffixTextColor = global::ChefRisingStar.Droid.Resource.Styleable.TextInputLayout_suffixTextColor;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ThemeEnforcement = global::ChefRisingStar.Droid.Resource.Styleable.ThemeEnforcement;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ThemeEnforcement_android_textAppearance = global::ChefRisingStar.Droid.Resource.Styleable.ThemeEnforcement_android_textAppearance;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme = global::ChefRisingStar.Droid.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme;
@@ -3852,6 +3910,14 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Toolbar_titleMarginTop = global::ChefRisingStar.Droid.Resource.Styleable.Toolbar_titleMarginTop;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Toolbar_titleTextAppearance = global::ChefRisingStar.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.Toolbar_titleTextColor = global::ChefRisingStar.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Tooltip = global::ChefRisingStar.Droid.Resource.Styleable.Tooltip;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Tooltip_android_layout_margin = global::ChefRisingStar.Droid.Resource.Styleable.Tooltip_android_layout_margin;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Tooltip_android_minHeight = global::ChefRisingStar.Droid.Resource.Styleable.Tooltip_android_minHeight;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Tooltip_android_minWidth = global::ChefRisingStar.Droid.Resource.Styleable.Tooltip_android_minWidth;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Tooltip_android_padding = global::ChefRisingStar.Droid.Resource.Styleable.Tooltip_android_padding;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Tooltip_android_text = global::ChefRisingStar.Droid.Resource.Styleable.Tooltip_android_text;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Tooltip_android_textAppearance = global::ChefRisingStar.Droid.Resource.Styleable.Tooltip_android_textAppearance;
+			global::Xamarin.CommunityToolkit.Resource.Styleable.Tooltip_backgroundTint = global::ChefRisingStar.Droid.Resource.Styleable.Tooltip_backgroundTint;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.View = global::ChefRisingStar.Droid.Resource.Styleable.View;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ViewBackgroundHelper = global::ChefRisingStar.Droid.Resource.Styleable.ViewBackgroundHelper;
 			global::Xamarin.CommunityToolkit.Resource.Styleable.ViewBackgroundHelper_android_background = global::ChefRisingStar.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
@@ -3873,6 +3939,7 @@ namespace ChefRisingStar.Droid
 			global::Xamarin.CommunityToolkit.Resource.Xml.standalone_badge_gravity_bottom_end = global::ChefRisingStar.Droid.Resource.Xml.standalone_badge_gravity_bottom_end;
 			global::Xamarin.CommunityToolkit.Resource.Xml.standalone_badge_gravity_bottom_start = global::ChefRisingStar.Droid.Resource.Xml.standalone_badge_gravity_bottom_start;
 			global::Xamarin.CommunityToolkit.Resource.Xml.standalone_badge_gravity_top_start = global::ChefRisingStar.Droid.Resource.Xml.standalone_badge_gravity_top_start;
+			global::Xamarin.CommunityToolkit.Resource.Xml.standalone_badge_offset = global::ChefRisingStar.Droid.Resource.Xml.standalone_badge_offset;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::ChefRisingStar.Droid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::ChefRisingStar.Droid.Resource.Attribute.font;
 			global::Xamarin.Essentials.Resource.Attribute.fontProviderAuthority = global::ChefRisingStar.Droid.Resource.Attribute.fontProviderAuthority;
@@ -18511,301 +18578,199 @@ namespace ChefRisingStar.Droid
 			public const int abc_vector_test = 2131165275;
 			
 			// aapt resource value: 0x7F07005C
-			public const int Avatar1 = 2131165276;
+			public const int avd_hide_password = 2131165276;
 			
 			// aapt resource value: 0x7F07005D
-			public const int Avatar10 = 2131165277;
+			public const int avd_show_password = 2131165277;
 			
 			// aapt resource value: 0x7F07005E
-			public const int Avatar11 = 2131165278;
+			public const int btn_checkbox_checked_mtrl = 2131165278;
 			
 			// aapt resource value: 0x7F07005F
-			public const int Avatar12 = 2131165279;
+			public const int btn_checkbox_checked_to_unchecked_mtrl_animation = 2131165279;
 			
 			// aapt resource value: 0x7F070060
-			public const int Avatar13 = 2131165280;
+			public const int btn_checkbox_unchecked_mtrl = 2131165280;
 			
 			// aapt resource value: 0x7F070061
-			public const int Avatar14 = 2131165281;
+			public const int btn_checkbox_unchecked_to_checked_mtrl_animation = 2131165281;
 			
 			// aapt resource value: 0x7F070062
-			public const int Avatar15 = 2131165282;
+			public const int btn_radio_off_mtrl = 2131165282;
 			
 			// aapt resource value: 0x7F070063
-			public const int Avatar16 = 2131165283;
+			public const int btn_radio_off_to_on_mtrl_animation = 2131165283;
 			
 			// aapt resource value: 0x7F070064
-			public const int Avatar17 = 2131165284;
+			public const int btn_radio_on_mtrl = 2131165284;
 			
 			// aapt resource value: 0x7F070065
-			public const int Avatar18 = 2131165285;
+			public const int btn_radio_on_to_off_mtrl_animation = 2131165285;
 			
 			// aapt resource value: 0x7F070066
-			public const int Avatar19 = 2131165286;
+			public const int Calendar64 = 2131165286;
 			
 			// aapt resource value: 0x7F070067
-			public const int Avatar2 = 2131165287;
+			public const int checkmark64 = 2131165287;
 			
 			// aapt resource value: 0x7F070068
-			public const int Avatar20 = 2131165288;
+			public const int chef = 2131165288;
 			
 			// aapt resource value: 0x7F070069
-			public const int Avatar21 = 2131165289;
+			public const int chef128 = 2131165289;
 			
 			// aapt resource value: 0x7F07006A
-			public const int Avatar22 = 2131165290;
+			public const int chef256 = 2131165290;
 			
 			// aapt resource value: 0x7F07006B
-			public const int Avatar23 = 2131165291;
+			public const int chef64 = 2131165291;
 			
 			// aapt resource value: 0x7F07006C
-			public const int Avatar24 = 2131165292;
+			public const int design_bottom_navigation_item_background = 2131165292;
 			
 			// aapt resource value: 0x7F07006D
-			public const int Avatar25 = 2131165293;
+			public const int design_fab_background = 2131165293;
 			
 			// aapt resource value: 0x7F07006E
-			public const int Avatar26 = 2131165294;
+			public const int design_ic_visibility = 2131165294;
 			
 			// aapt resource value: 0x7F07006F
-			public const int Avatar27 = 2131165295;
+			public const int design_ic_visibility_off = 2131165295;
 			
 			// aapt resource value: 0x7F070070
-			public const int Avatar28 = 2131165296;
+			public const int design_password_eye = 2131165296;
 			
 			// aapt resource value: 0x7F070071
-			public const int Avatar29 = 2131165297;
+			public const int design_snackbar_background = 2131165297;
 			
 			// aapt resource value: 0x7F070072
-			public const int Avatar3 = 2131165298;
+			public const int emptycheckbox64 = 2131165298;
 			
 			// aapt resource value: 0x7F070073
-			public const int Avatar30 = 2131165299;
+			public const int footprint64 = 2131165299;
 			
 			// aapt resource value: 0x7F070074
-			public const int Avatar4 = 2131165300;
-			
-			// aapt resource value: 0x7F070075
-			public const int Avatar5 = 2131165301;
-			
-			// aapt resource value: 0x7F070076
-			public const int Avatar6 = 2131165302;
-			
-			// aapt resource value: 0x7F070077
-			public const int Avatar7 = 2131165303;
-			
-			// aapt resource value: 0x7F070078
-			public const int Avatar8 = 2131165304;
+			public const int FootPrintCompare = 2131165300;
 			
 			// aapt resource value: 0x7F070079
-			public const int Avatar9 = 2131165305;
+			public const int icon_about = 2131165305;
 			
 			// aapt resource value: 0x7F07007A
-			public const int avd_hide_password = 2131165306;
+			public const int icon_feed = 2131165306;
+			
+			// aapt resource value: 0x7F070075
+			public const int ic_mtrl_checked_circle = 2131165301;
+			
+			// aapt resource value: 0x7F070076
+			public const int ic_mtrl_chip_checked_black = 2131165302;
+			
+			// aapt resource value: 0x7F070077
+			public const int ic_mtrl_chip_checked_circle = 2131165303;
+			
+			// aapt resource value: 0x7F070078
+			public const int ic_mtrl_chip_close_circle = 2131165304;
 			
 			// aapt resource value: 0x7F07007B
-			public const int avd_show_password = 2131165307;
+			public const int material_ic_calendar_black_24dp = 2131165307;
 			
 			// aapt resource value: 0x7F07007C
-			public const int btn_checkbox_checked_mtrl = 2131165308;
+			public const int material_ic_clear_black_24dp = 2131165308;
 			
 			// aapt resource value: 0x7F07007D
-			public const int btn_checkbox_checked_to_unchecked_mtrl_animation = 2131165309;
+			public const int material_ic_edit_black_24dp = 2131165309;
 			
 			// aapt resource value: 0x7F07007E
-			public const int btn_checkbox_unchecked_mtrl = 2131165310;
+			public const int material_ic_keyboard_arrow_left_black_24dp = 2131165310;
 			
 			// aapt resource value: 0x7F07007F
-			public const int btn_checkbox_unchecked_to_checked_mtrl_animation = 2131165311;
+			public const int material_ic_keyboard_arrow_right_black_24dp = 2131165311;
 			
 			// aapt resource value: 0x7F070080
-			public const int btn_radio_off_mtrl = 2131165312;
+			public const int material_ic_menu_arrow_down_black_24dp = 2131165312;
 			
 			// aapt resource value: 0x7F070081
-			public const int btn_radio_off_to_on_mtrl_animation = 2131165313;
+			public const int material_ic_menu_arrow_up_black_24dp = 2131165313;
 			
 			// aapt resource value: 0x7F070082
-			public const int btn_radio_on_mtrl = 2131165314;
+			public const int mtrl_dialog_background = 2131165314;
 			
 			// aapt resource value: 0x7F070083
-			public const int btn_radio_on_to_off_mtrl_animation = 2131165315;
+			public const int mtrl_dropdown_arrow = 2131165315;
 			
 			// aapt resource value: 0x7F070084
-			public const int Calendar64 = 2131165316;
+			public const int mtrl_ic_arrow_drop_down = 2131165316;
 			
 			// aapt resource value: 0x7F070085
-			public const int checkmark64 = 2131165317;
+			public const int mtrl_ic_arrow_drop_up = 2131165317;
 			
 			// aapt resource value: 0x7F070086
-			public const int chef = 2131165318;
+			public const int mtrl_ic_cancel = 2131165318;
 			
 			// aapt resource value: 0x7F070087
-			public const int chef128 = 2131165319;
+			public const int mtrl_ic_error = 2131165319;
 			
 			// aapt resource value: 0x7F070088
-			public const int chef256 = 2131165320;
+			public const int mtrl_popupmenu_background = 2131165320;
 			
 			// aapt resource value: 0x7F070089
-			public const int chef64 = 2131165321;
+			public const int mtrl_popupmenu_background_dark = 2131165321;
 			
 			// aapt resource value: 0x7F07008A
-			public const int clear_button_icon = 2131165322;
+			public const int mtrl_tabs_default_indicator = 2131165322;
 			
 			// aapt resource value: 0x7F07008B
-			public const int design_bottom_navigation_item_background = 2131165323;
+			public const int navigation_empty_icon = 2131165323;
 			
 			// aapt resource value: 0x7F07008C
-			public const int design_fab_background = 2131165324;
+			public const int notification_action_background = 2131165324;
 			
 			// aapt resource value: 0x7F07008D
-			public const int design_ic_visibility = 2131165325;
+			public const int notification_bg = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int design_ic_visibility_off = 2131165326;
+			public const int notification_bg_low = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int design_password_eye = 2131165327;
+			public const int notification_bg_low_normal = 2131165327;
 			
 			// aapt resource value: 0x7F070090
-			public const int design_snackbar_background = 2131165328;
+			public const int notification_bg_low_pressed = 2131165328;
 			
 			// aapt resource value: 0x7F070091
-			public const int emptycheckbox64 = 2131165329;
+			public const int notification_bg_normal = 2131165329;
 			
 			// aapt resource value: 0x7F070092
-			public const int footprint64 = 2131165330;
+			public const int notification_bg_normal_pressed = 2131165330;
 			
 			// aapt resource value: 0x7F070093
-			public const int FootPrintCompare = 2131165331;
-			
-			// aapt resource value: 0x7F070098
-			public const int icon_about = 2131165336;
-			
-			// aapt resource value: 0x7F070099
-			public const int icon_feed = 2131165337;
+			public const int notification_icon_background = 2131165331;
 			
 			// aapt resource value: 0x7F070094
-			public const int ic_mtrl_checked_circle = 2131165332;
+			public const int notification_template_icon_bg = 2131165332;
 			
 			// aapt resource value: 0x7F070095
-			public const int ic_mtrl_chip_checked_black = 2131165333;
+			public const int notification_template_icon_low_bg = 2131165333;
 			
 			// aapt resource value: 0x7F070096
-			public const int ic_mtrl_chip_checked_circle = 2131165334;
+			public const int notification_tile_bg = 2131165334;
 			
 			// aapt resource value: 0x7F070097
-			public const int ic_mtrl_chip_close_circle = 2131165335;
+			public const int notify_panel_notification_icon_bg = 2131165335;
 			
-			// aapt resource value: 0x7F07009B
-			public const int inputlayout_togglecollapseicon = 2131165339;
+			// aapt resource value: 0x7F070098
+			public const int test_custom_background = 2131165336;
 			
-			// aapt resource value: 0x7F07009C
-			public const int inputlayout_togglevisibleicon = 2131165340;
+			// aapt resource value: 0x7F070099
+			public const int tooltip_frame_dark = 2131165337;
 			
 			// aapt resource value: 0x7F07009A
-			public const int input_layout_drop_down_icon = 2131165338;
+			public const int tooltip_frame_light = 2131165338;
 			
-			// aapt resource value: 0x7F07009D
-			public const int material_ic_calendar_black_24dp = 2131165341;
+			// aapt resource value: 0x7F07009B
+			public const int trophy64 = 2131165339;
 			
-			// aapt resource value: 0x7F07009E
-			public const int material_ic_clear_black_24dp = 2131165342;
-			
-			// aapt resource value: 0x7F07009F
-			public const int material_ic_edit_black_24dp = 2131165343;
-			
-			// aapt resource value: 0x7F0700A0
-			public const int material_ic_keyboard_arrow_left_black_24dp = 2131165344;
-			
-			// aapt resource value: 0x7F0700A1
-			public const int material_ic_keyboard_arrow_right_black_24dp = 2131165345;
-			
-			// aapt resource value: 0x7F0700A2
-			public const int material_ic_menu_arrow_down_black_24dp = 2131165346;
-			
-			// aapt resource value: 0x7F0700A3
-			public const int material_ic_menu_arrow_up_black_24dp = 2131165347;
-			
-			// aapt resource value: 0x7F0700A4
-			public const int mtrl_dialog_background = 2131165348;
-			
-			// aapt resource value: 0x7F0700A5
-			public const int mtrl_dropdown_arrow = 2131165349;
-			
-			// aapt resource value: 0x7F0700A6
-			public const int mtrl_ic_arrow_drop_down = 2131165350;
-			
-			// aapt resource value: 0x7F0700A7
-			public const int mtrl_ic_arrow_drop_up = 2131165351;
-			
-			// aapt resource value: 0x7F0700A8
-			public const int mtrl_ic_cancel = 2131165352;
-			
-			// aapt resource value: 0x7F0700A9
-			public const int mtrl_ic_error = 2131165353;
-			
-			// aapt resource value: 0x7F0700AA
-			public const int mtrl_popupmenu_background = 2131165354;
-			
-			// aapt resource value: 0x7F0700AB
-			public const int mtrl_popupmenu_background_dark = 2131165355;
-			
-			// aapt resource value: 0x7F0700AC
-			public const int mtrl_tabs_default_indicator = 2131165356;
-			
-			// aapt resource value: 0x7F0700AD
-			public const int navigation_empty_icon = 2131165357;
-			
-			// aapt resource value: 0x7F0700AE
-			public const int notification_action_background = 2131165358;
-			
-			// aapt resource value: 0x7F0700AF
-			public const int notification_bg = 2131165359;
-			
-			// aapt resource value: 0x7F0700B0
-			public const int notification_bg_low = 2131165360;
-			
-			// aapt resource value: 0x7F0700B1
-			public const int notification_bg_low_normal = 2131165361;
-			
-			// aapt resource value: 0x7F0700B2
-			public const int notification_bg_low_pressed = 2131165362;
-			
-			// aapt resource value: 0x7F0700B3
-			public const int notification_bg_normal = 2131165363;
-			
-			// aapt resource value: 0x7F0700B4
-			public const int notification_bg_normal_pressed = 2131165364;
-			
-			// aapt resource value: 0x7F0700B5
-			public const int notification_icon_background = 2131165365;
-			
-			// aapt resource value: 0x7F0700B6
-			public const int notification_template_icon_bg = 2131165366;
-			
-			// aapt resource value: 0x7F0700B7
-			public const int notification_template_icon_low_bg = 2131165367;
-			
-			// aapt resource value: 0x7F0700B8
-			public const int notification_tile_bg = 2131165368;
-			
-			// aapt resource value: 0x7F0700B9
-			public const int notify_panel_notification_icon_bg = 2131165369;
-			
-			// aapt resource value: 0x7F0700BA
-			public const int test_custom_background = 2131165370;
-			
-			// aapt resource value: 0x7F0700BB
-			public const int tooltip_frame_dark = 2131165371;
-			
-			// aapt resource value: 0x7F0700BC
-			public const int tooltip_frame_light = 2131165372;
-			
-			// aapt resource value: 0x7F0700BD
-			public const int trophy64 = 2131165373;
-			
-			// aapt resource value: 0x7F0700BE
-			public const int xamarin_logo = 2131165374;
+			// aapt resource value: 0x7F07009C
+			public const int xamarin_logo = 2131165340;
 			
 			static Drawable()
 			{
