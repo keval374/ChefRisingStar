@@ -1,4 +1,5 @@
-﻿using ChefRisingStar.Views;
+﻿using ChefRisingStar.ViewModels;
+using ChefRisingStar.Views;
 using System;
 using Xamarin.Forms;
 
@@ -6,6 +7,7 @@ namespace ChefRisingStar
 {
     public partial class AppShell : Xamarin.Forms.Shell
     {
+        AppShellViewModel _viewModel;
         public AppShell()
         {
             InitializeComponent();
@@ -14,6 +16,8 @@ namespace ChefRisingStar
             Routing.RegisterRoute(nameof(AchievementDetailPage), typeof(AchievementDetailPage));
             Routing.RegisterRoute(nameof(FoodPrintsDetailPage), typeof(FoodPrintsDetailPage));
             Routing.RegisterRoute(nameof(RegisterPage), typeof(RegisterPage));
+
+            BindingContext = _viewModel = new AppShellViewModel();
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
