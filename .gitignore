@@ -348,3 +348,8 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/Database/sqlite3_analyzer.exe
+/Database/sqlite3.exe
+/Database/sqlite3.dll
+/Database/sqlite3.def
+/Database/sqldiff.exe

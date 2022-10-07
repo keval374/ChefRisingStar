@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31321.278
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChefRisingStar.Android", "ChefRisingStar.Android\ChefRisingStar.Android.csproj", "{C5FEDABA-89A5-4377-A685-30482EA8D369}"
 EndProject
@@ -12,6 +12,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D29F6B5C-E8E9-43E9-B721-7629382B5A54}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChefRisingStar.UnitTests", "ChefRisingStar.UnitTests\ChefRisingStar.UnitTests.csproj", "{B2E7431B-B119-435C-9519-662CF650D6CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{315E9471-110B-4499-B360-556FCDBDA0BA}"
+	ProjectSection(SolutionItems) = preProject
+		DatabaseSchema.sql = DatabaseSchema.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
