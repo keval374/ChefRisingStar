@@ -81,6 +81,9 @@
     <FlyoutItem Title="Adminstration" Icon="Calendar64.png" IsVisible="{Binding CurrentUser.IsAdmin}">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
+    <FlyoutItem Title="Register School" Icon="Calendar64.png" IsVisible="{Binding CurrentUser.IsAdmin}">
+        <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+    </FlyoutItem>
     <FlyoutItem Title="Daily Challenge" Icon="Calendar64.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
