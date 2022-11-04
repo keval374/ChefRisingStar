@@ -10,7 +10,7 @@ namespace ChefRisingStar.Helpers
     {
         private static List<SubstituteIngredient[]> NoSubstitutes;
 
-        private static List<string> measureTerms = new List<string> { "cup", "tbsp", "tsp", "oz", "g", "gr", "gram" };
+        private static List<string> measureTerms = new List<string> { "cup", "tbsp", "tsp", "oz", "ounce", "g", "gr", "gram", "bunch" };
         public static SubstituteIngredient[] ParseSubstitution(string substituion)
         {
             if (string.IsNullOrEmpty(substituion) || string.IsNullOrWhiteSpace(substituion))

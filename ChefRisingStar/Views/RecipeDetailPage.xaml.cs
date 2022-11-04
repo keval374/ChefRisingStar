@@ -20,13 +20,14 @@ namespace ChefRisingStar.Views
             BindingContext = _viewModel = new RecipeDetailViewModel(recipe);
         }
 
-        private void IngredientLongPressed(object sender, EventArgs e)
+        private void IngredientPressed(object sender, EventArgs e)
         {
-            var behave = sender as ButtonLongPressBehaviour;
+            //var behave = sender as ButtonLongPressBehaviour;
+            var behave = sender as Button;
 
             if (behave != null)
             {
-                ExtendedIngredient ingredient = behave.AttachedButton.CommandParameter as ExtendedIngredient;
+                ExtendedIngredient ingredient = behave.CommandParameter as ExtendedIngredient;
                 _viewModel.SelectedIngredient = ingredient;
                 _viewModel.IsContextMenuVisible = true;
                 _viewModel.GetSubstitutions(ingredient.NameClean);
@@ -35,20 +36,6 @@ namespace ChefRisingStar.Views
             {
                 Debug.WriteLine($"Error getting button for ingredient longpress sender: {sender}");
             }
-            
-            //var behave = sender as ButtonLongPressBehaviour;
-
-            //if (behave != null)
-            //{
-            //    ExtendedIngredient ingredient = behave.AttachedButton.CommandParameter as ExtendedIngredient;
-            //    _viewModel.SelectedIngredient = ingredient;
-            //    _viewModel.IsSubstitutionVisible = true;
-            //    _viewModel.GetSubstitutions(ingredient.NameClean);
-            //}
-            //else
-            //{
-            //    Debug.WriteLine($"Error getting button for ingredient longpress sender: {sender}");
-            //}
         }
 
         private void UseSubstituteClicked(object sender, EventArgs e)
@@ -56,10 +43,18 @@ namespace ChefRisingStar.Views
             _viewModel.IsSubstitutionVisible = false;
             _viewModel.ReplaceIngredient();
         }
+        
+        private void ViewMoreClicked(object sender, EventArgs e)
+        {
+            _viewModel.IsContextMenuVisible = false;
+            _viewModel.IsViewMoreVisible = true;
+            _viewModel.GetNutritionalInfo();
+        }
 
         private void CancelSubstituteClicked(object sender, EventArgs e)
         {
             _viewModel.IsSubstitutionVisible = false;
+            _viewModel.IsViewMoreVisible = false;
             _viewModel.SelectedIngredient = null;
         }
 

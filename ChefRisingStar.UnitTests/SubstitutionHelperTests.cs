@@ -32,7 +32,9 @@ namespace ChefRisingStar.UnitTests
             { "1 cup = 7/8 cup shortening and 1/2 tsp salt",
               "1/2 cup = 1/4 cup buttermilk + 1/4 cup unsweetened applesauce",
               "1 cup = 7/8 cup vegetable oil + 1/2 tsp salt",
+              "1 bunch = 1 bunch green onion",
               "1 cup = 1 cup margarine"};
+
 
             var converted = new List<SubstituteIngredient[]>();
             var results = new bool[substitutions.Length];

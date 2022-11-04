@@ -1,6 +1,7 @@
 ﻿using ChefRisingStar.Helpers;
 using ChefRisingStar.Models;
 using ChefRisingStar.Services;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,6 +11,7 @@ using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace ChefRisingStar.ViewModels
 {
@@ -17,6 +19,7 @@ namespace ChefRisingStar.ViewModels
     {
         #region Members
         private bool _isSubstitutionVisible;
+        private bool _isViewMoreVisible;
         private bool _isContextMenuVisible;
         private Recipe _recipe;
         private string _selectedSubstitution;
@@ -24,6 +27,8 @@ namespace ChefRisingStar.ViewModels
         private ExtendedIngredient _selectedIngredient;
 
         private List<ExtendedIngredient> _newIngredients { get; set; }
+
+        private NutritionInfo _nutritionInfo;
         #endregion Members
 
         #region Properties
@@ -40,8 +45,20 @@ namespace ChefRisingStar.ViewModels
                 OnPropertyChanged();
             }
         }
+        
+        public NutritionInfo RecipeNutritionInfo
+        {
+            get => _nutritionInfo;
+            set
+            {
+                _nutritionInfo = value;
+                OnPropertyChanged();
+            }
+        }
 
         public ObservableCollection<string> Substitutions { get; protected set; }
+        public ObservableCollection<NutritionInfoDetail> BasicNutritionalInfo { get; protected set; }
+        public ObservableCollection<NutritionInfoDetail> DetailNutritionalInfo { get; protected set; }
 
         public bool IsSubstitutionVisible
         {
@@ -49,6 +66,16 @@ namespace ChefRisingStar.ViewModels
             set
             {
                 _isSubstitutionVisible = value;
+                OnPropertyChanged();
+            }
+        }
+        
+        public bool IsViewMoreVisible
+        {
+            get => _isViewMoreVisible;
+            set
+            {
+                _isViewMoreVisible = value;
                 OnPropertyChanged();
             }
         }
@@ -112,6 +139,8 @@ namespace ChefRisingStar.ViewModels
             Instructions = new ObservableCollection<Step>();
             Substitutions = new ObservableCollection<string>();
             NewIngredients = new ObservableCollection<ExtendedIngredient>();
+            BasicNutritionalInfo = new ObservableCollection<NutritionInfoDetail>();
+            DetailNutritionalInfo = new ObservableCollection<NutritionInfoDetail>();
 
             foreach (AnalyzedInstruction ins in Recipe.AnalyzedInstructions)
             {
@@ -204,6 +233,93 @@ namespace ChefRisingStar.ViewModels
                 catch (Exception ex)
                 {
                     Debug.WriteLine($"Error getting substitutions: {ex}");
+                    await Application.Current.MainPage.DisplayAlert("API Error:", ex.Message, "OK");
+                }
+                finally
+                {
+                    IsBusy = false;
+                }
+            }
+        }
+        
+        internal async Task GetNutritionalInfo3()
+        {
+            if (IsBusy)
+                return;
+
+            IsBusy = true;
+
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    client.BaseAddress = new Uri($"https://api.spoonacular.com/recipes/{Recipe.Id}/nutritionWidget.json");
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json")); // Add an Accept header for JSON format.
+                    var streamTask = client.GetStreamAsync($"?apiKey=61f0c9888f5542a6b3604a030707b8ad");
+
+                    var temp = await streamTask;
+
+                    var result = streamTask.Result;
+
+                    var nutritionInfo = await JsonSerializer.DeserializeAsync<NutritionInfo>(await streamTask);
+
+                    if (nutritionInfo == null)
+                    {  
+                        return;
+                    }
+
+                    RecipeNutritionInfo = nutritionInfo;
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"Error getting nutritional: {ex}");
+                    await Application.Current.MainPage.DisplayAlert("API Error:", ex.Message, "OK");
+                }
+                finally
+                {
+                    IsBusy = false;
+                }
+            }
+        }
+        
+        internal async Task GetNutritionalInfo()
+        {
+            if (IsBusy)
+                return;
+
+            IsBusy = true;
+
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    client.BaseAddress = new Uri($"https://api.spoonacular.com/recipes/{Recipe.Id}/nutritionWidget.json");
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json")); // Add an Accept header for JSON format.
+                    var streamTask = client.GetStreamAsync($"?apiKey=61f0c9888f5542a6b3604a030707b8ad");
+
+                    string json = await client.GetStringAsync(client.BaseAddress+"?apiKey=61f0c9888f5542a6b3604a030707b8ad");
+                    var nutritionInfo = JsonConvert.DeserializeObject<NutritionInfo>(json);
+                    RecipeNutritionInfo = nutritionInfo;
+
+                    BasicNutritionalInfo.Clear();
+                    
+                    foreach(var i in RecipeNutritionInfo.Basics)
+                    {
+                        BasicNutritionalInfo.Add(i);
+                    }
+
+                    //DetailNutritionalInfo = new ObservableCollection<NutritionInfoDetail>(RecipeNutritionInfo.Details);
+                    DetailNutritionalInfo.Clear();
+
+                    foreach (var i in RecipeNutritionInfo.Details)
+                    {
+                        BasicNutritionalInfo.Add(i);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"Error getting nutritional: {ex}");
                     await Application.Current.MainPage.DisplayAlert("API Error:", ex.Message, "OK");
                 }
                 finally

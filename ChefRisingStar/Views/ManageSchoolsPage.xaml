@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChefRisingStar.Views.ManageSchoolsPage"
+             xmlns:vm="clr-namespace:ChefRisingStar.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid Margin="5" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Text="Find" VerticalTextAlignment="Center" FontSize="Header" />
+        <SearchBar Grid.Row="0" Grid.Column="1" />
+        <Image Source="plus.png" Grid.Row="0" Grid.Column="2" HeightRequest="32" />
+
+        <Label Grid.Row="1" Grid.Column="0" Text="School Name" VerticalTextAlignment="Center" FontSize="Header" />
+        <Entry Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="Morgan Stanley" />
+        <Label Grid.Row="2" Grid.Column="0" Text="Address" VerticalTextAlignment="Center" FontSize="Header" />
+        <Entry Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="700 Wellington St Montreal, QC H3C 3S4" HeightRequest="100" ClearButtonVisibility="WhileEditing" />
+        <Label Grid.Row="3" Grid.Column="0" Text="Phone" VerticalTextAlignment="Center" FontSize="Header" />
+        <Entry Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Text="+1 (514) 555-5555" ClearButtonVisibility="WhileEditing" />
+        <Label Grid.Row="4" Grid.Column="0" Text="Contact" VerticalTextAlignment="Center" FontSize="Header" />
+        <Entry Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Text="Headmaster Teacher" ClearButtonVisibility="WhileEditing" />
+    </Grid>
+
+</ContentPage>

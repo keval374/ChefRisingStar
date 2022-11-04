@@ -87,10 +87,10 @@
                                 </Grid>
                             </StackLayout>
                         </Grid>
-                        <Grid Grid.Row="1" VerticalOptions="FillAndExpand" Margin="0,-30,0,30">
+                        <Grid Grid.Row="1" VerticalOptions="FillAndExpand" Margin="0,-30,0,10">
                         <Frame CornerRadius="25" >
                             <Grid>
-                                <xct:TabView Style="{StaticResource CustomTabStyle}" HeightRequest="340">
+                                <xct:TabView Style="{StaticResource CustomTabStyle}" HeightRequest="450">
                                     <xct:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Ingredients" TextColorSelected="DarkGray">
                                         <Grid>
                                             <Frame Margin="0,-10,0,-10">
@@ -111,14 +111,13 @@
                                                                         <Image Grid.Row="0" Grid.Column="0" Source="{Binding ImageSrc}" WidthRequest="32" />
                                                                         <Label Grid.Row="0" Grid.Column="1" Text="{Binding AmountString}" LineBreakMode="TailTruncation" FontSize="Medium" VerticalTextAlignment="Center" />
                                                                     <Label Grid.Row="0" Grid.Column="2" Text="{Binding Unit}" LineBreakMode="NoWrap" FontSize="Medium" VerticalTextAlignment="Center" />
-                                                                    <Button Grid.Row="0" Grid.Column="3" Text="{Binding Name}" CommandParameter="{Binding .}" FontSize="Small" FontAttributes="Bold" TextColor="DarkBlue" BackgroundColor="Beige" HorizontalOptions="Start" VerticalOptions="Center" HeightRequest="20" Padding="-1">
-                                                                         put back     
-                                                                        <Button.Behaviors>
-                                                                                <!--<behaviours:ButtonLongPressBehaviour LongPressed="IngredientLongPressed" CommandParameter="{Binding .}" />
+                                                                    <Button Grid.Row="0" Grid.Column="3" Text="{Binding Name}" CommandParameter="{Binding .}" Clicked="IngredientPressed" FontSize="Small" FontAttributes="Bold" TextColor="DarkBlue" BackgroundColor="Beige" HorizontalOptions="Start" VerticalOptions="Center" HeightRequest="20" Padding="-1">                                                                         
+                                                                        <!--<Button.Behaviors>
+                                                                                --><!--<behaviours:ButtonLongPressBehaviour LongPressed="IngredientLongPressed" CommandParameter="{Binding .}" />
                                                                                 
                                                                                 Eventually use bindings
-                                                                                <behaviours:ButtonLongPressBehaviour Command="{Binding OpenSubstitutionsCommand}" CommandParameter="{Binding .}" />-->
-                                                                            </Button.Behaviors>
+                                                                                <behaviours:ButtonLongPressBehaviour Command="{Binding OpenSubstitutionsCommand}" CommandParameter="{Binding .}" />--><!--
+                                                                            </Button.Behaviors>-->
                                                                         </Button>
                                                                     </Grid>
                                                                 </DataTemplate>
@@ -131,7 +130,7 @@
                                         <xct:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Instructions" TextColorSelected="DarkGray">
                                             <Grid BackgroundColor="White">
                                                 <Frame Margin="0,-10,0,-10">
-                                                    <ScrollView>                                                       
+                                                    <ScrollView>
                                                             <CollectionView x:Name="InstructionsListView" ItemsSource="{Binding Instructions}" SelectionMode="None">
                                                                 <CollectionView.ItemTemplate>
                                                                     <DataTemplate>
@@ -156,15 +155,48 @@
                                             </Grid>
                                         </xct:TabViewItem>
                                         <xct:TabViewItem ControlTemplate="{StaticResource CustomTab}" Text="Review" TextColorSelected="DarkGray">
-                                            <Grid>
+                                            <ScrollView>
+                                            <StackLayout Orientation="Vertical" Spacing="10">
                                                 <Frame>
                                                     <Image x:Name="imgFootprint" Source="FootPrintCompare.PNG">
                                                         <Image.GestureRecognizers>
                                                             <PanGestureRecognizer PanUpdated="OnPanUpdated" />
                                                         </Image.GestureRecognizers>
-                                                    </Image>                                                    
+                                                    </Image>
                                                 </Frame>
-                                            </Grid>
+                                                <Grid BackgroundColor="White">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                    </Grid.RowDefinitions>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="Auto" />
+                                                        <ColumnDefinition Width="*" />
+                                                    </Grid.ColumnDefinitions>
+                                                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Eco Review" FontSize="18" />
+                                                    <Label Grid.Row="1" Grid.Column="0" Text="Land Usage" />
+                                                    <Label Grid.Row="1" Grid.Column="1" Text="-20%" TextColor="Green" />
+                                                    <Label Grid.Row="2" Grid.Column="0" Text="Water Usage" />
+                                                    <Label Grid.Row="2" Grid.Column="1" Text="-45%" TextColor="Green" />
+                                                    <Label Grid.Row="3" Grid.Column="0" Text="Packaging" />
+                                                    <Label Grid.Row="3" Grid.Column="1" Text="+5%" TextColor="Red" />
+                                                    <Label Grid.Row="4" Grid.Column="0" Text="CO2" />
+                                                    <Label Grid.Row="4" Grid.Column="1" Text="-55%" TextColor="Green" />
+                                                    <Label Grid.Row="5" Grid.Column="0" Text="Transport" />
+                                                    <Label Grid.Row="5" Grid.Column="1" Text="-15%" TextColor="Green" />
+                                                    <Label Grid.Row="6" Grid.Column="0" Text="Farming" />
+                                                    <Label Grid.Row="6" Grid.Column="1" Text="-65%" TextColor="Green" />
+                                                    <Label Grid.Row="7" Grid.Column="0" Text="Waste" />
+                                                    <Label Grid.Row="7" Grid.Column="1" Text="-52%" TextColor="Green" />
+                                                </Grid>
+                                            </StackLayout>
+                                            </ScrollView>
                                         </xct:TabViewItem>
                                     </xct:TabView>
                                 </Grid>
@@ -182,12 +214,10 @@
                                 <Image Source="https://cdn.iconscout.com/icon/premium/png-256-thumb/save-2037779-1723249.png" Aspect="AspectFit" Margin="5"/>
                             </pancake:PancakeView>
                         </Grid>
+                        <pancake:PancakeView Grid.Row="2" BackgroundColor="CornflowerBlue" HeightRequest="50" Padding="0" CornerRadius="20,20,0,0" VerticalOptions="EndAndExpand">
+                            <Label Text="Make this dish!" FontSize="20" TextColor="MintCream" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                        </pancake:PancakeView>
                     </Grid>
-
-                <pancake:PancakeView Grid.Row="2" BackgroundColor="CornflowerBlue" HeightRequest="50" Padding="0" CornerRadius="20,20,0,0" VerticalOptions="EndAndExpand" Margin="0,-50,0,0">
-                        <Label Text="Make this dish!" FontSize="20" TextColor="MintCream" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
-                    </pancake:PancakeView>
-                    
                 </StackLayout>
             </RefreshView>
             <ContentView x:Name="popupViewSubstitutions" BackgroundColor="#C0808080" Padding="30, 0" IsVisible="{Binding IsSubstitutionVisible}" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
@@ -208,9 +238,39 @@
                     </StackLayout>
                 </StackLayout>
             </ContentView>
+            <ContentView x:Name="popupViewMore" BackgroundColor="#C0808080" Padding="30, 0" IsVisible="{Binding IsViewMoreVisible}" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White" Margin="10">
+                        <Label Text="Nutritional Information" FontSize="18" />
+                        <ListView x:Name="nutritionalInfoBasics" ItemsSource="{Binding BasicNutritionalInfo}" SelectionMode="None">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid RowSpacing="0">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Label Grid.Column="0" Text="{Binding Title}" FontAttributes="Bold" Margin="10,0,0,0"/>
+                                            <Label Grid.Column="1" Text="{Binding Amount}" />
+                                            <Label Grid.Column="2" Text="{Binding DailyPercent}" Margin="0,0,10,0" />
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        <Button Text="Close" Clicked="CancelSubstituteClicked" Margin="10" />
+                    </StackLayout>
+                </StackLayout>
+            </ContentView>
             <ContentView x:Name="popupContextMenu" BackgroundColor="#C0808080" Padding="30, 0" IsVisible="{Binding IsContextMenuVisible}" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
-                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">                    
-                    <Button Text="Learn More..." Clicked="UseSubstituteClicked" Margin="10,10,10,0"/>
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <Button Text="Learn More..." Clicked="ViewMoreClicked" Margin="10,10,10,0"/>
                     <Button Text="View Substitutes" Clicked="ViewSubstitutesClicked" Margin="10,10,10,0"/>
                     <Button Text="View Footprint" Clicked="UseSubstituteClicked" Margin="10,10,10,0"/>
                     <Button Text="Close" Clicked="CloseContextMenu" Margin="10" />

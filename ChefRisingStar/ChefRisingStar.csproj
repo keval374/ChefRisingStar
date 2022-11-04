@@ -8,18 +8,25 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.8" />
-    <PackageReference Include="System.Text.Json" Version="6.0.4" />
-    <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.2" />  
+    <PackageReference Include="System.Drawing.Primitives" Version="4.3.0" />
+    <PackageReference Include="System.Text.Json" Version="6.0.6" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.5" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\ManageUsersPage.xaml.cs">
+      <DependentUpon>ManageUsersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ManageSchoolsPage.xaml.cs">
+      <DependentUpon>ManageSchoolsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\AchievementsPage.xaml.cs">
       <DependentUpon>AchievementsPage.xaml</DependentUpon>
     </Compile>

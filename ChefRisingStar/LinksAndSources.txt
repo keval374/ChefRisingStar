@@ -49,3 +49,7 @@ https://stackoverflow.com/questions/39620775/xamarin-forms-collapsable-stacklayo
 
 Commanding:
 https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-binding/commanding
+
+File Access:
+https://learn.microsoft.com/en-us/xamarin/android/platform/files/
+https://learn.microsoft.com/en-us/xamarin/essentials/permissions?tabs=android

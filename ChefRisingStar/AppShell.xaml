@@ -78,11 +78,14 @@
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
-    <FlyoutItem Title="Adminstration" Icon="Calendar64.png" IsVisible="{Binding CurrentUser.IsAdmin}">
+    <FlyoutItem Title="About" Icon="icon_about.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Register School" Icon="Calendar64.png" IsVisible="{Binding CurrentUser.IsAdmin}">
-        <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+    <FlyoutItem Title="Adminstration" Icon="briefcase128.png" IsVisible="{Binding CurrentUser.IsAdmin}" FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Adminstration" Icon="briefcase128.png">
+            <ShellContent Title="Manage Schools" Route="ManageSchoolsPage" Icon="briefcase128.png" ContentTemplate="{DataTemplate local:ManageSchoolsPage}" />
+            <ShellContent Title="Manage Users" Route="ManageUsersPage" Icon="briefcase128.png" ContentTemplate="{DataTemplate local:ManageUsersPage}" />
+        </Tab>
     </FlyoutItem>
     <FlyoutItem Title="Daily Challenge" Icon="Calendar64.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
@@ -96,12 +99,10 @@
     <FlyoutItem Title="Achievements" Icon="trophy64.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AchievementsPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Preferences" Icon="icon_feed.png">
+    <FlyoutItem Title="Preferences" Icon="control128.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="About" Icon="icon_about.png">
-        <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-    </FlyoutItem>
+    
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
     <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
