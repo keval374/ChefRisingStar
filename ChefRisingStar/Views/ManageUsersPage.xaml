@@ -23,6 +23,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -33,29 +34,37 @@
 
         <Label Grid.Row="0" Grid.Column="0" Text="Find" VerticalTextAlignment="Center" FontSize="Header" />
         <SearchBar Grid.Row="0" Grid.Column="1" x:Name="searchBar" Placeholder="Search users..." SearchCommand="{Binding PerformSearch}"
-                   SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}" />
+                   SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}" TextChanged="OnTextChanged" />
         <Image Source="plus.png" Grid.Row="0" Grid.Column="2" HeightRequest="32" />
 
-        <ListView x:Name="searchResults" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" ItemsSource="{Binding Users}">
+        <ListView x:Name="searchResults" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" ItemsSource="{Binding Users}" SelectedItem="{Binding SelectedItem}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
+                    <TextCell Text="{Binding DisplayName}" Detail="{Binding EmailAddress}" />
+                    <!--<ViewCell>
                     <StackLayout>
                         <Label Text="{Binding FirstName}" />
                     </StackLayout>
-                    </ViewCell>
+                    </ViewCell>-->
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
 
         <Label Grid.Row="2" Grid.Column="0" Text="First Name" VerticalTextAlignment="Center" FontSize="Header" />
-        <Entry Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="Morgan" ClearButtonVisibility="WhileEditing" />
+        <Entry Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding SelectedItem.FirstName}" ClearButtonVisibility="WhileEditing" />
         <Label Grid.Row="3" Grid.Column="0" Text="Last Name" VerticalTextAlignment="Center" FontSize="Header" />
-        <Entry Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Text="Stanley" ClearButtonVisibility="WhileEditing" />
+        <Entry Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding SelectedItem.LastName}" ClearButtonVisibility="WhileEditing" />
         <Label Grid.Row="4" Grid.Column="0" Text="Email" VerticalTextAlignment="Center" FontSize="Header" />
-        <Entry Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Text="user@email.com" ClearButtonVisibility="WhileEditing" />
+        <Entry Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding SelectedItem.EmailAddress}" ClearButtonVisibility="WhileEditing" />
         <Label Grid.Row="5" Grid.Column="0" Text="School" VerticalTextAlignment="Center" FontSize="Header" />
-        <Entry Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Text="Morgan Stanley Academy" ClearButtonVisibility="WhileEditing" />
+        <Entry Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding SelectedItem.SchoolId}" ClearButtonVisibility="WhileEditing" />
+        <Label Grid.Row="6" Grid.Column="0" Text="Is Admin" VerticalTextAlignment="Center" FontSize="Header" />
+        <StackLayout Grid.Row="6" Grid.Column="1" Orientation="Horizontal" RadioButtonGroup.GroupName="IsAdmin" RadioButtonGroup.SelectedValue="{Binding SelectedItem.IsAdmin}">
+            <RadioButton Value="true" Content="Yes" />
+            <RadioButton Value="false" Content="No" />
+        </StackLayout>
+
+
     </Grid>
 
 </ContentPage>

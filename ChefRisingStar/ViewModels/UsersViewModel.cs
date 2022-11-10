@@ -107,19 +107,19 @@ namespace ChefRisingStar.ViewModels
 
         public void GetSearchResults(string searchText)
         {
-            //Users.Clear();
-
-            //foreach (var result in DataStore.GetSearchResults(searchText))
-            //{
-            //    Users.Add(result);
-            //}
-
+            IsBusy = true;
             Users = DataStore.GetSearchResults(searchText).ToList();
+            IsBusy = false;
         }
 
         public ICommand PerformSearch => new Command<string>((string query) =>
         {
-            Users = DataStore.GetSearchResults(query).ToList();
+            if (query.Length > 2)
+            {
+                IsBusy = true;
+                Users = DataStore.GetSearchResults(query).ToList();
+                IsBusy = false;
+            }
         });
 
     }

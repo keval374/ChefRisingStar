@@ -15,8 +15,9 @@ namespace ChefRisingStar.Models
         UserLikedIngredient,
         UserSharedPhoto,
         UserSharedUpdate,
-        UserJoinedBridage,
-        UsewrSubmittedRecipe,
+        UserJoinedBrigade,
+        UserSubmittedRecipe,
+        UserSentMessage,
         AppError
     }
     public class AppMetric

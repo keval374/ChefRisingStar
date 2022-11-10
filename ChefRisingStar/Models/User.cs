@@ -7,7 +7,7 @@ namespace ChefRisingStar.Models
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string UserName { get; set; }
+        public string Username { get; set; }
         public string EmailAddress{ get; set; }
         public string SocialMediaAccount { get; set; }
         public string SocialMediaProvider { get; set; }
@@ -17,6 +17,12 @@ namespace ChefRisingStar.Models
         public DateTime LastLoginDate { get; set; }
 
         public bool IsAdmin { get; set; }
+        public bool IsLocked { get; set; }
+
+        public string DisplayName
+        {
+            get { return $"{Username} - {FirstName} {LastName}"; }
+        }
 
         public User()
         {
@@ -28,7 +34,7 @@ namespace ChefRisingStar.Models
             Id = id;
             FirstName = firstName;
             LastName = lastName;
-            UserName = userName;
+            Username = userName;
             EmailAddress = emailAddress;
             LastLoginDate = DateTime.Now;
 
@@ -40,7 +46,7 @@ namespace ChefRisingStar.Models
 
         public override string ToString()
         {
-            return $"{UserName} : {EmailAddress}";
+            return $"{Username} : {EmailAddress}";
         }
     }
 }

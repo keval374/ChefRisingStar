@@ -19,7 +19,11 @@ namespace ChefRisingStar.Views
         void OnTextChanged(object sender, EventArgs e)
         {
             SearchBar searchBar = (SearchBar)sender;
-            _viewModel.GetSearchResults(searchBar.Text);
+
+            if (searchBar.Text.Length > 2)
+            {
+                _viewModel.GetSearchResults(searchBar.Text);
+            }
         }
     }
 }

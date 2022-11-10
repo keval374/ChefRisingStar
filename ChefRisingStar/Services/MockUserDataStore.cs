@@ -64,7 +64,7 @@ namespace ChefRisingStar.Services
 
         public IEnumerable<User> GetSearchResults(string searchText)
         {
-            return items.Where(i => i.FirstName.Contains(searchText)|| i.LastName.Contains(searchText) || i.UserName.Contains(searchText));
+            return items.Where(i => i.FirstName.Contains(searchText)|| i.LastName.Contains(searchText) || i.Username.Contains(searchText));
         }
     }
 }
