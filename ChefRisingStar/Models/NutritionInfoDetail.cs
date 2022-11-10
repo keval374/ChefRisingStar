@@ -46,7 +46,7 @@ namespace ChefRisingStar.Models
         [JsonIgnore]
         public string DailyPercent
         {
-            get { return PercentOfDailyNeeds.ToString("P"); }
+            get { return (PercentOfDailyNeeds/100).ToString("P"); }
         }
 
         public override string ToString()

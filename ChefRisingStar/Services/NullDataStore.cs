@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChefRisingStar.Models;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
@@ -43,6 +44,11 @@ namespace ChefRisingStar.Services
         }
 
         public ReadOnlyCollection<bool> GetItems(bool forceRefresh = false)
+        {
+            return new ReadOnlyCollection<bool>(new[] { true, false });
+        }
+
+        public IEnumerable<bool> GetSearchResults(string searchText)
         {
             return new ReadOnlyCollection<bool>(new[] { true, false });
         }

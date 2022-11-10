@@ -6,7 +6,7 @@
              Title="{Binding Title}">
     
     <ContentPage.BindingContext>
-        <vm:AboutViewModel />
+        <vm:UsersViewModel />
     </ContentPage.BindingContext>
     
     <ContentPage.Resources>
@@ -18,11 +18,11 @@
     <Grid Margin="5" RowSpacing="0">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -32,17 +32,30 @@
         </Grid.ColumnDefinitions>
 
         <Label Grid.Row="0" Grid.Column="0" Text="Find" VerticalTextAlignment="Center" FontSize="Header" />
-        <SearchBar Grid.Row="0" Grid.Column="1" />
+        <SearchBar Grid.Row="0" Grid.Column="1" x:Name="searchBar" Placeholder="Search users..." SearchCommand="{Binding PerformSearch}"
+                   SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}" />
         <Image Source="plus.png" Grid.Row="0" Grid.Column="2" HeightRequest="32" />
 
-        <Label Grid.Row="1" Grid.Column="0" Text="First Name" VerticalTextAlignment="Center" FontSize="Header" />
-        <Entry Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="Morgan" ClearButtonVisibility="WhileEditing" />
-        <Label Grid.Row="2" Grid.Column="0" Text="Last Name" VerticalTextAlignment="Center" FontSize="Header" />
-        <Entry Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="Stanley" ClearButtonVisibility="WhileEditing" />
-        <Label Grid.Row="3" Grid.Column="0" Text="Email" VerticalTextAlignment="Center" FontSize="Header" />
-        <Entry Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Text="user@email.com" ClearButtonVisibility="WhileEditing" />
-        <Label Grid.Row="4" Grid.Column="0" Text="School" VerticalTextAlignment="Center" FontSize="Header" />
-        <Entry Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Text="Morgan Stanley Academy" ClearButtonVisibility="WhileEditing" />
+        <ListView x:Name="searchResults" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" ItemsSource="{Binding Users}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                    <StackLayout>
+                        <Label Text="{Binding FirstName}" />
+                    </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Label Grid.Row="2" Grid.Column="0" Text="First Name" VerticalTextAlignment="Center" FontSize="Header" />
+        <Entry Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="Morgan" ClearButtonVisibility="WhileEditing" />
+        <Label Grid.Row="3" Grid.Column="0" Text="Last Name" VerticalTextAlignment="Center" FontSize="Header" />
+        <Entry Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Text="Stanley" ClearButtonVisibility="WhileEditing" />
+        <Label Grid.Row="4" Grid.Column="0" Text="Email" VerticalTextAlignment="Center" FontSize="Header" />
+        <Entry Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Text="user@email.com" ClearButtonVisibility="WhileEditing" />
+        <Label Grid.Row="5" Grid.Column="0" Text="School" VerticalTextAlignment="Center" FontSize="Header" />
+        <Entry Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Text="Morgan Stanley Academy" ClearButtonVisibility="WhileEditing" />
     </Grid>
 
 </ContentPage>
