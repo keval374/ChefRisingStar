@@ -1,14 +1,17 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Reflection.Metadata;
 
 namespace ChefRisingStar.Models
 {
+    [DebuggerDisplay("{GetDebuggerDisplay}")]
     public class User
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Username { get; set; }
-        public string EmailAddress{ get; set; }
+        public string EmailAddress { get; set; }
         public string SocialMediaAccount { get; set; }
         public string SocialMediaProvider { get; set; }
         public int SchoolId { get; set; }
@@ -28,7 +31,7 @@ namespace ChefRisingStar.Models
         {
 
         }
-        
+
         public User(int id, string firstName, string lastName, string userName, string emailAddress)
         {
             Id = id;
@@ -46,7 +49,15 @@ namespace ChefRisingStar.Models
 
         public override string ToString()
         {
+            if (string.IsNullOrEmpty(EmailAddress))
+                return Username;
+
             return $"{Username} : {EmailAddress}";
+        }
+
+        private string GetDebuggerDisplay()
+        {
+            return $"{Id} - {Username}";
         }
     }
 }

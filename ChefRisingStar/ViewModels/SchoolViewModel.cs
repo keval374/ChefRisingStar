@@ -6,22 +6,15 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace ChefRisingStar.ViewModels
 {
-    public class UsersViewModel : BaseDataViewModel<User, int>
+    public class SchoolViewModel : BaseDataViewModel<School, int>
     {
-        private User _selectedItem;
-        private School _selectedSchool;
-
-        private bool _isUsernameReadonly = true;
-
-        public bool IsUsernameReadonly
-        {
-            get { return _isUsernameReadonly; }
-            set { SetProperty(ref _isUsernameReadonly, value); }
-        }
+        private IDataStore<User, int> _userDataStore;
+        private School _selectedItem;
 
         private List<User> _allUsers;
         public List<User> AllUsers
@@ -33,6 +26,19 @@ namespace ChefRisingStar.ViewModels
             set
             {
                 SetProperty(ref _allUsers, value);
+            }
+        }
+        
+        private List<User> _contacts;
+        public List<User> Contacts
+        {
+            get
+            {
+                return _contacts;
+            }
+            set
+            {
+                SetProperty(ref _contacts, value);
             }
         }
         
@@ -48,17 +54,17 @@ namespace ChefRisingStar.ViewModels
                 SetProperty(ref _allSchools, value);
             }
         }
-
-        private List<User> _users;
-        public List<User> Users
+        
+        private List<School> _schools;
+        public List<School> Schools
         {
             get
             {
-                return _users;
+                return _schools;
             }
             set
             {
-                SetProperty(ref _users, value);
+                SetProperty(ref _schools, value);
             }
         }
 
@@ -75,7 +81,7 @@ namespace ChefRisingStar.ViewModels
             }
         }
 
-        public User SelectedItem
+        public School SelectedItem
         {
             get => _selectedItem;
             set
@@ -84,35 +90,43 @@ namespace ChefRisingStar.ViewModels
                 OnItemSelected(value);
             }
         }
-        public School SelectedSchool
+
+        private User _selectedContact;
+        public User SelectedContact
         {
-            get => _selectedSchool;
+            get => _selectedContact;
             set
             {
-                SetProperty(ref _selectedSchool, value);
+                SetProperty(ref _selectedContact, value);
+                OnContactSelected(value);
             }
+        }
+
+        private void OnContactSelected(User value)
+        {
+            if(value != null)
+                SelectedItem.ContactId = value.Id;
         }
 
         public Command LoadItemsCommand { get; }
         public Command AddItemCommand { get; }
-        public Command<User> ItemTapped { get; }
+        public Command<School> ItemTapped { get; }
 
-        public override IDataStore<User, int> DataStore { get; protected set; }
-        public IDataStore<School, int> SchoolDataStore { get; protected set; }
-
-        public UsersViewModel()
+        public override IDataStore<School, int> DataStore { get; protected set; }
+        
+        public SchoolViewModel()
         {
-            Title = "Users";
-            Users = new List<User>();
+            Title = "Schools";
+            Schools = new List<School>();
             AllUsers = new List<User>();
 
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
-            ItemTapped = new Command<User>(OnItemSelected);
+            ItemTapped = new Command<School>(OnItemSelected);
 
             AddItemCommand = new Command(OnAddItem);
 
-            DataStore = DependencyService.Get<IDataStore<User, int>>();
-            SchoolDataStore = DependencyService.Get<IDataStore<School, int>>();
+            DataStore = DependencyService.Get<IDataStore<School, int>>();
+            _userDataStore = DependencyService.Get<IDataStore<User, int>>();
             ExecuteLoadItemsCommand();
         }
 
@@ -122,11 +136,12 @@ namespace ChefRisingStar.ViewModels
 
             try
             {
-                AllUsers = (await DataStore.GetItemsAsync(true)).ToList();
-                AllSchools = (await SchoolDataStore.GetItemsAsync(true)).ToList();
+                AllUsers = (await _userDataStore.GetItemsAsync(true)).ToList();
+                AllSchools = (await DataStore.GetItemsAsync(true)).ToList();
                 AllSchools.Sort();
 
-                AllSchools.Insert(0, new School(0, "None", string.Empty, string.Empty, string.Empty, 0));
+                AllUsers.Insert(0, new User(0, "None", string.Empty, "None", string.Empty));
+                Schools = AllSchools;
             }
             catch (Exception ex)
             {
@@ -148,33 +163,28 @@ namespace ChefRisingStar.ViewModels
         {
             SearchText = string.Empty;
 
-            IsUsernameReadonly = false;
+            School item = new School(0, "New School", string.Empty, string.Empty, string.Empty, 0);
 
-            User user = new User()
-            {
-                Username = "Username",
-                FirstName = "Firstname",
-                LastName = "Lastname",
-                EmailAddress = "user@email.com"
-            };
-
-            //DataStore.AddItemAsync(user);
-            AllUsers.Add(user);
-            Users = AllUsers.Where(i => i.Username == user.Username).ToList();
-            SelectedItem = user;
+            //DataStore.AddItemAsync(item);
+            AllSchools.Add(item);
+            _schools = AllSchools.Where(i => i.Name == item.Name).ToList();
+            SelectedItem = item;
         }
 
-        async void OnItemSelected(User item)
+        async void OnItemSelected(School item)
         {
             if (item == null)
                 return;
 
-            IsUsernameReadonly = true;
+            Contacts = new List<User>();
 
-            if (item.Id == 0)
-                IsUsernameReadonly = false;
+            //Filter to only people who go to that school
+            var results = AllUsers.Where(i => i.SchoolId == SelectedItem.Id || i.Id == 0);
 
-            SelectedSchool = AllSchools.Where(x => x.Id == SelectedItem.SchoolId).FirstOrDefault();
+            if(results.Any())
+                Contacts = results.AsEnumerable().ToList();
+            
+            SelectedContact = AllUsers.Where(x => x.Id == SelectedItem.ContactId).FirstOrDefault();
 
             // This will push the ItemDetailPage onto the navigation stack
             //TODO: Implement UserDetailPage & UserDetailViewModel
@@ -185,7 +195,7 @@ namespace ChefRisingStar.ViewModels
         {
             IsBusy = true;
             searchText = searchText.Trim().ToLower();
-            Users = AllUsers.Where(i => i.FirstName.Contains(searchText) || i.LastName.Contains(searchText) || i.Username.Contains(searchText)).ToList();
+            Schools = AllSchools.Where(i => i.Name.Contains(searchText) || i.Address.Contains(searchText) || i.City.Contains(searchText)).ToList();
             IsBusy = false;
         }
 
@@ -197,12 +207,11 @@ namespace ChefRisingStar.ViewModels
             }
         });
 
-        public ICommand ShowAllUsers => new Command(() =>
+        public ICommand ShowAllSchools => new Command(() =>
         {
             IsBusy = true;
-            Users = AllUsers.ToList();
+            Schools = AllSchools;
             IsBusy = false;
-
         });
     }
 }

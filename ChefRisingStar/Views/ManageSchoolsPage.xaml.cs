@@ -1,19 +1,29 @@
-﻿using ChefRisingStar.Models;
-using System.Diagnostics;
+﻿using ChefRisingStar.ViewModels;
 using System;
 using Xamarin.Forms;
-using System.Text.Json;
 
 namespace ChefRisingStar.Views
 {
     public partial class ManageSchoolsPage : ContentPage
     {
-        
+        SchoolViewModel _viewModel;
+
         public ManageSchoolsPage()
         {
             InitializeComponent();
             Title = "Manage Schools";
-            
+
+            BindingContext = _viewModel = new SchoolViewModel();
+        }
+
+        void OnTextChanged(object sender, EventArgs e)
+        {
+            SearchBar searchBar = (SearchBar)sender;
+
+            if (searchBar.Text.Length > 2)
+            {
+                _viewModel.GetSearchResults(searchBar.Text);
+            }
         }
     }
 }

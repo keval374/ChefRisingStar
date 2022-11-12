@@ -8,7 +8,6 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Text.Json;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using JsonSerializer = System.Text.Json.JsonSerializer;
@@ -45,7 +44,7 @@ namespace ChefRisingStar.ViewModels
                 OnPropertyChanged();
             }
         }
-        
+
         public NutritionInfo RecipeNutritionInfo
         {
             get => _nutritionInfo;
@@ -69,7 +68,7 @@ namespace ChefRisingStar.ViewModels
                 OnPropertyChanged();
             }
         }
-        
+
         public bool IsViewMoreVisible
         {
             get => _isViewMoreVisible;
@@ -79,7 +78,7 @@ namespace ChefRisingStar.ViewModels
                 OnPropertyChanged();
             }
         }
-        
+
         public bool IsContextMenuVisible
         {
             get => _isContextMenuVisible;
@@ -241,7 +240,7 @@ namespace ChefRisingStar.ViewModels
                 }
             }
         }
-        
+
         internal async Task GetNutritionalInfo3()
         {
             if (IsBusy)
@@ -264,7 +263,7 @@ namespace ChefRisingStar.ViewModels
                     var nutritionInfo = await JsonSerializer.DeserializeAsync<NutritionInfo>(await streamTask);
 
                     if (nutritionInfo == null)
-                    {  
+                    {
                         return;
                     }
 
@@ -281,7 +280,7 @@ namespace ChefRisingStar.ViewModels
                 }
             }
         }
-        
+
         internal async Task GetNutritionalInfo()
         {
             if (IsBusy)
@@ -297,13 +296,13 @@ namespace ChefRisingStar.ViewModels
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json")); // Add an Accept header for JSON format.
                     var streamTask = client.GetStreamAsync($"?apiKey=61f0c9888f5542a6b3604a030707b8ad");
 
-                    string json = await client.GetStringAsync(client.BaseAddress+"?apiKey=61f0c9888f5542a6b3604a030707b8ad");
+                    string json = await client.GetStringAsync(client.BaseAddress + "?apiKey=61f0c9888f5542a6b3604a030707b8ad");
                     var nutritionInfo = JsonConvert.DeserializeObject<NutritionInfo>(json);
                     RecipeNutritionInfo = nutritionInfo;
 
                     BasicNutritionalInfo.Clear();
-                    
-                    foreach(var i in RecipeNutritionInfo.Basics)
+
+                    foreach (var i in RecipeNutritionInfo.Basics)
                     {
                         BasicNutritionalInfo.Add(i);
                     }
@@ -394,7 +393,7 @@ namespace ChefRisingStar.ViewModels
 
                 CheckAchievments();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Debug.WriteLine($"Error replacing ingredient '{SelectedIngredient.Name}' with {SelectedSubstitution}: {ex}");
             }

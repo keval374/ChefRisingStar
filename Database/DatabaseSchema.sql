@@ -40,6 +40,7 @@ CREATE TABLE Schools (
 ID INTEGER PRIMARY KEY,
 Name TEXT NOT NULL,
 Address TEXT,
+Phone TEXT,
 City TEXT,
 ContactId INTEGER
 );
@@ -148,6 +149,6 @@ INSERT INTO SocialMediaSites VALUES (3, "Twitter", "Twitrer.com");
 INSERT INTO SocialMediaSites VALUES (4, "TicTok", "TicTok.com");
 INSERT INTO SocialMediaSites VALUES (5, "SnapChat", "Snapchat.com");
 
-INSERT INTO Schools VALUES (1, "Morgan Institute", "700 Wellington, Montreal, H4C", "Montreal", 1);
+INSERT INTO Schools VALUES (1, "Morgan Institute", "700 Wellington, Montreal, H4C", "514 555-3252", "Montreal", 1);
 
 INSERT INTO Teams VALUES (1, "Dragons", 1, 1);

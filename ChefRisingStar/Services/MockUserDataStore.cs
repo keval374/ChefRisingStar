@@ -1,10 +1,8 @@
 ﻿using ChefRisingStar.Models;
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 
 namespace ChefRisingStar.Services
 {
@@ -64,7 +62,7 @@ namespace ChefRisingStar.Services
 
         public IEnumerable<User> GetSearchResults(string searchText)
         {
-            return items.Where(i => i.FirstName.Contains(searchText)|| i.LastName.Contains(searchText) || i.Username.Contains(searchText));
+            return items.Where(i => i.FirstName.Contains(searchText) || i.LastName.Contains(searchText) || i.Username.Contains(searchText));
         }
     }
 }

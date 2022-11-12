@@ -1,8 +1,6 @@
-﻿using ChefRisingStar.Models;
-using System.Diagnostics;
+﻿using ChefRisingStar.ViewModels;
 using System;
 using Xamarin.Forms;
-using ChefRisingStar.ViewModels;
 
 namespace ChefRisingStar.Views
 {
@@ -24,6 +22,11 @@ namespace ChefRisingStar.Views
             {
                 _viewModel.GetSearchResults(searchBar.Text);
             }
+        }
+
+        private void SchoolSelectedChanged(object sender, EventArgs e)
+        {
+            _viewModel.SelectedItem.SchoolId = _viewModel.SelectedSchool.Id;
         }
     }
 }
