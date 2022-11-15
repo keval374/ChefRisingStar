@@ -10,8 +10,8 @@ namespace ChefRisingStar.Views
         public ManageUsersPage()
         {
             InitializeComponent();
-            Title = "Manage Users";
             BindingContext = _viewModel = new UsersViewModel();
+            Title = _viewModel.Title;
         }
 
         void OnTextChanged(object sender, EventArgs e)

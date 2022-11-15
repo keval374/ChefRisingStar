@@ -21,6 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\ManageTeamsPage.xaml.cs">
+      <DependentUpon>ManageTeamsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\ManageUsersPage.xaml.cs">
       <DependentUpon>ManageUsersPage.xaml</DependentUpon>
     </Compile>

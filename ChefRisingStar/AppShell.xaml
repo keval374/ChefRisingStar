@@ -85,7 +85,7 @@
         <Tab Title="Adminstration" Icon="briefcase128.png">
             <ShellContent Title="Manage Schools" Route="ManageSchoolsPage" Icon="briefcase128.png" ContentTemplate="{DataTemplate local:ManageSchoolsPage}" />
             <ShellContent Title="Manage Users" Route="ManageUsersPage" Icon="briefcase128.png" ContentTemplate="{DataTemplate local:ManageUsersPage}" />
-            <ShellContent Title="Manage Teams" Route="ManageUsersPage" Icon="briefcase128.png" ContentTemplate="{DataTemplate local:ManageUsersPage}" />
+            <ShellContent Title="Manage Teams" Route="ManageTeamsPage" Icon="briefcase128.png" ContentTemplate="{DataTemplate local:ManageTeamsPage}" />
         </Tab>
     </FlyoutItem>
     <FlyoutItem Title="Daily Challenge" Icon="Calendar64.png">

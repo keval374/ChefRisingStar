@@ -19,6 +19,9 @@ namespace ChefRisingStar.Services
                 new User(3, "John", "Ham", "hammer", "john@hamjam.com"),
                 new User(4, "Coutrney", "Cox", "moxcox", "ccox@jam.com"),
                 new User(5, "Jennifer", "Anniston", "jenjen", "jenny@friends.com"),
+                new User(6, "Thor", "God", "Thorny", "thor@marvel.com"),
+                new User(7, "Iron", "Man", "Iron man", "ironman@marvel.com"),
+                new User(8, "Captain", "Marvel", "cappy", "captain@marvel.com"),
             };
         }
 

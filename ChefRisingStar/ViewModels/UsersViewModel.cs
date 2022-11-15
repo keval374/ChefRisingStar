@@ -185,7 +185,7 @@ namespace ChefRisingStar.ViewModels
         {
             IsBusy = true;
             searchText = searchText.Trim().ToLower();
-            Users = AllUsers.Where(i => i.FirstName.Contains(searchText) || i.LastName.Contains(searchText) || i.Username.Contains(searchText)).ToList();
+            Users = AllUsers.Where(i => i.FirstName.ToLower().Contains(searchText) || i.LastName.ToLower().Contains(searchText) || i.Username.ToLower().Contains(searchText)).ToList();
             IsBusy = false;
         }
 
