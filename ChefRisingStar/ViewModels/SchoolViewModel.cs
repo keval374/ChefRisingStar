@@ -6,7 +6,6 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace ChefRisingStar.ViewModels
@@ -28,7 +27,7 @@ namespace ChefRisingStar.ViewModels
                 SetProperty(ref _allUsers, value);
             }
         }
-        
+
         private List<User> _contacts;
         public List<User> Contacts
         {
@@ -41,7 +40,7 @@ namespace ChefRisingStar.ViewModels
                 SetProperty(ref _contacts, value);
             }
         }
-        
+
         private List<School> _allSchools;
         public List<School> AllSchools
         {
@@ -54,7 +53,7 @@ namespace ChefRisingStar.ViewModels
                 SetProperty(ref _allSchools, value);
             }
         }
-        
+
         private List<School> _schools;
         public List<School> Schools
         {
@@ -104,7 +103,7 @@ namespace ChefRisingStar.ViewModels
 
         private void OnContactSelected(User value)
         {
-            if(value != null)
+            if (value != null)
                 SelectedItem.ContactId = value.Id;
         }
 
@@ -113,7 +112,7 @@ namespace ChefRisingStar.ViewModels
         public Command<School> ItemTapped { get; }
 
         public override IDataStore<School, int> DataStore { get; protected set; }
-        
+
         public SchoolViewModel()
         {
             Title = "Schools";
@@ -181,9 +180,9 @@ namespace ChefRisingStar.ViewModels
             //Filter to only people who go to that school
             var results = AllUsers.Where(i => i.SchoolId == SelectedItem.Id || i.Id == 0);
 
-            if(results.Any())
+            if (results.Any())
                 Contacts = results.AsEnumerable().ToList();
-            
+
             SelectedContact = AllUsers.Where(x => x.Id == SelectedItem.ContactId).FirstOrDefault();
 
             // This will push the ItemDetailPage onto the navigation stack

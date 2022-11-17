@@ -35,7 +35,7 @@ namespace ChefRisingStar.ViewModels
                 SetProperty(ref _allUsers, value);
             }
         }
-        
+
         private List<School> _allSchools;
         public List<School> AllSchools
         {

@@ -6,7 +6,6 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace ChefRisingStar.ViewModels
@@ -28,7 +27,7 @@ namespace ChefRisingStar.ViewModels
                 SetProperty(ref _allUsers, value);
             }
         }
-        
+
         private List<Team> _allTeams;
         public List<Team> AllTeams
         {
@@ -41,7 +40,7 @@ namespace ChefRisingStar.ViewModels
                 SetProperty(ref _allTeams, value);
             }
         }
-        
+
         private List<Team> _teams;
         public List<Team> Teams
         {
@@ -54,7 +53,7 @@ namespace ChefRisingStar.ViewModels
                 SetProperty(ref _teams, value);
             }
         }
-        
+
         private List<User> _contacts;
         public List<User> Contacts
         {
@@ -104,7 +103,7 @@ namespace ChefRisingStar.ViewModels
 
         private void OnContactSelected(User value)
         {
-            if(value != null)
+            if (value != null)
                 SelectedItem.CaptainId = value.Id;
         }
 
@@ -113,7 +112,7 @@ namespace ChefRisingStar.ViewModels
         public Command<Team> ItemTapped { get; }
 
         public override IDataStore<Team, int> DataStore { get; protected set; }
-        
+
         public TeamsViewModel()
         {
             Title = "Teams";
@@ -138,7 +137,7 @@ namespace ChefRisingStar.ViewModels
                 AllTeams = Teams = (await DataStore.GetItemsAsync(true)).ToList();
                 AllUsers = (await _userDataStore.GetItemsAsync(true)).ToList();
                 AllUsers.Insert(0, new User(0, "None", string.Empty, "None", string.Empty));
-                
+
             }
             catch (Exception ex)
             {
@@ -179,9 +178,9 @@ namespace ChefRisingStar.ViewModels
             //Filter to only people who go to that school
             var results = AllUsers.Where(i => SelectedItem.Members.Contains(i.Id) || i.Id == 0);
 
-            if(results.Any())
+            if (results.Any())
                 Contacts = results.AsEnumerable().ToList();
-            
+
             SelectedContact = AllUsers.Where(x => x.Id == SelectedItem.CaptainId).FirstOrDefault();
 
             // This will push the ItemDetailPage onto the navigation stack

@@ -37,7 +37,7 @@ namespace ChefRisingStar.Models
         {
             School school = obj as School;
 
-            if(school == null)
+            if (school == null)
                 return -1;
 
             return school.Name.CompareTo(Name);
