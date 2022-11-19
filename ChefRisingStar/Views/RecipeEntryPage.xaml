@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodel="clr-namespace:ChefRisingStar.ViewModels"
+    xmlns:model="clr-namespace:ChefRisingStar.Models"
+    x:Class="ChefRisingStar.Views.RecipeEntryPage"
+    Title="Recipe Entry">
+    <!--<ContentPage.Content x:DataType="viewmodel:TempRecipesViewModel">-->
+    <!--<ContentPage.Content>-->
+    <StackLayout Margin="20">
+        <Frame CornerRadius="25" BorderColor="DarkBlue">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Frame CornerRadius="25" Grid.Row="0" Grid.ColumnSpan="4" HorizontalOptions="FillAndExpand" Margin="0" Padding="0">
+                    <Label Text="General" Grid.Row="0" Grid.ColumnSpan="4" TextColor="White" BackgroundColor="CornflowerBlue"
+                           FontAttributes="Bold" FontSize="Medium"
+                           HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                </Frame>
+                <Label Text="Title" Grid.Row="1" Grid.Column="0" FontSize="Medium" />
+                <Entry Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Placeholder="Name of Recipe"
+                       Text="{Binding Title}" />
+
+                <!--<Label Text="Cuisine(s)" Grid.Row="2" Grid.Column="0" FontSize="Medium" />
+                <Grid Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" >
+                    <Entry Placeholder="Select Cuisine(s)" Text="{Binding SelectedCuisines}"/>
+                    <BoxView  />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding OpenCuisinesCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+                
+                <Label Text="DishType(s)" Grid.Row="3" Grid.Column="0" FontSize="Medium" />
+                <Grid Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" >
+                    <Entry Placeholder="Select DishType(s)" Text="{Binding SelectedDishTypes}"/>
+                    <BoxView  />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding OpenDishTypesCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>-->
+
+                <Label Text="Serves" Grid.Row="4" Grid.Column="0" FontSize="Medium" />
+                <Entry Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" Placeholder="Serving Size"
+                       Text="{Binding Servings}"/>
+
+                <Label Text="Time to Cook" Grid.Row="5" Grid.Column="0" FontSize="Medium" />
+                <Entry Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" Placeholder="Cooking time in minutes"
+                       Text="{Binding ReadyInMinutes}"/>
+
+                <Frame CornerRadius="25" Grid.Row="6" Grid.ColumnSpan="4" HorizontalOptions="FillAndExpand" Margin="0" Padding="0">
+                    <Label Text="Instructions" Grid.Row="6" Grid.ColumnSpan="4" TextColor="White"
+                           FontAttributes="Bold" FontSize="Medium" BackgroundColor="CornflowerBlue"
+                           HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                </Frame>
+                <Frame CornerRadius="25" Grid.Row="7" Grid.ColumnSpan="4" HorizontalOptions="FillAndExpand" Margin="0" Padding="0">
+                    <ScrollView>
+                        <Editor Grid.Row="7" Grid.ColumnSpan="4" BackgroundColor="AliceBlue" IsTextPredictionEnabled="True"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" AutoSize="TextChanges"
+                                Placeholder="Each instruction goes on a separate line"
+                                Text="{Binding Instructions}">
+                        </Editor>
+                    </ScrollView>
+                </Frame>
+
+                <Button Text="Save" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" x:Name="saveButton" BackgroundColor="CornflowerBlue" TextColor="White"
+                        FontAttributes="Bold" FontSize="Medium" CornerRadius="25" Clicked="OnSaveButtonClicked"/>
+                <Button Text="Delete" Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="2" x:Name="deleteButton" BackgroundColor="PaleVioletRed" TextColor="White"
+                        FontAttributes="Bold" FontSize="Medium" CornerRadius="25" Clicked="OnDeleteButtonClicked"/>
+            </Grid>
+        </Frame>
+    </StackLayout>
+    <!--</ContentPage.Content>-->
+</ContentPage>
+

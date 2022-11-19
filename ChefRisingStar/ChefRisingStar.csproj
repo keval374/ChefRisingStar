@@ -17,16 +17,12 @@
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Update="Views\AchievementsPage.xaml.cs">
-      <DependentUpon>AchievementsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\AchievementDetailPage.xaml.cs">
-      <DependentUpon>AchievementDetailPage.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
+  <!--<ItemGroup>
+    <Compile Remove="Views\RecipeAddPage.xaml.cs" />
+  </ItemGroup>-->
   <ItemGroup>
     <None Remove="Newtonsoft.Json" />
     <None Remove="Xamarin.Forms.PancakeView" />
@@ -36,10 +32,14 @@
     <None Remove="Microsoft.AspNetCore.Hosting" />
     <None Remove="Microsoft.AspNetCore.Hosting.Abstractions" />
     <None Remove="CustomRenderer\" />
+    <None Remove="sqlite-net-pcl" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Converters\" />
     <Folder Include="Styles\" />
     <Folder Include="CustomRenderer\" />
   </ItemGroup>
+  <!--<ItemGroup>
+    <EmbeddedResource Remove="Views\RecipeAddPage.xaml" />
+  </ItemGroup>-->
 </Project>
