@@ -17,6 +17,7 @@
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
   </ItemGroup>
 
   <!--<ItemGroup>
@@ -31,6 +32,7 @@
     <None Remove="Microsoft.AspNetCore.Hosting" />
     <None Remove="Microsoft.AspNetCore.Hosting.Abstractions" />
     <None Remove="CustomRenderer\" />
+    <None Remove="sqlite-net-pcl" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Converters\" />

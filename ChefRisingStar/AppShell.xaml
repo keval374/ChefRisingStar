@@ -84,11 +84,11 @@
     <FlyoutItem Title="Recipes" Icon="icon_feed.png">
         <ShellContent Route="RecipesListPage" ContentTemplate="{DataTemplate local:RecipesListPage}" />
     </FlyoutItem>
+    <FlyoutItem Title="Custom Recipes" Icon="icon_feed.png">
+        <ShellContent Route="CustomRecipePage" ContentTemplate="{DataTemplate local:CustomRecipePage}" />
+    </FlyoutItem>
     <FlyoutItem Title="Food Footprint" Icon="footprint64.png">
         <ShellContent Route="FoodPrintsDetailPage" ContentTemplate="{DataTemplate local:FoodPrintsDetailPage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="Bad cat" Icon="footprint64.png">
-        <ShellContent Route="KevalKiRecipeAddPage" ContentTemplate="{DataTemplate local:KevalKiRecipeAddPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Achievements" Icon="trophy64.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AchievementsPage}" />

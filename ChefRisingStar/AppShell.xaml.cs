@@ -14,6 +14,7 @@ namespace ChefRisingStar
             Routing.RegisterRoute(nameof(AchievementDetailPage), typeof(AchievementDetailPage));
             Routing.RegisterRoute(nameof(FoodPrintsDetailPage), typeof(FoodPrintsDetailPage));
             Routing.RegisterRoute(nameof(RegisterPage), typeof(RegisterPage));
+            Routing.RegisterRoute(nameof(RecipeEntryPage), typeof(RecipeEntryPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
