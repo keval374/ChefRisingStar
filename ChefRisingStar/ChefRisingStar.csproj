@@ -24,6 +24,9 @@
     <Compile Update="Views\ManageAchievementsPage.xaml.cs">
       <DependentUpon>ManageAchievementsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\ManageAchievementStepsPage.xaml.cs">
+      <DependentUpon>ManageAchievementStepsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\ManageTeamsPage.xaml.cs">
       <DependentUpon>ManageTeamsPage.xaml</DependentUpon>
     </Compile>
@@ -59,6 +62,7 @@
     <EmbeddedResource Include="sample\Substitutions.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="EventTriggers\" />
     <Folder Include="Styles\" />
     <Folder Include="CustomRenderer\" />
   </ItemGroup>

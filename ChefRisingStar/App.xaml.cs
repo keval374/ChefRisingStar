@@ -10,7 +10,7 @@ namespace ChefRisingStar
         {
             InitializeComponent();
             DependencyService.Register<MockDataStore>();
-            DependencyService.Register<MockAchievementConditionDataStore>();
+            DependencyService.Register<MockAchievementStepDataStore>();
             DependencyService.Register<MockAchievementDataStore>();
             DependencyService.Register<MockUserDataStore>();
             DependencyService.Register<MockSchooDataStore>();
