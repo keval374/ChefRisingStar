@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:ChefRisingStar.Views"
@@ -99,6 +99,9 @@
     </FlyoutItem>
     <FlyoutItem Title="Recipes" Icon="icon_feed.png">
         <ShellContent Route="RecipesListPage" ContentTemplate="{DataTemplate local:RecipesListPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Custom Recipes" Icon="icon_feed.png">
+        <ShellContent Route="CustomRecipePage" ContentTemplate="{DataTemplate local:CustomRecipePage}" />
     </FlyoutItem>
     <FlyoutItem Title="Food Footprint" Icon="footprint64.png">
         <ShellContent Route="FoodPrintsDetailPage" ContentTemplate="{DataTemplate local:FoodPrintsDetailPage}" />
