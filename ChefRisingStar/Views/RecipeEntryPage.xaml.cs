@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using ChefRisingStar.Models;
 using ChefRisingStar.ViewModels;
 using Xamarin.Forms;
@@ -9,6 +10,7 @@ namespace ChefRisingStar.Views
     [QueryProperty(nameof(ItemId), nameof(ItemId))]
     public partial class RecipeEntryPage : ContentPage
     {
+        TempRecipeViewModel _viewModel;
 
         public string ItemId
         {
@@ -21,8 +23,36 @@ namespace ChefRisingStar.Views
         public RecipeEntryPage()
         {
             InitializeComponent();
+            BindingContext = _viewModel = new TempRecipeViewModel();
             // Set the BindingContext of the page to a new Recipe.
-            BindingContext = new TempRecipeDetails();
+            //BindingContext = new TempRecipeDetails();
+        }
+
+        private void CloseCuisineClicked(object sender, EventArgs e)
+        {
+            //BindingContext = _viewModel = new TempRecipeViewModel();
+            StringBuilder selectedCuisined = new StringBuilder();
+
+            foreach (SelectableFilter filter in _viewModel.Cuisines)
+            {
+                if (filter.IsSelected)
+                    selectedCuisined.Append($"{filter.Text}, ");
+            }
+
+            _viewModel.SelectedCuisines = selectedCuisined.ToString();
+            _viewModel.IsSelectCuisineVisible = false;
+        }
+
+        private void SelectCuisineClicked(object sender, EventArgs e)
+        {
+            //BindingContext = _viewModel = new TempRecipeViewModel();
+            _viewModel.IsSelectCuisineVisible = true;
+        }
+
+        private void cuisineList_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            SelectableFilter item = e.Item as SelectableFilter;
+            item.IsSelected = !item.IsSelected;
         }
 
         async void LoadRecipe(string itemId)
