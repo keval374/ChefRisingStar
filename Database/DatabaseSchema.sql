@@ -6,10 +6,18 @@ Name TEXT UNIQUE NOT NULL,
 Url TEXT  NOT NULL
 );
 
+CREATE TABLE Languages (
+[Code] TEXT PRIMARY KEY,
+[Name] TEXT NOT NULL
+);
+
 CREATE TABLE Achievements (
 ID INTEGER PRIMARY KEY,
-Name TEXT NOT NULL,
-Description TEXT  NOT NULL
+[Name] TEXT NOT NULL,
+[LanguageCode] TEXT NOT NULL,
+[Value] INTEGER NOT NULL,
+Description TEXT  NOT NULL,
+FOREIGN KEY(LanguageCode) REFERENCES Languages(Code),
 );
 
 CREATE TABLE Metrics (
