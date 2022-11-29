@@ -32,6 +32,7 @@ namespace ChefRisingStar
             DependencyService.Register<MockSchooDataStore>();
             DependencyService.Register<MockTeamDataStore>();
             DependencyService.Register<MockLanguageDataStore>();
+            DependencyService.Register<MockFavoritesDataStore>();
 
             DependencyService.Register<SubstitutionCache>();
             DependencyService.Register<IngredientCache>();
