@@ -153,6 +153,7 @@ namespace ChefRisingStar.ViewModels
         public ICommand OpenSubstitutionsCommand { get; }
         public ICommand ToggleFavoriteCommand { get; }
         public ICommand ToggleBookmarkCommand { get; }
+        public ICommand ToggleIngredientFavoriteCommand { get; }
 
         #endregion 
 
@@ -180,6 +181,7 @@ namespace ChefRisingStar.ViewModels
 
             ToggleFavoriteCommand = new Command(ExecuteToggleFavorite);
             ToggleBookmarkCommand = new Command(ExecuteToggleBookmark);
+            ToggleIngredientFavoriteCommand = new Command(ExecuteToggleIngredientFavorite);
             FavortiesDatastore = DependencyService.Get<IDataStore<Favorite, IntStringKey>>();
 
             foreach (AnalyzedInstruction ins in Recipe.AnalyzedInstructions)
@@ -219,6 +221,11 @@ namespace ChefRisingStar.ViewModels
         {
             ExecuteToggle(FavoriteTypes.Bookmark).ContinueWith(t=> IsUserBookmark = t.Result);
         }
+        
+        private async void ExecuteToggleIngredientFavorite()
+        {
+            FavortiesDatastore.AddItemAsync(new Favorite(CurrentUser.Id, FavoriteTypes.Ingredient, SelectedIngredient.NameClean));
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -228,6 +235,7 @@ namespace ChefRisingStar.ViewModels
         {
             try
             {
+                //Todo: cache this locally
                 List<Favorite> favorites = (await FavortiesDatastore.GetItemsAsync(true)).ToList();
 
                 var foundFave = favorites.FirstOrDefault(f => f.UserId == CurrentUser.Id && f.ReferenceId == Recipe.Id.ToString() && f.FavoriteType == favoriteType);
