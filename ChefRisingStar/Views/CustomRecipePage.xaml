@@ -17,7 +17,7 @@
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <StackLayout>
-                    <Label Text="{Binding Title}" FontSize="Medium"/>
+                    <Label Text="{Binding RecipeTitle}" FontSize="Medium"/>
                 </StackLayout>
             </DataTemplate>
         </CollectionView.ItemTemplate>

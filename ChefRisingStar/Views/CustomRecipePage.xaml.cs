@@ -1,6 +1,8 @@
 ﻿using ChefRisingStar.Models;
 using System;
 using System.Linq;
+using System.Collections.Generic;
+using ChefRisingStar.Models;
 using Xamarin.Forms;
 
 namespace ChefRisingStar.Views
@@ -32,7 +34,7 @@ namespace ChefRisingStar.Views
             if (e.CurrentSelection != null)
             {
                 // Navigate to the RecipeEntryPage, passing the ID as a query parameter.
-                TempRecipeDetails recipe = (TempRecipeDetails)e.CurrentSelection.FirstOrDefault();
+                TempRecipeViewModel recipe = (TempRecipeViewModel)e.CurrentSelection.FirstOrDefault();
                 await Shell.Current.GoToAsync($"{nameof(RecipeEntryPage)}?{nameof(RecipeEntryPage.ItemId)}={recipe.ID.ToString()}");
             }
         }
