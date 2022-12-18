@@ -4,6 +4,7 @@ using System.Linq;
 using System.Collections.Generic;
 using ChefRisingStar.Models;
 using Xamarin.Forms;
+using ChefRisingStar.ViewModels;
 
 namespace ChefRisingStar.Views
 {

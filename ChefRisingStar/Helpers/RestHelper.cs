@@ -10,7 +10,7 @@ namespace ChefRisingStar.Helpers
 {
     internal class RestHelper
     {
-        private const string RemoteUrl = "http://someendpoint.com";
+        private const string RemoteUrl = "https://localhost:44322/";
         internal async static void MakePost<T>(T obj, string endpoint)
         {
             using (var client = new HttpClient())

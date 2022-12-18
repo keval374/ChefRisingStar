@@ -1,10 +1,13 @@
-﻿using Xamarin.Forms;
+﻿using ChefRisingStar.Helpers;
+using ChefRisingStar.Models;
+using System.Collections.Generic;
+using System.IO;
+using Xamarin.Forms;
 
 namespace ChefRisingStar.Views
 {
     public partial class AboutPage : ContentPage
     {
-
         public AboutPage()
         {
             InitializeComponent();
@@ -21,7 +24,32 @@ namespace ChefRisingStar.Views
 
             //model.Image = chart.GetImage();
             //imgBox.Source = chart.GetImage();
-            //imgBox.Source = new BitmapImage(new Uri(GraphFileName, UriKind.Absolute));
+
+            testc();
+
+
+        }
+
+        private async void testc()
+        {
+            List<DataPoint> dataPoints;
+            List<AxisInfo> AxisInfos;
+
+            dataPoints = new List<DataPoint>();
+            dataPoints.Add(new DataPoint("Audi e-tron", Color.Red, 69850, 80900, 8.4f, 218, 100f / 44));
+            dataPoints.Add(new DataPoint("Jaguar I-PACE", Color.Green, 39090, 44590, 8.2f, 234, 100f / 30));
+            dataPoints.Add(new DataPoint("Polestar 2", Color.Blue, 59900, 59900, 8.2f, 275, 100f / 27));
+
+            AxisInfos = new List<AxisInfo>();
+            AxisInfos.Add(new AxisInfo("PriceLow", "c", 90000, 30000));
+            AxisInfos.Add(new AxisInfo("PriceHigh", "c", 90000, 30000));
+            AxisInfos.Add(new AxisInfo("Rating", "0.0", 0, 10));
+            AxisInfos.Add(new AxisInfo("Range", "0", 0, 300));
+            AxisInfos.Add(new AxisInfo("Miles/kWh", "0.00", 0, 5));
+
+            string tmp = await RestHelper.Get<string>("graph", string.Empty);
+
+            DisplayAlert("AfterTest", $"Receieved {tmp}", "Cancel");
         }
     }
 }

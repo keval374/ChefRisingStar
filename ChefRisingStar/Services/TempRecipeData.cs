@@ -4,6 +4,7 @@ using Xamarin.Forms;
 using ChefRisingStar.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using ChefRisingStar.ViewModels;
 
 namespace ChefRisingStar.Services
 {
