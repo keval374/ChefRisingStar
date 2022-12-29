@@ -354,3 +354,6 @@ MigrationBackup/
 /Database/sqlite3.def
 /Database/sqldiff.exe
 /Database/ltdc.db
+/TestApp/Database/sqlite3_analyzer.exe
+/TestApp/Database/sqlite3.exe
+/TestApp/Database/sqldiff.exe
