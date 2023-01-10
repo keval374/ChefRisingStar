@@ -1,4 +1,4 @@
-﻿using Graphing.RadarChart;
+﻿//using Graphing.RadarChart;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -31,22 +31,22 @@ namespace LTDCWebservice.Controllers
             return filePath;
         }
 
-        [HttpPost]
-        public ActionResult Post(List<DataPoint> dataPoints)
-        {
-            List<AxisInfo> AxisInfos = new List<AxisInfo>();
-            AxisInfos.Add(new AxisInfo("PriceLow", "c", 90000, 30000));
-            AxisInfos.Add(new AxisInfo("PriceHigh", "c", 90000, 30000));
-            AxisInfos.Add(new AxisInfo("Rating", "0.0", 0, 10));
-            AxisInfos.Add(new AxisInfo("Range", "0", 0, 300));
-            AxisInfos.Add(new AxisInfo("Miles/kWh", "0.00", 0, 5));
+        //[HttpPost]
+        //public ActionResult Post(List<DataPoint> dataPoints)
+        //{
+        //    List<AxisInfo> AxisInfos = new List<AxisInfo>();
+        //    AxisInfos.Add(new AxisInfo("PriceLow", "c", 90000, 30000));
+        //    AxisInfos.Add(new AxisInfo("PriceHigh", "c", 90000, 30000));
+        //    AxisInfos.Add(new AxisInfo("Rating", "0.0", 0, 10));
+        //    AxisInfos.Add(new AxisInfo("Range", "0", 0, 300));
+        //    AxisInfos.Add(new AxisInfo("Miles/kWh", "0.00", 0, 5));
 
-            string filePath = Path.GetTempFileName();
-            RadarChart chart = new RadarChart(filePath, new System.Drawing.Size(800, 800), AxisInfos, dataPoints);
-            chart.Draw();
+        //    string filePath = Path.GetTempFileName();
+        //    RadarChart chart = new RadarChart(filePath, new System.Drawing.Size(800, 800), AxisInfos, dataPoints);
+        //    chart.Draw();
 
-            return Ok();
-        }
+        //    return Ok();
+        //}
 
 
     }
