@@ -357,3 +357,5 @@ MigrationBackup/
 /TestApp/Database/sqlite3_analyzer.exe
 /TestApp/Database/sqlite3.exe
 /TestApp/Database/sqldiff.exe
+/LTDCWebservice/Database/sqlite3.exe
+/LTDCWebservice/Database/sqlite3.dll
