@@ -18,7 +18,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using LTDCWebservice.Data;
+using LTDCWebservice.Models;
 
 namespace LTDCWebservice
 {
@@ -36,7 +36,9 @@ namespace LTDCWebservice
         {
             var key = "This is a public key test123";
             var tokenKey = Encoding.ASCII.GetBytes(key);
-
+            
+            services.AddDbContext<LtdcContext>(options =>
+                    options.UseSqlite(Configuration.GetConnectionString("LTDCDbContext")));
             services.AddSingleton<IJWTAuthenticationManager>(new JWTAuthenticationManager(key));
             services.AddAuthentication(x => 
             {
@@ -76,9 +78,6 @@ namespace LTDCWebservice
                     }
                 });
             });
-
-            services.AddDbContext<LTDCDbContext>(options =>
-                    options.UseSqlite(Configuration.GetConnectionString("LTDCDbContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

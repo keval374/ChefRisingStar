@@ -1,4 +1,6 @@
-﻿using ChefRisingStar.Views;
+﻿using ChefRisingStar.Helpers;
+using ChefRisingStar.Views;
+using ChefRisingStar.Models;
 using System;
 using System.Diagnostics;
 using System.Net.Http;
@@ -50,43 +52,31 @@ namespace ChefRisingStar.ViewModels
 
         private async void OnLoginClicked()
         {
-
-            using (HttpClient client = new HttpClient())
+            try
             {
-                try
-                {
-                    string userauth = username + ":" + password;
-                    client.DefaultRequestHeaders.Add("ContentType", "application/json");
+                //https://localhost:44322/api/auth/authenticate
+                var userCred = new UserCred { Password = Password, Username = Username };
+                string result = await RestHelper.MakePost<UserCred, string>(userCred, "api/auth/authenticate"); 
 
-                    var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(userauth);
-                    string val = System.Convert.ToBase64String(plainTextBytes);
-                    client.DefaultRequestHeaders.Add("Authorization", "Basic " + val);
+                //if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                //{
+                //    await Shell.Current.GoToAsync($"//{nameof(RecipesListPage)}");
+                //}
+                //else
+                //{
+                //    DisplayInvalidLoginPrompt();
+                //}
 
-                    HttpResponseMessage response = client.GetAsync("https://chefrisingstar-api.mybluemix.net/").Result;
-
-                    response = client.GetAsync("https://chefrisingstar-api.mybluemix.net/api/login/").Result;
-
-                    if (response.StatusCode.ToString() == "OK")
-                    {
-                        await Shell.Current.GoToAsync($"//{nameof(RecipesListPage)}");
-                    }
-                    else
-                    {
-                        DisplayInvalidLoginPrompt();
-                    }
-
-                }
-                catch (Exception ex)
-                {
-                    Debug.WriteLine($"Error during login: {ex}");
-                    await Application.Current.MainPage.DisplayAlert("API Error:", ex.Message, "OK");
-                }
-                finally
-                {
-                    IsBusy = false;
-                }
             }
-
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error during login: {ex}");
+                await Application.Current.MainPage.DisplayAlert("API Error:", ex.Message, "OK");
+            }
+            finally
+            {
+                IsBusy = false;
+            }
         }
 
         private async void OnRegisterClicked()

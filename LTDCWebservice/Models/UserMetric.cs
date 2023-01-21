@@ -14,6 +14,4 @@ public partial class UserMetric
     public string ActivityTime { get; set; }
 
     public virtual Metric Metric { get; set; }
-
-    public virtual User User { get; set; }
 }

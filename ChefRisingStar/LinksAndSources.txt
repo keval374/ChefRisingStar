@@ -53,3 +53,6 @@ https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-bin
 File Access:
 https://learn.microsoft.com/en-us/xamarin/android/platform/files/
 https://learn.microsoft.com/en-us/xamarin/essentials/permissions?tabs=android
+
+OAuth:
+https://youtu.be/vWkPdurauaA

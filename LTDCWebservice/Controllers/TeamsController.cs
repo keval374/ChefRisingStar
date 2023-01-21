@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using LTDCWebservice.Data;
 using LTDCWebservice.Models;
 using Microsoft.AspNetCore.Authorization;
 using NuGet.DependencyResolver;
+using System.Data.Entity;
+using EntityState = Microsoft.EntityFrameworkCore.EntityState;
+using System.Security.Claims;
 
 namespace LTDCWebservice.Controllers
 {
@@ -17,9 +19,9 @@ namespace LTDCWebservice.Controllers
     [ApiController]
     public class TeamsController : ControllerBase
     {
-        private readonly LTDCDbContext _context;
+        private readonly LtdcContext _context;
 
-        public TeamsController(LTDCDbContext context)
+        public TeamsController(LtdcContext context)
         {
             _context = context;
         }
@@ -28,8 +30,15 @@ namespace LTDCWebservice.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Team>>> GetTeam()
         {
-            
-            return await _context.Teams.ToListAsync();
+            //var identity = HttpContext.User.Identity as ClaimsIdentity;
+            //if (identity != null)
+            //{
+            //    IEnumerable<Claim> claims = identity.Claims;
+            //    // or
+            //    //identity.FindFirst("ClaimName").Value;
+
+            //}
+            return _context.Teams.ToList();
 
             //Scaffold-DbContext "Data Source=.\Database\ltdc.db" Microsoft.EntityFrameworkCore.Sqlite - OutputDir Models
         }
@@ -84,6 +93,11 @@ namespace LTDCWebservice.Controllers
         [HttpPost]
         public async Task<ActionResult<Team>> PostTeam(Team team)
         {
+            if(_context.Teams.Any(t => t.Name.ToLower() == team.Name.ToLower()))
+            {
+                return NoContent();
+            }
+
             _context.Teams.Add(team);
             await _context.SaveChangesAsync();
 

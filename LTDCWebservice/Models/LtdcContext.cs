@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LTDCWebservice.Models;
 
-public partial class LtdcContext : DbContext
+public partial class LtdcContext : DbContext, ILtdcContext
 {
     public LtdcContext()
     {
@@ -193,9 +193,10 @@ public partial class LtdcContext : DbContext
                 .HasForeignKey(d => d.MetricId)
                 .OnDelete(DeleteBehavior.ClientSetNull);
 
-            entity.HasOne(d => d.User).WithMany(p => p.UserMetrics)
-                .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull);
+            //todo: lookups by id
+            //entity.HasOne(d => d.User).WithMany(p => p.UserMetrics)
+            //    .HasForeignKey(d => d.UserId)
+            //    .OnDelete(DeleteBehavior.ClientSetNull);
         });
 
         modelBuilder.Entity<UserRecipe>(entity =>
