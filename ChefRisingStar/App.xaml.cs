@@ -1,4 +1,5 @@
-﻿using ChefRisingStar.Services;
+﻿using ChefRisingStar.Helpers;
+using ChefRisingStar.Services;
 using System;
 using System.IO;
 using Xamarin.Forms;
@@ -25,6 +26,7 @@ namespace ChefRisingStar
         public App()
         {
             InitializeComponent();
+            DependencyService.Register<RestHelper>();
             DependencyService.Register<MockDataStore>();
             DependencyService.Register<MockAchievementStepDataStore>();
             DependencyService.Register<MockAchievementDataStore>();

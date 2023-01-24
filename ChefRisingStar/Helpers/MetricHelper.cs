@@ -1,18 +1,20 @@
 ﻿using ChefRisingStar.Models;
+using Xamarin.Forms;
 
 namespace ChefRisingStar.Helpers
 {
     internal class MetricHelper
     {
-        private const string Route = "/metrics/";
+        private const string Route = "api/UserMetrics/";
         public static void SendMetric(AppMetric metric)
         {
-            RestHelper.MakePost(metric, Route);
+            RestHelper helper = DependencyService.Get<RestHelper>();
+            helper.Post(metric, Route);
         }
 
-        public static void SendMetric(MetricType metricType, string value)
+        public static void SendMetric(MetricType metricType, int userId, string value)
         {
-            AppMetric metric = new AppMetric(metricType, value);
+            AppMetric metric = new AppMetric(metricType, userId, value);
             SendMetric(metric);
         }
     }

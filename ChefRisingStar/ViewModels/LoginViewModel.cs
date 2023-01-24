@@ -54,9 +54,20 @@ namespace ChefRisingStar.ViewModels
         {
             try
             {
-                //https://localhost:44322/api/auth/authenticate
-                var userCred = new UserCred { Password = Password, Username = Username };
-                string result = await RestHelper.MakePost<UserCred, string>(userCred, "api/auth/authenticate"); 
+                RestHelper helper = DependencyService.Get<RestHelper>();
+                var userCred = new UserCred(Username, Password);
+                string token = await helper.Post<UserCred, string>(userCred, "api/auth/authenticate");
+
+                if (token == null)
+                {
+                    DisplayInvalidLoginPrompt();
+                    return;
+                }
+
+                helper.SetBearer(token);
+                //MetricHelper.SendMetric(new AppMetric(MetricType.UserLoggedIn, 1, username));
+
+                await Shell.Current.GoToAsync($"//{nameof(RecipesListPage)}");
 
                 //if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 //{
@@ -64,7 +75,7 @@ namespace ChefRisingStar.ViewModels
                 //}
                 //else
                 //{
-                //    DisplayInvalidLoginPrompt();
+                //    
                 //}
 
             }

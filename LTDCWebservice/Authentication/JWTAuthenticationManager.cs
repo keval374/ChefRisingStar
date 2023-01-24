@@ -42,6 +42,13 @@ namespace LTDCWebservice.Authentication
                 return null;
             }
 
+            string role = "User";
+
+            if(user.IsAdministrator.HasValue && user.IsAdministrator == 1)
+            {
+                role += ", Admin";
+            }
+
             var tokenHandler = new JwtSecurityTokenHandler();
             var tokenKey = Encoding.ASCII.GetBytes(_key);
             var tokenDescriptor = new SecurityTokenDescriptor
@@ -49,7 +56,7 @@ namespace LTDCWebservice.Authentication
                 Subject = new ClaimsIdentity(new Claim[]
                 {
                     new Claim(ClaimTypes.Name, username),
-                    new Claim(ClaimTypes.Role, "Admin300")
+                    new Claim(ClaimTypes.Role, role)
                 }),
                 Expires = DateTime.UtcNow.AddHours(1),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(tokenKey), SecurityAlgorithms.HmacSha256),

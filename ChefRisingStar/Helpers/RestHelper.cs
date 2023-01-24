@@ -10,10 +10,18 @@ namespace ChefRisingStar.Helpers
 {
     internal class RestHelper
     {
-        private const string RemoteUrl = "https://localhost:44322/";
-        internal async static void MakePost<T>(T obj, string endpoint)
+        //private const string RemoteUrl = "https://localhost:44322/";
+        private const string RemoteUrl = "https://ltdc.azurewebsites.net/";
+        private string _bearerToken;
+        
+        internal void SetBearer(string token)
         {
-            using (var client = new HttpClient())
+            _bearerToken = token;
+        }
+        
+        internal async void Post<T>(T obj, string endpoint)
+        {
+            using (HttpClient client = ClientFactory())
             {
                 try
                 {
@@ -21,6 +29,9 @@ namespace ChefRisingStar.Helpers
 
                     // Add an Accept header for JSON format.
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    if (!string.IsNullOrEmpty(_bearerToken))
+                        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _bearerToken);
 
                     // Initialization
                     HttpResponseMessage response = new HttpResponseMessage();
@@ -45,14 +56,14 @@ namespace ChefRisingStar.Helpers
                 }
                 catch (Exception ex)
                 {
-                    Debug.WriteLine($"Error sending PushBullet post:{ex}");
+                    Debug.WriteLine($"Error sending post:{ex}");
                 }
             }
         }
 
-        internal async static Task<TR> MakePost<T, TR>(T obj, string endpoint)
+        internal async Task<TR> Post<T, TR>(T obj, string endpoint)
         {
-            using (var client = new HttpClient())
+            using (HttpClient client = ClientFactory())
             {
                 try
                 {
@@ -60,6 +71,9 @@ namespace ChefRisingStar.Helpers
 
                     // Add an Accept header for JSON format.
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    if (!string.IsNullOrEmpty(_bearerToken))
+                        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _bearerToken);
 
                     // Initialization
                     HttpResponseMessage response = new HttpResponseMessage();
@@ -94,30 +108,35 @@ namespace ChefRisingStar.Helpers
             return default(TR);
         }
 
-        internal async static Task<T> Get<T>(string subType, string urlParameters)
+        internal async Task<T> Get<T>(string subType, string urlParameters)
         {
             try
             {
-                HttpClient client = new HttpClient();
-                client.BaseAddress = new Uri($"{RemoteUrl}{subType}");
-
-                // Add an Accept header for JSON format.
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-                // List data response.
-                var response = await client.GetAsync(urlParameters);  // Blocking call! Program will wait here until a response is received or a timeout occurs.
-
-                if (response.IsSuccessStatusCode)
+                using (HttpClient client = ClientFactory())
                 {
-                    // Parse the response body
-                    var jsonStr = response.Content.ReadAsStringAsync().Result;
+                    client.BaseAddress = new Uri($"{RemoteUrl}{subType}");
 
-                    T jsonObject = JsonConvert.DeserializeObject<T>(jsonStr);
-                    return jsonObject;
-                }
-                else
-                {
-                    Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+                    // Add an Accept header for JSON format.
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    if (!string.IsNullOrEmpty(_bearerToken))
+                        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _bearerToken);
+
+                    // List data response.
+                    var response = await client.GetAsync(urlParameters);  // Blocking call! Program will wait here until a response is received or a timeout occurs.
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        // Parse the response body
+                        var jsonStr = response.Content.ReadAsStringAsync().Result;
+
+                        T jsonObject = JsonConvert.DeserializeObject<T>(jsonStr);
+                        return jsonObject;
+                    }
+                    else
+                    {
+                        Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+                    }
                 }
             }
             catch (Exception ex)
@@ -127,5 +146,23 @@ namespace ChefRisingStar.Helpers
 
             return default(T);
         }
+
+        private HttpClient ClientFactory()
+        {
+#if DEBUG
+         
+                var httpClientHandler = new HttpClientHandler();
+                httpClientHandler.ServerCertificateCustomValidationCallback =
+                (message, cert, chain, errors) => { return true; };
+
+                var client = new HttpClient(httpClientHandler);
+                return client;
+         
+#endif
+
+            return new HttpClient();
+
+        }
+
     }
 }

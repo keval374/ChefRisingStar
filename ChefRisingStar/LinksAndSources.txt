@@ -56,3 +56,6 @@ https://learn.microsoft.com/en-us/xamarin/essentials/permissions?tabs=android
 
 OAuth:
 https://youtu.be/vWkPdurauaA
+
+SSL Error:
+https://stackoverflow.com/questions/58376095/xamarin-java-security-cert-certpathvalidatorexception-trust-anchor-for-certifi

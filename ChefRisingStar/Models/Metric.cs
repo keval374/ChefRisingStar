@@ -22,16 +22,20 @@ namespace ChefRisingStar.Models
     {
         public MetricType MetricTypeCaptured { get; set; }
         public string Value { get; set; }
-        public DateTime OccuredOn { get; set; }
+        public DateTime ActivityTime { get; set; }
+
+        public int UserId { get; set; }
 
         public AppMetric()
         {
         }
 
-        public AppMetric(MetricType metricTypeCaptured, string value)
+        public AppMetric(MetricType metricTypeCaptured, int userId, string value)
         {
             MetricTypeCaptured = metricTypeCaptured;
+            UserId = userId;
             Value = value;
+            ActivityTime = DateTime.UtcNow;
         }
     }
 }
