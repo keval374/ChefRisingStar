@@ -1,4 +1,6 @@
-﻿using ChefRisingStar.Models;
+﻿using ChefRisingStar.DTOs;
+using ChefRisingStar.Helpers;
+using ChefRisingStar.Models;
 using ChefRisingStar.Services;
 using System;
 using System.Collections.Generic;
@@ -95,6 +97,7 @@ namespace ChefRisingStar.ViewModels
 
         public ICommand LoadItemsCommand { get; }
         public ICommand AddItemCommand { get; }
+        public ICommand SaveItemCommand { get; }
         public Command<User> ItemTapped { get; }
 
         public override IDataStore<User, int> DataStore { get; protected set; }
@@ -108,12 +111,43 @@ namespace ChefRisingStar.ViewModels
 
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
             ItemTapped = new Command<User>(OnItemSelected);
-
             AddItemCommand = new Command(OnAddItem);
+            SaveItemCommand = new Command(OnSaveItem);
 
             DataStore = DependencyService.Get<IDataStore<User, int>>();
             SchoolDataStore = DependencyService.Get<IDataStore<School, int>>();
             ExecuteLoadItemsCommand();
+        }
+
+        private async void OnSaveItem(object obj)
+        {
+            try
+            {
+                IsBusy = true; 
+
+                RestHelper helper = DependencyService.Get<RestHelper>();
+
+                UserDto result = null;
+
+                UserDto userDto= (UserDto)SelectedItem;
+
+                if(SelectedItem.Id== 0 ) 
+                {
+                    result = await helper.Post<UserDto, UserDto>(userDto, "api/Users/");
+                }
+                else
+                {
+                    await helper.Put<UserDto, string>(userDto, $"api/Users/{userDto.Id}/");
+                }
+            }
+            catch(Exception ex) 
+            {
+                //todo: loggin
+            }
+            finally
+            {
+                IsBusy = false;
+            }
         }
 
         async Task ExecuteLoadItemsCommand()
@@ -151,15 +185,15 @@ namespace ChefRisingStar.ViewModels
 
             User user = new User()
             {
-                Username = "Username",
+                UserName = "Username",
                 FirstName = "Firstname",
                 LastName = "Lastname",
-                EmailAddress = "user@email.com"
+                Email = "user@email.com"
             };
 
             //DataStore.AddItemAsync(user);
             AllUsers.Add(user);
-            Users = AllUsers.Where(i => i.Username == user.Username).ToList();
+            Users = AllUsers.Where(i => i.UserName == user.UserName).ToList();
             SelectedItem = user;
         }
 
@@ -184,7 +218,7 @@ namespace ChefRisingStar.ViewModels
         {
             IsBusy = true;
             searchText = searchText.Trim().ToLower();
-            Users = AllUsers.Where(i => i.FirstName.ToLower().Contains(searchText) || i.LastName.ToLower().Contains(searchText) || i.Username.ToLower().Contains(searchText)).ToList();
+            Users = AllUsers.Where(i => i.FirstName.ToLower().Contains(searchText) || i.LastName.ToLower().Contains(searchText) || i.UserName.ToLower().Contains(searchText)).ToList();
             IsBusy = false;
         }
 

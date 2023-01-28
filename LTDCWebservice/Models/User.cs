@@ -46,4 +46,5 @@ public partial class User
     public virtual ICollection<UserRecipe> UserRecipes { get; } = new List<UserRecipe>();
 
     public virtual ICollection<UserSocialMediaSite> UserSocialMediaSites { get; } = new List<UserSocialMediaSite>();
+
 }

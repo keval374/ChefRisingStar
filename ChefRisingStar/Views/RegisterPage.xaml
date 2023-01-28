@@ -26,7 +26,13 @@
                                 <Frame BackgroundColor="Transparent" CornerRadius="60" HorizontalOptions="FillAndExpand"
                                         BorderColor="CornflowerBlue" Padding="5" HeightRequest="40" Margin="5">
                                     <StackLayout Orientation="Horizontal">
-                                        <local:CustomEntry x:Name="FullName" Text="{Binding FullName}" Placeholder="Full Name" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+                                        <local:CustomEntry x:Name="FirstName" Text="{Binding FirstName}" Placeholder="First Name" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+                                    </StackLayout>
+                                </Frame>
+                                <Frame BackgroundColor="Transparent" CornerRadius="60" HorizontalOptions="FillAndExpand"
+                                        BorderColor="CornflowerBlue" Padding="5" HeightRequest="40" Margin="5">
+                                    <StackLayout Orientation="Horizontal">
+                                        <local:CustomEntry x:Name="LastName" Text="{Binding LastName}" Placeholder="Last Name" TextColor="Black" HorizontalOptions="FillAndExpand"/>
                                     </StackLayout>
                                 </Frame>
                                 <Frame BackgroundColor="Transparent" CornerRadius="60" HorizontalOptions="FillAndExpand"

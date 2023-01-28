@@ -54,6 +54,8 @@ namespace ChefRisingStar.ViewModels
         {
             try
             {
+                IsBusy = true;
+
                 RestHelper helper = DependencyService.Get<RestHelper>();
                 var userCred = new UserCred(Username, Password);
                 string token = await helper.Post<UserCred, string>(userCred, "api/auth/authenticate");
@@ -65,19 +67,9 @@ namespace ChefRisingStar.ViewModels
                 }
 
                 helper.SetBearer(token);
-                //MetricHelper.SendMetric(new AppMetric(MetricType.UserLoggedIn, 1, username));
+                MetricHelper.SendMetric(new AppMetric(MetricType.UserLoggedIn, 1, username));
 
                 await Shell.Current.GoToAsync($"//{nameof(RecipesListPage)}");
-
-                //if (response.StatusCode == System.Net.HttpStatusCode.OK)
-                //{
-                //    await Shell.Current.GoToAsync($"//{nameof(RecipesListPage)}");
-                //}
-                //else
-                //{
-                //    
-                //}
-
             }
             catch (Exception ex)
             {

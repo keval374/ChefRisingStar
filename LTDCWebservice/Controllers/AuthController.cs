@@ -1,8 +1,11 @@
 ﻿using LTDCWebservice.Authentication;
+using LTDCWebservice.Handlers;
 using LTDCWebservice.Models;
 using LTDCWebservice.Utilities;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,13 +31,6 @@ namespace LTDCWebservice.Controllers
             _authenticationManager = authenticationManager;
             _context = context;
         }
-        
-        // GET: api/<NameController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
 
         [AllowAnonymous]
         [HttpPost("authenticate")]
@@ -52,21 +48,47 @@ namespace LTDCWebservice.Controllers
         [HttpPost("createAccount")]
         public IActionResult CreateAccount([FromBody] User user)
         {
-            var FoundUser = _context.Users.Any(u=>u.Email == user.Email || u.UserName == user.UserName);
+            UserHandler handler = new UserHandler(_context);
+            return handler.CreateAccount(user);
+        }
+        
+        [AllowAnonymous]
+        [HttpPost("resetAccount")]
+        public IActionResult ResetAccount([FromBody] UserCred userCred)
+        {
+            var foundUser = _context.Users.FirstOrDefault(u=>u.Email == userCred.Username || u.UserName == userCred.Username);
 
-            if (FoundUser)
+            if (foundUser == null)
             {
                 return BadRequest();
             }
 
-            byte[] salt;
+            string salt;
+            string hash = HashUtility.HashPasword(userCred.Password, out salt);
 
-            string hash = HashUtility.HashPasword(user.PasswordHash, out salt);
-            string hash2 = HashUtility.HashPaswordWithSalt(user.PasswordHash, salt);
-            return Ok(Convert.ToHexString(salt));
+            var result = new
+            {
+                PasswordHash = hash,
+                Salt = salt
+            };
+
+            _context.Entry(foundUser).State = EntityState.Modified;
+            foundUser.PasswordHash = hash;
+            foundUser.Salt = salt;
+
+            try
+            {
+                _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                
+            }
+
+            return Ok(result);
         }
         
-        [AllowAnonymous]
+        [Authorize(Roles = "Admin")]
         [HttpGet("getNounce")]
         public IActionResult GetNounce()
         {

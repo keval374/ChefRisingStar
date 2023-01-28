@@ -1,28 +1,22 @@
-﻿using ChefRisingStar.Models;
+﻿using ChefRisingStar.DTOs;
+using ChefRisingStar.Helpers;
+using ChefRisingStar.Models;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+using Xamarin.Forms;
+using static SQLite.SQLite3;
 
 namespace ChefRisingStar.Services
 {
-    public class MockUserDataStore : IDataStore<User, int>
+    public class UserDataStore : IDataStore<User, int>
     {
         readonly List<User> items;
 
-        public MockUserDataStore()
+        public UserDataStore()
         {
-            items = new List<User>()
-            {
-                new User(1, "John", "Wick", "john23", "john@wick.com"),
-                new User(2, "John", "Cena", "johnCNA", "john@cena.com"),
-                new User(3, "John", "Ham", "hammer", "john@hamjam.com"),
-                new User(4, "Coutrney", "Cox", "moxcox", "ccox@jam.com"),
-                new User(5, "Jennifer", "Anniston", "jenjen", "jenny@friends.com"),
-                new User(6, "Thor", "God", "Thorny", "thor@marvel.com"),
-                new User(7, "Iron", "Man", "Iron man", "ironman@marvel.com"),
-                new User(8, "Captain", "Marvel", "cappy", "captain@marvel.com"),
-            };
+            items = new List<User>();
         }
 
         public async Task<bool> AddItemAsync(User item)
@@ -55,6 +49,15 @@ namespace ChefRisingStar.Services
 
         public async Task<IEnumerable<User>> GetItemsAsync(bool forceRefresh = false)
         {
+            if(forceRefresh || items.Count == 0)
+            {
+                RestHelper helper = DependencyService.Get<RestHelper>();
+                items.Clear();
+                
+                var result = await helper.Get<User[]>(RestHelper.Routes.Users);
+                items.AddRange(result);
+            }
+
             return await Task.FromResult(items);
         }
 

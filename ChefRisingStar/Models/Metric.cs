@@ -37,5 +37,15 @@ namespace ChefRisingStar.Models
             Value = value;
             ActivityTime = DateTime.UtcNow;
         }
+
+        public static explicit operator UserMetric(AppMetric appMetric)
+        {
+            return new UserMetric()
+            {
+                ActivityTime = appMetric.ActivityTime.ToString("O"),
+                UserId = appMetric.UserId,
+                MetricId = (int)appMetric.MetricTypeCaptured
+            };
+        }
     }
 }

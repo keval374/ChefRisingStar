@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using LTDCWebservice.Models;
 using Microsoft.AspNetCore.Authorization;
+using LTDCWebservice.Utilities;
+using LTDCWebservice.Handlers;
 
 namespace LTDCWebservice.Controllers
 {
@@ -53,6 +55,16 @@ namespace LTDCWebservice.Controllers
                 return BadRequest();
             }
 
+            if(user.SchoolId == 0)
+            {
+                user.SchoolId = null;
+            }
+            
+            if(user.TeamId == 0)
+            {
+                user.TeamId = null;
+            }
+
             _context.Entry(user).State = EntityState.Modified;
 
             try
@@ -76,20 +88,17 @@ namespace LTDCWebservice.Controllers
 
         // POST: api/Users
         [HttpPost]
-        [AllowAnonymous]
         public async Task<ActionResult<User>> PostUser(User user)
         {
-            var FoundUser = _context.Users.Any(u => u.Email == user.Email || u.UserName == user.UserName);
+            UserHandler handler = new UserHandler(_context);
+            var result = handler.CreateAccount(user);
 
-            if (FoundUser)
+            if (result is OkObjectResult)
             {
-                return BadRequest();
+                return CreatedAtAction("GetUser", new { id = user.Id }, user);
             }
 
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetUser", new { id = user.Id }, user);
+            return NoContent();
         }
 
         // DELETE: api/Users/5

@@ -33,20 +33,12 @@ namespace LTDCWebservice.Authentication
             {
                 return null;
             }
-
-            byte[] salt = Convert.FromHexString(user.Salt);
-            string hash = HashUtility.HashPaswordWithSalt(password, salt);
+            
+            string hash = HashUtility.HashPaswordWithSalt(password, user.Salt);
 
             if(hash != user.PasswordHash)
             {
                 return null;
-            }
-
-            string role = "User";
-
-            if(user.IsAdministrator.HasValue && user.IsAdministrator == 1)
-            {
-                role += ", Admin";
             }
 
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -56,11 +48,16 @@ namespace LTDCWebservice.Authentication
                 Subject = new ClaimsIdentity(new Claim[]
                 {
                     new Claim(ClaimTypes.Name, username),
-                    new Claim(ClaimTypes.Role, role)
+                    new Claim(ClaimTypes.Role, "User")
                 }),
                 Expires = DateTime.UtcNow.AddHours(1),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(tokenKey), SecurityAlgorithms.HmacSha256),
             };
+
+            if (user.IsAdministrator.HasValue && user.IsAdministrator == 1)
+            {   
+                tokenDescriptor.Subject.AddClaim(new Claim(ClaimTypes.Role, "Admin"));
+            }
 
             try
             {   

@@ -1,4 +1,8 @@
-﻿using ChefRisingStar.Views;
+﻿using ChefRisingStar.DTOs;
+using ChefRisingStar.Helpers;
+using ChefRisingStar.Models;
+using ChefRisingStar.Views;
+using LTDCWebservice.Utilities;
 using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
@@ -11,7 +15,8 @@ namespace ChefRisingStar.ViewModels
 
     public class RegisterViewModel : BaseViewModel
     {
-        private string fullName;
+        private string firstName;
+        private string lastName;
         private string username;
         private string email;
         private string password;
@@ -20,16 +25,29 @@ namespace ChefRisingStar.ViewModels
         public Command RegistrationCommand { get; }
         public Command SignInCommand { get; }
 
-        public string FullName
+        public string FirstName
         {
-            get => fullName;
+            get => firstName;
             set
             {
-                if (fullName == value)
+                if (firstName == value)
                     return;
 
-                fullName = value;
-                OnPropertyChanged("FullName");
+                firstName = value;
+                OnPropertyChanged("FirstName");
+            }
+        }
+        
+        public string LastName
+        {
+            get => lastName;
+            set
+            {
+                if (lastName == value)
+                    return;
+
+                lastName = value;
+                OnPropertyChanged("LastName");
             }
         }
 
@@ -98,50 +116,47 @@ namespace ChefRisingStar.ViewModels
             if (IsBusy)
                 return;
 
-            IsBusy = true;
-
-            if (password != confirmPassword)
+           if (password != confirmPassword)
                 return;
 
-            using (HttpClient client = new HttpClient())
+            IsBusy = true;
+            
+            try
             {
-                try
-                {
-                    var my_jsondata = new
-                    {
-                        username = username,
-                        password = password,
-                        email = email
-                    };
-                    string json_data = JsonConvert.SerializeObject(my_jsondata);
+                User user = new User(firstName, lastName, username, email);
 
-                    var response = await client.PostAsync(
-                        "https://chefrisingstar-api.mybluemix.net/api/user/registry",
-                        new StringContent(json_data, Encoding.UTF8, "application/json"));
+                string salt;
+                string hashedPassword = HashUtility.HashPasword(password, out salt);
+                
+                user.PasswordHash = hashedPassword;
+                user.Salt = salt;
 
-                    if (response.StatusCode.ToString() == "OK")
-                    {
-                        await Application.Current.MainPage.DisplayAlert("Success", username + " successfully registered!", "OK");
-                    }
-                    else
-                    {
-                        await Application.Current.MainPage.DisplayAlert("Error", "something went wrong, try again", "OK");
-                    }
+                RestHelper helper = DependencyService.Get<RestHelper>();
 
-                }
-                catch (Exception ex)
+                UserDto userDto = (UserDto)user;
+
+                UserDto result = await helper.Post<UserDto, UserDto>(userDto, "api/Auth/CreateAccount");
+
+                if (result.Id != 0)
                 {
-                    Debug.WriteLine($"Error during registration: {ex}");
-                    await Application.Current.MainPage.DisplayAlert("API Error:", ex.Message, "OK");
+                    await Application.Current.MainPage.DisplayAlert("Success", username + " successfully registered!", "OK");
                 }
-                finally
+                else
                 {
-                    IsBusy = false;
+                    await Application.Current.MainPage.DisplayAlert("Error", "something went wrong, try again", "OK");
                 }
+
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error during registration: {ex}");
+                await Application.Current.MainPage.DisplayAlert("API Error:", ex.Message, "OK");
+            }
+            finally
+            {
+                IsBusy = false;
             }
         }
-
-
 
         private async void OnSignInClicked()
         {

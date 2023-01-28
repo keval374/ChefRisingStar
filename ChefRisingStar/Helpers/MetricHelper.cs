@@ -9,7 +9,8 @@ namespace ChefRisingStar.Helpers
         public static void SendMetric(AppMetric metric)
         {
             RestHelper helper = DependencyService.Get<RestHelper>();
-            helper.Post(metric, Route);
+            UserMetric userMetric = (UserMetric)metric;
+            helper.Post(userMetric, Route);
         }
 
         public static void SendMetric(MetricType metricType, int userId, string value)

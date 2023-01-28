@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="RecipeDetailViewModelTests.cs" />
+    <Compile Include="HashUtilityTests.cs" />
     <Compile Include="SubstitutionHelperTests.cs" />
     <Compile Include="Tests.cs" />
     <Compile Include="AppInitializer.cs" />

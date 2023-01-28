@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LTDCWebservice", "LTDCWebse
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApp", "TestApp\TestApp.csproj", "{0EFE5FB1-2FBF-4BE7-8767-25826743D6E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LTDCWebsservice.UnitTests", "LTDCWebsservice.UnitTests\LTDCWebsservice.UnitTests.csproj", "{59435780-5BE5-44D6-8C8A-0412477DC30E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,12 +125,25 @@ Global
 		{0EFE5FB1-2FBF-4BE7-8767-25826743D6E5}.Release|iPhone.Build.0 = Release|Any CPU
 		{0EFE5FB1-2FBF-4BE7-8767-25826743D6E5}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{0EFE5FB1-2FBF-4BE7-8767-25826743D6E5}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{59435780-5BE5-44D6-8C8A-0412477DC30E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59435780-5BE5-44D6-8C8A-0412477DC30E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59435780-5BE5-44D6-8C8A-0412477DC30E}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{59435780-5BE5-44D6-8C8A-0412477DC30E}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{59435780-5BE5-44D6-8C8A-0412477DC30E}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{59435780-5BE5-44D6-8C8A-0412477DC30E}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{59435780-5BE5-44D6-8C8A-0412477DC30E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59435780-5BE5-44D6-8C8A-0412477DC30E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59435780-5BE5-44D6-8C8A-0412477DC30E}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{59435780-5BE5-44D6-8C8A-0412477DC30E}.Release|iPhone.Build.0 = Release|Any CPU
+		{59435780-5BE5-44D6-8C8A-0412477DC30E}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{59435780-5BE5-44D6-8C8A-0412477DC30E}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B2E7431B-B119-435C-9519-662CF650D6CA} = {D29F6B5C-E8E9-43E9-B721-7629382B5A54}
+		{59435780-5BE5-44D6-8C8A-0412477DC30E} = {D29F6B5C-E8E9-43E9-B721-7629382B5A54}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8565B1C4-0BC3-4F47-987B-EAAC48C8A0F6}
