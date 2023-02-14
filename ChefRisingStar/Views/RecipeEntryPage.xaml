@@ -18,6 +18,7 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
@@ -34,16 +35,20 @@
                 <Entry Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Placeholder="Name of Recipe"
                        Text="{Binding RecipeTitle}" />
 
-                <Label Text="Serves" Grid.Row="2" Grid.Column="0" FontSize="Medium" />
-                <Entry Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Placeholder="Serving Size"
+                <Label Text="Summary" Grid.Row="2" Grid.Column="0" FontSize="Medium" />
+                <Entry Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Placeholder="Recipe Summary"
+                       Text="{Binding Summary}" />
+
+                <Label Text="Serves" Grid.Row="3" Grid.Column="0" FontSize="Medium" />
+                <Entry Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Placeholder="Serving Size"
                        Text="{Binding Servings}"/>
 
-                <Label Text="Time to Cook" Grid.Row="3" Grid.Column="0" FontSize="Medium" />
-                <Entry Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Placeholder="Cooking time in minutes"
+                <Label Text="Time to Cook" Grid.Row="4" Grid.Column="0" FontSize="Medium" />
+                <Entry Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" Placeholder="Cooking time in minutes"
                        Text="{Binding ReadyInMinutes}"/>
 
-                <Label Text="Cuisine(s)" Grid.Row="4" Grid.Column="0" FontSize="Medium" />
-                <Grid Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3">
+                <Label Text="Cuisine(s)" Grid.Row="5" Grid.Column="0" FontSize="Medium" />
+                <Grid Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3">
                     <Entry  Placeholder="Select Cuisine(s)" Text="{Binding SelectedCuisines}" />
                     <BoxView  />
                     <Grid.GestureRecognizers>
@@ -51,8 +56,8 @@
                     </Grid.GestureRecognizers>
                 </Grid>
 
-                <Label Text="Dish Type(s)" Grid.Row="5" Grid.Column="0" FontSize="Medium" />
-                <Grid Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3">
+                <Label Text="Dish Type(s)" Grid.Row="6" Grid.Column="0" FontSize="Medium" />
+                <Grid Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3">
                     <Entry  Placeholder="Select Dish Type(s)" Text="{Binding SelectedDishTypes}" />
                     <BoxView  />
                     <Grid.GestureRecognizers>
@@ -61,14 +66,14 @@
                 </Grid>
 
 
-                <Frame CornerRadius="25" Grid.Row="6" Grid.ColumnSpan="4" HorizontalOptions="FillAndExpand" Margin="0" Padding="0">
-                    <Label Text="Instructions" Grid.Row="6" Grid.ColumnSpan="4" TextColor="White"
+                <Frame CornerRadius="25" Grid.Row="7" Grid.ColumnSpan="4" HorizontalOptions="FillAndExpand" Margin="0" Padding="0">
+                    <Label Text="Instructions" Grid.Row="7" Grid.ColumnSpan="4" TextColor="White"
                            FontAttributes="Bold" FontSize="Medium" BackgroundColor="CornflowerBlue"
                            HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                 </Frame>
-                <Frame CornerRadius="25" Grid.Row="7" Grid.ColumnSpan="4" HorizontalOptions="FillAndExpand" Margin="0" Padding="0">
+                <Frame CornerRadius="25" Grid.Row="8" Grid.ColumnSpan="4" HorizontalOptions="FillAndExpand" Margin="0" Padding="0">
                     <ScrollView>
-                        <Editor Grid.Row="7" Grid.ColumnSpan="4" BackgroundColor="AliceBlue" IsTextPredictionEnabled="True"
+                        <Editor Grid.Row="8" Grid.ColumnSpan="4" BackgroundColor="AliceBlue" IsTextPredictionEnabled="True"
                                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" AutoSize="TextChanges"
                                 Placeholder="Each instruction goes on a separate line" HeightRequest="200"
                                 Text="{Binding Instructions}">
@@ -76,9 +81,9 @@
                     </ScrollView>
                 </Frame>
 
-                <Button Text="Save" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" x:Name="saveButton" BackgroundColor="CornflowerBlue" TextColor="White"
+                <Button Text="Save" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" x:Name="saveButton" BackgroundColor="CornflowerBlue" TextColor="White"
                         FontAttributes="Bold" FontSize="Medium" CornerRadius="25" Clicked="OnSaveButtonClicked"/>
-                <Button Text="Delete" Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="2" x:Name="deleteButton" BackgroundColor="PaleVioletRed" TextColor="White"
+                <Button Text="Delete" Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="2" x:Name="deleteButton" BackgroundColor="PaleVioletRed" TextColor="White"
                         FontAttributes="Bold" FontSize="Medium" CornerRadius="25" Clicked="OnDeleteButtonClicked"/>
             </Grid>
             </ScrollView>

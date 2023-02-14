@@ -1,10 +1,10 @@
-﻿using ChefRisingStar.Models;
-using ChefRisingStar.ViewModels;
-using System;
-using System.Text;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Text;
+using ChefRisingStar.Models;
+using ChefRisingStar.ViewModels;
+using Xamarin.Forms;
 
 namespace ChefRisingStar.Views
 {
@@ -99,33 +99,64 @@ namespace ChefRisingStar.Views
             {
                 int id = Convert.ToInt32(itemId);
                 // Retrieve the recipe and set it as the BindingContext of the page.
-                TempRecipeViewModel recipe = await App.Database.GetRecipeAsync(id);
-                BindingContext = recipe;
+                CustomRecipe recipe = await App.Database.GetRecipeAsync(id);
+                
+                _viewModel = new TempRecipeViewModel();
+                _viewModel.ID = recipe.ID;
+                _viewModel.RecipeTitle = recipe.RecipeTitle;
+                _viewModel.Summary = recipe.Summary;
+                _viewModel.Servings = recipe.Servings;
+                _viewModel.ReadyInMinutes = recipe.ReadyInMinutes;
+                _viewModel.SelectedCuisines = recipe.Cuisines;
+
+                BindingContext = _viewModel;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                await DisplayAlert("failure", "loadrecipe: " + ex, "ok", "cancel");
                 Console.WriteLine("Failed to load recipe.");
             }
         }
 
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
-            var recipe = (TempRecipeViewModel)BindingContext;
-
-            if (!string.IsNullOrWhiteSpace(recipe.RecipeTitle))
+            try
             {
-                await App.Database.SaveRecipeAsync(recipe);
-                var recipes = App.Database.GetRecipesAsync();
+                
+                TempRecipeViewModel tempRecipe = (TempRecipeViewModel)BindingContext;
+
+                CustomRecipe customRecipe = new CustomRecipe();
+                customRecipe.ID = tempRecipe.ID;
+                customRecipe.RecipeTitle = tempRecipe.RecipeTitle;
+                customRecipe.Summary = tempRecipe.Summary;
+                customRecipe.Servings = tempRecipe.Servings;
+                customRecipe.ReadyInMinutes = tempRecipe.ReadyInMinutes;
+                customRecipe.Cuisines = tempRecipe.SelectedCuisines;
+
+                if (!string.IsNullOrWhiteSpace(customRecipe.RecipeTitle))
+                {
+                    await App.Database.SaveRecipeAsync(customRecipe);
+                    //List<CustomRecipe> recipes = await App.Database.GetRecipesAsync();
+                }
+
             }
-            
+            catch (Exception ex)
+            {
+                Console.WriteLine("OnSaveButtonClicked failed with exception: "+ex);
+                await DisplayAlert("Failure", "OnSaveButtonClicked exception: "+ex, "ok", "Cancel");
+            }
             // Navigate backwards
             await Shell.Current.GoToAsync("..");
+
         }
 
         async void OnDeleteButtonClicked(object sender, EventArgs e)
         {
-            var recipe = (TempRecipeViewModel)BindingContext;
-            await App.Database.DeleteRecipeAsync(recipe);
+            TempRecipeViewModel tempRecipe = (TempRecipeViewModel)BindingContext;
+
+            CustomRecipe customRecipe = new CustomRecipe();
+            customRecipe.ID = tempRecipe.ID;
+            await App.Database.DeleteRecipeAsync(customRecipe);
 
             // Navigate backwards
             await Shell.Current.GoToAsync("..");

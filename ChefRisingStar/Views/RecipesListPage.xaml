@@ -19,7 +19,6 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
@@ -37,7 +36,6 @@
                         <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding OpenDishTypesCommand}" />
                     </Grid.GestureRecognizers>
                 </Grid>
-                
                 <Grid Grid.Row="2" Grid.Column="0">
                     <Entry  Placeholder="Select Diet(s)" Text="{Binding SelectedDiets}" />
                     <BoxView  />

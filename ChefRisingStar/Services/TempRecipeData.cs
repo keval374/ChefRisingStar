@@ -1,7 +1,6 @@
 ﻿using ChefRisingStar.Models;
 using SQLite;
 using Xamarin.Forms;
-using ChefRisingStar.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using ChefRisingStar.ViewModels;
@@ -15,24 +14,24 @@ namespace ChefRisingStar.Services
         public TempRecipeDatabase(string dbPath)
         {
             database = new SQLiteAsyncConnection(dbPath);
-            database.CreateTableAsync<TempRecipeViewModel>().Wait();
+            database.CreateTableAsync<CustomRecipe>().Wait();
         }
 
-        public Task<List<TempRecipeViewModel>> GetRecipesAsync()
+        public Task<List<CustomRecipe>> GetRecipesAsync()
         {
             //Get all Recipes.
-            return database.Table<TempRecipeViewModel>().ToListAsync();
+            return database.Table<CustomRecipe>().ToListAsync();
         }
 
-        public Task<TempRecipeViewModel> GetRecipeAsync(int id)
+        public Task<CustomRecipe> GetRecipeAsync(int id)
         {
             // Get a specific recipes.
-            return database.Table<TempRecipeViewModel>()
+            return database.Table<CustomRecipe>()
                             .Where(i => i.ID == id)
                             .FirstOrDefaultAsync();
         }
 
-        public Task<int> SaveRecipeAsync(TempRecipeViewModel recipe)
+        public Task<int> SaveRecipeAsync(CustomRecipe recipe)
         {
             if (recipe.ID != 0)
             {
@@ -46,7 +45,7 @@ namespace ChefRisingStar.Services
             }
         }
 
-        public Task<int> DeleteRecipeAsync(TempRecipeViewModel recipe)
+        public Task<int> DeleteRecipeAsync(CustomRecipe recipe)
         {
             // Delete a recipe.
             return database.DeleteAsync(recipe);

@@ -2,17 +2,21 @@
 using System;
 using System.Linq;
 using System.Collections.Generic;
-using ChefRisingStar.Models;
 using Xamarin.Forms;
 using ChefRisingStar.ViewModels;
+using Xamarin.Forms.PlatformConfiguration;
 
 namespace ChefRisingStar.Views
 {
     public partial class CustomRecipePage : ContentPage
     {
+        TempRecipeViewModel _viewModel;
+
         public CustomRecipePage()
         {
             InitializeComponent();
+            BindingContext = _viewModel = new TempRecipeViewModel();
+            Title = _viewModel.Title;
         }
 
         protected override async void OnAppearing()
@@ -35,8 +39,10 @@ namespace ChefRisingStar.Views
             if (e.CurrentSelection != null)
             {
                 // Navigate to the RecipeEntryPage, passing the ID as a query parameter.
-                TempRecipeViewModel recipe = (TempRecipeViewModel)e.CurrentSelection.FirstOrDefault();
-                await Shell.Current.GoToAsync($"{nameof(RecipeEntryPage)}?{nameof(RecipeEntryPage.ItemId)}={recipe.ID.ToString()}");
+                
+                CustomRecipe recipe = (CustomRecipe)e.CurrentSelection.FirstOrDefault();
+                await DisplayAlert("alert", "OnSelectionChanged: " + recipe, "ok", "Cancel");
+                await Shell.Current.GoToAsync($"{nameof(RecipeEntryPage)}?{nameof(RecipeEntryPage.ItemId)}={recipe.ID}");
             }
         }
     }
