@@ -2,8 +2,7 @@
 using System.Collections.ObjectModel;
 using SQLite;
 using System.Collections.Generic;
-
-
+using ChefRisingStar.DTOs;
 
 namespace ChefRisingStar.Models
 {
@@ -29,7 +28,8 @@ namespace ChefRisingStar.Models
 
         public string Cuisines { get; set; }
         //public List<string> Cuisines = new List<string>();
-        public List<string> DishTypes = new List<string>();
+        //public List<string> DishTypes = new List<string>();
+        public string DishTypes { get; set; }
 
         public CustomRecipe()
         {
@@ -41,6 +41,22 @@ namespace ChefRisingStar.Models
             return "[RecipeTitle:" + RecipeTitle +", Id:" +ID+" ]";
         }
 
+        public static explicit operator CustomRecipeDto(CustomRecipe customrecipe)
+        {
+            var item = new CustomRecipeDto()
+            {
+                ID = customrecipe.ID,
+                RecipeTitle = customrecipe.RecipeTitle,
+                Summary = customrecipe.Summary,
+                ReadyInMinutes = customrecipe.ReadyInMinutes,
+                Servings = customrecipe.Servings,
+                Instructions = customrecipe.Instructions,
+                Cuisines = customrecipe.Cuisines,
+                DishTypes = customrecipe.DishTypes
+            };
+
+            return item;
+        }
     }
 }
 

@@ -5,6 +5,8 @@ using System.Text;
 using ChefRisingStar.Models;
 using ChefRisingStar.ViewModels;
 using Xamarin.Forms;
+using ChefRisingStar.DTOs;
+using ChefRisingStar.Helpers;
 
 namespace ChefRisingStar.Views
 {
@@ -13,6 +15,7 @@ namespace ChefRisingStar.Views
     {
         TempRecipeViewModel _viewModel;
 
+        private CustomRecipe _selectedItem;
         public string ItemId
         {
             set
@@ -118,6 +121,7 @@ namespace ChefRisingStar.Views
             }
         }
 
+
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
             try
@@ -133,10 +137,31 @@ namespace ChefRisingStar.Views
                 customRecipe.ReadyInMinutes = tempRecipe.ReadyInMinutes;
                 customRecipe.Cuisines = tempRecipe.SelectedCuisines;
 
+                RestHelper helper = DependencyService.Get<RestHelper>();
+                CustomRecipeDto customRecipeDto = new CustomRecipeDto();
+                customRecipeDto.ID = tempRecipe.ID;
+                customRecipeDto.RecipeTitle = tempRecipe.RecipeTitle;
+                customRecipeDto.Summary = tempRecipe.Summary;
+                customRecipeDto.Servings = tempRecipe.Servings;
+                customRecipeDto.ReadyInMinutes = tempRecipe.ReadyInMinutes;
+                customRecipeDto.Cuisines = tempRecipe.SelectedCuisines;
+
                 if (!string.IsNullOrWhiteSpace(customRecipe.RecipeTitle))
                 {
                     await App.Database.SaveRecipeAsync(customRecipe);
                     //List<CustomRecipe> recipes = await App.Database.GetRecipesAsync();
+                    CustomRecipeDto result = null;
+                    if (customRecipeDto.ID == 0)
+                    {
+                        result = await helper.Post<CustomRecipeDto, CustomRecipeDto>(customRecipeDto, "api/CustomRecipes/");
+                        await DisplayAlert("Saved", "on save post res: " +result, "ok", "Cancel");
+                    }
+                    else
+                    {
+                        string res;
+                        res = await helper.Put<CustomRecipeDto, string>(customRecipeDto, $"api/CustomRecipes/{customRecipeDto.ID}/");
+                        await DisplayAlert("Saved", "on save put res: " + res, "ok", "Cancel");
+                    }
                 }
 
             }
